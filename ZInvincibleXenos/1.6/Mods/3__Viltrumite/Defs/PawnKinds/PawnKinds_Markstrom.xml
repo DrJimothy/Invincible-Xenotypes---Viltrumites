@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <PawnKindDef Name="MarkFighterBase" Abstract="True">
+    <race>Human</race>
+    <defaultFactionDef>JInv_AngstromFaction</defaultFactionDef>
+    <maxGenerationAge>35</maxGenerationAge>
+    <apparelTags>
+      <li>IndustrialBasic</li>
+    </apparelTags>
+    <styleItemTags>
+      <li>
+        <tag>Soldier</tag>
+        <baseWeight>1</baseWeight>
+        <weightFactor>1</weightFactor>
+      </li>
+    </styleItemTags>
+    <invNutrition>5</invNutrition>
+    <apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
+    <apparelMoney>3500~7500</apparelMoney>
+    <techHediffsChance>0.1</techHediffsChance>
+    <techHediffsMoney>250~9000</techHediffsMoney>
+    <useFactionXenotypes>false</useFactionXenotypes>
+    <xenotypeSet>
+      <xenotypeChances>
+        <Viltrumite>1</Viltrumite>
+      </xenotypeChances>
+    </xenotypeSet>
+    <backstoryFiltersOverride>
+      <li>
+        <categories>
+          <li>Viltrum</li>
+          <li>ViltrumChild</li>
+          <li>Viltrumite</li>
+          <li>ViltrumElite</li>
+          <li>ViltrumChildElite</li>
+          <li>ViltrumGarbage</li>
+          <li>Offworld</li>
+          <li>VGeneric</li>
+          <li>Outlander</li>
+          <li>Pirate</li>
+          <li>Tribal</li>
+        </categories>
+      </li>
+    </backstoryFiltersOverride>
+  </PawnKindDef>
+
+  <!-- Mark Variant. So random so fantastical -->
+  <PawnKindDef ParentName="MarkFighterBase">
+    <defName>Mark_Fighter_Solo</defName>
+    <label>mark</label>
+    <combatPower>6000</combatPower>
+    <techHediffsTags>
+      <li>Advanced</li>
+      <li MayRequire="Ludeon.RimWorld.Royalty">ImplantEmpireCommon</li>
+    </techHediffsTags>
+    <skills>
+      <li>
+        <skill>Melee</skill>
+        <range>0~20</range>
+      </li>
+    </skills>
+    <initialWillRange>1~10</initialWillRange>
+    <initialResistanceRange>1~20</initialResistanceRange>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="MarkFighterBase">
+    <defName>Mark_Fighter_Duo</defName>
+    <label>mark</label>
+    <combatPower>4000</combatPower>
+    <techHediffsTags>
+      <li>Advanced</li>
+      <li MayRequire="Ludeon.RimWorld.Royalty">ImplantEmpireCommon</li>
+    </techHediffsTags>
+    <skills>
+      <li>
+        <skill>Melee</skill>
+        <range>0~20</range>
+      </li>
+    </skills>
+    <initialWillRange>1~10</initialWillRange>
+    <initialResistanceRange>1~20</initialResistanceRange>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="MarkFighterBase">
+    <defName>Mark_Fighter_Squad</defName>
+    <label>mark</label>
+    <combatPower>2300</combatPower>
+    <techHediffsTags>
+      <li>Advanced</li>
+      <li MayRequire="Ludeon.RimWorld.Royalty">ImplantEmpireCommon</li>
+    </techHediffsTags>
+    <skills>
+      <li>
+        <skill>Melee</skill>
+        <range>0~20</range>
+      </li>
+    </skills>
+    <initialWillRange>1~10</initialWillRange>
+    <initialResistanceRange>1~20</initialResistanceRange>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="MarkFighterBase">
+    <defName>Mark_Fighter_OhGod</defName>
+    <label>mark</label>
+    <combatPower>900</combatPower>
+    <techHediffsTags>
+      <li>Advanced</li>
+      <li MayRequire="Ludeon.RimWorld.Royalty">ImplantEmpireCommon</li>
+    </techHediffsTags>
+    <skills>
+      <li>
+        <skill>Melee</skill>
+        <range>0~20</range>
+      </li>
+    </skills>
+    <initialWillRange>1~10</initialWillRange>
+    <initialResistanceRange>1~20</initialResistanceRange>
+  </PawnKindDef>
+
+
+  <PawnKindDef>
+    <defName>JInv_Angstrom_Pawnkind</defName>
+    <label>angstrom</label>
+    <combatPower>6000</combatPower>
+    <techHediffsTags>
+      <li>BeltDefensePop</li>
+      <li>IndustrialBasic</li>
+      <li>SpacerMilitary</li>
+    </techHediffsTags>
+    <initialWillRange>15~35</initialWillRange>
+    <initialResistanceRange>40~60</initialResistanceRange>
+    <race>Human</race>
+    <defaultFactionDef>JInv_AngstromFaction</defaultFactionDef>
+    <maxGenerationAge>60</maxGenerationAge>
+    <minGenerationAge>25</minGenerationAge>
+    <apparelTags>
+      <li>BeltDefensePop</li>
+      <li>J_ClothUnderArm</li>
+      <li>SpacerMilitary</li>
+    </apparelTags>
+    <styleItemTags>
+      <li>
+        <tag>Soldier</tag>
+        <baseWeight>1</baseWeight>
+        <weightFactor>1</weightFactor>
+      </li>
+    </styleItemTags>
+    <invNutrition>5</invNutrition>
+    <apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
+    <apparelMoney>10000~12000</apparelMoney>
+    <weaponTags>
+      <li>JimPew_Angstrom</li>
+    </weaponTags>
+    <weaponMoney>5000~7500</weaponMoney>
+    <itemQuality>Legendary</itemQuality>
+    <maxApparelQuality>Legendary</maxApparelQuality>
+    <forceWeaponQuality>Legendary</forceWeaponQuality>
+    <techHediffsChance>1</techHediffsChance>
+    <techHediffsMoney>2500~9000</techHediffsMoney>
+    <techHediffsRequired>
+      <li>DeathAcidifier</li>
+      <li>Painstopper</li>
+      <li MayRequire="Ludeon.RimWorld.Royalty">NuclearStomach</li>
+      <li MayRequire="Ludeon.RimWorld.Royalty">Coagulator</li>
+      <li MayRequire="Ludeon.RimWorld.Royalty">HealingEnhancer</li>
+      <li MayRequire="Ludeon.RimWorld.Royalty">CircadianAssistant</li>
+      <li MayRequire="Ludeon.RimWorld.Royalty">PsychicReader</li>
+      <li MayRequire="Ludeon.RimWorld.Royalty">StoneskinGland</li>
+      <li MayRequire="Ludeon.RimWorld.Royalty">LearningAssistant</li>
+      <li MayRequire="Ludeon.RimWorld.Royalty">Neurocalculator</li>
+      <li MayRequire="lts.I">HackingPortImplant</li>
+      <li MayRequire="lts.I">StrengthEnhancer</li>
+      <li MayRequire="lts.I">Synthmarrow</li>
+      <li MayRequire="lts.I">LTS_SubdermalArmour</li>
+      <li MayRequire="lts.I">CranialInsulation</li>
+      <li MayRequire="lts.I">LTS_MemoryDatabank</li>
+      <li MayRequire="lts.I">WiredReflex</li>
+      <li MayRequire="lts.I">PsychicLevitator</li>
+      <li MayRequire="lts.I">ArchotechVoicebox</li>
+      <li MayRequire="lts.I">InternalClimateControlImplant</li>
+      <li MayRequire="lts.I">SkeletalBracing</li>
+    </techHediffsRequired>
+    <useFactionXenotypes>false</useFactionXenotypes>
+    <xenotypeSet>
+      <xenotypeChances>
+        <Jim_AngstromLevy2>1</Jim_AngstromLevy2>
+      </xenotypeChances>
+    </xenotypeSet>
+    <backstoryFiltersOverride>
+      <li>
+        <categories>
+          <li>Angstrom</li>
+        </categories>
+      </li>
+    </backstoryFiltersOverride>
+    <disallowedTraits>
+      <li>Wimp</li>
+      <li>Delicate</li>
+      <li>Brawler</li>
+    </disallowedTraits>
+  </PawnKindDef>
+</Defs>

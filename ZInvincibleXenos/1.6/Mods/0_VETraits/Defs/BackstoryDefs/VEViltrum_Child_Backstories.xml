@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- Surely, not EVERYONE was Kung Fu fighting? -->
+	<BackstoryDef>
+		<defName>JVBackStory_KarateKid</defName>
+		<title>Karate Kid</title>
+		<titleShort>Karate</titleShort>
+		<slot>Childhood</slot>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<baseDesc>[PAWN_nameDef] was trained from a young age into martial arts.</baseDesc>
+		<spawnCategories>
+        	<li>Outlander</li>
+			<li>Hero</li>
+			<li>ViltrumChildElite</li>
+			<li>Vilgrunt</li>
+		</spawnCategories>
+		<skillGains>
+			<Melee>4</Melee>
+		</skillGains>
+		<forcedTraits>
+			<Tough>0</Tough>
+			<VTE_MartialArtist MayRequire="VanillaExpanded.VanillaTraitsExpanded">0</VTE_MartialArtist>
+			<Nimble>0</Nimble>
+		</forcedTraits>
+	</BackstoryDef>
+
+	<!-- Vilgrunt backstories -->
+	<!-- Regular Viltrumite backstories -->
+	<!-- Pathetic Viltrumite backstories -->
+	<!-- Elite Viltrumite backstories -->
+</Defs>

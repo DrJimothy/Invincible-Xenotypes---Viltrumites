@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+<!-- Giving shotguns a shotgun-specific tag... they should really have one already -->
+<Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="BS_JotunRifle"]/weaponTags</xpath>
+    <value>
+      <li>JimPew_BigSniper</li>
+    </value>
+</Operation>
+
+<!-- Giving shotguns a shotgun-specific tag... they should really have one already -->
+<Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="BS_GiantMinigun"]/weaponTags</xpath>
+    <value>
+      <li>JimPew_BigMinigun</li>
+    </value>
+</Operation>
+
+<!-- Giving shotguns a shotgun-specific tag... they should really have one already -->
+<Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="BS_JotunRocketLauncher"]/weaponTags</xpath>
+    <value>
+      <li>JimPew_BigBoom</li>
+    </value>
+</Operation>
+
+<!-- Giving shotguns a shotgun-specific tag... they should really have one already -->
+<Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="BS_JotunSword"]/weaponTags</xpath>
+    <value>
+      <li>JimPew_BigSword</li>
+    </value>
+</Operation>
+
+<!-- Giving shotguns a shotgun-specific tag... they should really have one already -->
+<Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="BS_OgreClub"]/weaponTags</xpath>
+    <value>
+      <li>JimPew_BigSmash</li>
+    </value>
+</Operation>
+<Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="BS_GiantHammer"]/weaponTags</xpath>
+    <value>
+      <li>JimPew_BigSmash</li>
+    </value>
+</Operation>
+<Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="BS_JotunHammer"]/weaponTags</xpath>
+    <value>
+      <li>JimPew_BigSmash</li>
+    </value>
+</Operation>
+
+</Patch>

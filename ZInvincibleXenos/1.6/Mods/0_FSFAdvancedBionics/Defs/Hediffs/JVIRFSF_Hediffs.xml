@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+	
+	<!-- Claws slashy slashy -->
+
+	<HediffDef>
+		<defName>JInvClawHediff</defName>
+		<label>mighty claw</label>
+		<labelNoun>slashy</labelNoun>
+		<description>a mighty claw, better than even most advanced weapons. Incredibly dangerous.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<everCurableByItem>false</everCurableByItem>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<isBad>false</isBad>
+		<comps>
+			<li Class="HediffCompProperties_VerbGiver">
+				<tools>
+					<li>
+						<label>punch</label>
+						<capacities>
+							<li>Blunt</li>
+						</capacities>
+						<power>10</power>
+						<armorPenetration>0.75</armorPenetration>
+						<cooldownTime>1</cooldownTime>
+						<alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+					</li>
+					<li>
+						<label>slash</label>
+						<capacities>
+							<li>Cut</li>
+						</capacities>
+						<power>12</power>
+						<armorPenetration>0.75</armorPenetration>
+						<cooldownTime>1</cooldownTime>
+						<alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+					</li>
+					<li>
+						<label>scratch</label>
+						<capacities>
+							<li>Cut</li>
+						</capacities>
+						<power>12</power>
+						<armorPenetration>0.75</armorPenetration>
+						<cooldownTime>1</cooldownTime>
+						<alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+					</li>
+					<li>
+						<label>jab</label>
+						<capacities>
+							<li>Stab</li>
+						</capacities>
+						<power>12</power>
+						<armorPenetration>0.75</armorPenetration>
+						<cooldownTime>1</cooldownTime>
+						<alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+					</li>
+				</tools>
+			</li>
+		</comps>
+		<addedPartProps>
+			<isGoodWeapon>true</isGoodWeapon>
+			<solid>true</solid>
+			<betterThanNatural>true</betterThanNatural>
+		</addedPartProps>
+	</HediffDef>
+
+	<HediffDef>
+		<defName>JInvClawGiverHediff</defName>
+		<label>regrowth</label>
+		<labelNoun>hediff giver</labelNoun>
+		<description>allows regaining of important parts or abilities if lost</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<everCurableByItem>false</everCurableByItem>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<isBad>false</isBad>
+		<stages>
+			<li>
+				<label>regrowth</label>
+				<hediffGivers>
+					<li Class="HediffGiver_Random">
+						<hediff>JInvClawHediff</hediff>
+						<mtbDays>2</mtbDays>
+						<partsToAffect>
+							<li>Hand</li>
+						</partsToAffect>
+					</li>
+				</hediffGivers>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<HediffDef>
+		<defName>JInvJawHediff</defName>
+		<label>mighty jaw</label>
+		<labelNoun>bitey</labelNoun>
+		<description>a mighty jaw, better than even most advanced weapons. Incredibly dangerous.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<everCurableByItem>false</everCurableByItem>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<isBad>false</isBad>
+		<comps>
+			<li Class="HediffCompProperties_VerbGiver">
+				<tools>
+					<li>
+						<label>slash</label>
+						<capacities>
+							<li>Cut</li>
+						</capacities>
+						<power>12</power>
+						<armorPenetration>1</armorPenetration>
+						<cooldownTime>1</cooldownTime>
+						<alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+					</li>
+					<li>
+						<label>stab</label>
+						<capacities>
+							<li>Stab</li>
+						</capacities>
+						<power>12</power>
+						<armorPenetration>1.25</armorPenetration>
+						<cooldownTime>1</cooldownTime>
+						<alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+					</li>
+				</tools>
+			</li>
+		</comps>
+		<addedPartProps>
+			<isGoodWeapon>true</isGoodWeapon>
+			<solid>true</solid>
+			<betterThanNatural>true</betterThanNatural>
+		</addedPartProps>
+	</HediffDef>
+
+	<HediffDef>
+		<defName>JInvJawGiverHediff</defName>
+		<label>regrowth</label>
+		<labelNoun>hediff giver</labelNoun>
+		<description>allows regaining of important parts or abilities if lost</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<everCurableByItem>false</everCurableByItem>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<isBad>false</isBad>
+		<stages>
+			<li>
+				<label>regrowth</label>
+				<hediffGivers>
+					<li Class="HediffGiver_Random">
+						<hediff>JInvJawHediff</hediff>
+						<mtbDays>2</mtbDays>
+						<partsToAffect>
+							<li>Jaw</li>
+						</partsToAffect>
+					</li>
+				</hediffGivers>
+			</li>
+		</stages>
+	</HediffDef>
+	
+</Defs>

@@ -1,0 +1,621 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- Normal backstories -->
+	<BackstoryDef>
+		<defName>JVBackstory_CheapClone</defName>
+		<title>Cheap Clone</title>
+		<titleShort>Clone</titleShort>
+		<slot>Childhood</slot>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<baseDesc>[PAWN_nameDef] was a clone, produced nice and cheap - quality reduction risks be damned.</baseDesc>
+		<spawnCategories>
+			<li>Offworld</li>
+			<li>VGeneric</li>
+			<li>Outlander</li>
+			<li>Outsider</li>
+		</spawnCategories>
+		<skillGains>
+			<Intellectual>-2</Intellectual>
+			<Social>-2</Social>
+		</skillGains>
+		<disallowedTraits>
+			<GreatMemory>0</GreatMemory>
+			<FastLearner>0</FastLearner>
+			<Tough>0</Tough>
+		</disallowedTraits>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<defName>JVBackstory_Cabbage</defName>
+		<title>Cabbage Child</title>
+		<titleShort>Cabbage</titleShort>
+		<slot>Childhood</slot>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<baseDesc>Baby [PAWN_nameDef] was found in a cabbage field and adopted. Nobody knows how or why they ended up there.</baseDesc>
+		<spawnCategories>
+			<li>Offworld</li>
+			<li>VGeneric</li>
+			<li>Outlander</li>
+			<li>Outsider</li>
+		</spawnCategories>
+		<skillGains>
+			<Animals>2</Animals>
+			<Plants>5</Plants>
+		</skillGains>
+	</BackstoryDef>
+
+	<!-- Special backstories -->
+	<BackstoryDef>
+		<defName>JVBackstory_Chosen</defName>
+		<title>Chosen One</title>
+		<titleShort>Chosen</titleShort>
+		<slot>Childhood</slot>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<baseDesc>As a child, [PAWN_nameDef]'s pure heart was noticed by a powerful being, which physically and mentally enhanced them.</baseDesc>
+		<spawnCategories>
+			<li>Hero</li>
+		</spawnCategories>
+		<skillGains>
+			<Melee>5</Melee>
+			<Shooting>5</Shooting>
+			<Medicine>5</Medicine>
+			<Intellectual>5</Intellectual>
+			<Social>5</Social>
+			<Cooking>5</Cooking>
+			<Construction>5</Construction>
+			<Crafting>5</Crafting>
+			<Artistic>5</Artistic>
+			<Animals>5</Animals>
+			<Plants>5</Plants>
+			<Mining>5</Mining>
+		</skillGains>
+		<forcedTraits>
+			<GreatMemory>0</GreatMemory>
+			<FastLearner>0</FastLearner>
+			<Tough>0</Tough>
+			<Kind>0</Kind>
+		</forcedTraits>
+		<disallowedTraits>
+			<Bloodlust>0</Bloodlust>
+			<Cannibal>0</Cannibal>
+		</disallowedTraits>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<defName>JVBackStory_BiosculptKid</defName>
+		<title>Biosculptee</title>
+		<titleShort>Biosculptee</titleShort>
+		<slot>Childhood</slot>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<baseDesc>As a child, [PAWN_nameDef] received advanced glitterworld biosculpting treatments, enhancing their body. However, this meant less time to enjoy their childhood, and came with heavy expectations.</baseDesc>
+		<spawnCategories>
+			<li>Vilgrunt</li>
+			<li>VilgruntKid</li>
+			<li>Outlander</li>
+			<li>Hero</li>
+		</spawnCategories>
+		<skillGains>
+			<Social>-2</Social>
+		</skillGains>
+		<forcedTraits>
+			<Tough>0</Tough>
+			<Beauty>2</Beauty>
+			<Immunity>1</Immunity>
+		</forcedTraits>
+		<disallowedTraits>
+			<AnnoyingVoice>0</AnnoyingVoice>
+		</disallowedTraits>
+	</BackstoryDef>
+
+	<!-- Vilgrunt backstories -->
+	<BackstoryDef>
+		<defName>JVBackstory_VilgruntA</defName>
+		<title>Vilgrunt Trainee</title>
+		<titleShort>Trainee</titleShort>
+		<slot>Childhood</slot>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<baseDesc>[PAWN_nameDef] was born or selected at a young age for an elite vilgrunt training program.</baseDesc>
+		<spawnCategories>
+			<li>Vilgrunt</li>
+			<li>VilgruntKid</li>
+		</spawnCategories>
+		<skillGains>
+			<Melee>7</Melee>
+			<Shooting>7</Shooting>
+			<Medicine>3</Medicine>
+		</skillGains>
+		<forcedTraits>
+			<Tough>0</Tough>
+		</forcedTraits>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<defName>JVBackstory_VilgruntB</defName>
+		<title>Child Executioner</title>
+		<titleShort>Executioner</titleShort>
+		<slot>Childhood</slot>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<baseDesc>To harden their heart, [PAWN_nameDef] was tasked with executions from a young age.</baseDesc>
+		<spawnCategories>
+			<li>Vilgrunt</li>
+			<li>ViltrumChild</li>
+			<li>VilgruntKid</li>
+		</spawnCategories>
+		<skillGains>
+			<Melee>3</Melee>
+		</skillGains>
+		<forcedTraits>
+			<Psychopath>0</Psychopath>
+		</forcedTraits>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<defName>JVBackstory_VilgruntC</defName>
+		<title>Tribute Child</title>
+		<titleShort>Tribute</titleShort>
+		<slot>Childhood</slot>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<baseDesc>[PAWN_nameDef] was given to the Empire at a young age, to be raised for war.</baseDesc>
+		<spawnCategories>
+			<li>Vilgrunt</li>
+			<li>VilgruntKid</li>
+		</spawnCategories>
+		<skillGains>
+			<Melee>4</Melee>
+			<Shooting>4</Shooting>
+			<Medicine>1</Medicine>
+		</skillGains>
+		<forcedTraits>
+			<Tough>0</Tough>
+		</forcedTraits>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<defName>JVBackstory_VilgruntTrack</defName>
+		<title>Joy Runner</title>
+		<titleShort>Joyrunner</titleShort>
+		<slot>Childhood</slot>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<baseDesc>As a child, [PAWN_nameDef] loved running. They became fit, fast, and got some nice experience patching up their own scrapes, too.</baseDesc>
+		<spawnCategories>
+			<li>Vilgrunt</li>
+			<li>VilgruntKid</li>
+			<li>Vilgrunt_Fast</li>
+			<li>Offworld</li>
+			<li>VGeneric</li>
+			<li>Outlander</li>
+			<li>Outsider</li>
+		</spawnCategories>
+		<skillGains>
+			<Melee>3</Melee>
+			<Medicine>2</Medicine>
+		</skillGains>
+		<forcedTraits>
+			<Tough>0</Tough>
+			<SpeedOffset>2</SpeedOffset>
+		</forcedTraits>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<defName>JVBackstory_VilgruntClone</defName>
+		<title>Vilgrunt Clone</title>
+		<titleShort>Clone</titleShort>
+		<slot>Childhood</slot>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<baseDesc>[PAWN_nameDef] was created through cloning of an accomplished Vilgrunt, with the hope of inheriting their qualities.</baseDesc>
+		<spawnCategories>
+			<li>Vilgrunt</li>
+			<li>VilgruntKid</li>
+		</spawnCategories>
+		<skillGains>
+			<Melee>4</Melee>
+			<Shooting>2</Shooting>
+			<Social>-2</Social>
+		</skillGains>
+		<forcedTraits>
+			<Tough>0</Tough>
+		</forcedTraits>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<defName>JVBackstory_VilgruntBlood</defName>
+		<title>Vilgrunt Bloodline</title>
+		<titleShort>Bloodline</titleShort>
+		<slot>Childhood</slot>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<baseDesc>[PAWN_nameDef] comes from a long familial line of Vilgrunts.</baseDesc>
+		<spawnCategories>
+			<li>Vilgrunt</li>
+			<li>VilgruntKid</li>
+		</spawnCategories>
+		<skillGains>
+			<Melee>4</Melee>
+			<Shooting>4</Shooting>
+			<Social>-2</Social>
+		</skillGains>
+		<forcedTraits>
+			<Tough>0</Tough>
+		</forcedTraits>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<defName>JVBackstory_VilgruntProvenC</defName>
+		<title>Streetkid Soldier</title>
+		<titleShort>Streetkid</titleShort>
+		<slot>Childhood</slot>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<baseDesc>[PAWN_nameDef] was a child on harsh, impoverished streets before being noticed for their strength and raised for war.</baseDesc>
+		<spawnCategories>
+			<li>Vilgrunt</li>
+			<li>VilgruntKid</li>
+		</spawnCategories>
+		<skillGains>
+			<Melee>3</Melee>
+			<Shooting>1</Shooting>
+			<Social>-5</Social>
+		</skillGains>
+		<forcedTraits>
+			<Tough>0</Tough>
+		</forcedTraits>
+	</BackstoryDef>
+
+	<!-- Viltrumite backstories -->
+	<BackstoryDef>
+		<defName>JVBackstory_Basic</defName>
+		<title>Child of Viltrum</title>
+		<titleShort>Viltrumchild</titleShort>
+		<slot>Childhood</slot>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<baseDesc>[PAWN_nameDef] was born and raised to serve Viltrum.</baseDesc>
+		<spawnCategories>
+			<li>ViltrumChild</li>
+			<li>Vilgrunt</li>
+			<li>VilgruntKid</li>
+		</spawnCategories>
+		<skillGains>
+			<Melee>3</Melee>
+			<Social>-3</Social>
+		</skillGains>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<defName>JVBackstory_Program</defName>
+		<title>Program Product</title>
+		<titleShort>Program</titleShort>
+		<slot>Childhood</slot>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<baseDesc>[PAWN_nameDef] was born from a deliberate breeding program.</baseDesc>
+		<spawnCategories>
+			<li>ViltrumChild</li>
+			<li>Vilgrunt</li>
+			<li>VilgruntKid</li>
+		</spawnCategories>
+		<skillGains>
+			<Social>-2</Social>
+		</skillGains>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<defName>JVBackstory_SibSlay1</defName>
+		<title>Siblingslayer</title>
+		<titleShort>Siblingslayer</titleShort>
+		<slot>Childhood</slot>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<baseDesc>[PAWN_nameDef] and their sibling were forced to fight to the death. They often wish they'd lost.</baseDesc>
+		<spawnCategories>
+			<li>ViltrumChild</li>
+			<li>Vilgrunt</li>
+			<li>VilgruntKid</li>
+		</spawnCategories>
+		<skillGains>
+			<Melee>6</Melee>
+			<Social>-5</Social>
+		</skillGains>
+		<forcedTraits>
+			<NaturalMood>-1</NaturalMood>
+		</forcedTraits>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<defName>JVBackstory_SibSlay2</defName>
+		<title>Siblingslayer</title>
+		<titleShort>Siblingslayer</titleShort>
+		<slot>Childhood</slot>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<baseDesc>[PAWN_nameDef] and their sibling were forced to fight to the death. Their heart was hardened.</baseDesc>
+		<spawnCategories>
+			<li>ViltrumChild</li>
+			<li>Vilgrunt</li>
+			<li>VilgruntKid</li>
+		</spawnCategories>
+		<skillGains>
+			<Melee>6</Melee>
+			<Social>-5</Social>
+		</skillGains>
+		<forcedTraits>
+			<Psychopath>0</Psychopath>
+		</forcedTraits>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<defName>JVBackstory_Hybrid</defName>
+		<title>Viltrumite Hybrid</title>
+		<titleShort>Hybrid</titleShort>
+		<slot>Childhood</slot>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<baseDesc>[PAWN_nameDef] is actually a hybrid with a non-Viltrumite parent, but is practically a pureblood.</baseDesc>
+		<spawnCategories>
+			<li>ViltrumChild</li>
+		</spawnCategories>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<defName>JVBackstory_Shelf</defName>
+		<title>Shelf Accessor</title>
+		<titleShort>Accessor</titleShort>
+		<slot>Childhood</slot>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<baseDesc>Despite their parents keeping such substances atop a 20-meter shelf and not being able to fly yet, [PAWN_nameDef] was able to climb up and use illicit substances. Ever since, they've wanted more.</baseDesc>
+		<spawnCategories>
+			<li>ViltrumChild</li>
+		</spawnCategories>
+		<skillGains>
+			<Intellectual>5</Intellectual>
+			<Medicine>3</Medicine>
+		</skillGains>
+		<forcedTraits>
+			<DrugDesire>2</DrugDesire>
+		</forcedTraits>
+	</BackstoryDef>
+
+	<!-- Viltrumite backstories: Strong -->
+	<BackstoryDef>
+		<defName>JVBackstory_Orphan</defName>
+		<title>Viltrum Orphan</title>
+		<titleShort>Orphan</titleShort>
+		<slot>Childhood</slot>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<baseDesc>[PAWN_nameDef]'s parents were killed for failure or weakness. Every day, [PAWN_nameDef] had to prove they were better than their parents.</baseDesc>
+		<spawnCategories>
+			<li>ViltrumChildElite</li>
+			<li>Vilgrunt</li>
+		</spawnCategories>
+		<skillGains>
+			<Melee>4</Melee>
+		</skillGains>
+		<forcedTraits>
+			<Tough>0</Tough>
+		</forcedTraits>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<defName>JVBackstory_Tutored</defName>
+		<title>Tutored Warrior</title>
+		<titleShort>Turtored</titleShort>
+		<slot>Childhood</slot>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<baseDesc>[PAWN_nameDef] was personally tutored by an elite warrior.</baseDesc>
+		<spawnCategories>
+			<li>ViltrumChildElite</li>
+			<li>Vilgrunt</li>
+		</spawnCategories>
+		<skillGains>
+			<Melee>4</Melee>
+		</skillGains>
+		<forcedTraits>
+			<Tough>0</Tough>
+			<Nimble>0</Nimble>
+		</forcedTraits>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<defName>JVBackstory_Eugenic</defName>
+		<title>Eugenic Child</title>
+		<titleShort>Eugenic</titleShort>
+		<slot>Childhood</slot>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<baseDesc>[PAWN_nameDef]'s parents were selected to breed together and produce strong offspring.</baseDesc>
+		<spawnCategories>
+			<li>ViltrumChildElite</li>
+			<li>Vilgrunt</li>
+		</spawnCategories>
+		<skillGains>
+			<Melee>3</Melee>
+		</skillGains>
+		<forcedTraits>
+			<Tough>0</Tough>
+		</forcedTraits>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<defName>JVBackstory_Tested</defName>
+		<title>Tested Child</title>
+		<titleShort>Tested</titleShort>
+		<slot>Childhood</slot>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<baseDesc>[PAWN_nameDef]'s strength was regularly tested. And proven.</baseDesc>
+		<spawnCategories>
+			<li>ViltrumChildElite</li>
+			<li>Vilgrunt</li>
+		</spawnCategories>
+		<skillGains>
+			<Melee>6</Melee>
+		</skillGains>
+		<forcedTraits>
+			<Tough>0</Tough>
+		</forcedTraits>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<defName>JVBackstory_Gymkid</defName>
+		<title>Gym Kid</title>
+		<titleShort>Gym</titleShort>
+		<slot>Childhood</slot>
+		<bodyTypeMale>Hulk</bodyTypeMale>
+		<bodyTypeFemale>Hulk</bodyTypeFemale>
+		<baseDesc>Instead of playing with other children or staring at Rimtok on a Rimpad, [PAWN_nameDef] spent much of their time getting stronger in the gym.</baseDesc>
+		<spawnCategories>
+			<li>ViltrumChildElite</li>
+			<li>Vilgrunt</li>
+		</spawnCategories>
+		<skillGains>
+			<Melee>2</Melee>
+			<Social>-2</Social>
+		</skillGains>
+		<forcedTraits>
+			<Tough>0</Tough>
+		</forcedTraits>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<defName>JVBackstory_Target</defName>
+		<title>Targetted Trainee</title>
+		<titleShort>Target</titleShort>
+		<slot>Childhood</slot>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<baseDesc>[PAWN_nameDef]'s training instructor hated and actively sought an excuse to kill them. [PAWN_nameDef] had to not only prove their strength, but outwit their instructor's attempts to falsify their weakness.</baseDesc>
+		<spawnCategories>
+			<li>ViltrumChildElite</li>
+			<li>Vilgrunt</li>
+		</spawnCategories>
+		<skillGains>
+			<Melee>2</Melee>
+			<Intellectual>2</Intellectual>
+			<Social>2</Social>
+		</skillGains>
+		<forcedTraits>
+			<Tough>0</Tough>
+			<FastLearner>0</FastLearner>
+		</forcedTraits>
+	</BackstoryDef>
+
+	<!-- Viltrumite backstories: weak -->
+	<BackstoryDef>
+		<defName>JVBackstory_PunchingBag</defName>
+		<title>Punching Bag</title>
+		<titleShort>Punchingbag</titleShort>
+		<slot>Childhood</slot>
+		<bodyTypeMale>Thin</bodyTypeMale>
+		<bodyTypeFemale>Thin</bodyTypeFemale>
+		<baseDesc>[PAWN_nameDef] was more delicate than the other children. Normally, this would've cost them their life, but they made up for it with skill and agility.</baseDesc>
+		<spawnCategories>
+			<li>ViltrumChild</li>
+			<li>Vilgrunt</li>
+		</spawnCategories>
+		<skillGains>
+			<Melee>4</Melee>
+			<Medicine>3</Medicine>
+		</skillGains>
+		<forcedTraits>
+			<Delicate>0</Delicate>
+			<Nimble>0</Nimble>
+			<SpeedOffset>2</SpeedOffset>
+		</forcedTraits>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<defName>JVBackstory_GeneMishap</defName>
+		<title>Genetic Mishap</title>
+		<titleShort>GeneMishap</titleShort>
+		<slot>Childhood</slot>
+		<bodyTypeMale>Thin</bodyTypeMale>
+		<bodyTypeFemale>Thin</bodyTypeFemale>
+		<baseDesc>[PAWN_nameDef] was mistaken for a genetically gifted baby, and so got away with signs of their true weakness they wouldn't have otherwise.</baseDesc>
+		<spawnCategories>
+			<li>ViltrumGarbage</li>
+		</spawnCategories>
+		<skillGains>
+			<Melee>-4</Melee>
+		</skillGains>
+		<forcedTraits>
+			<Delicate>0</Delicate>
+			<Wimp>0</Wimp>
+		</forcedTraits>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<defName>JVBackstory_Coddled</defName>
+		<title>Coddled Viltrumite</title>
+		<titleShort>GeneLucked</titleShort>
+		<slot>Childhood</slot>
+		<bodyTypeMale>Thin</bodyTypeMale>
+		<bodyTypeFemale>Thin</bodyTypeFemale>
+		<baseDesc>[PAWN_nameDef] wasn't raised like other Viltrumites. Their upbringing was soft, easy, and they didn't exercise much.</baseDesc>
+		<spawnCategories>
+			<li>ViltrumGarbage</li>
+		</spawnCategories>
+		<skillGains>
+			<Melee>-4</Melee>
+		</skillGains>
+		<forcedTraits>
+			<Delicate>0</Delicate>
+			<Wimp>0</Wimp>
+		</forcedTraits>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<defName>JVBackstory_CoughBaby</defName>
+		<title>Coughing Baby</title>
+		<titleShort>CoughBaby</titleShort>
+		<slot>Childhood</slot>
+		<bodyTypeMale>Thin</bodyTypeMale>
+		<bodyTypeFemale>Thin</bodyTypeFemale>
+		<baseDesc>As a baby, [PAWN_nameDef] wouldn't stop coughing, which had lasting effects. Their parents became protective of them, and they became unprepared for the harshness of the world.</baseDesc>
+		<spawnCategories>
+			<li>ViltrumGarbage</li>
+		</spawnCategories>
+		<skillGains>
+			<Medicine>4</Medicine>
+		</skillGains>
+		<forcedTraits>
+			<Delicate>0</Delicate>
+			<Wimp>0</Wimp>
+		</forcedTraits>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<defName>JVBackstory_VClone</defName>
+		<title>Cloned Viltrumite</title>
+		<titleShort>Clone</titleShort>
+		<slot>Childhood</slot>
+		<bodyTypeMale>Thin</bodyTypeMale>
+		<bodyTypeFemale>Thin</bodyTypeFemale>
+		<baseDesc>[PAWN_nameDef] was born of an experimental attempt at cloning Viltrumites. The result was... subpar.</baseDesc>
+		<spawnCategories>
+			<li>ViltrumGarbage</li>
+		</spawnCategories>
+		<skillGains>
+			<Melee>-4</Melee>
+			<Social>-4</Social>
+		</skillGains>
+		<forcedTraits>
+			<Delicate>0</Delicate>
+			<Wimp>0</Wimp>
+			<Beauty>-2</Beauty>
+			<SpeedOffset>-1</SpeedOffset>
+		</forcedTraits>
+	</BackstoryDef>
+</Defs>

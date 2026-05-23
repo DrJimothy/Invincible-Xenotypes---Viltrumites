@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+	
+	<!-- Brain Implant Addiction -->
+
+	<HediffDef>
+		<defName>JInvDrugImmunityHediff</defName>
+		<label>chemical balance</label>
+		<labelNoun>a chemical balance</labelNoun>
+		<description>A chemical balance in the brain, which helps them resist certain conditions and retain consciousness despite severe ailments, but prevents consciousness gain from implants or drugs.\n\nWarning: Doesn't affect luciferium, gene-induced dependencies, nor many modded drugs.</description>
+		<allowMothballIfLowPriorityWorldPawn>true</allowMothballIfLowPriorityWorldPawn>
+		<everCurableByItem>false</everCurableByItem>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<isBad>false</isBad>
+		<stages>
+			<li>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<setMax>1</setMax>
+					</li>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>1</offset>
+					</li>
+				</capMods>
+				<makeImmuneTo>
+					<li>ChemicalDamageSevere</li>
+					<li>ChemicalDamageModerate</li>
+					<li>Cirrhosis</li>
+					<li>Hangover</li>
+				</makeImmuneTo>
+				<disablesNeeds>
+					<li>DrugDesire</li>
+					<li>Chemical_Alcohol</li>
+					<li>Chemical_Ambrosia</li>
+					<li>Chemical_GoJuice</li>
+					<li>Chemical_Psychite</li>
+					<li>Chemical_Smokeleaf</li>
+					<li>Chemical_WakeUp</li>
+					<li MayRequire="VanillaExpanded.VBrewE">VBE_Chemical_Caffeine</li>
+					<li MayRequire="VanillaExpanded.VBrewE">VBE_Chemical_Tobacco</li>
+					<li MayRequire="OskarPotocki.VFE.Classical">VFEC_Chemical_Opium</li>
+					<li MayRequire="OskarPotocki.VFE.Insectoid2">VFEI2_Chemical_RoyalJelly</li>
+					<li MayRequire="Erin.HotDrink">ERN_Chemical_Caffeine</li>
+					<li MayRequire="Mlie.JecsTobaccoAndCigarettes">Jecs_Chemical_Nicotine</li>
+					<li MayRequire="freefolk.Remedies">FF_Chemical_Painkiller</li>
+					<li MayRequire="Crustypeanut.RC2.Core">RC2_Chemical_Caffeine</li>
+					<li MayRequire="Crustypeanut.RC2.SaSE">RC2_Chemical_Floxacine</li>
+					<li MayRequire="Crustypeanut.RC2.SaSE">RC2_Chemical_Shrooms</li>
+					<li MayRequire="Crustypeanut.RC2.SaSE">RC2_Chemical_SoldierPill</li>
+					<li MayRequire="Crustypeanut.RC2.SaSE">RC2_Chemical_Sunshine</li>
+					<li MayRequire="Crustypeanut.RC2.SaSE">RC2_Chemical_Tango</li>
+					<li MayRequire="Crustypeanut.RC2.SaSE">RC2_Chemical_Nicotine</li>
+					<li MayRequire="Crustypeanut.RC2.SaSE">RC2_Chemical_Zopioid</li>
+					<li MayRequire="froggo.speeddrugs_copy">chemical_frog_ketamine</li>
+					<li MayRequire="froggo.speeddrugs_copy">Chemical_frog_speed</li>
+					<li MayRequire="froggo.speeddrugs_copy">Chemical_frog_liquid_speed</li>
+					<li MayRequire="syrchalis.coffeeandtea">Chemical_SyrCaffeine</li>
+				</disablesNeeds>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<HediffDef>
+		<defName>JInvFistHediff</defName>
+		<label>mighty fist</label>
+		<labelNoun>punchy</labelNoun>
+		<description>a mighty fist, better than even most advanced weapons (slightly better than normal quality monosword).</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<everCurableByItem>false</everCurableByItem>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<countsAsAddedPartOrImplant>false</countsAsAddedPartOrImplant>
+		<maxSeverity>1.0</maxSeverity>
+		<isBad>false</isBad>
+		<allowMothballIfLowPriorityWorldPawn>true</allowMothballIfLowPriorityWorldPawn>
+		<comps>
+			<li Class="HediffCompProperties_VerbGiver">
+				<tools>
+					<li>
+						<label>punch</label>
+						<capacities>
+							<li>Blunt</li>
+						</capacities>
+						<power>12</power>
+						<armorPenetration>0.75</armorPenetration>
+						<cooldownTime>1</cooldownTime>
+						<alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+					</li>
+					<li>
+						<label>smack</label>
+						<capacities>
+							<li>Blunt</li>
+						</capacities>
+						<power>12</power>
+						<armorPenetration>0.75</armorPenetration>
+						<cooldownTime>1</cooldownTime>
+						<alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+					</li>
+					<li>
+						<label>slam</label>
+						<capacities>
+							<li>Blunt</li>
+						</capacities>
+						<power>12</power>
+						<armorPenetration>0.75</armorPenetration>
+						<cooldownTime>1</cooldownTime>
+						<alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+					</li>
+					<li>
+						<label>whack</label>
+						<capacities>
+							<li>Blunt</li>
+						</capacities>
+						<power>12</power>
+						<armorPenetration>0.75</armorPenetration>
+						<cooldownTime>1</cooldownTime>
+						<alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+					</li>
+					<li>
+						<label>chop</label>
+						<capacities>
+							<li>Cut</li>
+						</capacities>
+						<power>10</power>
+						<armorPenetration>0.75</armorPenetration>
+						<cooldownTime>1</cooldownTime>
+						<alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+					</li>
+					<li>
+						<label>stab</label>
+						<capacities>
+							<li>Stab</li>
+						</capacities>
+						<power>10</power>
+						<armorPenetration>0.75</armorPenetration>
+						<cooldownTime>1</cooldownTime>
+						<alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+					</li>
+				</tools>
+			</li>
+		</comps>
+		<addedPartProps>
+			<isGoodWeapon>true</isGoodWeapon>
+			<solid>true</solid>
+			<betterThanNatural>true</betterThanNatural>
+		</addedPartProps>
+	</HediffDef>
+
+	<HediffDef>
+		<defName>JInvVStomachHediff</defName>
+		<label>super stomach</label>
+		<labelNoun>super stomach</labelNoun>
+		<description>An viltrumite stomach. Great for surviving food-short worlds with nothing to eat but baby lizards and small twigs.</description>
+		<everCurableByItem>false</everCurableByItem>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<countsAsAddedPartOrImplant>false</countsAsAddedPartOrImplant>
+		<maxSeverity>1.0</maxSeverity>
+		<isBad>false</isBad>
+		<allowMothballIfLowPriorityWorldPawn>true</allowMothballIfLowPriorityWorldPawn>
+		<stages>
+			<li>
+				<makeImmuneTo>
+					<li>GutWorms</li>
+				</makeImmuneTo>
+				<hungerRateFactor MayRequire="Ludeon.RimWorld.Royalty">0.40</hungerRateFactor>
+			</li>
+		</stages>
+		<addedPartProps>
+			<solid>true</solid>
+			<partEfficiency>1.50</partEfficiency>
+			<betterThanNatural>true</betterThanNatural>
+		</addedPartProps>
+	</HediffDef>
+
+	<HediffDef>
+		<defName>JInvStomachGiverHediff</defName>
+		<label>regrowth</label>
+		<labelNoun>hediff giver</labelNoun>
+		<description>allows regaining of important parts or abilities if lost</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<everCurableByItem>false</everCurableByItem>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<isBad>false</isBad>
+		<allowMothballIfLowPriorityWorldPawn>true</allowMothballIfLowPriorityWorldPawn>
+		<stages>
+			<li>
+				<label>regrowth</label>
+				<hediffGivers>
+					<li Class="HediffGiver_Random">
+						<hediff>JInvVStomachHediff</hediff>
+						<mtbDays>2</mtbDays>
+						<partsToAffect>
+							<li>Stomach</li>
+						</partsToAffect>
+					</li>
+				</hediffGivers>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<HediffDef>
+		<defName>JInvFistGiverHediff</defName>
+		<label>regrowth</label>
+		<labelNoun>hediff giver</labelNoun>
+		<description>allows regaining of important parts or abilities if lost</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<everCurableByItem>false</everCurableByItem>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<isBad>false</isBad>
+		<allowMothballIfLowPriorityWorldPawn>true</allowMothballIfLowPriorityWorldPawn>
+		<stages>
+			<li>
+			<label>regrowth</label>
+			<hediffGivers>
+				<li Class="HediffGiver_Random">
+				<hediff>JInvFistHediff</hediff>
+				<mtbDays>2</mtbDays>
+				<partsToAffect>
+					<li>Hand</li>
+				</partsToAffect>
+				</li>
+			</hediffGivers>
+			</li>
+		</stages>
+	</HediffDef>
+	
+</Defs>

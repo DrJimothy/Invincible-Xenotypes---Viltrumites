@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- High Density = weak -->
+	<!-- Super Density = normal -->
+	<!-- Hyper Density = elite -->
+	<!-- Ultra Density = legendray / argall -->
+
+	<GeneDef>
+		<defName>JVIR_VHighMelee</defName>
+		<label>High-Density Melee Damage</label>
+ 		<displayCategory>Violence</displayCategory>
+		<description>Carriers of this gene do immensely more damage in close-quarters combat. Highly-dense fast-twitch muscle fibers make their strikes accurate and powerful.</description>
+		<iconPath>UI/Icons/Genes/WeakStrength</iconPath>
+		<biostatMet>-4</biostatMet>
+		<biostatCpx>2</biostatCpx>
+		<displayOrderInCategory>42.351</displayOrderInCategory>
+		<statFactors>
+			<MeleeDamageFactor>2</MeleeDamageFactor>
+			<CarryingCapacity>2</CarryingCapacity>
+			<VEF_MassCarryCapacity>2</VEF_MassCarryCapacity>
+		</statFactors>
+		<marketValueFactor>5</marketValueFactor>
+		<minAgeActive>13</minAgeActive>
+		<exclusionTags>
+			<li>MeleeDamage</li>
+		</exclusionTags>
+	</GeneDef>
+
+	<GeneDef>
+		<defName>JVIR_VHyperMelee</defName>
+		<label>Hyper-Density Melee Damage</label>
+ 		<displayCategory>Violence</displayCategory>
+		<description>Carriers of this gene do immensely more damage in close-quarters combat. Hyper-dense fast-twitch muscle fibers make their strikes accurate and powerful.</description>
+		<iconPath>UI/Icons/Genes/EliteStrength</iconPath>
+		<biostatMet>-8</biostatMet>
+		<biostatCpx>10</biostatCpx>
+		<displayOrderInCategory>42.351</displayOrderInCategory>
+		<statFactors>
+			<MeleeDamageFactor>3</MeleeDamageFactor>
+			<CarryingCapacity>3</CarryingCapacity>
+			<VEF_MassCarryCapacity>3</VEF_MassCarryCapacity>
+		</statFactors>
+		<marketValueFactor>5</marketValueFactor>
+		<minAgeActive>13</minAgeActive>
+		<exclusionTags>
+			<li>MeleeDamage</li>
+		</exclusionTags>
+	</GeneDef>
+
+	<GeneDef>
+		<defName>JVIR_VUltraMelee</defName>
+		<label>Ultra-Density Melee Damage</label>
+ 		<displayCategory>Violence</displayCategory>
+		<description>Carriers of this gene do immensely more damage in close-quarters combat. Ultra-dense fast-twitch muscle fibers make their strikes accurate and powerful.</description>
+		<iconPath>UI/Icons/Genes/legendaryStrength</iconPath>
+		<biostatMet>-8</biostatMet>
+		<biostatCpx>10</biostatCpx>
+		<displayOrderInCategory>42.351</displayOrderInCategory>
+		<statFactors>
+			<MeleeDamageFactor>3.5</MeleeDamageFactor>
+			<CarryingCapacity>3.5</CarryingCapacity>
+			<VEF_MassCarryCapacity>3.5</VEF_MassCarryCapacity>
+		</statFactors>
+		<marketValueFactor>5</marketValueFactor>
+		<minAgeActive>13</minAgeActive>
+		<exclusionTags>
+			<li>MeleeDamage</li>
+		</exclusionTags>
+	</GeneDef>
+
+	<GeneDef>
+		<defName>JVIR_VHighSpeed</defName>
+		<label>High-Density Runner</label>
+		<displayCategory>Movement</displayCategory>
+		<description>Carriers of this gene move with incredible speed. Highly-dense fibres in their legs let them move quickly.</description>
+		<iconPath>UI/Icons/Genes/Gene_VeryQuickMovespeed</iconPath>
+		<biostatMet>-7</biostatMet>
+		<biostatCpx>2</biostatCpx>
+		<displayOrderInCategory>20.55</displayOrderInCategory>
+		<statOffsets>
+			<MoveSpeed>1.1</MoveSpeed>
+		</statOffsets>
+		<marketValueFactor>2</marketValueFactor>
+		<minAgeActive>13</minAgeActive>
+		<exclusionTags>
+			<li>MoveSpeed</li>
+		</exclusionTags>
+	</GeneDef>
+
+	<GeneDef>
+		<defName>JVIR_VHyperSpeed</defName>
+		<label>Hyper-Density Runner</label>
+		<displayCategory>Movement</displayCategory>
+		<description>Carriers of this gene move with incredible speed. Hyper-dense fibres in their legs let them move quickly.</description>
+		<iconPath>UI/Icons/Genes/Gene_VeryQuickMovespeed</iconPath>
+		<biostatMet>-7</biostatMet>
+		<biostatCpx>2</biostatCpx>
+		<displayOrderInCategory>20.55</displayOrderInCategory>
+		<statOffsets>
+			<MoveSpeed>1.3</MoveSpeed>
+		</statOffsets>
+		<marketValueFactor>2</marketValueFactor>
+		<minAgeActive>13</minAgeActive>
+		<exclusionTags>
+			<li>MoveSpeed</li>
+		</exclusionTags>
+	</GeneDef>
+
+	<GeneDef>
+		<defName>JVIR_VUltraSpeed</defName>
+		<label>Ultra-Density Runner</label>
+		<displayCategory>Movement</displayCategory>
+		<description>Carriers of this gene move with incredible speed. Ultra-dense fibres in their legs let them move quickly.</description>
+		<iconPath>UI/Icons/Genes/Gene_VeryQuickMovespeed</iconPath>
+		<biostatMet>-9</biostatMet>
+		<biostatCpx>2</biostatCpx>
+		<displayOrderInCategory>20.55</displayOrderInCategory>
+		<statOffsets>
+			<MoveSpeed>1.4</MoveSpeed>
+		</statOffsets>
+		<marketValueFactor>2</marketValueFactor>
+		<minAgeActive>13</minAgeActive>
+		<exclusionTags>
+			<li>MoveSpeed</li>
+		</exclusionTags>
+	</GeneDef>
+
+	<GeneDef ParentName="GeneToughnessBase">
+		<defName>JVIR_VHighRobust</defName>
+		<label>High-Density Robustness</label>
+		<description>Carriers of this gene are excessively robust. Their body's density resists any kind of deformation.</description>
+		<iconPath>UI/Icons/Genes/weak_Resilient</iconPath>
+		<biostatMet>-4</biostatMet>
+		<biostatCpx>4</biostatCpx>
+		<displayOrderInCategory>12.31</displayOrderInCategory>
+		<statFactors>
+			<IncomingDamageFactor>0.50</IncomingDamageFactor>
+		</statFactors>
+		<marketValueFactor>2</marketValueFactor>
+		<minAgeActive>13</minAgeActive>
+	</GeneDef>
+
+	<GeneDef ParentName="GeneToughnessBase">
+		<defName>JVIR_VHyperRobust</defName>
+		<label>Hyper-Density Robustness</label>
+		<description>Carriers of this gene are excessively robust. Their body's density resists any kind of deformation.</description>
+		<iconPath>UI/Icons/Genes/Elite_Resilient</iconPath>
+		<biostatMet>-7</biostatMet>
+		<biostatCpx>4</biostatCpx>
+		<displayOrderInCategory>12.31</displayOrderInCategory>
+		<statFactors>
+			<IncomingDamageFactor>0.33</IncomingDamageFactor>
+		</statFactors>
+		<marketValueFactor>2</marketValueFactor>
+		<minAgeActive>13</minAgeActive>
+	</GeneDef>
+
+	<GeneDef ParentName="GeneToughnessBase">
+		<defName>JVIR_VUltraRobust</defName>
+		<label>Ultra-Density Robustness</label>
+		<description>Carriers of this gene are excessively robust. Their body's density resists any kind of deformation.</description>
+		<iconPath>UI/Icons/Genes/legendaryResilient</iconPath>
+		<biostatMet>-8</biostatMet>
+		<biostatCpx>4</biostatCpx>
+		<displayOrderInCategory>12.31</displayOrderInCategory>
+		<statFactors>
+			<IncomingDamageFactor>0.28</IncomingDamageFactor>
+		</statFactors>
+		<marketValueFactor>2</marketValueFactor>
+		<minAgeActive>13</minAgeActive>
+	</GeneDef>
+
+	<GeneDef>
+		<defName>JInv_VSkinMicro</defName>
+		<label>Micro-Carbon Skin</label>
+ 		<displayCategory>Pain</displayCategory>
+		<description>Carriers of this gene have a hyper-dense, fire-proof carbon latice in their skin. It resists cutting incredibly well, and absorbs heat, but doesn't absorb shock and so is useless against blunt impacts.</description>
+		<iconPath>UI/Icons/Genes/BattleBeastresilient</iconPath>
+		<biostatMet>-6</biostatMet>
+		<biostatCpx>4</biostatCpx>
+		<displayOrderInCategory>12.31</displayOrderInCategory>
+		<statOffsets>
+			<ArmorRating_Sharp>1.5</ArmorRating_Sharp>
+			<ArmorRating_Heat>1</ArmorRating_Heat>
+		</statOffsets>
+		<statFactors>
+			<Flammability>0.01</Flammability>
+		</statFactors>
+		<immuneToVacuumBurns MayRequire="Ludeon.RimWorld.Odyssey">true</immuneToVacuumBurns>
+		<marketValueFactor>2</marketValueFactor>
+		<minAgeActive>13</minAgeActive>
+		<exclusionTags>
+			<li>AG_Armour</li>
+			<li>Armour</li>
+			<li>Armor</li>
+			<li>FireDamage</li>
+		</exclusionTags>
+	</GeneDef>
+</Defs>

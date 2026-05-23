@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+<!-- Raids -->
+<Operation Class="PatchOperationAdd">
+	<xpath>Defs/FactionDef[defName="ViltrumEmpire"]/pawnGroupMakers</xpath>
+	<value>
+		<li>
+		<!-- Speeder Attack -->
+			<kindDef>Combat</kindDef>
+			<commonality>1</commonality>
+			<options>
+				<Vilgrunt_Mercenary_FastSlash>1</Vilgrunt_Mercenary_FastSlash>
+			</options>
+		</li>
+		<li>
+		<!-- Speeder Attack -->
+			<kindDef>Combat</kindDef>
+			<commonality>1</commonality>
+			<options>
+				<Vilgrunt_Mercenary_FastSlash>1</Vilgrunt_Mercenary_FastSlash>
+				<Vilgrunt_Grenadier_EMP>1</Vilgrunt_Grenadier_EMP>
+			</options>
+		</li>
+		<li>
+		<!-- Speeder Attack with Viltrumite -->
+			<kindDef>Combat</kindDef>
+			<commonality>1</commonality>
+			<options>
+				<Viltrumite_Fighter_Simple>0.1</Viltrumite_Fighter_Simple>
+				<Vilgrunt_Mercenary_FastSlash>1</Vilgrunt_Mercenary_FastSlash>
+			</options>
+		</li>
+		<li>
+		<!-- Speeder Attack with Viltrumite -->
+			<kindDef>Combat</kindDef>
+			<commonality>1</commonality>
+			<options>
+				<Viltrumite_Fighter_Random>0.1</Viltrumite_Fighter_Random>
+				<Vilgrunt_Mercenary_FastSlash>1</Vilgrunt_Mercenary_FastSlash>
+			</options>
+		</li>
+		<li>
+		<!-- Speeder Attack with Viltrumite -->
+			<kindDef>Combat</kindDef>
+			<commonality>1</commonality>
+			<options>
+				<Viltrumite_Fighter_Elite>0.1</Viltrumite_Fighter_Elite>
+				<Vilgrunt_Mercenary_FastSlash>1</Vilgrunt_Mercenary_FastSlash>
+			</options>
+		</li>
+		<li>
+		<!-- Speeder Attack with Viltrumite -->
+			<kindDef>Combat</kindDef>
+			<commonality>1</commonality>
+			<options>
+				<Viltrumite_Fighter_Solo>0.1</Viltrumite_Fighter_Solo>
+				<Vilgrunt_Mercenary_FastSlash>1</Vilgrunt_Mercenary_FastSlash>
+			</options>
+		</li>
+		<!-- Speeders + Other meleeists -->
+		<li>
+		<!-- Speeder Attack -->
+			<kindDef>Combat</kindDef>
+			<commonality>1</commonality>
+			<options>
+				<Vilgrunt_Mercenary_FastSlash>1</Vilgrunt_Mercenary_FastSlash>
+				<Viltrumite_Fighter_Random>1</Viltrumite_Fighter_Random>
+				<Vilgrunt_Mercenary_Slasher>1</Vilgrunt_Mercenary_Slasher>
+				<Vilmerc_Slasher>1</Vilmerc_Slasher>
+				<Viltrum_Fighter_Champion MayRequire="Ludeon.RimWorld.Royalty">1</Viltrum_Fighter_Champion>
+			</options>
+		</li>
+		<li>
+		<!-- Speeder Attack with Viltrumite -->
+			<kindDef>Combat</kindDef>
+			<commonality>1</commonality>
+			<options>
+				<Viltrumite_Fighter_Simple>0.1</Viltrumite_Fighter_Simple>
+				<Vilgrunt_Mercenary_FastSlash>1</Vilgrunt_Mercenary_FastSlash>
+				<Viltrumite_Fighter_Random>1</Viltrumite_Fighter_Random>
+				<Vilgrunt_Mercenary_Slasher>1</Vilgrunt_Mercenary_Slasher>
+				<Vilmerc_Slasher>1</Vilmerc_Slasher>
+				<Viltrum_Fighter_Champion MayRequire="Ludeon.RimWorld.Royalty">1</Viltrum_Fighter_Champion>
+			</options>
+		</li>
+		<li>
+		<!-- Speeder Attack with Viltrumite -->
+			<kindDef>Combat</kindDef>
+			<commonality>1</commonality>
+			<options>
+				<Viltrumite_Fighter_Random>0.1</Viltrumite_Fighter_Random>
+				<Vilgrunt_Mercenary_FastSlash>1</Vilgrunt_Mercenary_FastSlash>
+				<Viltrumite_Fighter_Random>1</Viltrumite_Fighter_Random>
+				<Vilgrunt_Mercenary_Slasher>1</Vilgrunt_Mercenary_Slasher>
+				<Vilmerc_Slasher>1</Vilmerc_Slasher>
+				<Viltrum_Fighter_Champion MayRequire="Ludeon.RimWorld.Royalty">1</Viltrum_Fighter_Champion>
+			</options>
+		</li>
+		<li>
+		<!-- Speeder Attack with Viltrumite -->
+			<kindDef>Combat</kindDef>
+			<commonality>1</commonality>
+			<options>
+				<Viltrumite_Fighter_Elite>0.1</Viltrumite_Fighter_Elite>
+				<Vilgrunt_Mercenary_FastSlash>1</Vilgrunt_Mercenary_FastSlash>
+				<Viltrumite_Fighter_Random>1</Viltrumite_Fighter_Random>
+				<Vilgrunt_Mercenary_Slasher>1</Vilgrunt_Mercenary_Slasher>
+				<Vilmerc_Slasher>1</Vilmerc_Slasher>
+				<Viltrum_Fighter_Champion MayRequire="Ludeon.RimWorld.Royalty">1</Viltrum_Fighter_Champion>
+			</options>
+		</li>
+		<li>
+		<!-- Speeder Attack with Viltrumite -->
+			<kindDef>Combat</kindDef>
+			<commonality>1</commonality>
+			<options>
+				<Viltrumite_Fighter_Solo>0.1</Viltrumite_Fighter_Solo>
+				<Vilgrunt_Mercenary_FastSlash>1</Vilgrunt_Mercenary_FastSlash>
+				<Viltrumite_Fighter_Random>1</Viltrumite_Fighter_Random>
+				<Vilgrunt_Mercenary_Slasher>1</Vilgrunt_Mercenary_Slasher>
+				<Vilmerc_Slasher>1</Vilmerc_Slasher>
+				<Viltrum_Fighter_Champion MayRequire="Ludeon.RimWorld.Royalty">1</Viltrum_Fighter_Champion>
+			</options>
+		</li>
+	</value>
+</Operation>
+
+</Patch>

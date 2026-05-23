@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="ApparelMakeableBase">
+ 
+    <defName>JInv_Homelandersuitc</defName>
+    <label>Homelander Super-Suit</label>
+    <description>A highly durable, homelander-themed Super-Suit.</description>
+    <graphicData>
+      <texPath>Things/Suits/homelander/homelander</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>1.0</drawSize>
+    </graphicData>
+    <costList>
+        <Hyperweave>150</Hyperweave>
+        <Plasteel>15</Plasteel>
+        <ComponentSpacer>3</ComponentSpacer>
+        <Dye>1</Dye>
+    </costList>
+    <tradeability>Sellable</tradeability>
+    <statBases>
+      <WorkToMake>1500</WorkToMake>
+      <MaxHitPoints>10000</MaxHitPoints>
+      <Mass>5.0</Mass>
+      <ArmorRating_Sharp>0.25</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.25</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.25</ArmorRating_Heat>
+      <Insulation_Cold>50</Insulation_Cold>
+      <Insulation_Heat>50</Insulation_Heat>
+      <EquipDelay>1</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+        <MeleeDodgeChance>0.6</MeleeDodgeChance>
+        <SocialImpact>0.40</SocialImpact>
+    </equippedStatOffsets>
+    <thingCategories>
+      <li>Apparel</li>
+    </thingCategories>
+    <apparel>
+      <bodyPartGroups>
+        <li>Torso</li>
+				<li>Neck</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+				<li>Legs</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Suits/homelander/homelander</wornGraphicPath>
+      <useWornGraphicMask>true</useWornGraphicMask>
+      <!-- Layers your apparel will be on, OnSkin (Shirt), Middle (Flak vest), Shell (Duster) -->
+      <layers>
+        <li>OnSkin</li>
+      </layers>
+      <!-- Tags for your apparel to spawn -->
+      <tags>
+        <li>Viltrum_Suit</li>
+        <li>Hero_Suit</li>
+        <li>Super_Suit</li>
+        <li>Omniman_Suit</li>
+      </tags>
+      <!-- Can this apparel be deired for an Ideoligion? If no then false,if yes then true -->
+      <canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+    </apparel>
+    <recipeMaker>
+    <!-- Research required to get before apparel can be made -->
+    <researchPrerequisites>
+      <li>ComplexClothing</li>
+      <li>AdvancedFabrication</li>
+    </researchPrerequisites>
+        <recipeUsers>
+          <li>ElectricTailoringBench</li>
+        </recipeUsers>
+    </recipeMaker>
+  </ThingDef>
+
+  <ThingDef ParentName="ApparelMakeableBase">
+ 
+    <defName>JInv_Starlightsuitc</defName>
+    <label>Starlight Super-Suit</label>
+    <description>A highly durable, starlight-themed Super-Suit.</description>
+    <graphicData>
+      <texPath>Things/Suits/Starlight/Starlight</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>1.0</drawSize>
+    </graphicData>
+    <costList>
+        <Hyperweave>150</Hyperweave>
+        <Plasteel>15</Plasteel>
+        <ComponentSpacer>3</ComponentSpacer>
+        <Dye>1</Dye>
+    </costList>
+    <tradeability>Sellable</tradeability>
+    <statBases>
+      <WorkToMake>1500</WorkToMake>
+      <MaxHitPoints>10000</MaxHitPoints>
+      <Mass>5.0</Mass>
+      <ArmorRating_Sharp>0.25</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.25</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.25</ArmorRating_Heat>
+      <Insulation_Cold>50</Insulation_Cold>
+      <Insulation_Heat>50</Insulation_Heat>
+      <EquipDelay>1</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+        <MeleeDodgeChance>0.6</MeleeDodgeChance>
+        <SocialImpact>0.40</SocialImpact>
+    </equippedStatOffsets>
+    <thingCategories>
+      <li>Apparel</li>
+    </thingCategories>
+    <apparel>
+      <bodyPartGroups>
+        <li>Torso</li>
+				<li>Neck</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+				<li>Legs</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Suits/Starlight/Starlight</wornGraphicPath>
+      <useWornGraphicMask>true</useWornGraphicMask>
+      <!-- Layers your apparel will be on, OnSkin (Shirt), Middle (Flak vest), Shell (Duster) -->
+      <layers>
+        <li>OnSkin</li>
+      </layers>
+      <!-- Tags for your apparel to spawn -->
+      <tags>
+        <li>Viltrum_Suit</li>
+        <li>Hero_Suit</li>
+        <li>Super_Suit</li>
+        <li>Omniman_Suit</li>
+      </tags>
+      <!-- Can this apparel be deired for an Ideoligion? If no then false,if yes then true -->
+      <canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+    </apparel>
+    <recipeMaker>
+    <!-- Research required to get before apparel can be made -->
+    <researchPrerequisites>
+      <li>ComplexClothing</li>
+      <li>AdvancedFabrication</li>
+    </researchPrerequisites>
+        <recipeUsers>
+          <li>ElectricTailoringBench</li>
+        </recipeUsers>
+    </recipeMaker>
+  </ThingDef>
+
+  <ThingDef ParentName="ApparelMakeableBase">
+ 
+    <defName>JInv_Supermanc</defName>
+    <label>Superman Super-Suit</label>
+    <description>A highly durable, superman-themed Super-Suit.</description>
+    <graphicData>
+      <texPath>Things/Suits/Superman/SupermanSuit</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>1.0</drawSize>
+    </graphicData>
+    <costList>
+        <Hyperweave>150</Hyperweave>
+        <Plasteel>15</Plasteel>
+        <ComponentSpacer>3</ComponentSpacer>
+        <Dye>1</Dye>
+    </costList>
+    <tradeability>Sellable</tradeability>
+    <statBases>
+      <WorkToMake>1500</WorkToMake>
+      <MaxHitPoints>10000</MaxHitPoints>
+      <Mass>5.0</Mass>
+      <ArmorRating_Sharp>0.25</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.25</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.25</ArmorRating_Heat>
+      <Insulation_Cold>50</Insulation_Cold>
+      <Insulation_Heat>50</Insulation_Heat>
+      <EquipDelay>1</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+        <MeleeDodgeChance>0.6</MeleeDodgeChance>
+        <SocialImpact>0.40</SocialImpact>
+    </equippedStatOffsets>
+    <thingCategories>
+      <li>Apparel</li>
+    </thingCategories>
+    <apparel>
+      <bodyPartGroups>
+        <li>Torso</li>
+				<li>Neck</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+				<li>Legs</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Suits/Superman/SupermanSuit</wornGraphicPath>
+      <useWornGraphicMask>true</useWornGraphicMask>
+      <!-- Layers your apparel will be on, OnSkin (Shirt), Middle (Flak vest), Shell (Duster) -->
+      <layers>
+        <li>OnSkin</li>
+      </layers>
+      <!-- Tags for your apparel to spawn -->
+      <tags>
+        <li>Viltrum_Suit</li>
+        <li>Hero_Suit</li>
+        <li>Super_Suit</li>
+        <li>Omniman_Suit</li>
+      </tags>
+      <!-- Can this apparel be deired for an Ideoligion? If no then false,if yes then true -->
+      <canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+    </apparel>
+    <recipeMaker>
+    <!-- Research required to get before apparel can be made -->
+    <researchPrerequisites>
+      <li>ComplexClothing</li>
+      <li>AdvancedFabrication</li>
+    </researchPrerequisites>
+        <recipeUsers>
+          <li>ElectricTailoringBench</li>
+        </recipeUsers>
+    </recipeMaker>
+  </ThingDef>
+
+  <ThingDef ParentName="ApparelMakeableBase">
+ 
+    <defName>JInv_SoldierBoy</defName>
+    <label>SoldierBoy Super-Suit</label>
+    <description>A highly durable, soldierboy-themed Super-Suit.</description>
+    <graphicData>
+      <texPath>Things/Suits/SoldierBoy/soldierboy</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>1.0</drawSize>
+    </graphicData>
+    <costList>
+        <Hyperweave>150</Hyperweave>
+        <Plasteel>15</Plasteel>
+        <ComponentSpacer>3</ComponentSpacer>
+        <Dye>1</Dye>
+    </costList>
+    <tradeability>Sellable</tradeability>
+    <statBases>
+      <WorkToMake>1500</WorkToMake>
+      <MaxHitPoints>10000</MaxHitPoints>
+      <Mass>5.0</Mass>
+      <ArmorRating_Sharp>0.25</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.25</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.25</ArmorRating_Heat>
+      <Insulation_Cold>50</Insulation_Cold>
+      <Insulation_Heat>50</Insulation_Heat>
+      <EquipDelay>1</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+        <MeleeDodgeChance>0.6</MeleeDodgeChance>
+        <SocialImpact>0.40</SocialImpact>
+    </equippedStatOffsets>
+    <thingCategories>
+      <li>Apparel</li>
+    </thingCategories>
+    <apparel>
+      <bodyPartGroups>
+        <li>Torso</li>
+				<li>Neck</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+				<li>Legs</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Suits/SoldierBoy/soldierboy</wornGraphicPath>
+      <useWornGraphicMask>true</useWornGraphicMask>
+      <!-- Layers your apparel will be on, OnSkin (Shirt), Middle (Flak vest), Shell (Duster) -->
+      <layers>
+        <li>OnSkin</li>
+      </layers>
+      <!-- Tags for your apparel to spawn -->
+      <tags>
+        <li>Viltrum_Suit</li>
+        <li>Hero_Suit</li>
+        <li>Super_Suit</li>
+        <li>Omniman_Suit</li>
+      </tags>
+      <!-- Can this apparel be deired for an Ideoligion? If no then false,if yes then true -->
+      <canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+    </apparel>
+    <recipeMaker>
+    <!-- Research required to get before apparel can be made -->
+    <researchPrerequisites>
+      <li>ComplexClothing</li>
+      <li>AdvancedFabrication</li>
+    </researchPrerequisites>
+        <recipeUsers>
+          <li>ElectricTailoringBench</li>
+        </recipeUsers>
+    </recipeMaker>
+  </ThingDef>
+
+  <ThingDef ParentName="ApparelMakeableBase">
+ 
+    <defName>JInv_Incrediblesc</defName>
+    <label>Incredible Super-Suit</label>
+    <description>A highly durable, incredible-themed Super-Suit.</description>
+    <graphicData>
+      <texPath>Things/Suits/Incredibles/Incredibles</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>1.0</drawSize>
+    </graphicData>
+    <costList>
+        <Hyperweave>150</Hyperweave>
+        <Plasteel>15</Plasteel>
+        <ComponentSpacer>3</ComponentSpacer>
+        <Dye>1</Dye>
+    </costList>
+    <tradeability>Sellable</tradeability>
+    <statBases>
+      <WorkToMake>1500</WorkToMake>
+      <MaxHitPoints>10000</MaxHitPoints>
+      <Mass>5.0</Mass>
+      <ArmorRating_Sharp>0.25</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.25</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.25</ArmorRating_Heat>
+      <Insulation_Cold>50</Insulation_Cold>
+      <Insulation_Heat>50</Insulation_Heat>
+      <EquipDelay>1</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+        <MeleeDodgeChance>0.6</MeleeDodgeChance>
+        <SocialImpact>0.40</SocialImpact>
+    </equippedStatOffsets>
+    <thingCategories>
+      <li>Apparel</li>
+    </thingCategories>
+    <apparel>
+      <bodyPartGroups>
+        <li>Torso</li>
+				<li>Neck</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+				<li>Legs</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Suits/Incredibles/Incredibles</wornGraphicPath>
+      <useWornGraphicMask>true</useWornGraphicMask>
+      <!-- Layers your apparel will be on, OnSkin (Shirt), Middle (Flak vest), Shell (Duster) -->
+      <layers>
+        <li>OnSkin</li>
+      </layers>
+      <!-- Tags for your apparel to spawn -->
+      <tags>
+        <li>Viltrum_Suit</li>
+        <li>Hero_Suit</li>
+        <li>Super_Suit</li>
+        <li>Omniman_Suit</li>
+      </tags>
+      <!-- Can this apparel be deired for an Ideoligion? If no then false,if yes then true -->
+      <canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+    </apparel>
+    <recipeMaker>
+    <!-- Research required to get before apparel can be made -->
+    <researchPrerequisites>
+      <li>ComplexClothing</li>
+      <li>AdvancedFabrication</li>
+    </researchPrerequisites>
+        <recipeUsers>
+          <li>ElectricTailoringBench</li>
+        </recipeUsers>
+    </recipeMaker>
+  </ThingDef>
+
+</Defs>

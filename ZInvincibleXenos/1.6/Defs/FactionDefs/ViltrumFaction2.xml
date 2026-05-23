@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <FactionDef ParentName="FactionBase">
+    <defName>ViltrumEmpire2</defName>
+    <label>Empire of Viltrumites</label>
+    <categoryTag>Empire</categoryTag>
+    <description>A ruthless, militaristic, expansionist, eugenic, ultratech empire. Their leaders and champions, the Viltrumites, are near-immortal superbeings.\n\nTheir advanced technology means they can greatly improve the lives of those who submit, but their sheer brutality and callousness makes resistance attractive to those with the power or will for it.\n\nUsually, Viltrumites are a tiny portion of their population, but only Viltrumites have come to conquer this world.</description>
+    <pawnSingular>vilgrunt</pawnSingular>
+    <pawnsPlural>vilgrunts</pawnsPlural>
+    <settlementGenerationWeight>1</settlementGenerationWeight>
+    <requiredCountAtGameStart>1</requiredCountAtGameStart>
+    <canSiege>true</canSiege>
+    <canStageAttacks>true</canStageAttacks>
+    <leaderTitle>grand regent</leaderTitle>
+    <leaderForceGenerateNewPawn>true</leaderForceGenerateNewPawn>
+    <factionIconPath>World/WorldObjects/Expanding/WasterPirates</factionIconPath>
+    <factionNameMaker>NamerFactionViltrum2</factionNameMaker>
+    <settlementNameMaker>NamerSettlementViltrum</settlementNameMaker>
+    <allowedCultures>
+      <li>Culture_Viltrum</li>
+    </allowedCultures>
+    <arrivalLayerWhitelist>
+      <li>Surface</li>
+      <li MayRequire="Ludeon.RimWorld.Odyssey">Orbit</li>
+    </arrivalLayerWhitelist>
+    <requiredMemes>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Supremacist</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Raider</li>
+			<li MayRequire="VanillaExpanded.VMemesE">VME_BloodCourt</li>
+    </requiredMemes>
+    <allowedMemes>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Collectivist</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">HumanPrimacy</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Proselytizer</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">PainIsVirtue</li>
+      <li MayRequire="Sarg.AlphaMemes">AM_Gladiator</li>
+			<li MayRequire="VanillaExpanded.VMemesE">VME_Bushido</li>
+			<li MayRequire="VanillaExpanded.VMemesE">VME_ViolentConversion</li>
+			<li MayRequire="VanillaExpanded.VMemesE">VME_Progressive</li>
+    </allowedMemes>
+    <structureMemeWeights>
+      <Structure_Archist MayRequire="Ludeon.RimWorld.Ideology">2</Structure_Archist>
+      <Structure_Ideological MayRequire="Ludeon.RimWorld.Ideology">1</Structure_Ideological>
+    </structureMemeWeights>
+    <xenotypeSet>
+      <xenotypeChances>
+        <Jim_Viltrumite>1</Jim_Viltrumite>
+      </xenotypeChances>
+    </xenotypeSet>
+    <naturalEnemy>true</naturalEnemy>
+    <techLevel>Ultra</techLevel>
+    <backstoryFilters>
+      <li>
+        <categories>
+          <li>Vilgrunt</li>
+          <li>Viltrum</li>
+          <li>VGeneric</li>
+          <li MayRequire="Ludeon.RimWorld.Royalty">ImperialCommon</li>
+          <li>Offworld</li>
+          <li>Outlander</li>
+          <li>Pirate</li>
+          <li>Tribal</li>
+        </categories>
+      </li>
+    </backstoryFilters>
+    <allowedArrivalTemperatureRange>-85~45</allowedArrivalTemperatureRange>
+    <settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
+    <colorSpectrum>
+      <li>(0.9, 0.9, 0.9)</li>
+    </colorSpectrum>
+    <fixedLeaderKinds>
+      <li>Viltrumite_Fighter_Regent</li>
+    </fixedLeaderKinds>
+    <baseTraderKinds>
+      <li>Base_Outlander_Standard</li>
+    </baseTraderKinds>
+    <caravanTraderKinds>
+      <li>Caravan_Outlander_BulkGoods</li>
+      <li>Caravan_Outlander_CombatSupplier</li>
+      <li>Caravan_Outlander_Exotic</li>
+      <li>Caravan_Outlander_PirateMerchant</li>
+    </caravanTraderKinds>
+    <!-- TESTING ORBITAL TRADERS. Requesting orbital traders disabled. -->
+    <!-- canRequestOrbitalTrader MayRequire="Ludeon.RimWorld.Odyssey">true</canRequestOrbitalTrader -->
+    <layerWhitelist MayRequire="Ludeon.RimWorld.Odyssey">
+      <li MayRequire="Ludeon.RimWorld.Odyssey">Orbit</li>
+    </layerWhitelist>
+    <orbitalTraderKinds MayRequire="Ludeon.RimWorld.Odyssey">
+      <li>Orbital_BulkGoods</li>
+      <li>Orbital_CombatSupplier</li>
+      <li>Orbital_Exotic</li>
+      <li>Orbital_PirateMerchant</li>
+    </orbitalTraderKinds>
+    <!-- TESTING ORBITAL TRADERS -->
+    <!-- TESTING HONOUR SYSTEM -->
+    <royalFavorLabel MayRequire="Ludeon.RimWorld.Royalty">loyalty</royalFavorLabel>
+    <royalFavorIconPath MayRequire="Ludeon.RimWorld.Royalty">UI/Icons/RoyalFavor</royalFavorIconPath>
+    <royalTitleTags MayRequire="Ludeon.RimWorld.Royalty"><li>ViltrumTitle</li></royalTitleTags>
+    <royalTitleInheritanceWorkerClass MayRequire="Ludeon.RimWorld.Royalty">RoyalTitleInheritanceWorker</royalTitleInheritanceWorkerClass>
+    <royalTitleInheritanceRelations MayRequire="Ludeon.RimWorld.Royalty">
+      <li>Child</li>
+      <li>Grandchild</li>
+      <li>GreatGrandchild</li>
+      <li>NephewOrNiece</li>
+      <li>Sibling</li>
+      <li>HalfSibling</li>
+      <li>Spouse</li>
+      <li>Cousin</li>
+      <li>Parent</li>
+      <li>UncleOrAunt</li>
+    </royalTitleInheritanceRelations>
+    <!-- TESTING HONOUR SYSTEM -->
+    <raidCommonalityFromPointsCurve>
+      <points>
+        <li>(0, 1)</li> <!--Constant 1 at all points levels-->
+      </points>
+    </raidCommonalityFromPointsCurve>
+    <raidLootMaker>ViltrumRaidLootMaker</raidLootMaker>
+    <maxPawnCostPerTotalPointsCurve><!-- Possible to get wrecked day 1 -->
+      <points>
+        <li>(0,10000)</li>
+      </points>
+    </maxPawnCostPerTotalPointsCurve>
+    <pawnGroupMakers>
+			<!-- You're so boned bro lmao -->
+			<li>
+				<kindDef>Combat</kindDef>
+				<commonality>1</commonality>
+				<options>
+					<Viltrumite_Fighter_Regent>1</Viltrumite_Fighter_Regent>
+					<Viltrumite_Fighter_Simple>1</Viltrumite_Fighter_Simple>
+					<Viltrumite_Fighter_Garbage>1</Viltrumite_Fighter_Garbage>
+					<Viltrumite_Fighter_Slicer>1</Viltrumite_Fighter_Slicer>
+					<Viltrumite_Fighter_Random>1</Viltrumite_Fighter_Random>
+					<Viltrumite_Fighter_Solo>1</Viltrumite_Fighter_Solo>
+					<Viltrumite_Fighter_Elite>1</Viltrumite_Fighter_Elite>
+				</options>
+			</li>
+			<!-- Solo Viltrumite raids (pawn cost means only 1 will be sent) -->
+			<li>
+				<kindDef>Combat</kindDef>
+				<commonality>1</commonality>
+				<options>
+					<Viltrumite_Fighter_Regent>1</Viltrumite_Fighter_Regent>
+					<Viltrumite_Fighter_Solo>1</Viltrumite_Fighter_Solo>
+					<Viltrumite_Fighter_Elite>1</Viltrumite_Fighter_Elite>
+					<Viltrumite_Fighter_Slicer>1</Viltrumite_Fighter_Slicer>
+				</options>
+			</li>
+			<!-- Gang Violence -->
+			<li>
+				<kindDef>Combat</kindDef>
+				<commonality>1</commonality>
+				<options>
+					<Viltrumite_Fighter_Simple>1</Viltrumite_Fighter_Simple>
+				</options>
+			</li>
+			<li>
+				<kindDef>Combat</kindDef>
+				<commonality>1</commonality>
+				<options>
+					<Viltrumite_Fighter_Random>1</Viltrumite_Fighter_Random>
+				</options>
+			</li>
+			<li>
+				<kindDef>Combat</kindDef>
+				<commonality>1</commonality>
+				<options>
+					<Viltrumite_Fighter_Garbage>1</Viltrumite_Fighter_Garbage>
+				</options>
+			</li>
+			<li>
+				<kindDef>Combat</kindDef>
+				<commonality>1</commonality>
+				<options>
+					<Viltrumite_Fighter_Simple>1</Viltrumite_Fighter_Simple>
+					<Viltrumite_Fighter_Garbage>1</Viltrumite_Fighter_Garbage>
+					<Viltrumite_Fighter_Random>1</Viltrumite_Fighter_Random>
+				</options>
+			</li>
+      <li>
+        <!-- Base defense. Just give the Viltrumite a space helmet -->
+        <kindDef>Settlement</kindDef>
+        <options>
+					<Viltrumite_Fighter_RandomGuard>1</Viltrumite_Fighter_RandomGuard>
+					<Viltrumite_Fighter_GarbageGuard>1</Viltrumite_Fighter_GarbageGuard>
+					<Viltrumite_Fighter_SlicerGuard>1</Viltrumite_Fighter_SlicerGuard>
+					<Viltrumite_Fighter_SimpleGuard>1</Viltrumite_Fighter_SimpleGuard>
+					<Viltrumite_Fighter_EliteGuard>1</Viltrumite_Fighter_EliteGuard>
+					<Viltrumite_Fighter_Regent>1</Viltrumite_Fighter_Regent>
+      </options>
+      </li>
+      <li>
+        <!-- Traders -->
+        <kindDef>Trader</kindDef>
+        <traders>
+          <Town_Trader>1</Town_Trader>
+        </traders>
+        <carriers>
+          <Muffalo>6</Muffalo>
+          <Dromedary>5</Dromedary>
+          <Alpaca>2</Alpaca>
+          <Elephant>1</Elephant>
+        </carriers>
+        <guards>
+          <Viltrumite_Fighter_SimpleGuard>1</Viltrumite_Fighter_SimpleGuard>
+        </guards>
+      </li>
+    </pawnGroupMakers>
+    <maxConfigurableAtWorldCreation>2</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>70</configurationListOrderPriority>
+    <disallowedRaidAgeRestrictions>
+      <li>Children</li>
+    </disallowedRaidAgeRestrictions>
+  </FactionDef>
+  
+  <!-- =============================== Names =============================== -->
+
+  <RulePackDef>
+    <defName>NamerFactionViltrum2</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>r_name->The Viltrumite Empire</li>
+        <li>r_name->Viltrumite Empire</li>
+        <li>r_name->Enders of Weakness</li>
+        <li>r_name->Viltrum's Purity</li>
+        <li>r_name->Purgers</li>
+        <li>r_name->Survivors of Viltrum</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+</Defs>

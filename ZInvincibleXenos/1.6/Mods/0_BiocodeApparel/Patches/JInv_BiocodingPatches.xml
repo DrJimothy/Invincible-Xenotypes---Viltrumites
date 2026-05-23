@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/PawnKindDef[@Name="VilmercBase" or @Name="Vilgrunt_WarriorBase" or @Name="Vilgrunt_MercenaryBase"]</xpath>
+		<value>
+			<li Class="SEX_BiocodableApparel.PawnKindExtension">
+				<biocodeApparelChance>1</biocodeApparelChance>
+			</li>
+		</value>
+	</Operation>
+</Patch>

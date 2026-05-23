@@ -1,0 +1,297 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="MakeableDrugBase">
+		<defName>InvincizaJoint</defName>
+		<label>invinciza joint</label>
+		<description>Invinciza joints are so powerful that only the truly INVINCIBLE can handle them. If anyone without the power to survive it consumes one, they'll probably explode and die.\n\n"This Thraxan pack got me bugging. You sure Cecil didn't lace this boof?." - Mohawk Mark. Invinciza, Director's Cut, by the great documentary maker Meth Gater.</description>
+		<possessionCount>5</possessionCount>
+		<descriptionHyperlinks>
+			<HediffDef>InvincizaHigh</HediffDef>
+			<HediffDef>InvincizaTolerance</HediffDef>
+			<HediffDef>InvincizaAddiction</HediffDef>
+			<HediffDef>Carcinoma</HediffDef>
+			<HediffDef>Asthma</HediffDef>
+		</descriptionHyperlinks>
+		<graphicData>
+			<texPath>Things/Item/Drug/Joint</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<rotatable>false</rotatable>
+		<statBases>
+			<WorkToMake>450</WorkToMake>
+			<MarketValue>140</MarketValue>
+			<Mass>0.05</Mass>
+			<DeteriorationRate>1</DeteriorationRate>
+			<Flammability>0.5</Flammability>
+		</statBases>
+		<techLevel>Neolithic</techLevel>
+		<ingestible>
+			<foodType>Plant, Processed</foodType>
+			<joyKind>Chemical</joyKind>
+			<joy>0.95</joy>
+			<baseIngestTicks>720</baseIngestTicks>
+			<nurseable>true</nurseable>
+			<drugCategory>Social</drugCategory>
+			<ingestSound>Ingest_Smoke</ingestSound>
+			<ingestEffect>Smoke_Joint</ingestEffect>
+			<ingestEffectEat>EatVegetarian</ingestEffectEat>
+			<ingestHoldOffsetStanding>
+				<northDefault>
+					<offset>(0.27,0,0.08)</offset>
+					<behind>true</behind>
+				</northDefault>
+				<east>
+					<offset>(0.45,0,0.08)</offset>
+				</east>
+				<south>
+					<offset>(0.27,0,0.08)</offset>
+				</south>
+				<west>
+					<offset>(-0.50,0,0.08)</offset>
+					<flip>true</flip>
+				</west>
+			</ingestHoldOffsetStanding>
+			<ingestHoldUsesTable>false</ingestHoldUsesTable>
+			<ingestCommandString>Smoke {0}</ingestCommandString>
+			<ingestReportString>Smoking {0}.</ingestReportString>
+			<ingestReportStringEat>Consuming {0}.</ingestReportStringEat>
+			<useEatingSpeedStat>false</useEatingSpeedStat>
+			<outcomeDoers>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>SmokeleafHigh</hediffDef>
+					<severity>0.95</severity>
+					<toleranceChemical>Smokeleaf</toleranceChemical>
+				</li>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>InvincizaHigh</hediffDef>
+					<severity>0.95</severity>
+					<toleranceChemical>Invinciza</toleranceChemical>
+				</li>
+				<li Class="IngestionOutcomeDoer_OffsetNeed">
+					<need>Rest</need>
+					<offset>-0.3</offset>
+				</li>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>SmokeleafTolerance</hediffDef>
+					<toleranceChemical>Smokeleaf</toleranceChemical>
+					<severity>0.030</severity>
+					<divideByBodySize>true</divideByBodySize>
+					<multiplyByGeneToleranceFactors>true</multiplyByGeneToleranceFactors>
+				</li>
+				<li Class="IngestionOutcomeDoer_GiveHediff">
+					<hediffDef>InvincizaTolerance</hediffDef>
+					<toleranceChemical>Invinciza</toleranceChemical>
+					<severity>0.030</severity>
+					<divideByBodySize>true</divideByBodySize>
+					<multiplyByGeneToleranceFactors>true</multiplyByGeneToleranceFactors>
+				</li>
+			</outcomeDoers>
+		</ingestible>
+		<recipeMaker>
+    		<researchPrerequisite>GoJuiceProduction</researchPrerequisite>
+			<recipeUsers>
+				<li>CraftingSpot</li>
+				<li>DrugLab</li>
+			</recipeUsers>
+			<workSpeedStat>DrugCookingSpeed</workSpeedStat>
+			<workSkill>Cooking</workSkill>
+			<displayPriority>1400</displayPriority>
+			<skillRequirements>
+    			<Crafting>20</Crafting>
+    			<Intellectual>20</Intellectual>
+    			<Medicine>20</Medicine>
+    		</skillRequirements>
+		</recipeMaker>
+		<costList>
+			<SmokeleafJoint>1</SmokeleafJoint>
+    		<ThrumboHorn>1</ThrumboHorn>
+			<Chemfuel>4</Chemfuel>
+		</costList>
+		<comps>
+			<li Class="CompProperties_Drug">
+				<chemical>Invinciza</chemical>
+				<addictiveness>0.020</addictiveness>
+				<minToleranceToAddict>0.15</minToleranceToAddict>
+				<existingAddictionSeverityOffset>0.06</existingAddictionSeverityOffset>
+				<needLevelOffset>0.9</needLevelOffset>
+				<listOrder>20</listOrder>
+			</li>
+		</comps>
+		<allowedArchonexusCount>50</allowedArchonexusCount>
+	</ThingDef>
+
+	<HediffDef>
+		<defName>InvincizaHigh</defName>
+		<label>stoned on invinciza</label>
+		<labelNoun>a invinciza high</labelNoun>
+		<description>Invinciza's active chemical in the bloodstream. If they survive, they'll never be the same.</description>
+		<hediffClass>Hediff_High</hediffClass>
+		<defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<maxSeverity>1.0</maxSeverity>
+		<isBad>false</isBad>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-1.0</severityPerDay>
+				<showHoursToRecover>true</showHoursToRecover>
+			</li>
+		</comps>
+			<stages>
+				<li>
+					<hungerRateFactorOffset>4</hungerRateFactorOffset>
+					<painOffset>-1</painOffset>
+					<capMods>
+						<li>
+							<capacity>Consciousness</capacity>
+							<offset>-0.4</offset>
+						</li>
+						<li>
+							<capacity>Moving</capacity>
+							<offset>-0.1</offset>
+						</li>
+					</capMods>
+				</li>
+			</stages>
+	</HediffDef>
+	
+	<ThoughtDef>
+		<defName>InvincizaHigh</defName>
+		<workerClass>ThoughtWorker_Hediff</workerClass>
+		<hediff>InvincizaHigh</hediff>
+		<validWhileDespawned>true</validWhileDespawned>
+		<developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
+		<stages>
+			<li>
+				<label>high on invinciza</label>
+				<description>The stuff I'm puffing on would turn Battlebeast pacifist.</description>
+				<baseMoodEffect>200</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+	<!-- Invinciza addiction -->
+
+	<ChemicalDef>
+		<defName>Invinciza</defName>
+		<label>Invinciza</label>
+		<addictionHediff>InvincizaAddiction</addictionHediff>
+		<toleranceHediff>InvincizaTolerance</toleranceHediff>
+		<onGeneratedAddictedToleranceChance>0.8</onGeneratedAddictedToleranceChance>
+		<geneToleranceBuildupFactorResist>0.5</geneToleranceBuildupFactorResist>
+		<geneToleranceBuildupFactorImmune>0</geneToleranceBuildupFactorImmune>
+	</ChemicalDef>
+
+	<NeedDef ParentName="DrugAddictionNeedBase">
+		<defName>Chemical_Invinciza</defName>
+		<needClass>Need_Chemical</needClass>
+		<label>Invinciza</label>
+		<description>Because of a invinciza dependence, this person needs to regularly consume the drug to avoid withdrawal symptoms.</description>
+		<listPriority>25</listPriority>
+	</NeedDef>
+	
+	<HediffDef ParentName="DrugToleranceBase">
+		<defName>InvincizaTolerance</defName>
+		<label>invinciza tolerance</label>
+		<description>A built-up tolerance to invinciza. The more severe this tolerance is, the more invinciza it takes to get the same effect.</description>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-0.015</severityPerDay>
+			</li>
+			<li Class="HediffCompProperties_DrugEffectFactor">
+				<chemical>Invinciza</chemical>
+			</li>
+		</comps>
+		<hediffGivers>
+			<li Class="HediffGiver_RandomDrugEffect">
+				<hediff>Asthma</hediff>
+				<severityToMtbDaysCurve>
+					<points>
+						<li>(0.45, 50000)</li>
+						<li>(0.5, 90)</li>
+						<li>(1, 65)</li>
+					</points>
+				</severityToMtbDaysCurve>
+				<partsToAffect>
+					<li>Lung</li>
+				</partsToAffect>
+				<countToAffect>2</countToAffect>
+			</li>
+			<li Class="HediffGiver_RandomDrugEffect">
+				<hediff>Carcinoma</hediff>
+				<severityToMtbDaysCurve>
+					<points>
+						<li>(0.36, 50000)</li>
+						<li>(0.4, 90)</li>
+						<li>(1, 65)</li>
+					</points>
+				</severityToMtbDaysCurve>
+				<partsToAffect>
+					<li>Lung</li>
+				</partsToAffect>
+				<countToAffect>1</countToAffect>
+			</li>
+		</hediffGivers>
+	</HediffDef>
+
+	<HediffDef ParentName="AddictionBase">
+		<defName>InvincizaAddiction</defName>
+		<label>invinciza dependence</label>
+		<description>A chemical addiction to invinciza. Long-term use of invinciza has caused neurological adaptations at the cellular level, so the brain can no longer function properly without the drug.
+\nWithout regular doses of invinciza, withdrawal symptoms will begin. However, extended abstinence will force the brain to adapt back to its normal state, resolving the addiction.</description>
+		<hediffClass>Hediff_Addiction</hediffClass>
+		<chemicalNeed>Chemical_Invinciza</chemicalNeed>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>-0.0333</severityPerDay>
+				<showDaysToRecover>true</showDaysToRecover>
+			</li>
+		</comps>
+		<stages>
+			<li>
+			</li>
+			<li>
+				<label>withdrawal</label>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>-0.30</offset>
+					</li>
+					<li>
+						<capacity>Moving</capacity>
+						<offset>-0.15</offset>
+					</li>
+				</capMods>
+				<mentalStateGivers>
+					<li>
+						<mentalState>Binging_Food</mentalState>
+						<mtbDays>15</mtbDays>
+					</li>
+					<li>
+						<mentalState>Binging_DrugMajor</mentalState>
+						<mtbDays>25</mtbDays>
+					</li>
+				</mentalStateGivers>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<ThoughtDef>
+		<defName>InvincizaWithdrawal</defName>
+		<workerClass>ThoughtWorker_Hediff</workerClass>
+		<hediff>InvincizaAddiction</hediff>
+		<validWhileDespawned>true</validWhileDespawned>
+		<developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
+		<stages>
+			<li>
+				<visible>false</visible>
+			</li>
+			<li>
+				<label>invinciza withdrawal</label>
+				<description>I really wish I could smoke. I feel jittery, and my gut has that anxious sensation all the time.</description>
+				<baseMoodEffect>-40</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+</Defs>

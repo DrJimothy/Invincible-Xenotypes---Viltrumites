@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- ============================= Permits from royal titles ============================= -->
+
+
+  <!-- ============================= Faction permits ============================= -->
+
+  <!-- Econ -->
+
+  <RoyalTitlePermitDef Name="Vilt_DropResourcesBase2" Abstract="True">
+    <workerClass>RoyalTitlePermitWorker_DropResources</workerClass>
+    <faction>ViltrumEmpire2</faction>
+    <permitPointCost>1</permitPointCost>
+    <cooldownDays>15</cooldownDays>
+    <usableOnWorldMap>true</usableOnWorldMap>
+    <royalAid>
+      <targetingRange>39.9</targetingRange>
+    </royalAid>
+  </RoyalTitlePermitDef>
+
+  <!-- Goons. Make all of these comically awful - Viltrum views you as cannonfodder -->
+
+  <RoyalTitlePermitDef ParentName="Vilt_DropResourcesBase2">
+    <defName>Vilt_DebrisDrop2</defName>
+    <!-- See if Ship Chunks are possible? -->
+    <label>debris drop</label>
+    <description>Call for some debris Viltrum has little use for.</description>
+    <minTitle>Vilt_Stooge</minTitle>
+    <permitPointCost>1</permitPointCost>
+    <uiPosition>(0,0)</uiPosition>
+    <royalAid>
+      <itemsToDrop>
+        <ChunkSlagSteel>1</ChunkSlagSteel>
+        <ChunkMechanoidSlag>1</ChunkMechanoidSlag>
+        <ChunkSandstone>5</ChunkSandstone>
+        <ChunkVacstone MayRequire="Ludeon.RimWorld.Odyssey">1</ChunkVacstone>
+      </itemsToDrop>
+      <favorCost>4</favorCost>
+    </royalAid>
+  </RoyalTitlePermitDef>
+
+  <RoyalTitlePermitDef ParentName="Vilt_DropResourcesBase2">
+    <defName>Vil_FoodDrop2</defName>
+    <label>snacks</label>
+    <description>Very nutritious... not as delicious.</description>
+    <minTitle>Vilt_Stooge</minTitle>
+    <uiPosition>(1,0)</uiPosition>
+    <royalAid>
+      <itemsToDrop>
+        <Kibble>900</Kibble>
+      </itemsToDrop>
+      <favorCost>4</favorCost>
+    </royalAid>
+  </RoyalTitlePermitDef>
+
+  <RoyalTitlePermitDef ParentName="Vilt_DropResourcesBase2">
+    <defName>Vil_MedDrop2</defName>
+    <label>medicine</label>
+    <description>Healthcare is for weaklings</description>
+    <minTitle>Vilt_Stooge</minTitle>
+    <uiPosition>(2,0)</uiPosition>
+    <royalAid>
+      <itemsToDrop>
+        <Flake>5</Flake>
+        <MedicineHerbal>10</MedicineHerbal>
+        <Luciferium>1</Luciferium>
+        <WakeUp>1</WakeUp>
+      </itemsToDrop>
+      <favorCost>4</favorCost>
+    </royalAid>
+  </RoyalTitlePermitDef>
+
+  <RoyalTitlePermitDef ParentName="Vilt_DropResourcesBase2">
+    <defName>Vil_Chemfuel2</defName>
+    <label>fuel</label>
+    <description>Fuel the war</description>
+    <minTitle>Vilt_Stooge</minTitle>
+    <uiPosition>(3,0)</uiPosition>
+    <royalAid>
+      <itemsToDrop>
+        <Chemfuel>150</Chemfuel>
+        <WoodLog>150</WoodLog>
+      </itemsToDrop>
+      <favorCost>4</favorCost>
+    </royalAid>
+  </RoyalTitlePermitDef>
+
+  <!-- Soldier. Comically good resource / item drops, basically. Viltrum values you now. -->
+
+  <RoyalTitlePermitDef ParentName="Vilt_DropResourcesBase2">
+    <defName>Vilt_MetalDrop2</defName>
+    <label>metal drop</label>
+    <description>Call for some metal.</description>
+    <minTitle>Vilt_Cadet</minTitle>
+    <permitPointCost>1</permitPointCost>
+    <uiPosition>(0,1)</uiPosition>
+    <royalAid>
+      <itemsToDrop>
+        <Plasteel>250</Plasteel>
+        <Steel>500</Steel>
+        <Uranium>375</Uranium>
+      </itemsToDrop>
+      <favorCost>4</favorCost>
+    </royalAid>
+  </RoyalTitlePermitDef>
+
+  <RoyalTitlePermitDef ParentName="Vilt_DropResourcesBase2">
+    <defName>Vilt_MoneyDrop2</defName>
+    <label>jewelry drop</label>
+    <description>Call for some jewelry. Fancy!</description>
+    <minTitle>Vilt_Cadet</minTitle>
+    <permitPointCost>1</permitPointCost>
+    <uiPosition>(1,1)</uiPosition>
+    <royalAid>
+      <itemsToDrop>
+        <Gold>250</Gold>
+        <Silver>1000</Silver>
+        <Jade>75</Jade>
+      </itemsToDrop>
+      <favorCost>4</favorCost>
+    </royalAid>
+  </RoyalTitlePermitDef>
+
+  <RoyalTitlePermitDef ParentName="Vilt_DropResourcesBase2">
+    <defName>Vilt_GMedDrop2</defName>
+    <label>medicine</label>
+    <description>Only the finest medicine!</description>
+    <minTitle>Vilt_Cadet</minTitle>
+    <permitPointCost>1</permitPointCost>
+    <uiPosition>(2,1)</uiPosition>
+    <royalAid>
+      <itemsToDrop>
+        <Yayo>5</Yayo>
+        <MedicineUltratech>10</MedicineUltratech>
+        <Luciferium>5</Luciferium>
+        <WakeUp>5</WakeUp>
+        <GoJuice>5</GoJuice>
+      </itemsToDrop>
+      <favorCost>4</favorCost>
+    </royalAid>
+  </RoyalTitlePermitDef>
+
+  <RoyalTitlePermitDef ParentName="Vilt_DropResourcesBase2">
+    <defName>Vilt_TechDrop2</defName>
+    <label>technology</label>
+    <description>components, hyperweave, synthread, and a techprofer</description>
+    <minTitle>Vilt_Cadet</minTitle>
+    <permitPointCost>1</permitPointCost>
+    <uiPosition>(3,1)</uiPosition>
+    <royalAid>
+      <itemsToDrop>
+        <ComponentIndustrial>45</ComponentIndustrial>
+        <ComponentSpacer>20</ComponentSpacer>
+        <Hyperweave>80</Hyperweave>
+        <Synthread>160</Synthread>
+        <TechprofSubpersonaCore>1</TechprofSubpersonaCore>
+      </itemsToDrop>
+      <favorCost>4</favorCost>
+    </royalAid>
+  </RoyalTitlePermitDef>
+
+  <!-- Commanders. Make these comically good and mostly ordering-others based. Viltrum expects you to manage things -->
+
+
+  <!-- Combat -->
+
+  <RoyalTitlePermitDef>
+    <defName>Vilt_CallMilitaryAidLarge2</defName>
+    <label>call viltrumite</label>
+    <description>Call a Viltrumite aid you in battle.</description>
+    <workerClass>RoyalTitlePermitWorker_CallAid</workerClass>
+    <minTitle>Vilt_Captain</minTitle>
+    <faction>ViltrumEmpire2</faction>
+    <permitPointCost>2</permitPointCost>
+    <uiPosition>(1,7)</uiPosition>
+    <royalAid>
+      <favorCost>6</favorCost>
+      <pawnKindDef>Viltrumite_Fighter_Simple</pawnKindDef>
+      <pawnCount>1</pawnCount>
+      <targetingRange>39.9</targetingRange>
+    </royalAid>
+    <layerBlacklist>
+      <li MayRequire="Ludeon.RimWorld.Odyssey">Orbit</li>
+    </layerBlacklist>
+    <cooldownDays>50</cooldownDays>
+  </RoyalTitlePermitDef>
+
+  <RoyalTitlePermitDef>
+    <defName>Vilt_CallMilitaryAidGrand2</defName>
+    <label>call elite viltrumite</label>
+    <description>Call an elite Viltrumite aid you in battle.</description>
+    <workerClass>RoyalTitlePermitWorker_CallAid</workerClass>
+    <minTitle>Vilt_Captain</minTitle>
+    <faction>ViltrumEmpire2</faction>
+    <permitPointCost>2</permitPointCost>
+    <prerequisite>Vilt_CallMilitaryAidLarge</prerequisite>
+    <uiPosition>(2,7)</uiPosition>
+    <royalAid>
+      <favorCost>8</favorCost>
+      <pawnKindDef>Viltrumite_Fighter_Elite</pawnKindDef>
+      <pawnCount>1</pawnCount>
+      <targetingRange>39.9</targetingRange>
+      <overrideAcceptableTemperatureRange>-80~50</overrideAcceptableTemperatureRange>
+    </royalAid>
+    <layerBlacklist>
+      <li MayRequire="Ludeon.RimWorld.Odyssey">Orbit</li>
+    </layerBlacklist>
+    <cooldownDays>60</cooldownDays>
+  </RoyalTitlePermitDef>
+
+  <RoyalTitlePermitDef>
+    <defName>Vilt_CallOrbitalStrike2</defName>
+    <label>call aerodrone strike</label>
+    <description>Call a single-impact aerodrone strike at a target position. Can be used regularly.</description>
+    <workerClass>RoyalTitlePermitWorker_OrbitalStrike</workerClass>
+    <minTitle>Vilt_Captain</minTitle>
+    <faction>ViltrumEmpire2</faction>
+    <permitPointCost>1</permitPointCost>
+    <cooldownDays>1</cooldownDays>
+    <uiPosition>(0,5)</uiPosition>
+    <royalAid>
+      <favorCost>6</favorCost>
+      <targetingRange>44.9</targetingRange>
+      <radius>2.9</radius>
+      <explosionRadiusRange>7.9</explosionRadiusRange>
+      <explosionCount>1</explosionCount>
+      <intervalTicks>60</intervalTicks>
+      <warmupTicks>120</warmupTicks>
+    </royalAid>
+  </RoyalTitlePermitDef>
+
+  <RoyalTitlePermitDef>
+    <defName>Vilt_CallOrbitalSalvo2</defName>
+    <label>call aerodrone obliteration</label>
+    <description>Call a salvo of aerodrone strikes to obliterate a target position.</description>
+    <workerClass>RoyalTitlePermitWorker_OrbitalStrike</workerClass>
+    <minTitle>Vilt_Captain</minTitle>
+    <faction>ViltrumEmpire2</faction>
+    <permitPointCost>1</permitPointCost>
+    <prerequisite>Vilt_CallOrbitalStrike</prerequisite>
+    <cooldownDays>30</cooldownDays>
+    <uiPosition>(1,5)</uiPosition>
+    <royalAid>
+      <favorCost>8</favorCost>
+      <targetingRange>44.9</targetingRange>
+      <radius>7.9</radius>
+      <explosionRadiusRange>5.9</explosionRadiusRange>
+      <explosionCount>20</explosionCount>
+      <intervalTicks>60</intervalTicks>
+      <warmupTicks>120</warmupTicks>
+    </royalAid>
+  </RoyalTitlePermitDef>
+
+
+  <!-- Utility -->
+
+  <RoyalTitlePermitDef>
+    <defName>Vilt_CallTransportShuttle2</defName>
+    <label>call transport shuttle</label>
+    <description>Call a shuttle for your own use. It will transport colonists, items, and animals anywhere you like within 70 world tiles.</description>
+    <workerClass>RoyalTitlePermitWorker_CallShuttle</workerClass>
+    <minTitle>Vilt_Captain</minTitle>
+    <faction>ViltrumEmpire2</faction>
+    <permitPointCost>1</permitPointCost>
+    <cooldownDays>15</cooldownDays>
+    <usableOnWorldMap>true</usableOnWorldMap>
+    <uiPosition>(0,6)</uiPosition>
+    <royalAid>
+      <favorCost>8</favorCost>
+      <targetingRange>44.9</targetingRange>
+      <targetingRequireLOS>false</targetingRequireLOS>
+    </royalAid>
+  </RoyalTitlePermitDef>
+
+</Defs>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<GeneDef>
+		<defName>JInv_VMeleeGeneSH</defName>
+		<label>Ultra Smart Strength</label>
+		<description>Carriers of this gene do immensely more damage in close-quarters combat. (this gene is only active if using Superhero Genes, and makes Viltrumites slightly stronger than strength-based supers).</description>
+		<iconPath>UI/Icons/Genes/Gene_StrongMeleeDamage</iconPath>
+		<biostatArc>4</biostatArc>
+		<biostatCpx>8</biostatCpx>
+		<displayOrderInCategory>42.351</displayOrderInCategory>
+		<statFactors>
+			<MeleeDamageFactor>4</MeleeDamageFactor>
+			<CarryingCapacity>4</CarryingCapacity>
+			<VEF_MassCarryCapacity>4</VEF_MassCarryCapacity>
+            <SM_RaidWealthMultiplier MayRequire="RedMattis.BigSmall.Core">2</SM_RaidWealthMultiplier>
+		</statFactors>
+		<marketValueFactor>1.5</marketValueFactor>
+		<minAgeActive>13</minAgeActive>
+		<prerequisite>JInv_VSmartGene</prerequisite>
+	</GeneDef>
+	
+	<GeneDef>
+		<defName>JInv_VRobustGeneSH</defName>
+		<label>Ultra Smart Robustness</label>
+		<description>Carriers of this gene are excessively robust. Smart atoms kinetically hold their body in shape, reducing damage taken, while their body's density resists any kind of deformation.</description>
+		<iconPath>UI/Icons/Genes/Gene_Tough</iconPath>
+		<biostatArc>4</biostatArc>
+		<biostatCpx>8</biostatCpx>
+		<displayOrderInCategory>12.31</displayOrderInCategory>
+		<statFactors>
+			<IncomingDamageFactor>0.25</IncomingDamageFactor>
+            <SM_RaidWealthMultiplier MayRequire="RedMattis.BigSmall.Core">2</SM_RaidWealthMultiplier>
+		</statFactors>
+		<marketValueFactor>1.5</marketValueFactor>
+		<minAgeActive>13</minAgeActive>
+		<prerequisite>JInv_VSmartGene</prerequisite>
+	</GeneDef>
+</Defs>

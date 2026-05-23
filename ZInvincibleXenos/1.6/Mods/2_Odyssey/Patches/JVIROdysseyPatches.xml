@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+<Operation Class="PatchOperationSequence">
+	<operations>
+		<li Class="PatchOperationRemove">
+			<xpath>Defs/XenotypeDef[defName="WeakViltrumite"]/genes/li[text()="ViltrumiteLungs"]</xpath>
+		</li>
+		<li Class="PatchOperationRemove">
+			<xpath>Defs/XenotypeDef[defName="EliteViltrumite"]/genes/li[text()="ViltrumiteLungs"]</xpath>
+		</li>
+		<li Class="PatchOperationRemove">
+			<xpath>Defs/XenotypeDef[defName="LegendaryViltrumite"]/genes/li[text()="ViltrumiteLungs"]</xpath>
+		</li>		
+		<li Class="PatchOperationRemove">
+			<xpath>Defs/XenotypeDef[defName="BloodOfArgall"]/genes/li[text()="ViltrumiteLungs"]</xpath>
+		</li>
+	</operations>
+</Operation>
+
+</Patch>

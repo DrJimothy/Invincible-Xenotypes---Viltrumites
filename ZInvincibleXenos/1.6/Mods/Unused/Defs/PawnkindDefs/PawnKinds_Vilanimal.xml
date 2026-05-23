@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <PawnKindDef Name="Viltrum_AnimalBase" Abstract="True" ParentName="AnimalKindBase">
+    <defaultFactionDef>ViltrumEmpire</defaultFactionDef>
+    <startingHediffs>
+      <li>
+        <def>GoJuiceHigh</def>
+        <severity>1</severity>
+      </li>
+      <li>
+        <def>WakeUpHigh</def>
+        <severity>1</severity>
+      </li>
+      <li>
+        <def>YayoHigh</def>
+        <severity>1</severity>
+      </li>
+      <li>
+        <def>PsychiteTeaHigh</def>
+        <severity>1</severity>
+      </li>
+      <li>
+        <def>TraumaSavant</def>
+        <chance>0.2</chance>
+      </li>
+      <li><def>LuciferiumHigh</def></li>
+      <li><def>SensoryMechanites</def></li>
+      <li><def>FibrousMechanites</def></li>
+    </startingHediffs>
+  </PawnKindDef>
+
+</Defs>

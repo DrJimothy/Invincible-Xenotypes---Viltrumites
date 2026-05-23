@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!--===================== Viltrum fighters: punishment ranks =========================-->
+
+  <PawnKindDef ParentName="VilmercBase">
+    <defName>Vilgrunt_Mycomorph</defName>
+    <label>mycomorph</label>
+    <combatPower>400</combatPower>
+    <gearHealthRange>0.4~1</gearHealthRange>
+    <minGenerationAge>25</minGenerationAge>
+    <apparelTags>
+      <li>IndustrialBasic</li>
+      <li>SpacerMilitary</li>
+    </apparelTags>
+    <apparelMoney>3000~4000</apparelMoney>
+    <apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+    <apparelRequired>
+      <li>Apparel_PowerArmorHelmet</li>
+      <li>Apparel_ArmorRecon</li>
+      <li>Apparel_ShieldBelt</li>
+    </apparelRequired>
+    <startingHediffs Inherit="False">
+      <li><def>GoJuiceHigh</def><severity>1</severity></li>
+      <li><def>WakeUpHigh</def><severity>1</severity></li>
+      <li><def>YayoHigh</def><severity>1</severity></li>
+      <li><def>PsychiteTeaHigh</def><severity>1</severity></li>
+      <li><def>LuciferiumHigh</def></li>
+      <li><def>TraumaSavant</def></li>
+      <li><def>SensoryMechanites</def></li>
+      <li><def>FibrousMechanites</def></li>
+    </startingHediffs>
+    <backstoryFiltersOverride>
+      <li>
+        <categories>
+          <li>Vilgrunt_Fungoid</li>
+        </categories>
+      </li>
+    </backstoryFiltersOverride>
+    <disallowedTraits>
+      <li>Wimp</li>
+      <li>Delicate</li>
+    </disallowedTraits>
+    <skills>
+      <li>
+        <skill>Melee</skill>
+        <range>10~20</range>
+      </li>
+    </skills>
+    <initialResistanceRange>1~2</initialResistanceRange>
+    <initialWillRange>1~2</initialWillRange>
+    <useFactionXenotypes>false</useFactionXenotypes>
+    <xenotypeSet>
+      <xenotypeChances>
+        <AG_Mycormorph>1</AG_Mycormorph>
+      </xenotypeChances>
+    </xenotypeSet>
+  </PawnKindDef>
+
+</Defs>

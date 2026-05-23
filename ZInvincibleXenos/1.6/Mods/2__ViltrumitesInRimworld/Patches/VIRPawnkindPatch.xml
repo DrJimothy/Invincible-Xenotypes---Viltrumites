@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+<!-- WeakViltrumite -->
+<Operation Class="PatchOperationAdd">
+		<xpath>Defs/PawnKindDef[defName="Viltrumite_Fighter_Garbage"]</xpath>
+		<value>
+			<xenotypeSet Inherit="False">
+				<xenotypeChances>
+					<WeakViltrumite>0.8</WeakViltrumite>
+					<Jim_Viltrumite>0.3</Jim_Viltrumite>
+				</xenotypeChances>
+			</xenotypeSet>
+		</value>
+</Operation>
+<Operation Class="PatchOperationAdd">
+		<xpath>Defs/PawnKindDef[defName="Viltrumite_Fighter_GarbageGuard"]</xpath>
+		<value>
+			<xenotypeSet Inherit="False">
+				<xenotypeChances>
+					<WeakViltrumite>0.8</WeakViltrumite>
+					<Jim_Viltrumite>0.3</Jim_Viltrumite>
+				</xenotypeChances>
+			</xenotypeSet>
+		</value>
+</Operation>
+
+<!-- EliteViltrumite -->
+<Operation Class="PatchOperationAdd">
+		<xpath>Defs/PawnKindDef[defName="Viltrumite_Fighter_Simple"]</xpath>
+		<value>
+			<xenotypeSet Inherit="False">
+				<xenotypeChances>
+					<WeakViltrumite>0.2</WeakViltrumite>
+					<Jim_Viltrumite>0.8</Jim_Viltrumite>
+					<EliteViltrumite>0.1</EliteViltrumite>
+				</xenotypeChances>
+			</xenotypeSet>
+		</value>
+</Operation>
+<Operation Class="PatchOperationAdd">
+		<xpath>Defs/PawnKindDef[defName="Viltrumite_Fighter_SimpleGuard"]</xpath>
+		<value>
+			<xenotypeSet Inherit="False">
+				<xenotypeChances>
+					<WeakViltrumite>0.2</WeakViltrumite>
+					<Jim_Viltrumite>0.8</Jim_Viltrumite>
+					<EliteViltrumite>0.1</EliteViltrumite>
+				</xenotypeChances>
+			</xenotypeSet>
+		</value>
+</Operation>
+
+<Operation Class="PatchOperationAdd">
+		<xpath>Defs/PawnKindDef[defName="Viltrumite_Fighter_Elite"]</xpath>
+		<value>
+			<xenotypeSet Inherit="False">
+				<xenotypeChances>
+					<WeakViltrumite>0.5</WeakViltrumite>
+					<Jim_Viltrumite>1</Jim_Viltrumite>
+					<EliteViltrumite>2</EliteViltrumite>
+					<BloodOfArgall>0.1</BloodOfArgall>
+					<LegendaryViltrumite>0.1</LegendaryViltrumite>
+				</xenotypeChances>
+			</xenotypeSet>
+		</value>
+</Operation>
+<Operation Class="PatchOperationAdd">
+		<xpath>Defs/PawnKindDef[defName="Viltrumite_Fighter_EliteGuard"]</xpath>
+		<value>
+			<xenotypeSet Inherit="False">
+				<xenotypeChances>
+					<WeakViltrumite>0.5</WeakViltrumite>
+					<Jim_Viltrumite>1</Jim_Viltrumite>
+					<EliteViltrumite>2</EliteViltrumite>
+					<BloodOfArgall>0.1</BloodOfArgall>
+					<LegendaryViltrumite>0.1</LegendaryViltrumite>
+				</xenotypeChances>
+			</xenotypeSet>
+		</value>
+</Operation>
+
+<!-- LegendaryViltrumite -->
+<!-- ArgallViltrumite -->
+<Operation Class="PatchOperationAdd">
+		<xpath>Defs/PawnKindDef[defName="Viltrumite_Fighter_Regent"]</xpath>
+		<value>
+			<xenotypeSet Inherit="False">
+				<xenotypeChances>
+					<BloodOfArgall>0.5</BloodOfArgall>
+					<LegendaryViltrumite>0.5</LegendaryViltrumite>
+				</xenotypeChances>
+			</xenotypeSet>
+		</value>
+</Operation>
+
+<!-- Soloist, ever random -->
+<Operation Class="PatchOperationAdd">
+		<xpath>Defs/PawnKindDef[defName="Viltrumite_Fighter_Solo"]</xpath>
+		<value>
+			<xenotypeSet Inherit="False">
+				<xenotypeChances>
+					<LegendaryViltrumite>0.1</LegendaryViltrumite>
+					<BloodOfArgall>0.1</BloodOfArgall>
+					<WeakViltrumite>1</WeakViltrumite>
+					<Jim_Viltrumite>2</Jim_Viltrumite>
+					<EliteViltrumite>0.5</EliteViltrumite>
+				</xenotypeChances>
+			</xenotypeSet>
+		</value>
+</Operation>
+
+</Patch>

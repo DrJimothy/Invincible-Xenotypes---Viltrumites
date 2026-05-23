@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+    <!--NO MORE STINKIN DUSTERS AND PARKAS-->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/PawnKindDef[@Name="MarkFighterBase"]/apparelTags</xpath>
+        <value>
+    		<apparelTags>
+                <li>Super_Suit</li>
+    		</apparelTags>
+        </value>
+    </Operation>
+    
+    <!--Make Viltrumites spawn without them stinking parkas and dusters-->
+
+</Patch>

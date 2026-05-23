@@ -1,0 +1,652 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="ApparelMakeableBase">
+ 
+    <defName>JInv_CyclopsSuit</defName>
+    <label>Cyclops Super-Suit</label>
+    <description>A highly durable, cyclops-themed Super-Suit.</description>
+    <graphicData>
+      <texPath>Things/Suits/Xmen90s/Cyclops/Cyclops</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>1.0</drawSize>
+    </graphicData>
+    <costList>
+        <Hyperweave>150</Hyperweave>
+        <Plasteel>15</Plasteel>
+        <ComponentSpacer>3</ComponentSpacer>
+        <Dye>1</Dye>
+    </costList>
+    <tradeability>Sellable</tradeability>
+    <statBases>
+      <WorkToMake>1500</WorkToMake>
+      <MaxHitPoints>10000</MaxHitPoints>
+      <Mass>5.0</Mass>
+      <ArmorRating_Sharp>0.25</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.25</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.25</ArmorRating_Heat>
+      <Insulation_Cold>50</Insulation_Cold>
+      <Insulation_Heat>50</Insulation_Heat>
+      <EquipDelay>1</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+        <MeleeDodgeChance>0.6</MeleeDodgeChance>
+        <SocialImpact>0.40</SocialImpact>
+    </equippedStatOffsets>
+    <thingCategories>
+      <li>Apparel</li>
+    </thingCategories>
+    <apparel>
+      <bodyPartGroups>
+        <li>Torso</li>
+				<li>Neck</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+				<li>Legs</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Suits/Xmen90s/Cyclops/Cyclops</wornGraphicPath>
+      <useWornGraphicMask>true</useWornGraphicMask>
+      <!-- Layers your apparel will be on, OnSkin (Shirt), Middle (Flak vest), Shell (Duster) -->
+      <layers>
+        <li>OnSkin</li>
+      </layers>
+      <!-- Tags for your apparel to spawn -->
+      <tags>
+        <li>Viltrum_Suit</li>
+        <li>Hero_Suit</li>
+        <li>Super_Suit</li>
+        <li>Omniman_Suit</li>
+      </tags>
+      <!-- Can this apparel be deired for an Ideoligion? If no then false,if yes then true -->
+      <canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+    </apparel>
+    <recipeMaker>
+    <!-- Research required to get before apparel can be made -->
+    <researchPrerequisites>
+      <li>ComplexClothing</li>
+      <li>AdvancedFabrication</li>
+    </researchPrerequisites>
+        <recipeUsers>
+          <li>ElectricTailoringBench</li>
+        </recipeUsers>
+    </recipeMaker>
+  </ThingDef>
+
+  <ThingDef ParentName="ApparelMakeableBase">
+ 
+    <defName>JInv_WolverineSuit</defName>
+    <label>Wolverine Super-Suit</label>
+    <description>A highly durable, wolverine-themed Super-Suit.</description>
+    <graphicData>
+      <texPath>Things/Suits/Xmen90s/Wolverine/Wolverine</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>1.0</drawSize>
+    </graphicData>
+    <costList>
+        <Hyperweave>150</Hyperweave>
+        <Plasteel>15</Plasteel>
+        <ComponentSpacer>3</ComponentSpacer>
+        <Dye>1</Dye>
+    </costList>
+    <tradeability>Sellable</tradeability>
+    <statBases>
+      <WorkToMake>1500</WorkToMake>
+      <MaxHitPoints>10000</MaxHitPoints>
+      <Mass>5.0</Mass>
+      <ArmorRating_Sharp>0.25</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.25</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.25</ArmorRating_Heat>
+      <Insulation_Cold>50</Insulation_Cold>
+      <Insulation_Heat>50</Insulation_Heat>
+      <EquipDelay>1</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+        <MeleeDodgeChance>0.6</MeleeDodgeChance>
+        <SocialImpact>0.40</SocialImpact>
+    </equippedStatOffsets>
+    <thingCategories>
+      <li>Apparel</li>
+    </thingCategories>
+    <apparel>
+      <bodyPartGroups>
+        <li>Torso</li>
+				<li>Neck</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+				<li>Legs</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Suits/Xmen90s/Wolverine/Wolverine</wornGraphicPath>
+      <useWornGraphicMask>true</useWornGraphicMask>
+      <!-- Layers your apparel will be on, OnSkin (Shirt), Middle (Flak vest), Shell (Duster) -->
+      <layers>
+        <li>OnSkin</li>
+      </layers>
+      <!-- Tags for your apparel to spawn -->
+      <tags>
+        <li>Viltrum_Suit</li>
+        <li>Hero_Suit</li>
+        <li>Super_Suit</li>
+        <li>Omniman_Suit</li>
+      </tags>
+      <!-- Can this apparel be deired for an Ideoligion? If no then false,if yes then true -->
+      <canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+    </apparel>
+    <recipeMaker>
+    <!-- Research required to get before apparel can be made -->
+    <researchPrerequisites>
+      <li>ComplexClothing</li>
+      <li>AdvancedFabrication</li>
+    </researchPrerequisites>
+        <recipeUsers>
+          <li>ElectricTailoringBench</li>
+        </recipeUsers>
+    </recipeMaker>
+  </ThingDef>
+
+  <ThingDef ParentName="ApparelMakeableBase">
+ 
+    <defName>JInv_StormSuit</defName>
+    <label>Storm Super-Suit</label>
+    <description>A highly durable, Storm-themed Super-Suit.</description>
+    <graphicData>
+      <texPath>Things/Suits/Xmen90s/Storm/Storm</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>1.0</drawSize>
+    </graphicData>
+    <costList>
+        <Hyperweave>150</Hyperweave>
+        <Plasteel>15</Plasteel>
+        <ComponentSpacer>3</ComponentSpacer>
+        <Dye>1</Dye>
+    </costList>
+    <tradeability>Sellable</tradeability>
+    <statBases>
+      <WorkToMake>1500</WorkToMake>
+      <MaxHitPoints>10000</MaxHitPoints>
+      <Mass>5.0</Mass>
+      <ArmorRating_Sharp>0.25</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.25</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.25</ArmorRating_Heat>
+      <Insulation_Cold>50</Insulation_Cold>
+      <Insulation_Heat>50</Insulation_Heat>
+      <EquipDelay>1</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+        <MeleeDodgeChance>0.6</MeleeDodgeChance>
+        <SocialImpact>0.40</SocialImpact>
+    </equippedStatOffsets>
+    <thingCategories>
+      <li>Apparel</li>
+    </thingCategories>
+    <apparel>
+      <bodyPartGroups>
+        <li>Torso</li>
+				<li>Neck</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+				<li>Legs</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Suits/Xmen90s/Storm/Storm</wornGraphicPath>
+      <useWornGraphicMask>true</useWornGraphicMask>
+      <!-- Layers your apparel will be on, OnSkin (Shirt), Middle (Flak vest), Shell (Duster) -->
+      <layers>
+        <li>OnSkin</li>
+      </layers>
+      <!-- Tags for your apparel to spawn -->
+      <tags>
+        <li>Viltrum_Suit</li>
+        <li>Hero_Suit</li>
+        <li>Super_Suit</li>
+        <li>Omniman_Suit</li>
+      </tags>
+      <!-- Can this apparel be deired for an Ideoligion? If no then false,if yes then true -->
+      <canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+    </apparel>
+    <recipeMaker>
+    <!-- Research required to get before apparel can be made -->
+    <researchPrerequisites>
+      <li>ComplexClothing</li>
+      <li>AdvancedFabrication</li>
+    </researchPrerequisites>
+        <recipeUsers>
+          <li>ElectricTailoringBench</li>
+        </recipeUsers>
+    </recipeMaker>
+  </ThingDef>
+
+  <ThingDef ParentName="ApparelMakeableBase">
+ 
+    <defName>JInv_RogueSuit</defName>
+    <label>Rogue Super-Suit</label>
+    <description>A highly durable, Rogue-themed Super-Suit.</description>
+    <graphicData>
+      <texPath>Things/Suits/Xmen90s/Rogue/Rogue</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>1.0</drawSize>
+    </graphicData>
+    <costList>
+        <Hyperweave>150</Hyperweave>
+        <Plasteel>15</Plasteel>
+        <ComponentSpacer>3</ComponentSpacer>
+        <Dye>1</Dye>
+    </costList>
+    <tradeability>Sellable</tradeability>
+    <statBases>
+      <WorkToMake>1500</WorkToMake>
+      <MaxHitPoints>10000</MaxHitPoints>
+      <Mass>5.0</Mass>
+      <ArmorRating_Sharp>0.25</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.25</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.25</ArmorRating_Heat>
+      <Insulation_Cold>50</Insulation_Cold>
+      <Insulation_Heat>50</Insulation_Heat>
+      <EquipDelay>1</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+        <MeleeDodgeChance>0.6</MeleeDodgeChance>
+        <SocialImpact>0.40</SocialImpact>
+    </equippedStatOffsets>
+    <thingCategories>
+      <li>Apparel</li>
+    </thingCategories>
+    <apparel>
+      <bodyPartGroups>
+        <li>Torso</li>
+				<li>Neck</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+				<li>Legs</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Suits/Xmen90s/Rogue/Rogue</wornGraphicPath>
+      <useWornGraphicMask>true</useWornGraphicMask>
+      <!-- Layers your apparel will be on, OnSkin (Shirt), Middle (Flak vest), Shell (Duster) -->
+      <layers>
+        <li>OnSkin</li>
+      </layers>
+      <!-- Tags for your apparel to spawn -->
+      <tags>
+        <li>Viltrum_Suit</li>
+        <li>Hero_Suit</li>
+        <li>Super_Suit</li>
+        <li>Omniman_Suit</li>
+      </tags>
+      <!-- Can this apparel be deired for an Ideoligion? If no then false,if yes then true -->
+      <canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+    </apparel>
+    <recipeMaker>
+    <!-- Research required to get before apparel can be made -->
+    <researchPrerequisites>
+      <li>ComplexClothing</li>
+      <li>AdvancedFabrication</li>
+    </researchPrerequisites>
+        <recipeUsers>
+          <li>ElectricTailoringBench</li>
+        </recipeUsers>
+    </recipeMaker>
+  </ThingDef>
+
+  <ThingDef ParentName="ApparelMakeableBase">
+ 
+    <defName>JInv_GambitSuit</defName>
+    <label>Gambit Super-Suit</label>
+    <description>A highly durable, Gambit-themed Super-Suit.</description>
+    <graphicData>
+      <texPath>Things/Suits/Xmen90s/Gambit/Gambit</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>1.0</drawSize>
+    </graphicData>
+    <costList>
+        <Hyperweave>150</Hyperweave>
+        <Plasteel>15</Plasteel>
+        <ComponentSpacer>3</ComponentSpacer>
+        <Dye>1</Dye>
+    </costList>
+    <tradeability>Sellable</tradeability>
+    <statBases>
+      <WorkToMake>1500</WorkToMake>
+      <MaxHitPoints>10000</MaxHitPoints>
+      <Mass>5.0</Mass>
+      <ArmorRating_Sharp>0.25</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.25</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.25</ArmorRating_Heat>
+      <Insulation_Cold>50</Insulation_Cold>
+      <Insulation_Heat>50</Insulation_Heat>
+      <EquipDelay>1</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+        <MeleeDodgeChance>0.6</MeleeDodgeChance>
+        <SocialImpact>0.40</SocialImpact>
+    </equippedStatOffsets>
+    <thingCategories>
+      <li>Apparel</li>
+    </thingCategories>
+    <apparel>
+      <bodyPartGroups>
+        <li>Torso</li>
+				<li>Neck</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+				<li>Legs</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Suits/Xmen90s/Gambit/Gambit</wornGraphicPath>
+      <useWornGraphicMask>true</useWornGraphicMask>
+      <!-- Layers your apparel will be on, OnSkin (Shirt), Middle (Flak vest), Shell (Duster) -->
+      <layers>
+        <li>OnSkin</li>
+      </layers>
+      <!-- Tags for your apparel to spawn -->
+      <tags>
+        <li>Viltrum_Suit</li>
+        <li>Hero_Suit</li>
+        <li>Super_Suit</li>
+        <li>Omniman_Suit</li>
+      </tags>
+      <!-- Can this apparel be deired for an Ideoligion? If no then false,if yes then true -->
+      <canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+    </apparel>
+    <recipeMaker>
+    <!-- Research required to get before apparel can be made -->
+    <researchPrerequisites>
+      <li>ComplexClothing</li>
+      <li>AdvancedFabrication</li>
+    </researchPrerequisites>
+        <recipeUsers>
+          <li>ElectricTailoringBench</li>
+        </recipeUsers>
+    </recipeMaker>
+  </ThingDef>
+
+  <ThingDef ParentName="ApparelMakeableBase">
+ 
+    <defName>JInv_JeanGreySuit</defName>
+    <label>JeanGrey Super-Suit</label>
+    <description>A highly durable, JeanGrey-themed Super-Suit.</description>
+    <graphicData>
+      <texPath>Things/Suits/Xmen90s/JeanGrey/JeanGrey</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>1.0</drawSize>
+    </graphicData>
+    <costList>
+        <Hyperweave>150</Hyperweave>
+        <Plasteel>15</Plasteel>
+        <ComponentSpacer>3</ComponentSpacer>
+        <Dye>1</Dye>
+    </costList>
+    <tradeability>Sellable</tradeability>
+    <statBases>
+      <WorkToMake>1500</WorkToMake>
+      <MaxHitPoints>10000</MaxHitPoints>
+      <Mass>5.0</Mass>
+      <ArmorRating_Sharp>0.25</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.25</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.25</ArmorRating_Heat>
+      <Insulation_Cold>50</Insulation_Cold>
+      <Insulation_Heat>50</Insulation_Heat>
+      <EquipDelay>1</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+        <MeleeDodgeChance>0.6</MeleeDodgeChance>
+        <SocialImpact>0.40</SocialImpact>
+    </equippedStatOffsets>
+    <thingCategories>
+      <li>Apparel</li>
+    </thingCategories>
+    <apparel>
+      <bodyPartGroups>
+        <li>Torso</li>
+				<li>Neck</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+				<li>Legs</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Suits/Xmen90s/JeanGrey/JeanGrey</wornGraphicPath>
+      <useWornGraphicMask>true</useWornGraphicMask>
+      <!-- Layers your apparel will be on, OnSkin (Shirt), Middle (Flak vest), Shell (Duster) -->
+      <layers>
+        <li>OnSkin</li>
+      </layers>
+      <!-- Tags for your apparel to spawn -->
+      <tags>
+        <li>Viltrum_Suit</li>
+        <li>Hero_Suit</li>
+        <li>Super_Suit</li>
+        <li>Omniman_Suit</li>
+      </tags>
+      <!-- Can this apparel be deired for an Ideoligion? If no then false,if yes then true -->
+      <canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+    </apparel>
+    <recipeMaker>
+    <!-- Research required to get before apparel can be made -->
+    <researchPrerequisites>
+      <li>ComplexClothing</li>
+      <li>AdvancedFabrication</li>
+    </researchPrerequisites>
+        <recipeUsers>
+          <li>ElectricTailoringBench</li>
+        </recipeUsers>
+    </recipeMaker>
+  </ThingDef>
+
+  <ThingDef ParentName="ApparelMakeableBase">
+ 
+    <defName>JInv_MagnetoSuit</defName>
+    <label>Magneto Super-Suit</label>
+    <description>A highly durable, Magneto-themed Super-Suit.</description>
+    <graphicData>
+      <texPath>Things/Suits/Xmen90s/Magneto/Magneto</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>1.0</drawSize>
+    </graphicData>
+    <costList>
+        <Hyperweave>150</Hyperweave>
+        <Plasteel>15</Plasteel>
+        <ComponentSpacer>3</ComponentSpacer>
+        <Dye>1</Dye>
+    </costList>
+    <tradeability>Sellable</tradeability>
+    <statBases>
+      <WorkToMake>1500</WorkToMake>
+      <MaxHitPoints>10000</MaxHitPoints>
+      <Mass>5.0</Mass>
+      <ArmorRating_Sharp>0.25</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.25</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.25</ArmorRating_Heat>
+      <Insulation_Cold>50</Insulation_Cold>
+      <Insulation_Heat>50</Insulation_Heat>
+      <EquipDelay>1</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+        <MeleeDodgeChance>0.6</MeleeDodgeChance>
+        <SocialImpact>0.40</SocialImpact>
+    </equippedStatOffsets>
+    <thingCategories>
+      <li>Apparel</li>
+    </thingCategories>
+    <apparel>
+      <bodyPartGroups>
+        <li>Torso</li>
+				<li>Neck</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+				<li>Legs</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Suits/Xmen90s/Magneto/Magneto</wornGraphicPath>
+      <useWornGraphicMask>true</useWornGraphicMask>
+      <!-- Layers your apparel will be on, OnSkin (Shirt), Middle (Flak vest), Shell (Duster) -->
+      <layers>
+        <li>OnSkin</li>
+      </layers>
+      <!-- Tags for your apparel to spawn -->
+      <tags>
+        <li>Viltrum_Suit</li>
+        <li>Hero_Suit</li>
+        <li>Super_Suit</li>
+        <li>Omniman_Suit</li>
+      </tags>
+      <!-- Can this apparel be deired for an Ideoligion? If no then false,if yes then true -->
+      <canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+    </apparel>
+    <recipeMaker>
+    <!-- Research required to get before apparel can be made -->
+    <researchPrerequisites>
+      <li>ComplexClothing</li>
+      <li>AdvancedFabrication</li>
+    </researchPrerequisites>
+        <recipeUsers>
+          <li>ElectricTailoringBench</li>
+        </recipeUsers>
+    </recipeMaker>
+  </ThingDef>
+
+  <ThingDef ParentName="ApparelMakeableBase">
+ 
+    <defName>JInv_MagnetoCSuit</defName>
+    <label>Magneto Cape Super-Suit</label>
+    <description>A highly durable, Magneto-themed Super-Suit with a cape.</description>
+    <graphicData>
+      <texPath>Things/Suits/Xmen90s/Magneto/Magnetowcape</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>1.0</drawSize>
+    </graphicData>
+    <costList>
+        <Hyperweave>150</Hyperweave>
+        <Plasteel>15</Plasteel>
+        <ComponentSpacer>3</ComponentSpacer>
+        <Dye>1</Dye>
+    </costList>
+    <tradeability>Sellable</tradeability>
+    <statBases>
+      <WorkToMake>1500</WorkToMake>
+      <MaxHitPoints>10000</MaxHitPoints>
+      <Mass>5.0</Mass>
+      <ArmorRating_Sharp>0.25</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.25</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.25</ArmorRating_Heat>
+      <Insulation_Cold>50</Insulation_Cold>
+      <Insulation_Heat>50</Insulation_Heat>
+      <EquipDelay>1</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+        <MeleeDodgeChance>0.6</MeleeDodgeChance>
+        <SocialImpact>0.40</SocialImpact>
+    </equippedStatOffsets>
+    <thingCategories>
+      <li>Apparel</li>
+    </thingCategories>
+    <apparel>
+      <bodyPartGroups>
+        <li>Torso</li>
+				<li>Neck</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+				<li>Legs</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Suits/Xmen90s/Magneto/Magnetowcape</wornGraphicPath>
+      <useWornGraphicMask>true</useWornGraphicMask>
+      <!-- Layers your apparel will be on, OnSkin (Shirt), Middle (Flak vest), Shell (Duster) -->
+      <layers>
+        <li>OnSkin</li>
+      </layers>
+      <!-- Tags for your apparel to spawn -->
+      <tags>
+        <li>Viltrum_Suit</li>
+        <li>Hero_Suit</li>
+        <li>Super_Suit</li>
+        <li>Omniman_Suit</li>
+      </tags>
+      <!-- Can this apparel be deired for an Ideoligion? If no then false,if yes then true -->
+      <canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+    </apparel>
+    <recipeMaker>
+    <!-- Research required to get before apparel can be made -->
+    <researchPrerequisites>
+      <li>ComplexClothing</li>
+      <li>AdvancedFabrication</li>
+    </researchPrerequisites>
+        <recipeUsers>
+          <li>ElectricTailoringBench</li>
+        </recipeUsers>
+    </recipeMaker>
+  </ThingDef>
+
+  <ThingDef ParentName="ApparelMakeableBase">
+ 
+    <defName>JInv_NightCrawlerSuit</defName>
+    <label>NightCrawler Cape Super-Suit</label>
+    <description>A highly durable, NightCrawler-themed Super-Suit with a cape.</description>
+    <graphicData>
+      <texPath>Things/Suits/Xmen90s/NightCrawler/NightCrawler</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>1.0</drawSize>
+    </graphicData>
+    <costList>
+        <Hyperweave>150</Hyperweave>
+        <Plasteel>15</Plasteel>
+        <ComponentSpacer>3</ComponentSpacer>
+        <Dye>1</Dye>
+    </costList>
+    <tradeability>Sellable</tradeability>
+    <statBases>
+      <WorkToMake>1500</WorkToMake>
+      <MaxHitPoints>10000</MaxHitPoints>
+      <Mass>5.0</Mass>
+      <ArmorRating_Sharp>0.25</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.25</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.25</ArmorRating_Heat>
+      <Insulation_Cold>50</Insulation_Cold>
+      <Insulation_Heat>50</Insulation_Heat>
+      <EquipDelay>1</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+        <MeleeDodgeChance>0.6</MeleeDodgeChance>
+        <SocialImpact>0.40</SocialImpact>
+    </equippedStatOffsets>
+    <thingCategories>
+      <li>Apparel</li>
+    </thingCategories>
+    <apparel>
+      <bodyPartGroups>
+        <li>Torso</li>
+				<li>Neck</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+				<li>Legs</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Suits/Xmen90s/NightCrawler/NightCrawler</wornGraphicPath>
+      <useWornGraphicMask>true</useWornGraphicMask>
+      <!-- Layers your apparel will be on, OnSkin (Shirt), Middle (Flak vest), Shell (Duster) -->
+      <layers>
+        <li>OnSkin</li>
+      </layers>
+      <!-- Tags for your apparel to spawn -->
+      <tags>
+        <li>Viltrum_Suit</li>
+        <li>Hero_Suit</li>
+        <li>Super_Suit</li>
+        <li>Omniman_Suit</li>
+      </tags>
+      <!-- Can this apparel be deired for an Ideoligion? If no then false,if yes then true -->
+      <canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+    </apparel>
+    <recipeMaker>
+    <!-- Research required to get before apparel can be made -->
+    <researchPrerequisites>
+      <li>ComplexClothing</li>
+      <li>AdvancedFabrication</li>
+    </researchPrerequisites>
+        <recipeUsers>
+          <li>ElectricTailoringBench</li>
+        </recipeUsers>
+    </recipeMaker>
+  </ThingDef>
+
+</Defs>

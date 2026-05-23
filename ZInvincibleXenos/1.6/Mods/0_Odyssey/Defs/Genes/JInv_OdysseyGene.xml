@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<GeneDef>
+		<defName>JInv_VLungGene</defName>
+		<label>Almost Breathless</label>
+ 		<displayCategory>ResistanceAndWeakness</displayCategory>
+		<description>Carriers of this gene can store lots of concentrated oxygen in their lungs. Their cells are super oxygen-efficient. They rarely need to breathe, but can't hold their breath forever...</description>
+		<iconPath>UI/Icons/Genes/Gene_Breathless</iconPath>
+		<biostatCpx>2</biostatCpx>
+		<biostatArc>1</biostatArc>
+		<displayOrderInCategory>20.1</displayOrderInCategory>
+		<immuneToVacuumBurns>true</immuneToVacuumBurns>
+		<immuneToToxGasExposure>true</immuneToToxGasExposure>
+		<capMods>
+			<li>
+				<capacity>Breathing</capacity>
+				<offset>0.5</offset>
+			</li>
+		</capMods>
+		<statOffsets>
+			<VacuumResistance>0.99</VacuumResistance>
+		</statOffsets>
+		<hediffGiversCannotGive>
+			<li>Asthma</li>
+		</hediffGiversCannotGive>
+		<marketValueFactor>1.5</marketValueFactor>
+		<minAgeActive>13</minAgeActive>
+		<exclusionTags>
+			<li>VacuumResistance</li>
+		</exclusionTags>
+	</GeneDef>
+</Defs>

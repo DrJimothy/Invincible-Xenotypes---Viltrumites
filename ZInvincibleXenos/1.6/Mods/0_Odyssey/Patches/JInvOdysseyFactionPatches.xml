@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+<!-- Viltrumite -->
+<Operation Class="PatchOperationAdd">
+    <xpath>Defs/FactionDef[defName="ViltrumEmpire"]/xenotypeSet/xenotypeChances</xpath>
+    <value>
+        <Starjack>0.25</Starjack>
+    </value>
+</Operation>
+
+    <!-- Make Marines feel Mariney -->
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Gun_ChargeRifle_Unique"]/weaponTags</xpath>
+		<nomatch Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Gun_ChargeRifle_Unique"]</xpath>
+			<value>
+				<weaponTags />
+			</value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Gun_ChargeRifle_Unique"]/weaponTags</xpath>
+		<value>
+			<li>JimPew_Marine</li>
+			<li>JimPew_UniqueStrong</li>
+		</value>
+	</Operation>
+
+    <!-- Damn stream snipers -->
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Gun_ChargeLance_Unique"]/weaponTags</xpath>
+		<nomatch Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Gun_ChargeLance_Unique"]</xpath>
+			<value>
+				<weaponTags />
+			</value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Gun_ChargeLance_Unique"]/weaponTags</xpath>
+		<value>
+			<li>JimPew_SniperStrong</li>
+			<li>JimPew_UniqueStrong</li>
+		</value>
+	</Operation>
+
+    <!-- Damn stream snipers -->
+	<Operation Class="PatchOperationConditional">
+		<xpath>Defs/ThingDef[defName="Gun_BeamRepeater_Unique"]/weaponTags</xpath>
+		<nomatch Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Gun_BeamRepeater_Unique"]</xpath>
+			<value>
+				<weaponTags />
+			</value>
+		</nomatch>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Gun_BeamRepeater_Unique"]/weaponTags</xpath>
+		<value>
+			<li>JimPew_MinigunStrong</li>
+			<li>JimPew_UniqueStrong</li>
+		</value>
+	</Operation>
+
+</Patch>

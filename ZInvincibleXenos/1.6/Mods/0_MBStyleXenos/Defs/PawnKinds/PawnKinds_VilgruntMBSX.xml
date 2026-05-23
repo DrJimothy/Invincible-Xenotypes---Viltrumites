@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <PawnKindDef ParentName="Vilgrunt_WarriorBase">
+    <defName>Vilgrunt_Mercenary_FastSlash</defName>
+    <label>vilgrunt slicer</label>
+    <combatPower>450</combatPower>
+    <gearHealthRange>0.4~1</gearHealthRange>
+    <apparelMoney>10000~20000</apparelMoney>
+    <apparelTags>
+      <li>J_ClothUnderArm</li>
+      <li>J_ClothSpeedy</li>
+      <li>SpacerMilitary</li>
+    </apparelTags>
+    <itemQuality>Legendary</itemQuality>
+    <maxApparelQuality>Legendary</maxApparelQuality>
+    <forceWeaponQuality>Legendary</forceWeaponQuality>
+    <weaponMoney>8000~12000</weaponMoney>
+    <weaponTags>
+      <li>LongSword</li>
+      <li>MedievalMeleeAdvanced</li>
+    </weaponTags>
+    <weaponStuffOverride>Plasteel</weaponStuffOverride>
+    <apparelRequired>
+      <li>Apparel_PowerArmorHelmet</li>
+      <li>Apparel_ArmorRecon</li>
+      <li>Apparel_ShieldBelt</li>
+    </apparelRequired>
+    <backstoryFiltersOverride>
+      <li>
+        <categories>
+			    <li>VilgruntKid</li>
+          <li>Vilgrunt_Fast</li>
+        </categories>
+      </li>
+    </backstoryFiltersOverride>
+    <useFactionXenotypes>false</useFactionXenotypes>
+    <xenotypeSet>
+      <xenotypeChances>
+        <MBSXT_Viperal>0.1</MBSXT_Viperal>
+        <MBSXT_Felionkin>1</MBSXT_Felionkin>
+        <MBSXT_Canuskin>1</MBSXT_Canuskin>
+        <MBSXT_Reaver>1</MBSXT_Reaver>
+      </xenotypeChances>
+    </xenotypeSet>
+  </PawnKindDef>
+
+</Defs>

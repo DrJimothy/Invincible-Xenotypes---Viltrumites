@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+<Operation Class="PatchOperationSequence">
+	<operations>
+		<li Class="PatchOperationRemove">
+			<xpath>Defs/XenotypeDef[defName="Viltrumite"]/genes/li[text()="SuperhumanSpeed"]</xpath>
+		</li>
+		<li Class="PatchOperationRemove">
+			<xpath>Defs/XenotypeDef[defName="Viltrumite"]/genes/li[text()="SuperhumanResilience"]</xpath>
+		</li>		
+		<li Class="PatchOperationRemove">
+			<xpath>Defs/XenotypeDef[defName="Viltrumite"]/genes/li[text()="SuperhumanStrength"]</xpath>
+		</li>
+		<li Class="PatchOperationRemove">
+			<xpath>Defs/XenotypeDef[defName="Viltrumite"]/genes/li[text()="Body_Standard"]</xpath>
+		</li>
+		<li Class="PatchOperationRemove">
+			<xpath>Defs/XenotypeDef[defName="Viltrumite"]/genes/li[text()="Body_Hulk"]</xpath>
+		</li>
+		<li Class="PatchOperationRemove">
+			<xpath>Defs/XenotypeDef[defName="Viltrumite"]/genes/li[text()="Superclotting"]</xpath>
+		</li>
+		<li Class="PatchOperationRemove">
+			<xpath>Defs/XenotypeDef[defName="Viltrumite"]/genes/li[text()="Beard_MoustacheOnly"]</xpath>
+		</li>
+	</operations>
+</Operation>
+
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/PawnKindDef[defName="Viltrumite"]/backstoryFilters</xpath>
+		<value>
+			<backstoryFilters>
+			<li>
+				<categories>
+				<li>Viltrum</li>
+				<li>ViltrumChild</li>
+				<li>Viltrumite</li>
+				<li>ViltrumElite</li>
+				<li>ViltrumChildElite</li>
+				</categories>
+			</li>
+			</backstoryFilters>
+		</value>
+	</Operation>
+
+</Patch>

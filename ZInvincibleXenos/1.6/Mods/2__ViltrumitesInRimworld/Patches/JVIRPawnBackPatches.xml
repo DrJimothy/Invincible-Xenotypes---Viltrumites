@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+  
+    <!--Make Imperio Viltrumites have more varied backstories-->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/PawnKindDef[defName="ViltrumiteEmpire_Weak"]/backstoryFilters</xpath>
+        <value>
+          <backstoryFilters>
+            <li>
+              <categories>
+                <li>ImperioViltrumita</li>
+                <li>ViltrumGarbage</li>
+                <li>ViltrumChild</li>
+              </categories>
+            </li>
+          </backstoryFilters>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/PawnKindDef[defName="ViltrumiteEmpire_Elite"]/backstoryFilters</xpath>
+        <value>
+          <backstoryFilters>
+            <li>
+              <categories>
+                <li>ImperioViltrumita</li>
+                <li>Viltrum</li>
+                <li>ViltrumChild</li>
+                <li>Viltrumite</li>
+                <li>ViltrumElite</li>
+                <li>ViltrumChildElite</li>
+              </categories>
+            </li>
+          </backstoryFilters>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/PawnKindDef[defName="ViltrumiteEmpire_Blood"]/backstoryFilters</xpath>
+        <value>
+          <backstoryFilters>
+            <li>
+              <categories>
+                <li>ImperioViltrumita</li>
+                <li>Viltrum</li>
+                <li>ViltrumChild</li>
+                <li>Viltrumite</li>
+                <li>ViltrumElite</li>
+                <li>ViltrumChildElite</li>
+              </categories>
+            </li>
+          </backstoryFilters>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/PawnKindDef[defName="ViltrumiteEmpire_Leader"]/backstoryFilters</xpath>
+        <value>
+          <backstoryFilters>
+            <li>
+              <categories>
+                <li>ViltrumRegent</li>
+                <li>ViltrumChild</li>
+                <li>ViltrumChildElite</li>
+                <li>ImperioViltrumita</li>
+                <li>ViltrumElite</li>
+              </categories>
+            </li>
+          </backstoryFilters>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/PawnKindDef[defName="ConquestPawn"]/backstoryFilters</xpath>
+        <value>
+          <backstoryFilters>
+            <li>
+              <categories>
+                <li>ViltrumConquest</li>
+                <li>ViltrumChild</li>
+                <li>ViltrumChildElite</li>
+              </categories>
+            </li>
+          </backstoryFilters>
+        </value>
+    </Operation>
+    
+    <!--Walter-->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/PawnKindDef[defName="WeakViltrumitePawn"]/backstoryFilters</xpath>
+        <value>
+          <backstoryFilters>
+            <li>
+              <categories>
+                <li>ImperioViltrumita</li>
+                <li>ViltrumGarbage</li>
+                <li>ViltrumChild</li>
+              </categories>
+            </li>
+          </backstoryFilters>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/PawnKindDef[defName="EvilWeakViltrumitePawn"]/backstoryFilters</xpath>
+        <value>
+          <backstoryFilters>
+            <li>
+              <categories>
+                <li>ImperioViltrumita</li>
+                <li>ViltrumGarbage</li>
+                <li>ViltrumChild</li>
+              </categories>
+            </li>
+          </backstoryFilters>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/PawnKindDef[defName="EvilWeakViltrumitePawn"]/backstoryFilters</xpath>
+        <value>
+          <backstoryFilters>
+            <li>
+              <categories>
+                <li>ImperioViltrumita</li>
+                <li>ViltrumGarbage</li>
+                <li>ViltrumChild</li>
+              </categories>
+            </li>
+          </backstoryFilters>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/PawnKindDef[defName="EliteViltrumitePawn"]/backstoryFilters</xpath>
+        <value>
+          <backstoryFilters>
+            <li>
+              <categories>
+                <li>ImperioViltrumita</li>
+                <li>Viltrum</li>
+                <li>ViltrumChild</li>
+                <li>Viltrumite</li>
+                <li>ViltrumElite</li>
+                <li>ViltrumChildElite</li>
+              </categories>
+            </li>
+          </backstoryFilters>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/PawnKindDef[defName="EvilEliteViltrumitePawn"]/backstoryFilters</xpath>
+        <value>
+          <backstoryFilters>
+            <li>
+              <categories>
+                <li>ImperioViltrumita</li>
+                <li>Viltrum</li>
+                <li>ViltrumChild</li>
+                <li>Viltrumite</li>
+                <li>ViltrumElite</li>
+                <li>ViltrumChildElite</li>
+              </categories>
+            </li>
+          </backstoryFilters>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/PawnKindDef[defName="EvilBloodOfArgallPawn"]/backstoryFilters</xpath>
+        <value>
+          <backstoryFilters>
+            <li>
+              <categories>
+                <li>ImperioViltrumita</li>
+                <li>Viltrum</li>
+                <li>ViltrumChild</li>
+                <li>Viltrumite</li>
+                <li>ViltrumElite</li>
+                <li>ViltrumChildElite</li>
+              </categories>
+            </li>
+          </backstoryFilters>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/PawnKindDef[defName="EliteViltrumiteScenarioPawn"]/backstoryFilters</xpath>
+        <value>
+          <backstoryFilters>
+            <li>
+              <categories>
+                <li>ImperioViltrumita</li>
+                <li>Viltrum</li>
+                <li>ViltrumChild</li>
+                <li>Viltrumite</li>
+                <li>ViltrumElite</li>
+                <li>ViltrumChildElite</li>
+              </categories>
+            </li>
+          </backstoryFilters>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/PawnKindDef[defName="BloodOfArgallPawn"]/backstoryFilters</xpath>
+        <value>
+          <backstoryFilters>
+            <li>
+              <categories>
+                <li>ImperioViltrumita</li>
+                <li>Viltrum</li>
+                <li>ViltrumChild</li>
+                <li>Viltrumite</li>
+                <li>ViltrumElite</li>
+                <li>ViltrumChildElite</li>
+              </categories>
+            </li>
+          </backstoryFilters>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/PawnKindDef[defName="LegendaryViltrumitePawn"]/backstoryFilters</xpath>
+        <value>
+          <backstoryFilters>
+            <li>
+              <categories>
+                <li>ImperioViltrumita</li>
+                <li>Viltrum</li>
+                <li>ViltrumChild</li>
+                <li>Viltrumite</li>
+                <li>ViltrumElite</li>
+                <li>ViltrumChildElite</li>
+              </categories>
+            </li>
+          </backstoryFilters>
+        </value>
+    </Operation>
+
+</Patch>

@@ -1,0 +1,759 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<PawnKindDef ParentName="SlaveBase">
+		<defName>Slave_Viltrum</defName>
+		<xenotypeSet Inherit="False">
+			<xenotypeChances>
+				<Highmate>0.05</Highmate>
+			</xenotypeChances>
+		</xenotypeSet>
+	</PawnKindDef>
+
+	<!--===================== Imperial civilians =========================-->
+
+	<PawnKindDef Name="ViltrumCommonerBase" Abstract="True">
+		<specificApparelRequirements>
+			<li>
+				<colorGenerator Class="ColorGenerator_Options">
+					<options>
+						<li>
+							<only>(0.9, 0.9, 0.9)</only>
+						</li>
+					</options>
+				</colorGenerator>
+			</li>
+			<li>
+				<bodyPartGroup>UpperHead</bodyPartGroup>
+				<stuff>Hyperweave</stuff>
+			</li>
+			<li>
+				<bodyPartGroup>Torso</bodyPartGroup>
+				<stuff>Hyperweave</stuff>
+			</li>
+			<li>
+				<bodyPartGroup>Legs</bodyPartGroup>
+				<stuff>Hyperweave</stuff>
+			</li>
+		</specificApparelRequirements>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="ViltrumCommonerBase">
+		<defName>Viltrum_Common_Lodger</defName>
+		<label>viltrum citizen</label>
+		<race>Human</race>
+		<defaultFactionDef>ViltrumEmpire</defaultFactionDef>
+		<titleSelectOne>
+			<li>Vilt_Peon</li>
+			<li>Vilt_Underling</li>
+			<li>Vilt_Servant</li>
+			<li>Vilt_Citizen</li>
+		</titleSelectOne>
+		<maxGenerationAge>65</maxGenerationAge>
+		<combatPower>30</combatPower>
+		<backstoryFiltersOverride>
+			<li>
+				<categories>
+					<li>ImperialCommon</li>
+					<li>ImperialFighter</li>
+					<li>Offworld</li>
+					<li>VGeneric</li>
+					<li>Outlander</li>
+					<li>Outsider</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>
+		<backstoryCryptosleepCommonality>0.08</backstoryCryptosleepCommonality>
+		<isFighter>false</isFighter>
+		<apparelTags>
+			<li>IndustrialBasic</li>
+			<li>SpacerMilitary</li>
+		</apparelTags>
+		<apparelMoney>400~2000</apparelMoney>
+		<gearHealthRange>1~1</gearHealthRange>
+		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+		<techHediffsMoney>1000~2000</techHediffsMoney>
+		<techHediffsTags>
+			<li>Poor</li>
+			<li>Simple</li>
+		</techHediffsTags>
+		<techHediffsChance>1</techHediffsChance>
+		<techHediffsRequired>
+			<li>DeathAcidifier</li>
+			<li>Painstopper</li>
+			<li>Coagulator</li>
+			<li>HealingEnhancer</li>
+		</techHediffsRequired>
+		<apparelDisallowTags>
+			<li>Western</li>
+		</apparelDisallowTags>
+		<disallowedTraits>
+			<li>Nudist</li>
+		</disallowedTraits>
+		<initialWillRange>1~3</initialWillRange>
+		<initialResistanceRange>10~17</initialResistanceRange>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="ViltrumCommonerBase">
+		<defName>Viltrum_Common_Laborer</defName>
+		<label>viltrum laborer</label>
+		<race>Human</race>
+		<defaultFactionDef>ViltrumEmpire</defaultFactionDef>
+		<royalTitleChance>0.8</royalTitleChance>
+		<titleSelectOne>
+			<li>Vilt_Peon</li>
+			<li>Vilt_Underling</li>
+			<li>Vilt_Servant</li>
+			<li>Vilt_Citizen</li>
+		</titleSelectOne>
+		<maxGenerationAge>50</maxGenerationAge>
+		<combatPower>45</combatPower>
+		<backstoryCryptosleepCommonality>0.08</backstoryCryptosleepCommonality>
+		<isFighter>false</isFighter>
+		<requiredWorkTags> <!-- Must be capable of labor, as this pawn kind is used in laborer quests. -->
+			<li>ManualDumb</li>
+			<li>ManualSkilled</li>
+			<li>Caring</li>
+			<li>Cleaning</li>
+			<li>Constructing</li>
+			<li>Crafting</li>
+			<li>Intellectual</li>
+			<li>Hauling</li>
+			<li>Mining</li>
+			<li>Firefighting</li>
+		</requiredWorkTags>
+		<apparelTags>
+			<li>IndustrialBasic</li>
+			<li>SpacerMilitary</li>
+		</apparelTags>
+		<apparelRequired MayRequire="Ludeon.RimWorld.Odyssey">
+			<li MayRequire="Ludeon.RimWorld.Odyssey">Apparel_VacsuitHelmet</li>
+			<li>Apparel_ArmorRecon</li>
+		</apparelRequired>
+		<apparelMoney>3500~7000</apparelMoney>
+		<gearHealthRange>1~1</gearHealthRange>
+		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+		<techHediffsMoney>5000~10000</techHediffsMoney>
+		<maxApparelQuality>Legendary</maxApparelQuality>
+		<techHediffsTags>
+			<li>Poor</li>
+			<li>Simple</li>
+			<li>Advanced</li>
+			<li>ImplantEmpireCommon</li>
+		</techHediffsTags>
+		<techHediffsChance>1</techHediffsChance>
+		<techHediffsRequired>
+			<li>DeathAcidifier</li>
+			<li>Painstopper</li>
+			<li>CircadianHalfCycler</li>
+			<li>Joywire</li>
+			<li>Coagulator</li>
+			<li>HealingEnhancer</li>
+			<li>NuclearStomach</li>
+			<li MayRequire="Ludeon.RimWorld.Odyssey">VacskinGland</li>
+			<li MayRequire="Ludeon.RimWorld.Royalty,lts.I">LTS_NeuralStunner</li>
+			<li MayRequire="Ludeon.RimWorld.Royalty,lts.I">LTS_Voicelock</li>
+			<li MayRequire="Ludeon.RimWorld.Royalty,lts.I">InternalClimateControlImplant</li>
+			<li MayRequire="Ludeon.RimWorld.Royalty,lts.I">SkeletalBracing</li>
+			<li MayRequire="Ludeon.RimWorld.Royalty,FrozenSnowFox.AdvancedBionicsExpansion">FSFImplantBrainConsciousness</li>
+			<li MayRequire="Ludeon.RimWorld.Royalty,FrozenSnowFox.AdvancedBionicsExpansion">FSFImplantBrainRecreation</li>
+			<li MayRequire="Ludeon.RimWorld.Royalty,FrozenSnowFox.AdvancedBionicsExpansion">FSFImplantTorsoClimateControl</li>
+			<li MayRequire="Ludeon.RimWorld.Royalty,FrozenSnowFox.AdvancedBionicsExpansion">FSFImplantTorsoRespirator</li>
+		</techHediffsRequired>
+		<apparelDisallowTags>
+			<li>Western</li>
+		</apparelDisallowTags>
+		<disallowedTraits>
+			<li>Nudist</li>
+			<li>BodyPurist</li>
+		</disallowedTraits>
+		<initialWillRange>1~2</initialWillRange>
+		<initialResistanceRange>1~4</initialResistanceRange>
+	</PawnKindDef>
+
+	<!--===================== RECYCLING ZONE: WE USE THESE ============-->
+
+	<!-- Champion -->
+	<PawnKindDef ParentName="Vilgrunt_WarriorBase">
+		<defName>Viltrum_Fighter_Champion</defName>
+		<combatPower>600</combatPower>
+		<label>vilgrunt champion</label>
+		<labelPlural>vilgrunt champions</labelPlural>
+		<apparelMoney>15000~20000</apparelMoney>
+		<apparelTags>
+			<li>BeltDefensePop</li>
+			<li>J_ClothUnderArm</li>
+			<li>SpacerHeavy</li>
+		</apparelTags>
+		<apparelRequired>
+			<li>Apparel_ShieldBelt</li>
+			<li>Apparel_ArmorHelmetCataphract</li>
+			<li>Apparel_ArmorCataphract</li>
+		</apparelRequired>
+		<weaponTags>
+			<li>UltratechMelee</li>
+		</weaponTags>
+		<itemQuality>Legendary</itemQuality>
+		<maxApparelQuality>Legendary</maxApparelQuality>
+		<forceWeaponQuality>Legendary</forceWeaponQuality>
+		<weaponMoney>8000~12000</weaponMoney>
+		<apparelColor>(0.9, 0.9, 0.9)</apparelColor>
+		<techHediffsRequired>
+			<li>StoneskinGland</li>
+		</techHediffsRequired>
+		<useFactionXenotypes>false</useFactionXenotypes>
+		<xenotypeSet>
+			<xenotypeChances>
+				<Yttakin>1</Yttakin>
+				<Dirtmole>1</Dirtmole>
+				<Neanderthal>1</Neanderthal>
+				<Hussar>0.25</Hussar>
+				<Sanguophage>0.01</Sanguophage>
+				<Waster>0.1</Waster>
+				<!-- BE Mammalia -->
+				<Barkkin MayRequire="biotexpans.mammalia">0.5</Barkkin>
+				<Bonecrown MayRequire="biotexpans.mammalia">0.5</Bonecrown>
+				<Seertusk MayRequire="biotexpans.mammalia">0.5</Seertusk>
+				<Haytankard MayRequire="sarg.alphagenes,biotexpans.mammalia">0.5</Haytankard>
+				<!-- Alpha -->
+				<AG_Hiveling MayRequire="sarg.alphagenes">2</AG_Hiveling>
+				<AG_Lapis MayRequire="sarg.alphagenes">2</AG_Lapis>
+				<AG_Efreet MayRequire="sarg.alphagenes">2</AG_Efreet>
+				<AG_Drakonori MayRequire="sarg.alphagenes">2</AG_Drakonori>
+				<AG_Nereid MayRequire="sarg.alphagenes">2</AG_Nereid>
+				<!-- Dets -->
+				<DV_Brawnum MayRequire="det.brawnum">1</DV_Brawnum>
+				<Stoneborn MayRequire="det.stoneborn">1</Stoneborn>
+				<DV_Keshig MayRequire="det.keshig">2</DV_Keshig>
+				<DV_Bogleg MayRequire="det.boglegs">1</DV_Bogleg>
+				<!-- Florian -->
+				<ST_PlantPerson MayRequire="Starei.PlantPeople">1</ST_PlantPerson>
+				<!-- Dreadfleet -->
+				<mfaxLiche MayRequire="doll.dreadfleet">0.01</mfaxLiche>
+				<mfaxGaunt MayRequire="doll.dreadfleet">0.05</mfaxGaunt>
+				<mfaxGorerunner MayRequire="doll.dreadfleet">0.05</mfaxGorerunner>
+				<!-- VE -->
+				<VREH_Uhlan MayRequire="vanillaracesexpanded.hussar">0.01</VREH_Uhlan>
+				<VRE_Strigoi MayRequire="vanillaracesexpanded.sanguophage">0.01</VRE_Strigoi>
+				<VRE_Ekkimian MayRequire="vanillaracesexpanded.sanguophage">0.01</VRE_Ekkimian>
+				<VRE_Boarskin MayRequire="vanillaracesexpanded.pigskin">1</VRE_Boarskin>
+				<mytigio_Harbingerkin MayRequire="mytigio.HarbingerKin">1</mytigio_Harbingerkin>
+				<!-- More Biotech Style Xenos -->
+				<MBSXT_Damphir MayRequire="MoreBiotechStyleXenotypes.Mod">0.05</MBSXT_Damphir>
+				<MBSXT_Viperal MayRequire="MoreBiotechStyleXenotypes.Mod">0.1</MBSXT_Viperal>
+				<MBSXT_Reaver MayRequire="MoreBiotechStyleXenotypes.Mod">1</MBSXT_Reaver>
+				<MBSXT_Yeti MayRequire="MoreBiotechStyleGenes.Mod,MoreBiotechStyleXenotypes.Mod">0.25</MBSXT_Yeti>
+				<MBSXT_Battleborne MayRequire="MoreBiotechStyleXenotypes.Mod">0.25</MBSXT_Battleborne>
+				<MBSXT_Oni MayRequire="MoreBiotechStyleXenotypes.Mod">1</MBSXT_Oni>
+				<MBSXT_Artifexian MayRequire="MoreBiotechStyleXenotypes.Mod">0.1</MBSXT_Artifexian>
+				<MBSXT_Canuskin MayRequire="MoreBiotechStyleXenotypes.Mod">1</MBSXT_Canuskin>
+			</xenotypeChances>
+		</xenotypeSet>
+	</PawnKindDef>
+
+	<!-- Zeuschampion -->
+	<PawnKindDef ParentName="Vilgrunt_WarriorBase">
+		<defName>Viltrum_Fighter_CataphractMelee</defName>
+		<combatPower>750</combatPower>
+		<label>vilgrunt thunderer</label>
+		<labelPlural>vilgrunt thunderers</labelPlural>
+		<apparelMoney>15000~20000</apparelMoney>
+		<apparelTags>
+			<li>BeltDefensePop</li>
+			<li>J_ClothUnderArm</li>
+			<li>SpacerHeavy</li>
+		</apparelTags>
+		<apparelRequired>
+			<li>Apparel_ShieldBelt</li>
+			<li>Apparel_ArmorHelmetCataphract</li>
+			<li>Apparel_ArmorCataphract</li>
+		</apparelRequired>
+		<weaponTags>
+			<li>JimPew_Zeushammer</li>
+		</weaponTags>
+		<itemQuality>Legendary</itemQuality>
+		<maxApparelQuality>Legendary</maxApparelQuality>
+		<forceWeaponQuality>Legendary</forceWeaponQuality>
+		<weaponMoney>8000~12000</weaponMoney>
+		<apparelColor>(0.9, 0.9, 0.9)</apparelColor>
+		<techHediffsRequired>
+			<li>StoneskinGland</li>
+		</techHediffsRequired>
+		<useFactionXenotypes>false</useFactionXenotypes>
+		<xenotypeSet>
+			<xenotypeChances>
+				<Yttakin>1</Yttakin>
+				<Dirtmole>1</Dirtmole>
+				<Neanderthal>1</Neanderthal>
+				<Hussar>0.25</Hussar>
+				<Sanguophage>0.01</Sanguophage>
+				<Waster>0.1</Waster>
+				<!-- BE Mammalia -->
+				<Barkkin MayRequire="biotexpans.mammalia">0.5</Barkkin>
+				<Bonecrown MayRequire="biotexpans.mammalia">0.5</Bonecrown>
+				<Seertusk MayRequire="biotexpans.mammalia">0.5</Seertusk>
+				<Haytankard MayRequire="sarg.alphagenes,biotexpans.mammalia">0.5</Haytankard>
+				<!-- Alpha -->
+				<AG_Hiveling MayRequire="sarg.alphagenes">2</AG_Hiveling>
+				<AG_Lapis MayRequire="sarg.alphagenes">2</AG_Lapis>
+				<AG_Efreet MayRequire="sarg.alphagenes">2</AG_Efreet>
+				<AG_Drakonori MayRequire="sarg.alphagenes">2</AG_Drakonori>
+				<AG_Nereid MayRequire="sarg.alphagenes">2</AG_Nereid>
+				<!-- Dets -->
+				<DV_Brawnum MayRequire="det.brawnum">1</DV_Brawnum>
+				<Stoneborn MayRequire="det.stoneborn">1</Stoneborn>
+				<DV_Keshig MayRequire="det.keshig">2</DV_Keshig>
+				<DV_Bogleg MayRequire="det.boglegs">1</DV_Bogleg>
+				<!-- Florian -->
+				<ST_PlantPerson MayRequire="Starei.PlantPeople">1</ST_PlantPerson>
+				<!-- Dreadfleet -->
+				<mfaxLiche MayRequire="doll.dreadfleet">0.01</mfaxLiche>
+				<mfaxGaunt MayRequire="doll.dreadfleet">0.05</mfaxGaunt>
+				<mfaxGorerunner MayRequire="doll.dreadfleet">0.05</mfaxGorerunner>
+				<!-- VE -->
+				<VREH_Uhlan MayRequire="vanillaracesexpanded.hussar">0.01</VREH_Uhlan>
+				<VRE_Strigoi MayRequire="vanillaracesexpanded.sanguophage">0.01</VRE_Strigoi>
+				<VRE_Ekkimian MayRequire="vanillaracesexpanded.sanguophage">0.01</VRE_Ekkimian>
+				<VRE_Boarskin MayRequire="vanillaracesexpanded.pigskin">1</VRE_Boarskin>
+				<mytigio_Harbingerkin MayRequire="mytigio.HarbingerKin">1</mytigio_Harbingerkin>
+				<!-- More Biotech Style Xenos -->
+				<MBSXT_Damphir MayRequire="MoreBiotechStyleXenotypes.Mod">0.05</MBSXT_Damphir>
+				<MBSXT_Viperal MayRequire="MoreBiotechStyleXenotypes.Mod">0.1</MBSXT_Viperal>
+				<MBSXT_Reaver MayRequire="MoreBiotechStyleXenotypes.Mod">1</MBSXT_Reaver>
+				<MBSXT_Yeti MayRequire="MoreBiotechStyleGenes.Mod,MoreBiotechStyleXenotypes.Mod">0.25</MBSXT_Yeti>
+				<MBSXT_Battleborne MayRequire="MoreBiotechStyleXenotypes.Mod">0.25</MBSXT_Battleborne>
+				<MBSXT_Oni MayRequire="MoreBiotechStyleXenotypes.Mod">1</MBSXT_Oni>
+				<MBSXT_Artifexian MayRequire="MoreBiotechStyleXenotypes.Mod">0.1</MBSXT_Artifexian>
+				<MBSXT_Canuskin MayRequire="MoreBiotechStyleXenotypes.Mod">1</MBSXT_Canuskin>
+			</xenotypeChances>
+		</xenotypeSet>
+	</PawnKindDef>
+
+	<!-- Monochampion -->
+	<PawnKindDef ParentName="Vilgrunt_WarriorBase">
+		<defName>Viltrum_Fighter_Trooper</defName>
+		<combatPower>350</combatPower>
+		<label>vilgrunt monoslicers</label>
+		<labelPlural>vilgrunt monoslicers</labelPlural>
+		<apparelMoney>15000~20000</apparelMoney>
+		<apparelTags>
+			<li>BeltDefensePop</li>
+			<li>IndustrialBasic</li>
+			<li>SpacerHeavy</li>
+		</apparelTags>
+		<apparelRequired>
+			<li>Apparel_ShieldBelt</li>
+			<li>Apparel_ArmorHelmetCataphract</li>
+			<li>Apparel_ArmorCataphract</li>
+		</apparelRequired>
+		<weaponTags>
+			<li>JimPew_Monosword</li>
+		</weaponTags>
+		<itemQuality>Legendary</itemQuality>
+		<maxApparelQuality>Legendary</maxApparelQuality>
+		<forceWeaponQuality>Legendary</forceWeaponQuality>
+		<weaponMoney>8000~12000</weaponMoney>
+		<apparelColor>(0.9, 0.9, 0.9)</apparelColor>
+		<techHediffsRequired>
+			<li>StoneskinGland</li>
+		</techHediffsRequired>
+		<useFactionXenotypes>false</useFactionXenotypes>
+		<xenotypeSet>
+			<xenotypeChances>
+				<Yttakin>1</Yttakin>
+				<Dirtmole>1</Dirtmole>
+				<Neanderthal>1</Neanderthal>
+				<Hussar>0.25</Hussar>
+				<Sanguophage>0.01</Sanguophage>
+				<Waster>0.1</Waster>
+				<!-- BE Mammalia -->
+				<Barkkin MayRequire="biotexpans.mammalia">0.5</Barkkin>
+				<Bonecrown MayRequire="biotexpans.mammalia">0.5</Bonecrown>
+				<Seertusk MayRequire="biotexpans.mammalia">0.5</Seertusk>
+				<Haytankard MayRequire="sarg.alphagenes,biotexpans.mammalia">0.5</Haytankard>
+				<!-- Alpha -->
+				<AG_Hiveling MayRequire="sarg.alphagenes">2</AG_Hiveling>
+				<AG_Lapis MayRequire="sarg.alphagenes">2</AG_Lapis>
+				<AG_Efreet MayRequire="sarg.alphagenes">2</AG_Efreet>
+				<AG_Drakonori MayRequire="sarg.alphagenes">2</AG_Drakonori>
+				<AG_Nereid MayRequire="sarg.alphagenes">2</AG_Nereid>
+				<!-- Dets -->
+				<DV_Brawnum MayRequire="det.brawnum">1</DV_Brawnum>
+				<Stoneborn MayRequire="det.stoneborn">1</Stoneborn>
+				<DV_Keshig MayRequire="det.keshig">2</DV_Keshig>
+				<DV_Bogleg MayRequire="det.boglegs">1</DV_Bogleg>
+				<!-- Florian -->
+				<ST_PlantPerson MayRequire="Starei.PlantPeople">1</ST_PlantPerson>
+				<!-- Dreadfleet -->
+				<mfaxLiche MayRequire="doll.dreadfleet">0.01</mfaxLiche>
+				<mfaxGaunt MayRequire="doll.dreadfleet">0.05</mfaxGaunt>
+				<mfaxGorerunner MayRequire="doll.dreadfleet">0.05</mfaxGorerunner>
+				<!-- VE -->
+				<VREH_Uhlan MayRequire="vanillaracesexpanded.hussar">0.01</VREH_Uhlan>
+				<VRE_Strigoi MayRequire="vanillaracesexpanded.sanguophage">0.01</VRE_Strigoi>
+				<VRE_Ekkimian MayRequire="vanillaracesexpanded.sanguophage">0.01</VRE_Ekkimian>
+				<VRE_Boarskin MayRequire="vanillaracesexpanded.pigskin">1</VRE_Boarskin>
+				<mytigio_Harbingerkin MayRequire="mytigio.HarbingerKin">1</mytigio_Harbingerkin>
+				<!-- More Biotech Style Xenos -->
+				<MBSXT_Damphir MayRequire="MoreBiotechStyleXenotypes.Mod">0.05</MBSXT_Damphir>
+				<MBSXT_Viperal MayRequire="MoreBiotechStyleXenotypes.Mod">0.1</MBSXT_Viperal>
+				<MBSXT_Reaver MayRequire="MoreBiotechStyleXenotypes.Mod">1</MBSXT_Reaver>
+				<MBSXT_Yeti MayRequire="MoreBiotechStyleGenes.Mod,MoreBiotechStyleXenotypes.Mod">0.25</MBSXT_Yeti>
+				<MBSXT_Battleborne MayRequire="MoreBiotechStyleXenotypes.Mod">0.25</MBSXT_Battleborne>
+				<MBSXT_Oni MayRequire="MoreBiotechStyleXenotypes.Mod">1</MBSXT_Oni>
+				<MBSXT_Artifexian MayRequire="MoreBiotechStyleXenotypes.Mod">0.1</MBSXT_Artifexian>
+				<MBSXT_Canuskin MayRequire="MoreBiotechStyleXenotypes.Mod">1</MBSXT_Canuskin>
+			</xenotypeChances>
+		</xenotypeSet>
+	</PawnKindDef>
+
+	<!-- Plasmachampion -->
+	<PawnKindDef ParentName="Vilgrunt_WarriorBase">
+		<defName>Viltrum_Fighter_Janissary</defName>
+		<combatPower>350</combatPower>
+		<label>vilgrunt plasmaslicer</label>
+		<labelPlural>vilgrunt plasmaslicers</labelPlural>
+		<apparelMoney>15000~20000</apparelMoney>
+		<apparelTags>
+			<li>BeltDefensePop</li>
+			<li>J_ClothUnderArm</li>
+			<li>SpacerHeavy</li>
+		</apparelTags>
+		<apparelRequired>
+			<li>Apparel_ShieldBelt</li>
+			<li>Apparel_ArmorHelmetCataphract</li>
+			<li>Apparel_ArmorCataphract</li>
+		</apparelRequired>
+		<weaponTags>
+			<li>JimPew_Plasmasword</li>
+		</weaponTags>
+		<itemQuality>Legendary</itemQuality>
+		<maxApparelQuality>Legendary</maxApparelQuality>
+		<forceWeaponQuality>Legendary</forceWeaponQuality>
+		<weaponMoney>8000~12000</weaponMoney>
+		<apparelColor>(0.9, 0.9, 0.9)</apparelColor>
+		<techHediffsRequired>
+			<li>StoneskinGland</li>
+		</techHediffsRequired>
+		<useFactionXenotypes>false</useFactionXenotypes>
+		<xenotypeSet>
+			<xenotypeChances>
+				<Yttakin>1</Yttakin>
+				<Dirtmole>1</Dirtmole>
+				<Neanderthal>1</Neanderthal>
+				<Hussar>0.25</Hussar>
+				<Sanguophage>0.01</Sanguophage>
+				<Waster>0.1</Waster>
+				<!-- BE Mammalia -->
+				<Barkkin MayRequire="biotexpans.mammalia">0.5</Barkkin>
+				<Bonecrown MayRequire="biotexpans.mammalia">0.5</Bonecrown>
+				<Seertusk MayRequire="biotexpans.mammalia">0.5</Seertusk>
+				<Haytankard MayRequire="sarg.alphagenes,biotexpans.mammalia">0.5</Haytankard>
+				<!-- Alpha -->
+				<AG_Hiveling MayRequire="sarg.alphagenes">2</AG_Hiveling>
+				<AG_Lapis MayRequire="sarg.alphagenes">2</AG_Lapis>
+				<AG_Efreet MayRequire="sarg.alphagenes">2</AG_Efreet>
+				<AG_Drakonori MayRequire="sarg.alphagenes">2</AG_Drakonori>
+				<AG_Nereid MayRequire="sarg.alphagenes">2</AG_Nereid>
+				<!-- Dets -->
+				<DV_Brawnum MayRequire="det.brawnum">1</DV_Brawnum>
+				<Stoneborn MayRequire="det.stoneborn">1</Stoneborn>
+				<DV_Keshig MayRequire="det.keshig">2</DV_Keshig>
+				<DV_Bogleg MayRequire="det.boglegs">1</DV_Bogleg>
+				<!-- Florian -->
+				<ST_PlantPerson MayRequire="Starei.PlantPeople">1</ST_PlantPerson>
+				<!-- Dreadfleet -->
+				<mfaxLiche MayRequire="doll.dreadfleet">0.01</mfaxLiche>
+				<mfaxGaunt MayRequire="doll.dreadfleet">0.05</mfaxGaunt>
+				<mfaxGorerunner MayRequire="doll.dreadfleet">0.05</mfaxGorerunner>
+				<!-- VE -->
+				<VREH_Uhlan MayRequire="vanillaracesexpanded.hussar">0.01</VREH_Uhlan>
+				<VRE_Strigoi MayRequire="vanillaracesexpanded.sanguophage">0.01</VRE_Strigoi>
+				<VRE_Ekkimian MayRequire="vanillaracesexpanded.sanguophage">0.01</VRE_Ekkimian>
+				<VRE_Boarskin MayRequire="vanillaracesexpanded.pigskin">1</VRE_Boarskin>
+				<mytigio_Harbingerkin MayRequire="mytigio.HarbingerKin">1</mytigio_Harbingerkin>
+				<!-- More Biotech Style Xenos -->
+				<MBSXT_Damphir MayRequire="MoreBiotechStyleXenotypes.Mod">0.05</MBSXT_Damphir>
+				<MBSXT_Viperal MayRequire="MoreBiotechStyleXenotypes.Mod">0.1</MBSXT_Viperal>
+				<MBSXT_Reaver MayRequire="MoreBiotechStyleXenotypes.Mod">1</MBSXT_Reaver>
+				<MBSXT_Yeti MayRequire="MoreBiotechStyleGenes.Mod,MoreBiotechStyleXenotypes.Mod">0.25</MBSXT_Yeti>
+				<MBSXT_Battleborne MayRequire="MoreBiotechStyleXenotypes.Mod">0.25</MBSXT_Battleborne>
+				<MBSXT_Oni MayRequire="MoreBiotechStyleXenotypes.Mod">1</MBSXT_Oni>
+				<MBSXT_Artifexian MayRequire="MoreBiotechStyleXenotypes.Mod">0.1</MBSXT_Artifexian>
+				<MBSXT_Canuskin MayRequire="MoreBiotechStyleXenotypes.Mod">1</MBSXT_Canuskin>
+			</xenotypeChances>
+		</xenotypeSet>
+	</PawnKindDef>
+
+	<!-- Heavy Vilgrunt -->
+	<PawnKindDef ParentName="Vilgrunt_WarriorBase">
+		<combatPower>450</combatPower>
+		<defName>Viltrum_Fighter_CataphractRanged</defName>
+		<label>vilgrunt heavy</label>
+		<labelPlural>vilgrunt heavy</labelPlural>
+		<apparelMoney>15000~20000</apparelMoney>
+		<apparelTags>
+			<li>BeltDefensePop</li>
+			<li>J_ClothUnderArm</li>
+			<li>SpacerHeavy</li>
+		</apparelTags>
+		<apparelRequired>
+			<li MayRequire="VanillaExpanded.VAEAccessories">VAEA_Apparel_RangedShieldBelt</li>
+			<li>Apparel_ArmorHelmetCataphract</li>
+			<li>Apparel_ArmorCataphract</li>
+		</apparelRequired>
+		<itemQuality>Legendary</itemQuality>
+		<maxApparelQuality>Legendary</maxApparelQuality>
+		<forceWeaponQuality>Legendary</forceWeaponQuality>
+		<weaponMoney>8000~12000</weaponMoney>
+		<weaponTags>
+			<li>Minigun</li>
+			<li>JimPew_MinigunStrong</li>
+			<li MayRequire="Ludeon.RimWorld.Odyssey">WeaponBeamRepeater</li>
+		</weaponTags>
+		<techHediffsMoney>12000~24000</techHediffsMoney>
+		<techHediffsTags>
+			<li>Advanced</li>
+			<li>ImplantEmpireCommon</li>
+		</techHediffsTags>
+		<disallowedTraits>
+			<li>Brawler</li>
+		</disallowedTraits>
+		<useFactionXenotypes>false</useFactionXenotypes>
+		<xenotypeSet>
+			<xenotypeChances>
+				<Yttakin>1</Yttakin>
+				<Impid>1</Impid>
+				<Hussar>0.25</Hussar>
+				<Sanguophage>0.01</Sanguophage>
+				<Waster>0.1</Waster>
+				<!-- BE Mammalia -->
+				<Bonecrown MayRequire="biotexpans.mammalia">0.5</Bonecrown>
+				<Haytankard MayRequire="sarg.alphagenes,biotexpans.mammalia">0.5</Haytankard>
+				<!-- Alpha -->
+				<AG_Fleetkind MayRequire="sarg.alphagenes">2</AG_Fleetkind>
+				<AG_Lapis MayRequire="sarg.alphagenes">2</AG_Lapis>
+				<AG_Hiveling MayRequire="sarg.alphagenes">2</AG_Hiveling>
+				<AG_Drakonori MayRequire="sarg.alphagenes">2</AG_Drakonori>
+				<!-- Dets -->
+				<DV_Brawnum MayRequire="det.brawnum">1</DV_Brawnum>
+				<Stoneborn MayRequire="det.stoneborn">1</Stoneborn>
+				<!-- Florian -->
+				<ST_PlantPerson MayRequire="Starei.PlantPeople">1</ST_PlantPerson>
+				<!-- Dreadfleet -->
+				<mfaxLiche MayRequire="doll.dreadfleet">0.01</mfaxLiche>
+				<mfaxGaunt MayRequire="doll.dreadfleet">0.05</mfaxGaunt>
+				<mfaxGorerunner MayRequire="doll.dreadfleet">0.05</mfaxGorerunner>
+				<!-- VE -->
+				<VREH_Uhlan MayRequire="vanillaracesexpanded.hussar">0.01</VREH_Uhlan>
+				<VRE_Ekkimian MayRequire="vanillaracesexpanded.sanguophage">0.01</VRE_Ekkimian>
+				<!-- More Biotech Style Xenos -->
+				<MBSXT_Damphir MayRequire="MoreBiotechStyleXenotypes.Mod">0.05</MBSXT_Damphir>
+				<MBSXT_Viperal MayRequire="MoreBiotechStyleXenotypes.Mod">0.1</MBSXT_Viperal>
+				<MBSXT_Reaver MayRequire="MoreBiotechStyleXenotypes.Mod">1</MBSXT_Reaver>
+				<MBSXT_Yeti MayRequire="MoreBiotechStyleGenes.Mod,MoreBiotechStyleXenotypes.Mod">0.25</MBSXT_Yeti>
+			</xenotypeChances>
+		</xenotypeSet>
+	</PawnKindDef>
+
+	<!--===================== Viltrum fighters: punishment ranks =========================-->
+
+	<PawnKindDef Name="ViltrumFighterBase" Abstract="True">
+		<race>Human</race>
+		<defaultFactionDef>ViltrumEmpire</defaultFactionDef>
+		<maxGenerationAge>55</maxGenerationAge>
+		<backstoryCryptosleepCommonality>0.08</backstoryCryptosleepCommonality>
+		<royalTitleChance>0.8</royalTitleChance>
+		<titleSelectOne>
+			<li>Vilt_Peon</li>
+			<li>Vilt_Underling</li>
+			<li>Vilt_Servant</li>
+			<li>Vilt_Citizen</li>
+			<li>Vilt_Stooge</li>
+			<li>Vilt_Mook</li>
+			<li>Vilt_Grunt</li>
+			<li>Vilt_Goon</li>
+		</titleSelectOne>
+		<backstoryFiltersOverride>
+			<li>
+				<categories>
+					<li>Vilgrunt</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>
+		<styleItemTags>
+			<li>
+				<tag>Soldier</tag>
+				<baseWeight>1</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+		</styleItemTags>
+		<chemicalAddictionChance>1</chemicalAddictionChance>
+		<combatEnhancingDrugsChance>1</combatEnhancingDrugsChance>
+		<combatEnhancingDrugsCount>1~2</combatEnhancingDrugsCount>
+		<invNutrition>2.55</invNutrition>
+		<weaponMoney>2200~5000</weaponMoney>
+		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+		<apparelMoney>3500~7000</apparelMoney>
+		<maxApparelQuality>Legendary</maxApparelQuality>
+		<apparelTags>
+			<li>IndustrialBasic</li>
+			<li>SpacerMilitary</li>
+		</apparelTags>
+		<apparelDisallowTags>
+			<li>Western</li>
+		</apparelDisallowTags>
+		<specificApparelRequirements>
+			<li>
+				<bodyPartGroup>Torso</bodyPartGroup>
+				<apparelLayer>OnSkin</apparelLayer>
+				<stuff>Hyperweave</stuff>
+			</li>
+			<li>
+				<bodyPartGroup>Legs</bodyPartGroup>
+				<apparelLayer>OnSkin</apparelLayer>
+				<stuff>Hyperweave</stuff>
+			</li>
+		</specificApparelRequirements>
+		<techHediffsChance>1</techHediffsChance>
+		<techHediffsMoney>7000~14000</techHediffsMoney>
+		<techHediffsRequired>
+			<li>DeathAcidifier</li>
+			<li>Painstopper</li>
+			<li>Coagulator</li>
+			<li>HealingEnhancer</li>
+			<li>CircadianAssistant</li>
+			<li>LoveEnhancer</li>
+			<li>AestheticShaper</li>
+		</techHediffsRequired>
+		<biocodeWeaponChance>1</biocodeWeaponChance>
+		<disallowedTraits>
+			<li>Wimp</li>
+			<li>Delicate</li>
+		</disallowedTraits>
+	</PawnKindDef>
+
+	<!-- Viltrum Grenadier -->
+
+	<PawnKindDef ParentName="ViltrumFighterBase">
+		<defName>Viltrum_Fighter_Grenadier</defName>
+		<label>viltrum grenadier</label>
+		<apparelColor>(0.9, 0.9, 0.9)</apparelColor>
+		<canBeSapper>true</canBeSapper>
+		<isGoodBreacher>true</isGoodBreacher>
+		<combatPower>100</combatPower>
+		<weaponTags>
+			<li>EmpireGrenadeDestructive</li>
+		</weaponTags>
+		<apparelMoney>6000~9000</apparelMoney>
+		<apparelRequired>
+			<li>Apparel_PowerArmorHelmet</li>
+			<li>Apparel_PowerArmor</li>
+		</apparelRequired>
+		<techHediffsTags>
+			<li>ImplantEmpireCommon</li>
+			<li>Advanced</li>
+		</techHediffsTags>
+		<skills>
+			<li>
+				<skill>Shooting</skill>
+				<range>8~20</range>
+			</li>
+		</skills>
+		<disallowedTraits>
+			<li>Wimp</li>
+			<li>Delicate</li>
+		</disallowedTraits>
+		<initialWillRange>2~4</initialWillRange>
+		<initialResistanceRange>13~21</initialResistanceRange>
+	</PawnKindDef>
+
+	<!--===================== Viltrum Troopers: basic and trainee ranks =========================-->
+
+	<PawnKindDef Name="ViltrumTrooperBase" Abstract="True" ParentName="ViltrumFighterBase">
+		<combatPower>65</combatPower>
+		<apparelMoney>3500~7000</apparelMoney>
+		<weaponTags>
+			<li>IndustrialGunAdvanced</li>
+			<li>SpacerGun</li>
+		</weaponTags>
+		<initialWillRange>2~4</initialWillRange>
+	</PawnKindDef>
+
+	<!--===================== Viltrum Janissaries: elite and specialist ranks =========================-->
+
+	<PawnKindDef Name="VilJanissaryBase" Abstract="True" ParentName="ViltrumFighterBase">
+		<combatPower>100</combatPower>
+		<weaponMoney>3100~5400</weaponMoney>
+		<weaponTags>
+			<li>IndustrialGunAdvanced</li>
+			<li>SpacerGun</li>
+			<li>SniperRifle</li>
+		</weaponTags>
+		<apparelMoney>6000~9000</apparelMoney>
+		<techHediffsMoney>10000~20000</techHediffsMoney>
+		<apparelRequired>
+			<li>Apparel_ArmorHelmetRecon</li>
+			<li>Apparel_ArmorRecon</li>
+		</apparelRequired>
+		<disallowedTraits>
+			<li>Wimp</li>
+			<li>Delicate</li>
+		</disallowedTraits>
+	</PawnKindDef>
+
+	<!-- Sniper -->
+
+	<PawnKindDef ParentName="VilJanissaryBase">
+		<defName>Viltrum_Fighter_JanSniper</defName>
+		<label>vilgrunt sniper</label>
+		<apparelColor>(0.9, 0.9, 0.9)</apparelColor>
+		<weaponTags>
+			<li>SniperRifle</li>
+		</weaponTags>
+		<techHediffsTags>
+			<li>ImplantEmpireCommon</li>
+			<li>Advanced</li>
+		</techHediffsTags>
+		<skills>
+			<li>
+				<skill>Shooting</skill>
+				<range>18~20</range>
+			</li>
+		</skills>
+		<initialWillRange>3~5</initialWillRange>
+		<initialResistanceRange>13~21</initialResistanceRange>
+	</PawnKindDef>
+
+	<!-- KABOOM -->
+
+	<PawnKindDef ParentName="VilJanissaryBase" MayRequire="sarg.alphagenes">
+		<defName>Viltrum_Fighter_JanKaboom</defName>
+		<combatPower>180</combatPower>
+		<label>kaboom</label>
+		<apparelColor>(0.9, 0.9, 0.9)</apparelColor>
+		<weaponTags>
+			<li>GunSingleUse</li>
+			<li>EmpireGrenadeDestructive</li>
+		</weaponTags>
+		<techHediffsTags>
+			<li>ImplantEmpireCommon</li>
+			<li>Advanced</li>
+		</techHediffsTags>
+		<skills>
+			<li>
+				<skill>Shooting</skill>
+				<range>18~20</range>
+			</li>
+		</skills>
+		<initialWillRange>3~5</initialWillRange>
+		<initialResistanceRange>13~21</initialResistanceRange>
+		<useFactionXenotypes>false</useFactionXenotypes>
+		<xenotypeSet>
+			<xenotypeChances>
+				<AG_Hiveling MayRequire="sarg.alphagenes">1</AG_Hiveling>
+			</xenotypeChances>
+		</xenotypeSet>
+	</PawnKindDef>
+
+</Defs>

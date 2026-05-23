@@ -1,0 +1,274 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<FactionDef ParentName="FactionBase">
+		<defName>JInv_AngstromFaction</defName>
+		<label>Angstrom's Army</label>
+		<factionNameMaker>NamerFactionAngstrom</factionNameMaker>
+		<description>This faction was formed solely to slander Mark Grayson by using copies of him to terrorize the Rim... even in realities where Mark otherwise wouldn't exist at all. Its leader, Angstrom Levy, is mentally unstable.</description>
+		<hidden>true</hidden>
+		<requiredCountAtGameStart>1</requiredCountAtGameStart>
+		<maxConfigurableAtWorldCreation>1</maxConfigurableAtWorldCreation>
+		<hostileToFactionlessHumanlikes>true</hostileToFactionlessHumanlikes>
+		<arrivalLayerWhitelist>
+			<li>Surface</li>
+			<li MayRequire="Ludeon.RimWorld.Odyssey">Orbit</li>
+		</arrivalLayerWhitelist>
+		<colorSpectrum>
+			<li>(0.75, 0.5, 0.5)</li>
+		</colorSpectrum>
+		<pawnSingular>angoon</pawnSingular>
+		<pawnsPlural>angoons</pawnsPlural>
+		<leaderTitle>Angstrom</leaderTitle>
+		<categoryTag>Empire</categoryTag>
+		<listOrderPriority>20</listOrderPriority>
+		<settlementGenerationWeight>1</settlementGenerationWeight>
+		<canSiege>true</canSiege>
+		<canStageAttacks>true</canStageAttacks>
+		<factionIconPath>World/WorldObjects/Expanding/PirateOutpost</factionIconPath>
+		<techLevel>Ultra</techLevel>
+		<canRequestTraders>false</canRequestTraders>
+		<canRequestOrbitalTrader>false</canRequestOrbitalTrader>
+		<canRequestMilitaryAid>false</canRequestMilitaryAid>
+		<canGenerateQuestSites>false</canGenerateQuestSites>
+		<hiddenIdeo>true</hiddenIdeo>
+		<permanentEnemy>true</permanentEnemy>
+		<fixedLeaderKinds>
+			<li>JInv_Angstrom_Pawnkind</li>
+		</fixedLeaderKinds>
+		<layerWhitelist>
+			<li>Surface</li>
+		</layerWhitelist>
+		<allowedCultures>
+			<li>Kriminul</li>
+		</allowedCultures>
+		<styles>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Techist</li>
+		</styles>
+		<requiredMemes>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Supremacist</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Raider</li>
+		</requiredMemes>
+		<allowedMemes>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Collectivist</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">HumanPrimacy</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Proselytizer</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">PainIsVirtue</li>
+		</allowedMemes>
+		<structureMemeWeights>
+			<Structure_Ideological MayRequire="Ludeon.RimWorld.Ideology">1</Structure_Ideological>
+		</structureMemeWeights>
+		<xenotypeSet>
+			<xenotypeChances>
+				<Viltrumite>1</Viltrumite>
+			</xenotypeChances>
+		</xenotypeSet>
+		<backstoryFilters>
+			<li>
+				<categories>
+					<li>Vilgrunt</li>
+					<li>Viltrum</li>
+					<li>VGeneric</li>
+					<li MayRequire="Ludeon.RimWorld.Royalty">ImperialCommon</li>
+					<li>Offworld</li>
+					<li>Outlander</li>
+					<li>Pirate</li>
+					<li>Tribal</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+		<caravanTraderKinds />
+		<visitorTraderKinds />
+		<orbitalTraderKinds />
+		<baseTraderKinds />
+		<allowedArrivalTemperatureRange>-200~200</allowedArrivalTemperatureRange>
+		<raidLootMaker>ViltrumRaidLootMaker</raidLootMaker>
+		<maxPawnCostPerTotalPointsCurve>
+			<points>
+				<li>(0,10000)</li>
+			</points>
+		</maxPawnCostPerTotalPointsCurve>
+		<raidCommonalityFromPointsCurve>
+			<points>
+				<li>(0, 0.2)</li> <!--Constant 1 at all points levels-->
+			</points>
+		</raidCommonalityFromPointsCurve>
+		<pawnGroupMakers Inherit="False">
+			<li>
+				<kindDef>Combat</kindDef>
+				<commonality>100</commonality>
+				<options>
+					<Mark_Fighter_Solo>1</Mark_Fighter_Solo>
+				</options>
+			</li>
+			<li>
+				<kindDef>Combat</kindDef>
+				<commonality>50</commonality>
+				<options>
+					<Mark_Fighter_Duo>1</Mark_Fighter_Duo>
+				</options>
+			</li>
+			<li>
+				<kindDef>Combat</kindDef>
+				<commonality>25</commonality>
+				<options>
+					<Mark_Fighter_Squad>1</Mark_Fighter_Squad>
+				</options>
+			</li>
+			<li>
+				<kindDef>Combat</kindDef>
+				<commonality>10</commonality>
+				<options>
+					<Mark_Fighter_OhGod>1</Mark_Fighter_OhGod>
+				</options>
+			</li>
+			<li>
+				<kindDef>Combat</kindDef>
+				<commonality>10</commonality>
+				<options>
+					<JInv_Angstrom_Pawnkind>1</JInv_Angstrom_Pawnkind>
+				</options>
+			</li>
+			<li>
+				<kindDef>Combat</kindDef>
+				<commonality>10</commonality>
+				<options>
+					<JInv_Angstrom_Pawnkind>1</JInv_Angstrom_Pawnkind>
+					<Mark_Fighter_OhGod>1</Mark_Fighter_OhGod>
+				</options>
+			</li>
+			<li>
+				<kindDef>Peaceful</kindDef>
+				<options>
+					<Mark_Fighter_OhGod>10</Mark_Fighter_OhGod>
+			</options>
+			</li>
+			<li>
+				<kindDef>Settlement</kindDef>
+				<options>
+					<Mark_Fighter_OhGod>10</Mark_Fighter_OhGod>
+				</options>
+			</li>
+		</pawnGroupMakers>
+		<settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
+	</FactionDef>
+
+
+	<RulePackDef>
+		<defName>NamerFactionAngstrom</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name->Mark Gang</li>
+				<li>r_name->Angstrom's Army</li>
+				<li>r_name->Slander Squad</li>
+				<li>r_name->Smear Squad</li>
+				<li>r_name->Defamation Division</li>
+				<li>r_name->Defamation Department</li>
+				<li>r_name->Hashtag Mark Haters</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+
+	<RulePackDef>
+		<defName>AngstromNameUtility</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>AngstromNameFirstMale->Mark</li>
+				<li>AngstromNameFirstMale->Mack</li>
+				<li>AngstromNameFirstMale->Markiplier</li>
+				<li>AngstromNameFirstMale->Martin</li>
+				<li>AngstromNameFirstMale->Oliver</li>
+				<li>AngstromNameFirstMale->Mario</li>
+				<li>AngstromNameFirstMale->Martin</li>
+				<li>AngstromNameFirstMale->Imasteak</li>
+				<li>AngstromNameFirstFemale->Marcelle</li>
+				<li>AngstromNameFirstFemale->Markette</li>
+				<li>AngstromNameFirstFemale->Martina</li>
+				<li>AngstromNameFirstFemale->Marceline</li>
+				<li>AngstromNameFirstFemale->Marcia</li>
+				<li>AngstromNameFirstFemale->Mary</li>
+				<li>AngstromNameFirstFemale->Imasteak</li>
+				
+				<li>Desig->0</li>
+				<li>Desig->1</li>
+				<li>Desig->2</li>
+				<li>Desig->3</li>
+				<li>Desig->4</li>
+				<li>Desig->5</li>
+				<li>Desig->6</li>
+				<li>Desig->7</li>
+				<li>Desig->8</li>
+				<li>Desig->9</li>
+
+				<li>Leta->A</li>
+				<li>Leta->B</li>
+				<li>Leta->C</li>
+				<li>Leta->D</li>
+				<li>Leta->E</li>
+				<li>Leta->F</li>
+				<li>Leta->G</li>
+				<li>Leta->H</li>
+				<li>Leta->I</li>
+				<li>Leta->J</li>
+				<li>Leta->K</li>
+				<li>Leta->L</li>
+				<li>Leta->M</li>
+				<li>Leta->N</li>
+				<li>Leta->O</li>
+				<li>Leta->P</li>
+				<li>Leta->Q</li>
+				<li>Leta->R</li>
+				<li>Leta->S</li>
+				<li>Leta->T</li>
+				<li>Leta->U</li>
+				<li>Leta->V</li>
+				<li>Leta->W</li>
+				<li>Leta->X</li>
+				<li>Leta->Y</li>
+				<li>Leta->Z</li>
+
+				<li>AngstromNameLast->[Desig]</li>
+				<li>AngstromNameLast->[Desig][Desig]</li>
+				<li>AngstromNameLast->[Desig][Desig][Desig]</li>
+				<li>AngstromNameLast->[Desig][Desig][Desig][Desig]</li>
+				<li>AngstromNameLast->[Desig][Desig][Desig][Desig][Desig]</li>
+				<li>AngstromNameLast->[Leta][Desig]</li>
+				<li>AngstromNameLast->[Leta][Desig][Desig]</li>
+				<li>AngstromNameLast->[Leta][Desig][Desig][Desig]</li>
+				<li>AngstromNameLast->[Leta][Desig][Desig][Desig][Desig]</li>
+				<li>AngstromNameLast->[Leta][Desig][Desig][Desig][Desig][Desig]</li>
+				<li>AngstromNameLast->Grayson</li>
+				<li>AngstromNameLast->Greyson</li>
+				<li>AngstromNameLast->Gayson</li>
+				<li>AngstromNameLast->Gaeson</li>
+				<li>AngstromNameLast->Gaston</li>
+				<li>AngstromNameLast->Glavical</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+
+	<RulePackDef>
+		<defName>NamerPersonAngstromMale</defName>
+		<include>
+			<li>AngstromNameUtility</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name->[AngstromNameFirstMale] [AngstromNameLast]</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+
+	<RulePackDef>
+		<defName>NamerPersonAngstromFemale</defName>
+		<include>
+			<li>AngstromNameUtility</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name->[AngstromNameFirstFemale] [AngstromNameLast]</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+
+</Defs>

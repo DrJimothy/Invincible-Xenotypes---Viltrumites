@@ -1,0 +1,622 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+<!-- WeakViltrumite -->
+<Operation Class="PatchOperationSequence">
+	<operations>
+		<li Class="PatchOperationRemove">
+			<xpath>Defs/XenotypeDef[defName="WeakViltrumite"]/genes/li[text()="SuperhumanSpeed"]</xpath>
+		</li>
+		<li Class="PatchOperationRemove">
+			<xpath>Defs/XenotypeDef[defName="WeakViltrumite"]/genes/li[text()="SuperhumanResilience"]</xpath>
+		</li>		
+		<li Class="PatchOperationRemove">
+			<xpath>Defs/XenotypeDef[defName="WeakViltrumite"]/genes/li[text()="SuperhumanStrength"]</xpath>
+		</li>
+		<li Class="PatchOperationRemove">
+			<xpath>Defs/XenotypeDef[defName="WeakViltrumite"]/genes/li[text()="Body_Standard"]</xpath>
+		</li>
+		<li Class="PatchOperationRemove">
+			<xpath>Defs/XenotypeDef[defName="WeakViltrumite"]/genes/li[text()="Body_Hulk"]</xpath>
+		</li>
+		<li Class="PatchOperationRemove">
+			<xpath>Defs/XenotypeDef[defName="WeakViltrumite"]/genes/li[text()="ViltrumiteNutritionStorage"]</xpath>
+		</li>
+		<li Class="PatchOperationRemove">
+			<xpath>Defs/XenotypeDef[defName="WeakViltrumite"]/genes/li[text()="ViltrumiteDigestion"]</xpath>
+		</li>
+		<li Class="PatchOperationRemove">
+			<xpath>Defs/XenotypeDef[defName="WeakViltrumite"]/genes/li[text()="AptitudeStrong_Medicine"]</xpath>
+		</li>
+		<li Class="PatchOperationRemove">
+			<xpath>Defs/XenotypeDef[defName="WeakViltrumite"]/genes/li[text()="AptitudeStrong_Melee"]</xpath>
+		</li>
+		<li Class="PatchOperationRemove">
+			<xpath>Defs/XenotypeDef[defName="WeakViltrumite"]/genes/li[text()="AptitudeStrong_Intellectual"]</xpath>
+		</li>
+		<li Class="PatchOperationRemove">
+			<xpath>Defs/XenotypeDef[defName="WeakViltrumite"]/genes/li[text()="AptitudeStrong_Mining"]</xpath>
+		</li>
+		<li Class="PatchOperationRemove">
+			<xpath>Defs/XenotypeDef[defName="WeakViltrumite"]/genes/li[text()="Superclotting"]</xpath>
+		</li>
+	</operations>
+</Operation>
+<Operation Class="PatchOperationAdd">
+		<xpath>Defs/XenotypeDef[defName="WeakViltrumite"]/genes</xpath>
+		<value>
+			<li>JVIR_VHighRobust</li>
+			<li>JVIR_VHighMelee</li>
+			<li>JVIR_VHighSpeed</li>
+			<li>JInv_VSpeedGene</li>
+			<li>JInv_VMeleeGene</li>
+			<li>JInv_VSmartGene</li>
+			<li>JInv_VRobustGene</li>
+			<li>JInv_VMetabolism</li>
+			<li>JInv_VImmGene</li>
+			<li>JInv_VAgeGene</li>
+			<li>JInv_VHealGene</li>
+			<li>JInv_VHealGene2</li>
+			<li>JInv_VStoreGene</li>
+			<li>JInv_VStoreGene2</li>
+			<li>JInv_VToxinGene</li>
+			<li>JInv_VSkinGene</li>
+			<li>JInv_VSkinGene2</li>
+			<li>JInv_VTempGene</li>
+			<li>PsychicAbility_Deaf</li>
+			<li>Pain_Reduced</li>
+			<li>Beauty_Pretty</li>
+			<li>Libido_High</li>
+			<li>Aggression_Aggressive</li>
+			<li>DiseaseFree</li>
+			<li MayRequire="kentington.saveourship2">SoS2_VacuumAdapted</li>
+			<li MayRequire="Ludeon.RimWorld.Odyssey">JInv_VLungGene</li>
+			<!-- Dets -->
+			<li MayRequire="det.stoneborn">DV_ExtendedMemory</li>
+			<li MayRequire="det.stoneborn">DV_MightyLiver</li>
+			<li MayRequire="det.stoneborn">DV_LifespanLong</li>
+			<li MayRequire="det.brawnum">DV_RoughPlay</li>
+			<li MayRequire="det.brawnum">DV_StrongBack</li>
+			<li MayRequire="det.boglegs">DV_IntimidatingPresence</li>
+			<!-- Alpha Genes -->
+			<li MayRequire="sarg.alphagenes">AG_DeadlyRaidPresence</li>
+			<li MayRequire="sarg.alphagenes">AG_HardBones</li>
+			<li MayRequire="sarg.alphagenes">AG_Enforcer</li>
+			<li MayRequire="sarg.alphagenes">AG_NoWings</li>
+			<li MayRequire="sarg.alphagenes">AG_PackMule</li>
+			<li MayRequire="sarg.alphagenes">AG_ToughSinews</li>
+			<li MayRequire="sarg.alphagenes">AG_NoTusks</li>
+			<li MayRequire="sarg.alphagenes">AG_NoLowerAntennae</li>
+			<li MayRequire="sarg.alphagenes">AG_NoAntennae</li>
+			<li MayRequire="sarg.alphagenes,vanillaracesexpanded.fungoid">AG_GeneInfectionImmunity</li>
+			<!-- Biggie Smol -->
+			<li MayRequire="RedMattis.BigSmall.Core">BS_Xenolocked</li>
+			<li MayRequire="RedMattis.BigSmall.Core">BS_EverFertile</li>
+			<li MayRequire="RedMattis.BigSmall.Core">BS_SlowBleeding</li>
+			<li MayRequire="RedMattis.BigSmall.Core">BS_GeneStabilizing_Extreme</li>
+			<li MayRequire="RedMattis.BetterGeneInheritance">BGI_PrimaryGenes</li>
+			<!-- FSF -->
+			<li MayRequire="FrozenSnowFox.AdvancedBionicsExpansion">JInv_VFistGene</li>
+			<li MayRequire="FrozenSnowFox.AdvancedBionicsExpansion">JInv_VDigestion</li>
+			<li MayRequire="FrozenSnowFox.AdvancedBionicsExpansion">JInv_VDrugsGene</li>
+			<!-- Adaptation -->
+			<li MayRequire="OmniNerd.CombatEvolution.2005">JIM_OmniAdaptiveLite</li>
+			<li MayRequire="Endermaster567.CryptosleepAdaptationGene">CryptosleepAdaptationGene</li>
+			<!-- Metabolic nonsense -->
+			<li MayRequire="Darkborderman.MoreTraitGenes">LargeStomach</li>
+			<!-- Supa -->
+			<li MayRequire="SuperheroGenesBase.Mod">JInv_VMeleeGeneSH</li>
+			<li MayRequire="SuperheroGenesBase.Mod">JInv_VRobustGeneSH</li>
+			<li MayRequire="SuperheroGenesBase.Mod">JInv_Flight</li>
+			<li MayRequire="SuperheroGenesBase.Mod">JInv_HeroicLeap</li>
+			<li MayRequire="SuperheroGenesBase.Mod">JInv_Restraint</li>
+			<!-- VRE -->
+			<li MayRequire="vanillaracesexpanded.genie">VRE_Slow_Diseases</li>
+			<li MayRequire="vanillaracesexpanded.hussar">VREH_Unconstrained</li>
+			<li MayRequire="vanillaracesexpanded.pigskin">VRE_OrganRegeneration</li>
+		</value>
+</Operation>
+
+<!-- EliteViltrumite -->
+<Operation Class="PatchOperationSequence">
+	<operations>
+		<li Class="PatchOperationRemove">
+			<xpath>Defs/XenotypeDef[defName="EliteViltrumite"]/genes/li[text()="EliteViltrumiteSpeed"]</xpath>
+		</li>
+		<li Class="PatchOperationRemove">
+			<xpath>Defs/XenotypeDef[defName="EliteViltrumite"]/genes/li[text()="EliteViltrumiteResilience"]</xpath>
+		</li>		
+		<li Class="PatchOperationRemove">
+			<xpath>Defs/XenotypeDef[defName="EliteViltrumite"]/genes/li[text()="EliteViltrumiteStrength"]</xpath>
+		</li>
+		<li Class="PatchOperationRemove">
+			<xpath>Defs/XenotypeDef[defName="EliteViltrumite"]/genes/li[text()="Body_Standard"]</xpath>
+		</li>
+		<li Class="PatchOperationRemove">
+			<xpath>Defs/XenotypeDef[defName="EliteViltrumite"]/genes/li[text()="Body_Hulk"]</xpath>
+		</li>
+		<li Class="PatchOperationRemove">
+			<xpath>Defs/XenotypeDef[defName="EliteViltrumite"]/genes/li[text()="ViltrumiteNutritionStorage"]</xpath>
+		</li>
+		<li Class="PatchOperationRemove">
+			<xpath>Defs/XenotypeDef[defName="EliteViltrumite"]/genes/li[text()="ViltrumiteDigestion"]</xpath>
+		</li>
+		<li Class="PatchOperationRemove">
+			<xpath>Defs/XenotypeDef[defName="EliteViltrumite"]/genes/li[text()="AptitudeRemarkable_Medicine"]</xpath>
+		</li>
+		<li Class="PatchOperationRemove">
+			<xpath>Defs/XenotypeDef[defName="EliteViltrumite"]/genes/li[text()="AptitudeRemarkable_Melee"]</xpath>
+		</li>
+		<li Class="PatchOperationRemove">
+			<xpath>Defs/XenotypeDef[defName="EliteViltrumite"]/genes/li[text()="AptitudeRemarkable_Intellectual"]</xpath>
+		</li>
+		<li Class="PatchOperationRemove">
+			<xpath>Defs/XenotypeDef[defName="EliteViltrumite"]/genes/li[text()="AptitudeRemarkable_Mining"]</xpath>
+		</li>
+		<li Class="PatchOperationRemove">
+			<xpath>Defs/XenotypeDef[defName="EliteViltrumite"]/genes/li[text()="Superclotting"]</xpath>
+		</li>
+	</operations>
+</Operation>
+<Operation Class="PatchOperationAdd">
+		<xpath>Defs/XenotypeDef[defName="EliteViltrumite"]/genes</xpath>
+		<value>
+			<li>JVIR_VHyperRobust</li>
+			<li>JVIR_VHyperMelee</li>
+			<li>JVIR_VHyperSpeed</li>
+			<li>JInv_VSpeedGene</li>
+			<li>JInv_VMeleeGene</li>
+			<li>JInv_VSmartGene</li>
+			<li>JInv_VRobustGene</li>
+			<li>JInv_VMetabolism</li>
+			<li>JInv_VImmGene</li>
+			<li>JInv_VAgeGene</li>
+			<li>JInv_VHealGene</li>
+			<li>JInv_VHealGene2</li>
+			<li>JInv_VStoreGene</li>
+			<li>JInv_VStoreGene2</li>
+			<li>JInv_VToxinGene</li>
+			<li>JInv_VSkinGene</li>
+			<li>JInv_VSkinGene2</li>
+			<li>JInv_VTempGene</li>
+			<li>PsychicAbility_Deaf</li>
+			<li>Beauty_Pretty</li>
+			<li>Libido_High</li>
+			<li>Aggression_Aggressive</li>
+			<li>DiseaseFree</li>
+			<li MayRequire="kentington.saveourship2">SoS2_VacuumAdapted</li>
+			<li MayRequire="Ludeon.RimWorld.Odyssey">JInv_VLungGene</li>
+			<!-- Dets -->
+			<li MayRequire="det.stoneborn">DV_ExtendedMemory</li>
+			<li MayRequire="det.stoneborn">DV_MightyLiver</li>
+			<li MayRequire="det.stoneborn">DV_LifespanLong</li>
+			<li MayRequire="det.brawnum">DV_RoughPlay</li>
+			<li MayRequire="det.brawnum">DV_StrongBack</li>
+			<li MayRequire="det.boglegs">DV_IntimidatingPresence</li>
+			<!-- Alpha Genes -->
+			<li MayRequire="sarg.alphagenes">AG_DeadlyRaidPresence</li>
+			<li MayRequire="sarg.alphagenes">AG_HardBones</li>
+			<li MayRequire="sarg.alphagenes">AG_Enforcer</li>
+			<li MayRequire="sarg.alphagenes">AG_NoWings</li>
+			<li MayRequire="sarg.alphagenes">AG_PackMule</li>
+			<li MayRequire="sarg.alphagenes">AG_ToughSinews</li>
+			<li MayRequire="sarg.alphagenes">AG_NoTusks</li>
+			<li MayRequire="sarg.alphagenes">AG_NoLowerAntennae</li>
+			<li MayRequire="sarg.alphagenes">AG_NoAntennae</li>
+			<li MayRequire="sarg.alphagenes,vanillaracesexpanded.fungoid">AG_GeneInfectionImmunity</li>
+			<!-- Biggie Smol -->
+			<li MayRequire="RedMattis.BigSmall.Core">BS_Xenolocked</li>
+			<li MayRequire="RedMattis.BigSmall.Core">BS_EverFertile</li>
+			<li MayRequire="RedMattis.BigSmall.Core">BS_SlowBleeding</li>
+			<li MayRequire="RedMattis.BigSmall.Core">BS_GeneStabilizing_Extreme</li>
+			<li MayRequire="RedMattis.BetterGeneInheritance">BGI_PrimaryGenes</li>
+			<!-- FSF -->
+			<li MayRequire="FrozenSnowFox.AdvancedBionicsExpansion">JInv_VFistGene</li>
+			<li MayRequire="FrozenSnowFox.AdvancedBionicsExpansion">JInv_VDigestion</li>
+			<li MayRequire="FrozenSnowFox.AdvancedBionicsExpansion">JInv_VDrugsGene</li>
+			<!-- Adaptation -->
+			<li MayRequire="OmniNerd.CombatEvolution.2005">JIM_OmniAdaptiveLite</li>
+			<li MayRequire="Endermaster567.CryptosleepAdaptationGene">CryptosleepAdaptationGene</li>
+			<!-- Metabolic nonsense -->
+			<li MayRequire="Darkborderman.MoreTraitGenes">LargeStomach</li>
+			<!-- Supa -->
+			<li MayRequire="SuperheroGenesBase.Mod">JInv_VMeleeGeneSH</li>
+			<li MayRequire="SuperheroGenesBase.Mod">JInv_VRobustGeneSH</li>
+			<li MayRequire="SuperheroGenesBase.Mod">JInv_Flight</li>
+			<li MayRequire="SuperheroGenesBase.Mod">JInv_HeroicLeap</li>
+			<li MayRequire="SuperheroGenesBase.Mod">JInv_Restraint</li>
+			<!-- VRE -->
+			<li MayRequire="vanillaracesexpanded.genie">VRE_Slow_Diseases</li>
+			<li MayRequire="vanillaracesexpanded.hussar">VREH_Unconstrained</li>
+			<li MayRequire="vanillaracesexpanded.pigskin">VRE_OrganRegeneration</li>
+		</value>
+</Operation>
+
+<!-- LegendaryViltrumite -->
+<Operation Class="PatchOperationSequence">
+	<operations>
+		<li Class="PatchOperationRemove">
+			<xpath>Defs/XenotypeDef[defName="LegendaryViltrumite"]/genes/li[text()="LegendaryViltrumiteSpeed"]</xpath>
+		</li>
+		<li Class="PatchOperationRemove">
+			<xpath>Defs/XenotypeDef[defName="LegendaryViltrumite"]/genes/li[text()="LegendaryViltrumiteResilience"]</xpath>
+		</li>		
+		<li Class="PatchOperationRemove">
+			<xpath>Defs/XenotypeDef[defName="LegendaryViltrumite"]/genes/li[text()="LegendaryViltrumiteStrength"]</xpath>
+		</li>
+		<li Class="PatchOperationRemove">
+			<xpath>Defs/XenotypeDef[defName="LegendaryViltrumite"]/genes/li[text()="Body_Standard"]</xpath>
+		</li>
+		<li Class="PatchOperationRemove">
+			<xpath>Defs/XenotypeDef[defName="LegendaryViltrumite"]/genes/li[text()="Body_Hulk"]</xpath>
+		</li>
+		<li Class="PatchOperationRemove">
+			<xpath>Defs/XenotypeDef[defName="LegendaryViltrumite"]/genes/li[text()="ViltrumiteNutritionStorage"]</xpath>
+		</li>
+		<li Class="PatchOperationRemove">
+			<xpath>Defs/XenotypeDef[defName="LegendaryViltrumite"]/genes/li[text()="ViltrumiteDigestion"]</xpath>
+		</li>
+		<li Class="PatchOperationRemove">
+			<xpath>Defs/XenotypeDef[defName="LegendaryViltrumite"]/genes/li[text()="AptitudeRemarkable_Medicine"]</xpath>
+		</li>
+		<li Class="PatchOperationRemove">
+			<xpath>Defs/XenotypeDef[defName="LegendaryViltrumite"]/genes/li[text()="AptitudeRemarkable_Melee"]</xpath>
+		</li>
+		<li Class="PatchOperationRemove">
+			<xpath>Defs/XenotypeDef[defName="LegendaryViltrumite"]/genes/li[text()="AptitudeRemarkable_Intellectual"]</xpath>
+		</li>
+		<li Class="PatchOperationRemove">
+			<xpath>Defs/XenotypeDef[defName="LegendaryViltrumite"]/genes/li[text()="AptitudeRemarkable_Mining"]</xpath>
+		</li>
+		<li Class="PatchOperationRemove">
+			<xpath>Defs/XenotypeDef[defName="LegendaryViltrumite"]/genes/li[text()="Superclotting"]</xpath>
+		</li>
+		<li Class="PatchOperationRemove">
+			<xpath>Defs/XenotypeDef[defName="LegendaryViltrumite"]/genes/li[text()="MeleeDamage_Strong"]</xpath>
+		</li>
+		<li Class="PatchOperationRemove">
+			<xpath>Defs/XenotypeDef[defName="LegendaryViltrumite"]/genes/li[text()="Fertile"]</xpath>
+		</li>
+		<li Class="PatchOperationRemove">
+			<xpath>Defs/XenotypeDef[defName="LegendaryViltrumite"]/genes/li[text()="Mood_Sanguine"]</xpath>
+		</li>
+		<li Class="PatchOperationRemove">
+			<xpath>Defs/XenotypeDef[defName="LegendaryViltrumite"]/genes/li[text()="Beauty_Beautiful"]</xpath>
+		</li>
+	</operations>
+</Operation>
+<Operation Class="PatchOperationAdd">
+		<xpath>Defs/XenotypeDef[defName="LegendaryViltrumite"]/genes</xpath>
+		<value>
+			<li>JVIR_VUltraRobust</li>
+			<li>JVIR_VUltraMelee</li>
+			<li>JVIR_VUltraSpeed</li>
+			<li>JInv_VSpeedGene</li>
+			<li>JInv_VMeleeGene</li>
+			<li>JInv_VSmartGene</li>
+			<li>JInv_VRobustGene</li>
+			<li>JInv_VMetabolism</li>
+			<li>JInv_VImmGene</li>
+			<li>JInv_VAgeGene</li>
+			<li>JInv_VHealGene</li>
+			<li>JInv_VHealGene2</li>
+			<li>JInv_VStoreGene</li>
+			<li>JInv_VStoreGene2</li>
+			<li>JInv_VToxinGene</li>
+			<li>JInv_VSkinGene</li>
+			<li>JInv_VSkinGene2</li>
+			<li>JInv_VTempGene</li>
+			<li>PsychicAbility_Deaf</li>
+			<li>Libido_High</li>
+			<li>Aggression_HyperAggressive</li>
+			<li>Mood_Depressive</li>
+			<li>KillThirst</li>
+			<li>Beauty_Pretty</li>
+			<li MayRequire="kentington.saveourship2">SoS2_VacuumAdapted</li>
+			<li MayRequire="Ludeon.RimWorld.Odyssey">JInv_VLungGene</li>
+			<!-- Dets -->
+			<li MayRequire="det.stoneborn">DV_ExtendedMemory</li>
+			<li MayRequire="det.stoneborn">DV_MightyLiver</li>
+			<li MayRequire="det.stoneborn">DV_LifespanLong</li>
+			<li MayRequire="det.brawnum">DV_RoughPlay</li>
+			<li MayRequire="det.brawnum">DV_StrongBack</li>
+			<li MayRequire="det.boglegs">DV_IntimidatingPresence</li>
+			<!-- Alpha Genes -->
+			<li MayRequire="sarg.alphagenes">AG_DeadlyRaidPresence</li>
+			<li MayRequire="sarg.alphagenes">AG_HardBones</li>
+			<li MayRequire="sarg.alphagenes">AG_Enforcer</li>
+			<li MayRequire="sarg.alphagenes">AG_NoWings</li>
+			<li MayRequire="sarg.alphagenes">AG_PackMule</li>
+			<li MayRequire="sarg.alphagenes">AG_ToughSinews</li>
+			<li MayRequire="sarg.alphagenes">AG_NoTusks</li>
+			<li MayRequire="sarg.alphagenes">AG_NoLowerAntennae</li>
+			<li MayRequire="sarg.alphagenes">AG_NoAntennae</li>
+			<li MayRequire="sarg.alphagenes,vanillaracesexpanded.fungoid">AG_GeneInfectionImmunity</li>
+			<li MayRequire="sarg.alphagenes">AG_Rowdy</li>
+			<!-- Biggie Smol -->
+			<li MayRequire="RedMattis.BigSmall.Core">BS_Xenolocked</li>
+			<li MayRequire="RedMattis.BigSmall.Core">BS_EverFertile</li>
+			<li MayRequire="RedMattis.BigSmall.Core">BS_SlowBleeding</li>
+			<li MayRequire="RedMattis.BigSmall.Core">BS_GeneStabilizing_Extreme</li>
+			<li MayRequire="RedMattis.BetterGeneInheritance">BGI_PrimaryGenes</li>
+			<!-- FSF -->
+			<li MayRequire="FrozenSnowFox.AdvancedBionicsExpansion">JInv_VFistGene</li>
+			<li MayRequire="FrozenSnowFox.AdvancedBionicsExpansion">JInv_VDigestion</li>
+			<li MayRequire="FrozenSnowFox.AdvancedBionicsExpansion">JInv_VDrugsGene</li>
+			<!-- Adaptation -->
+			<li MayRequire="OmniNerd.CombatEvolution.2005">JIM_OmniAdaptiveLite</li>
+			<li MayRequire="Endermaster567.CryptosleepAdaptationGene">CryptosleepAdaptationGene</li>
+			<!-- Metabolic nonsense -->
+			<li MayRequire="Darkborderman.MoreTraitGenes">LargeStomach</li>
+			<!-- Supa -->
+			<li MayRequire="SuperheroGenesBase.Mod">JInv_VMeleeGeneSH</li>
+			<li MayRequire="SuperheroGenesBase.Mod">JInv_VRobustGeneSH</li>
+			<li MayRequire="SuperheroGenesBase.Mod">JInv_Flight</li>
+			<li MayRequire="SuperheroGenesBase.Mod">JInv_HeroicLeap</li>
+			<li MayRequire="SuperheroGenesBase.Mod">JInv_Restraint</li>
+			<!-- VRE -->
+			<li MayRequire="vanillaracesexpanded.genie">VRE_Slow_Diseases</li>
+			<li MayRequire="vanillaracesexpanded.hussar">VREH_Unconstrained</li>
+			<li MayRequire="vanillaracesexpanded.pigskin">VRE_OrganRegeneration</li>
+		</value>
+</Operation>
+
+<!-- ArgallViltrumite -->
+<Operation Class="PatchOperationSequence">
+	<operations>
+		<li Class="PatchOperationRemove">
+			<xpath>Defs/XenotypeDef[defName="BloodOfArgall"]/genes/li[text()="BloodOfArgallSpeed"]</xpath>
+		</li>
+		<li Class="PatchOperationRemove">
+			<xpath>Defs/XenotypeDef[defName="BloodOfArgall"]/genes/li[text()="BloodOfArgallResilience"]</xpath>
+		</li>		
+		<li Class="PatchOperationRemove">
+			<xpath>Defs/XenotypeDef[defName="BloodOfArgall"]/genes/li[text()="BloodOfArgallStrength"]</xpath>
+		</li>
+		<li Class="PatchOperationRemove">
+			<xpath>Defs/XenotypeDef[defName="BloodOfArgall"]/genes/li[text()="Body_Standard"]</xpath>
+		</li>
+		<li Class="PatchOperationRemove">
+			<xpath>Defs/XenotypeDef[defName="BloodOfArgall"]/genes/li[text()="Body_Hulk"]</xpath>
+		</li>
+		<li Class="PatchOperationRemove">
+			<xpath>Defs/XenotypeDef[defName="BloodOfArgall"]/genes/li[text()="ViltrumiteNutritionStorage"]</xpath>
+		</li>
+		<li Class="PatchOperationRemove">
+			<xpath>Defs/XenotypeDef[defName="BloodOfArgall"]/genes/li[text()="ViltrumiteDigestion"]</xpath>
+		</li>
+		<li Class="PatchOperationRemove">
+			<xpath>Defs/XenotypeDef[defName="BloodOfArgall"]/genes/li[text()="AptitudeRemarkable_Medicine"]</xpath>
+		</li>
+		<li Class="PatchOperationRemove">
+			<xpath>Defs/XenotypeDef[defName="BloodOfArgall"]/genes/li[text()="AptitudeRemarkable_Melee"]</xpath>
+		</li>
+		<li Class="PatchOperationRemove">
+			<xpath>Defs/XenotypeDef[defName="BloodOfArgall"]/genes/li[text()="AptitudeRemarkable_Intellectual"]</xpath>
+		</li>
+		<li Class="PatchOperationRemove">
+			<xpath>Defs/XenotypeDef[defName="BloodOfArgall"]/genes/li[text()="AptitudeRemarkable_Mining"]</xpath>
+		</li>
+		<li Class="PatchOperationRemove">
+			<xpath>Defs/XenotypeDef[defName="BloodOfArgall"]/genes/li[text()="Superclotting"]</xpath>
+		</li>
+		<li Class="PatchOperationRemove">
+			<xpath>Defs/XenotypeDef[defName="BloodOfArgall"]/genes/li[text()="Fertile"]</xpath>
+		</li>
+		<li Class="PatchOperationRemove">
+			<xpath>Defs/XenotypeDef[defName="BloodOfArgall"]/genes/li[text()="MeleeDamage_Strong"]</xpath>
+		</li>
+	</operations>
+</Operation>
+<Operation Class="PatchOperationAdd">
+		<xpath>Defs/XenotypeDef[defName="BloodOfArgall"]/genes</xpath>
+		<value>
+			<li>JVIR_VUltraRobust</li>
+			<li>JVIR_VUltraMelee</li>
+			<li>JVIR_VUltraSpeed</li>
+			<li>JInv_VSpeedGene</li>
+			<li>JInv_VMeleeGene</li>
+			<li>JInv_VSmartGene</li>
+			<li>JInv_VRobustGene</li>
+			<li>JInv_VMetabolism</li>
+			<li>JInv_VImmGene</li>
+			<li>JInv_VAgeGene</li>
+			<li>JInv_VHealGene</li>
+			<li>JInv_VHealGene2</li>
+			<li>JInv_VStoreGene</li>
+			<li>JInv_VStoreGene2</li>
+			<li>JInv_VToxinGene</li>
+			<li>JInv_VSkinGene</li>
+			<li>JInv_VSkinGene2</li>
+			<li>JInv_VTempGene</li>
+			<li>PsychicAbility_Deaf</li>
+			<li>Libido_High</li>
+			<li>Aggression_Aggressive</li>
+			<li MayRequire="kentington.saveourship2">SoS2_VacuumAdapted</li>
+			<li MayRequire="Ludeon.RimWorld.Odyssey">JInv_VLungGene</li>
+			<!-- Dets -->
+			<li MayRequire="det.stoneborn">DV_ExtendedMemory</li>
+			<li MayRequire="det.stoneborn">DV_MightyLiver</li>
+			<li MayRequire="det.stoneborn">DV_LifespanLong</li>
+			<li MayRequire="det.brawnum">DV_RoughPlay</li>
+			<li MayRequire="det.brawnum">DV_StrongBack</li>
+			<li MayRequire="det.boglegs">DV_IntimidatingPresence</li>
+			<!-- Alpha Genes -->
+			<li MayRequire="sarg.alphagenes">AG_DeadlyRaidPresence</li>
+			<li MayRequire="sarg.alphagenes">AG_HardBones</li>
+			<li MayRequire="sarg.alphagenes">AG_Enforcer</li>
+			<li MayRequire="sarg.alphagenes">AG_NoWings</li>
+			<li MayRequire="sarg.alphagenes">AG_PackMule</li>
+			<li MayRequire="sarg.alphagenes">AG_ToughSinews</li>
+			<li MayRequire="sarg.alphagenes">AG_NoTusks</li>
+			<li MayRequire="sarg.alphagenes">AG_NoLowerAntennae</li>
+			<li MayRequire="sarg.alphagenes">AG_NoAntennae</li>
+			<li MayRequire="sarg.alphagenes,vanillaracesexpanded.fungoid">AG_GeneInfectionImmunity</li>
+			<!-- Biggie Smol -->
+			<li MayRequire="RedMattis.BigSmall.Core">BS_Xenolocked</li>
+			<li MayRequire="RedMattis.BigSmall.Core">BS_EverFertile</li>
+			<li MayRequire="RedMattis.BigSmall.Core">BS_SlowBleeding</li>
+			<li MayRequire="RedMattis.BigSmall.Core">BS_GeneStabilizing_Extreme</li>
+			<li MayRequire="RedMattis.BetterGeneInheritance">BGI_PrimaryGenes</li>
+			<!-- FSF -->
+			<li MayRequire="FrozenSnowFox.AdvancedBionicsExpansion">JInv_VFistGene</li>
+			<li MayRequire="FrozenSnowFox.AdvancedBionicsExpansion">JInv_VDigestion</li>
+			<li MayRequire="FrozenSnowFox.AdvancedBionicsExpansion">JInv_VDrugsGene</li>
+			<!-- Adaptation -->
+			<li MayRequire="OmniNerd.CombatEvolution.2005">JIM_OmniAdaptiveLite</li>
+			<li MayRequire="Endermaster567.CryptosleepAdaptationGene">CryptosleepAdaptationGene</li>
+			<!-- Metabolic nonsense -->
+			<li MayRequire="Darkborderman.MoreTraitGenes">LargeStomach</li>
+			<!-- Supa -->
+			<li MayRequire="SuperheroGenesBase.Mod">JInv_VMeleeGeneSH</li>
+			<li MayRequire="SuperheroGenesBase.Mod">JInv_VRobustGeneSH</li>
+			<li MayRequire="SuperheroGenesBase.Mod">JInv_Flight</li>
+			<li MayRequire="SuperheroGenesBase.Mod">JInv_HeroicLeap</li>
+			<li MayRequire="SuperheroGenesBase.Mod">JInv_Restraint</li>
+			<!-- VRE -->
+			<li MayRequire="vanillaracesexpanded.genie">VRE_Slow_Diseases</li>
+			<li MayRequire="vanillaracesexpanded.hussar">VREH_Unconstrained</li>
+			<li MayRequire="vanillaracesexpanded.pigskin">VRE_OrganRegeneration</li>
+			<li MayRequire="vanillaracesexpanded.highmate">VRE_PerfectBody</li>
+		</value>
+</Operation>
+
+<!-- BattleBeast -->
+<Operation Class="PatchOperationSequence">
+	<operations>
+		<li Class="PatchOperationRemove">
+			<xpath>Defs/XenotypeDef[defName="BattleBeast"]/genes/li[text()="BattleBeastSpeed"]</xpath>
+		</li>
+		<li Class="PatchOperationRemove">
+			<xpath>Defs/XenotypeDef[defName="BattleBeast"]/genes/li[text()="BattleBeastResilience"]</xpath>
+		</li>		
+		<li Class="PatchOperationRemove">
+			<xpath>Defs/XenotypeDef[defName="BattleBeast"]/genes/li[text()="BattleBeastStrength"]</xpath>
+		</li>
+		<li Class="PatchOperationRemove">
+			<xpath>Defs/XenotypeDef[defName="BattleBeast"]/genes/li[text()="BattleBeastDigestion"]</xpath>
+		</li>
+		<li Class="PatchOperationRemove">
+			<xpath>Defs/XenotypeDef[defName="BattleBeast"]/genes/li[text()="BattleBeastNutritionStorage"]</xpath>
+		</li>
+		<li Class="PatchOperationRemove">
+			<xpath>Defs/XenotypeDef[defName="BattleBeast"]/genes/li[text()="AptitudeStrong_Medicine"]</xpath>
+		</li>
+		<li Class="PatchOperationRemove">
+			<xpath>Defs/XenotypeDef[defName="BattleBeast"]/genes/li[text()="AptitudeStrong_Melee"]</xpath>
+		</li>
+		<li Class="PatchOperationRemove">
+			<xpath>Defs/XenotypeDef[defName="BattleBeast"]/genes/li[text()="AptitudeStrong_Intellectual"]</xpath>
+		</li>
+		<li Class="PatchOperationRemove">
+			<xpath>Defs/XenotypeDef[defName="BattleBeast"]/genes/li[text()="AptitudeStrong_Mining"]</xpath>
+		</li>
+		<li Class="PatchOperationRemove">
+			<xpath>Defs/XenotypeDef[defName="BattleBeast"]/genes/li[text()="Hands_Human"]</xpath>
+		</li>
+		<li Class="PatchOperationRemove">
+			<xpath>Defs/XenotypeDef[defName="BattleBeast"]/genes/li[text()="Tail_Smooth"]</xpath>
+		</li>
+		<li Class="PatchOperationRemove">
+			<xpath>Defs/XenotypeDef[defName="BattleBeast"]/genes/li[text()="Jaw_Baseline"]</xpath>
+		</li>
+		<li Class="PatchOperationRemove">
+			<xpath>Defs/XenotypeDef[defName="BattleBeast"]/genes/li[text()="Nose_Human"]</xpath>
+		</li>
+		<li Class="PatchOperationRemove">
+			<xpath>Defs/XenotypeDef[defName="BattleBeast"]/genes/li[text()="Headbone_Human"]</xpath>
+		</li>
+		<li Class="PatchOperationRemove">
+			<xpath>Defs/XenotypeDef[defName="BattleBeast"]/genes/li[text()="PerfectImmunity"]</xpath>
+		</li>
+	</operations>
+</Operation>
+<Operation Class="PatchOperationAdd">
+		<xpath>Defs/XenotypeDef[defName="BattleBeast"]/genes</xpath>
+		<value>
+			<li>JVIR_VHighRobust</li>
+			<li>JVIR_VHighMelee</li>
+			<li>JInv_VSpeedGene2</li>
+			<li>JInv_VSpeedGene</li>
+			<li>JInv_VMeleeGene</li>
+			<li>JInv_VSmartGene</li>
+			<li>JInv_VRobustGene</li>
+			<li>JInv_VMetabolism</li>
+			<li>JInv_VHealGene</li>
+			<li>JInv_VHealGene2</li>
+			<li>JInv_VStoreGene</li>
+			<li>JInv_VStoreGene2</li>
+			<li>ToxicEnvironmentResistance_Total</li>
+			<li>JInv_VSkinGene2</li>
+			<li>JInv_VSkinMicro</li>
+			<li>JInv_VTempGene</li>
+			<li>PsychicAbility_Deaf</li>
+			<li>Aggression_HyperAggressive</li>
+			<li>Mood_Depressive</li>
+			<li>KillThirst</li>
+			<li>RobustDigestion</li>
+			<li>Immunity_SuperStrong</li>
+			<li>DarkVision</li>
+			<li>Nearsighted</li>
+			<li>AptitudeRemarkable_Mining</li>
+			<li>AptitudeRemarkable_Melee</li>
+			<li>AptitudeRemarkable_Construction</li>
+			<li>AptitudeTerrible_Social</li>
+			<li>DiseaseFree</li>
+			<li MayRequire="kentington.saveourship2">SoS2_VacuumAdapted</li>
+			<li MayRequire="Ludeon.RimWorld.Odyssey">VacuumResistance_Total</li>
+			<!-- Dets -->
+			<li MayRequire="det.brawnum">DV_RoughPlay</li>
+			<li MayRequire="det.brawnum">DV_StrongBack</li>
+			<li MayRequire="det.brawnum">DV_ShoulderFur</li>
+			<li MayRequire="det.boglegs">DV_IntimidatingPresence</li>
+			<!-- Alpha Genes -->
+			<li MayRequire="sarg.alphagenes">AG_DeadlyRaidPresence</li>
+			<li MayRequire="sarg.alphagenes">AG_Enforcer</li>
+			<li MayRequire="sarg.alphagenes">AG_PackMule</li>
+			<li MayRequire="sarg.alphagenes">AG_ToughSinews</li>
+			<li MayRequire="sarg.alphagenes,vanillaracesexpanded.fungoid">AG_GeneInfectionImmunity</li>
+			<li MayRequire="sarg.alphagenes">AG_Rowdy</li>
+			<li MayRequire="sarg.alphagenes">AG_ExtraLeather</li>
+			<li MayRequire="sarg.alphagenes">AG_ArmouredSpeed</li>
+			<!-- Biggie Smol -->
+			<li MayRequire="RedMattis.BetterGeneInheritance">BGI_PrimaryGenes</li>
+			<li MayRequire="RedMattis.BigSmall.Core">BS_Diet_Carnivore</li>
+			<li MayRequire="RedMattis.BigSmall.Core">VU_Unliving_Resilience</li>
+			<li MayRequire="RedMattis.BigSmall.Core">BS_Fast_TotalHealing</li>
+			<li MayRequire="RedMattis.BigSmall.Core">BS_Bloodlust</li>
+			<li MayRequire="RedMattis.BigSmall.Core">BS_Unpretentious</li>
+			<li MayRequire="RedMattis.BigSmall.Core">BS_Abrasive</li>
+			<li MayRequire="RedMattis.BigSmall.Core">BS_LargeFrame</li>
+			<li MayRequire="RedMattis.BigSmall.Core">Large</li>
+			<li MayRequire="RedMattis.BigSmall.Core">VU_Pounce</li>
+			<li MayRequire="RedMattis.BigSmall.Core">BS_FuzzyBrows</li>
+			<li MayRequire="RedMattis.BigSmall.Core">BS_FurryBody</li>
+			<!-- FSF -->
+			<li MayRequire="FrozenSnowFox.AdvancedBionicsExpansion">JInv_VClawGene</li>
+			<li MayRequire="FrozenSnowFox.AdvancedBionicsExpansion">JInv_VJawGene</li>
+			<li MayRequire="FrozenSnowFox.AdvancedBionicsExpansion">JInv_VDrugsGene</li>
+			<li MayRequire="FrozenSnowFox.AdvancedBionicsExpansion">JInv_VDigestion</li>
+			<!-- Adaptation -->
+			<li MayRequire="OmniNerd.CombatEvolution.2005">JIM_OmniAdaptiveLite</li>
+			<!-- Supa -->
+			<li MayRequire="SuperheroGenesBase.Mod">JInv_VMeleeGeneSH</li>
+			<li MayRequire="SuperheroGenesBase.Mod">JInv_VRobustGeneSH</li>
+			<li MayRequire="SuperheroGenesBase.Mod">JInv_HeroicLeap</li>
+			<li MayRequire="SuperheroGenesBase.Mod">JInv_Restraint</li>
+			<!-- VRE -->
+			<li MayRequire="vanillaracesexpanded.hussar">VREH_Unconstrained</li>
+			<li MayRequire="vanillaracesexpanded.pigskin">VRE_ExtraMeat</li>
+			<li MayRequire="vanillaracesexpanded.genie">VRE_Slow_Diseases</li>
+			<!-- Outland -->
+			<li MayRequire="Neronix17.Outland.Genetics">Outland_FelineHead</li>
+			<li MayRequire="Neronix17.Outland.Genetics">Outland_NeckRuffle_Fuzzy</li>
+			<li MayRequire="Neronix17.Outland.Genetics">Outland_Voice_Beastly</li>
+			<li MayRequire="Neronix17.Outland.Genetics">Outland_Chest_Fur</li>
+			<li MayRequire="Neronix17.Outland.Genetics">Beard_NoBeardOnly</li>
+			<!-- Rumbliest Tummy -->
+			<li MayRequire="Darkborderman.MoreTraitGenes">LargeStomach</li>
+		</value>
+</Operation>
+
+</Patch>

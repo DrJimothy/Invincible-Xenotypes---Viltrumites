@@ -1,0 +1,1220 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<FactionDef ParentName="FactionBase">
+		<defName>ViltrumEmpire</defName>
+		<label>Empire of Viltrum</label>
+		<categoryTag>Empire</categoryTag>
+		<description>A ruthless, militaristic, expansionist, eugenic, ultratech empire. Their leaders and champions, the Viltrumites, are near-immortal superbeings.\n\nTheir advanced technology means they can greatly improve the lives of those who submit, but their sheer brutality and callousness makes resistance attractive to those with the power or will for it.\n\nViltrumites are a tiny portion of their population. Their underlings are equipped and enhanced with the empire's advanced technology, and so pose a serious threat with or without their masters present. They also utilize mechanoids.</description>
+		<pawnSingular>vilgrunt</pawnSingular>
+		<pawnsPlural>vilgrunts</pawnsPlural>
+		<settlementGenerationWeight>1</settlementGenerationWeight>
+		<requiredCountAtGameStart>1</requiredCountAtGameStart>
+		<canSiege>true</canSiege>
+		<canStageAttacks>true</canStageAttacks>
+		<leaderTitle>regent</leaderTitle>
+		<leaderForceGenerateNewPawn>true</leaderForceGenerateNewPawn>
+		<factionIconPath>World/WorldObjects/Expanding/PirateOutpost</factionIconPath>
+		<factionNameMaker>NamerFactionViltrum</factionNameMaker>
+		<settlementNameMaker>NamerSettlementViltrum</settlementNameMaker>
+		<allowedCultures>
+			<li>Culture_Viltrum</li>
+		</allowedCultures>
+		<arrivalLayerWhitelist>
+			<li>Surface</li>
+			<li MayRequire="Ludeon.RimWorld.Odyssey">Orbit</li>
+		</arrivalLayerWhitelist>
+		<requiredMemes>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Supremacist</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Raider</li>
+			<li MayRequire="VanillaExpanded.VMemesE">VME_BloodCourt</li>
+		</requiredMemes>
+		<allowedMemes>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Collectivist</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">HumanPrimacy</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Proselytizer</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">PainIsVirtue</li>
+			<li MayRequire="Sarg.AlphaMemes">AM_Gladiator</li>
+			<li MayRequire="VanillaExpanded.VMemesE">VME_Bushido</li>
+			<li MayRequire="VanillaExpanded.VMemesE">VME_ViolentConversion</li>
+			<li MayRequire="VanillaExpanded.VMemesE">VME_Progressive</li>
+		</allowedMemes>
+		<structureMemeWeights>
+			<Structure_Archist MayRequire="Ludeon.RimWorld.Ideology">1</Structure_Archist>
+			<Structure_Ideological MayRequire="Ludeon.RimWorld.Ideology">2</Structure_Ideological>
+		</structureMemeWeights>
+		<xenotypeSet>
+			<xenotypeChances>
+				<!-- Vanilla -->
+				<Baseliner>0.1</Baseliner>
+				<Neanderthal>1</Neanderthal>
+				<Yttakin>1</Yttakin>
+				<Impid>1</Impid>
+				<Pigskin>1</Pigskin>
+				<Waster>1</Waster>
+				<Dirtmole>1</Dirtmole>
+				<Hussar>0.25</Hussar>
+				<Genie>0.25</Genie>
+				<Sanguophage>0.01</Sanguophage>
+				<!-- BE Mammalia -->
+				<Barkkin MayRequire="biotexpans.mammalia">0.5</Barkkin>
+				<Bonecrown MayRequire="biotexpans.mammalia">0.5</Bonecrown>
+				<Wiretail MayRequire="biotexpans.mammalia">0.5</Wiretail>
+				<Hidewing MayRequire="biotexpans.mammalia">0.5</Hidewing>
+				<Seertusk MayRequire="biotexpans.mammalia">0.5</Seertusk>
+				<Devilpuff MayRequire="sarg.alphagenes,biotexpans.mammalia">0.5</Devilpuff>
+				<Blastheart MayRequire="sarg.alphagenes,biotexpans.mammalia">0.5</Blastheart>
+				<Cloudpuff MayRequire="sarg.alphagenes,biotexpans.mammalia">0.5</Cloudpuff>
+				<Haytankard MayRequire="sarg.alphagenes,biotexpans.mammalia">0.5</Haytankard>
+				<Hindhopper MayRequire="sarg.alphagenes,biotexpans.mammalia">0.5</Hindhopper>
+				<!-- Alpha -->
+				<AG_Fleetkind MayRequire="sarg.alphagenes">2</AG_Fleetkind>
+				<AG_Helixien MayRequire="sarg.alphagenes">2</AG_Helixien>
+				<AG_Animusen MayRequire="sarg.alphagenes">2</AG_Animusen>
+				<AG_Lapis MayRequire="sarg.alphagenes">2</AG_Lapis>
+				<AG_Hiveling MayRequire="sarg.alphagenes">2</AG_Hiveling>
+				<AG_MindDevourer MayRequire="sarg.alphagenes">2</AG_MindDevourer>
+				<AG_Efreet MayRequire="sarg.alphagenes">2</AG_Efreet>
+				<AG_Drakonori MayRequire="sarg.alphagenes">2</AG_Drakonori>
+				<AG_Nereid MayRequire="sarg.alphagenes">2</AG_Nereid>
+				<AG_Taukai MayRequire="sarg.alphagenes">0.1</AG_Taukai>
+				<AG_RandomCustom MayRequire="sarg.alphagenes">0.1</AG_RandomCustom>
+				<!-- Dets -->
+				<DV_Avaloi MayRequire="det.avaloi">2</DV_Avaloi>
+				<DV_Brawnum MayRequire="det.brawnum">1</DV_Brawnum>
+				<DV_Bogleg MayRequire="det.boglegs">1</DV_Bogleg>
+				<DV_Halffoot MayRequire="det.halffoot">1</DV_Halffoot>
+				<DV_Buzzer MayRequire="det.buzzers">2</DV_Buzzer>
+				<DV_Venator MayRequire="det.venators">2</DV_Venator>
+				<DV_Keshig MayRequire="det.keshig">2</DV_Keshig>
+				<Stoneborn MayRequire="det.stoneborn">1</Stoneborn>
+				<!-- Florian -->
+				<ST_PlantPerson MayRequire="Starei.PlantPeople">1</ST_PlantPerson>
+				<!-- Dreadfleet -->
+				<mfaxGaunt MayRequire="doll.dreadfleet">0.05</mfaxGaunt>
+				<mfaxGorerunner MayRequire="doll.dreadfleet">0.05</mfaxGorerunner>
+				<mfaxLiche MayRequire="doll.dreadfleet">0.01</mfaxLiche>
+				<!-- VE -->
+				<VRE_Lowmate MayRequire="vanillaracesexpanded.highmate">0.25</VRE_Lowmate>
+				<VREH_Uhlan MayRequire="vanillaracesexpanded.hussar">0.01</VREH_Uhlan>
+				<VRE_Boarskin MayRequire="vanillaracesexpanded.pigskin">1</VRE_Boarskin>
+				<VRE_Strigoi MayRequire="vanillaracesexpanded.sanguophage">0.01</VRE_Strigoi>
+				<VRE_Ekkimian MayRequire="vanillaracesexpanded.sanguophage">0.01</VRE_Ekkimian>
+				<VRE_Bruxa MayRequire="vanillaracesexpanded.sanguophage">0.01</VRE_Bruxa>
+				<VRESaurids_Saurid MayRequire="vanillaracesexpanded.saurid">2</VRESaurids_Saurid>
+				<!-- Phytokin -->
+				<VRE_Poluxkin MayRequire="vanillaracesexpanded.phytokin">1</VRE_Poluxkin>
+				<VRE_Gauranlenkin MayRequire="vanillaracesexpanded.phytokin,Ludeon.RimWorld.Ideology">0.25</VRE_Gauranlenkin>
+				<VRE_Animakin MayRequire="vanillaracesexpanded.phytokin,Ludeon.RimWorld.Royalty">0.25</VRE_Animakin>
+				<ArcheanKin MayRequire="dustydinoface.Archeankin">0.25</ArcheanKin>
+				<mytigio_Harbingerkin MayRequire="mytigio.HarbingerKin">1</mytigio_Harbingerkin>
+				<!-- More Biotech Style Xenos -->
+				<MBSXT_Damphir MayRequire="MoreBiotechStyleXenotypes.Mod">0.05</MBSXT_Damphir>
+				<MBSXT_Viperal MayRequire="MoreBiotechStyleXenotypes.Mod">0.1</MBSXT_Viperal>
+				<MBSXT_Artifexian MayRequire="MoreBiotechStyleXenotypes.Mod">1</MBSXT_Artifexian>
+				<MBSXT_Felionkin MayRequire="MoreBiotechStyleXenotypes.Mod">1</MBSXT_Felionkin>
+				<MBSXT_Canuskin MayRequire="MoreBiotechStyleXenotypes.Mod">1</MBSXT_Canuskin>
+				<MBSXT_Toxinborn MayRequire="MoreBiotechStyleXenotypes.Mod">1</MBSXT_Toxinborn>
+				<MBSXT_Reaver MayRequire="MoreBiotechStyleXenotypes.Mod">1</MBSXT_Reaver>
+				<MBSXT_Harmonite MayRequire="MoreBiotechStyleXenotypes.Mod">0.01</MBSXT_Harmonite>
+				<MBSXT_Battleborne MayRequire="MoreBiotechStyleXenotypes.Mod">0.25</MBSXT_Battleborne>
+				<MBSXT_Oni MayRequire="MoreBiotechStyleXenotypes.Mod">1</MBSXT_Oni>
+				<MBSXT_Celestial MayRequire="MoreBiotechStyleGenes.Mod,MoreBiotechStyleXenotypes.Mod">0.01</MBSXT_Celestial>
+				<MBSXT_Phoenix MayRequire="MoreBiotechStyleGenes.Mod,MoreBiotechStyleXenotypes.Mod">0.25</MBSXT_Phoenix>
+				<MBSXT_Yeti MayRequire="MoreBiotechStyleGenes.Mod,MoreBiotechStyleXenotypes.Mod">0.25</MBSXT_Yeti>
+				<!-- Vanilla Xenos Improved -->
+				<Kitul MayRequire="GrillMaster.vanillaxenotypesimproved">1</Kitul>
+				<Artemid MayRequire="GrillMaster.vanillaxenotypesimproved">1</Artemid>
+				<Nizhar MayRequire="GrillMaster.vanillaxenotypesimproved">1</Nizhar>
+				<Prole MayRequire="GrillMaster.vanillaxenotypesimproved">1</Prole>
+				<Gwennin MayRequire="GrillMaster.vanillaxenotypesimproved">1</Gwennin>
+			</xenotypeChances>
+		</xenotypeSet>
+		<naturalEnemy>true</naturalEnemy>
+		<techLevel>Ultra</techLevel>
+		<backstoryFilters>
+			<li>
+				<categories>
+					<li>Vilgrunt</li>
+					<li>Viltrum</li>
+					<li>VGeneric</li>
+					<li MayRequire="Ludeon.RimWorld.Royalty">ImperialCommon</li>
+					<li>Offworld</li>
+					<li>Outlander</li>
+					<li>Pirate</li>
+					<li>Tribal</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+		<allowedArrivalTemperatureRange>-85~45</allowedArrivalTemperatureRange>
+		<settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
+		<colorSpectrum>
+			<li>(0.9, 0.9, 0.9)</li>
+		</colorSpectrum>
+		<fixedLeaderKinds>
+			<li>Viltrumite_Fighter_Regent</li>
+		</fixedLeaderKinds>
+		<baseTraderKinds>
+			<li>Base_Outlander_Standard</li>
+		</baseTraderKinds>
+		<caravanTraderKinds>
+			<li>Caravan_Outlander_BulkGoods</li>
+			<li>Caravan_Outlander_CombatSupplier</li>
+			<li>Caravan_Outlander_Exotic</li>
+			<li>Caravan_Outlander_PirateMerchant</li>
+		</caravanTraderKinds>
+		<!-- TESTING ORBITAL TRADERS. Requesting orbital traders disabled. -->
+		<!-- canRequestOrbitalTrader MayRequire="Ludeon.RimWorld.Odyssey">true</canRequestOrbitalTrader -->
+		<layerWhitelist>
+			<li>Surface</li>
+		</layerWhitelist>
+		<orbitalTraderKinds>
+			<li>Orbital_BulkGoods</li>
+			<li>Orbital_CombatSupplier</li>
+			<li>Orbital_Exotic</li>
+			<li>Orbital_PirateMerchant</li>
+		</orbitalTraderKinds>
+		<!-- TESTING ORBITAL TRADERS -->
+		<!-- TESTING HONOUR SYSTEM -->
+		<royalFavorLabel MayRequire="Ludeon.RimWorld.Royalty">loyalty</royalFavorLabel>
+		<royalFavorIconPath MayRequire="Ludeon.RimWorld.Royalty">UI/Icons/RoyalFavor</royalFavorIconPath>
+		<royalTitleTags MayRequire="Ludeon.RimWorld.Royalty"><li>ViltrumTitle</li></royalTitleTags>
+		<royalTitleInheritanceWorkerClass MayRequire="Ludeon.RimWorld.Royalty">RoyalTitleInheritanceWorker</royalTitleInheritanceWorkerClass>
+		<royalTitleInheritanceRelations MayRequire="Ludeon.RimWorld.Royalty">
+			<li>Child</li>
+			<li>Grandchild</li>
+			<li>GreatGrandchild</li>
+			<li>NephewOrNiece</li>
+			<li>Sibling</li>
+			<li>HalfSibling</li>
+			<li>Spouse</li>
+			<li>Cousin</li>
+			<li>Parent</li>
+			<li>UncleOrAunt</li>
+		</royalTitleInheritanceRelations>
+		<!-- TESTING HONOUR SYSTEM -->
+		<!-- Similar raid commonality to mechs, but can attack from day 1 -->
+		<raidCommonalityFromPointsCurve>
+			<points>
+				<li>(0,	0.5)</li>
+				<li>(700,	1)</li>
+				<li>(1400, 1.8)</li>
+				<li>(2800, 2.2)</li>
+				<li>(4000, 2.6)</li>
+			</points>
+		</raidCommonalityFromPointsCurve>
+		<raidLootMaker>ViltrumRaidLootMaker</raidLootMaker>
+		<maxPawnCostPerTotalPointsCurve><!-- Possible to get wrecked day 1 -->
+			<points>
+				<li>(0,10000)</li>
+			</points>
+		</maxPawnCostPerTotalPointsCurve>
+		<pawnGroupMakers>
+			<!-- Warcaller Squad -->
+			<li>
+				<kindDef>Combat</kindDef>
+				<commonality>1</commonality>
+				<options>
+					<Vilgrunt_RandomWC>1</Vilgrunt_RandomWC>
+					<Vilgrunt_SlasherWC>1</Vilgrunt_SlasherWC>
+					<Elephant>1</Elephant>
+					<Thrumbo>1</Thrumbo>
+					<AlphaThrumbo MayRequire="Ludeon.RimWorld.Odyssey">1</AlphaThrumbo>
+				</options>
+			</li>
+			<li>
+				<kindDef>Combat</kindDef>
+				<commonality>1</commonality>
+				<options>
+					<Viltrumite_Fighter_Random>1</Viltrumite_Fighter_Random>
+					<Vilgrunt_RandomWC>1</Vilgrunt_RandomWC>
+					<Vilgrunt_SlasherWC>1</Vilgrunt_SlasherWC>
+					<Elephant>1</Elephant>
+					<Thrumbo>1</Thrumbo>
+					<AlphaThrumbo MayRequire="Ludeon.RimWorld.Odyssey">1</AlphaThrumbo>
+				</options>
+			</li>
+			<!-- Sniper Team -->
+			<li>
+				<kindDef>Combat</kindDef>
+				<commonality>1</commonality>
+				<options>
+					<Viltrumite_Fighter_Random>1</Viltrumite_Fighter_Random>
+					<Vilmerc_Sniper>1</Vilmerc_Sniper>
+					<Vilgrunt_Mercenary_Sniper>1</Vilgrunt_Mercenary_Sniper>
+				</options>
+			</li>
+			<li>
+				<kindDef>Combat</kindDef>
+				<commonality>1</commonality>
+				<options>
+					<Vilmerc_Sniper>1</Vilmerc_Sniper>
+					<Vilgrunt_Mercenary_Sniper>1</Vilgrunt_Mercenary_Sniper>
+				</options>
+			</li>
+			<!-- Melee Team -->
+			<li>
+				<kindDef>Combat</kindDef>
+				<commonality>1</commonality>
+				<options>
+					<Viltrumite_Fighter_Random>1</Viltrumite_Fighter_Random>
+					<Vilgrunt_Mercenary_Slasher>1</Vilgrunt_Mercenary_Slasher>
+					<Vilmerc_Slasher>1</Vilmerc_Slasher>
+					<Viltrum_Fighter_Champion MayRequire="Ludeon.RimWorld.Royalty">1</Viltrum_Fighter_Champion>
+				</options>
+			</li>
+			<li>
+				<kindDef>Combat</kindDef>
+				<commonality>1</commonality>
+				<options>
+					<Vilgrunt_Mercenary_Slasher>1</Vilgrunt_Mercenary_Slasher>
+					<Vilmerc_Slasher>1</Vilmerc_Slasher>
+					<Viltrum_Fighter_Champion MayRequire="Ludeon.RimWorld.Royalty">1</Viltrum_Fighter_Champion>
+				</options>
+			</li>
+			<!-- Vilgrunt_Grenadier_EMP. No Viltrumite buddies cos duh. -->
+			<li>
+				<kindDef>Combat</kindDef>
+				<commonality>1</commonality>
+				<options>
+					<Vilgrunt_Grenadier_EMP>1</Vilgrunt_Grenadier_EMP>
+				</options>
+			</li>
+			<li>
+				<!-- Horror Beyond Comprehension -->
+				<kindDef>Combat</kindDef>
+				<commonality>1</commonality>
+				<options>
+					<Vilgrunt_Grenadier_EMP>1</Vilgrunt_Grenadier_EMP>
+					<Viltrum_Fighter_CataphractMelee MayRequire="Ludeon.RimWorld.Royalty">1</Viltrum_Fighter_CataphractMelee>
+				</options>
+			</li>
+			<li>
+				<kindDef>Combat</kindDef>
+				<commonality>1</commonality>
+				<options>
+					<Vilgrunt_Grenadier_EMP>1</Vilgrunt_Grenadier_EMP>
+					<Vilgrunt_Grenadier_Destructive>1</Vilgrunt_Grenadier_Destructive>
+				</options>
+			</li>
+			<!-- Vilgrunt_Grenadier_Destructive -->
+			<li>
+				<kindDef>Combat</kindDef>
+				<commonality>1</commonality>
+				<options>
+					<Viltrumite_Fighter_Random>1</Viltrumite_Fighter_Random>
+					<Vilgrunt_Grenadier_Destructive>1</Vilgrunt_Grenadier_Destructive>
+				</options>
+			</li>
+			<li>
+				<kindDef>Combat</kindDef>
+				<commonality>1</commonality>
+				<options>
+					<Vilgrunt_Grenadier_Destructive>1</Vilgrunt_Grenadier_Destructive>
+				</options>
+			</li>
+			<!-- Vilgrunt_Mercenary_Gunner -->
+			<li>
+				<kindDef>Combat</kindDef>
+				<commonality>1</commonality>
+				<options>
+					<Viltrumite_Fighter_Random>1</Viltrumite_Fighter_Random>
+					<Vilgrunt_Mercenary_Gunner>1</Vilgrunt_Mercenary_Gunner>
+				</options>
+			</li>
+			<li>
+				<kindDef>Combat</kindDef>
+				<commonality>1</commonality>
+				<options>
+					<Vilgrunt_Mercenary_Gunner>1</Vilgrunt_Mercenary_Gunner>
+				</options>
+			</li>
+			<!-- Vilmerc_Sniper -->
+			<li>
+				<kindDef>Combat</kindDef>
+				<commonality>1</commonality>
+				<options>
+					<Viltrumite_Fighter_Random>1</Viltrumite_Fighter_Random>
+					<Vilmerc_Sniper>1</Vilmerc_Sniper>
+				</options>
+			</li>
+			<li>
+				<kindDef>Combat</kindDef>
+				<commonality>1</commonality>
+				<options>
+					<Vilmerc_Sniper>1</Vilmerc_Sniper>
+				</options>
+			</li>
+			<!-- Vilmerc_Slasher -->
+			<li>
+				<kindDef>Combat</kindDef>
+				<commonality>1</commonality>
+				<options>
+					<Viltrumite_Fighter_Random>1</Viltrumite_Fighter_Random>
+					<Vilmerc_Slasher>1</Vilmerc_Slasher>
+				</options>
+			</li>
+			<li>
+				<kindDef>Combat</kindDef>
+				<commonality>1</commonality>
+				<options>
+					<Vilmerc_Slasher>1</Vilmerc_Slasher>
+				</options>
+			</li>
+			<!-- Vilgrunt_Mercenary_Heavy + Viltrum_Fighter_CataphractRanged -->
+			<li>
+				<kindDef>Combat</kindDef>
+				<commonality>1</commonality>
+				<options>
+					<Viltrumite_Fighter_Random>1</Viltrumite_Fighter_Random>
+					<Vilgrunt_Mercenary_Heavy>1</Vilgrunt_Mercenary_Heavy>
+				</options>
+			</li>
+			<li>
+				<kindDef>Combat</kindDef>
+				<commonality>1</commonality>
+				<options>
+					<Vilgrunt_Mercenary_Heavy>1</Vilgrunt_Mercenary_Heavy>
+				</options>
+			</li>
+			<li>
+				<kindDef>Combat</kindDef>
+				<commonality>1</commonality>
+				<options>
+					<Viltrumite_Fighter_Random>1</Viltrumite_Fighter_Random>
+					<Vilgrunt_Mercenary_Heavy>1</Vilgrunt_Mercenary_Heavy>
+					<Viltrum_Fighter_CataphractRanged MayRequire="Ludeon.RimWorld.Royalty">1</Viltrum_Fighter_CataphractRanged>
+				</options>
+			</li>
+			<li>
+				<kindDef>Combat</kindDef>
+				<commonality>1</commonality>
+				<options>
+					<Vilgrunt_Mercenary_Heavy>1</Vilgrunt_Mercenary_Heavy>
+					<Viltrum_Fighter_CataphractRanged MayRequire="Ludeon.RimWorld.Royalty">1</Viltrum_Fighter_CataphractRanged>
+				</options>
+			</li>
+			<!-- Vilgrunt_Mercenary_Elite -->
+			<li>
+				<kindDef>Combat</kindDef>
+				<commonality>1</commonality>
+				<options>
+					<Viltrumite_Fighter_Random>1</Viltrumite_Fighter_Random>
+					<Vilgrunt_Mercenary_Elite>1</Vilgrunt_Mercenary_Elite>
+				</options>
+			</li>
+			<li>
+				<kindDef>Combat</kindDef>
+				<commonality>1</commonality>
+				<options>
+					<Vilgrunt_Mercenary_Elite>1</Vilgrunt_Mercenary_Elite>
+				</options>
+			</li>
+			<!-- Vilgrunt_Random -->
+			<li>
+				<kindDef>Combat</kindDef>
+				<commonality>1</commonality>
+				<options>
+					<Viltrumite_Fighter_Random>1</Viltrumite_Fighter_Random>
+					<Vilgrunt_Random>1</Vilgrunt_Random>
+				</options>
+			</li>
+			<li>
+				<kindDef>Combat</kindDef>
+				<commonality>1</commonality>
+				<options>
+					<Vilgrunt_Random>1</Vilgrunt_Random>
+				</options>
+			</li>
+			<!-- Vilgrunt_Marine -->
+			<li>
+				<kindDef>Combat</kindDef>
+				<commonality>1</commonality>
+				<options>
+					<Viltrumite_Fighter_Random>1</Viltrumite_Fighter_Random>
+					<Vilgrunt_Marine>1</Vilgrunt_Marine>
+				</options>
+			</li>
+			<li>
+				<kindDef>Combat</kindDef>
+				<commonality>1</commonality>
+				<options>
+					<Vilgrunt_Marine>1</Vilgrunt_Marine>
+				</options>
+			</li>
+			<!-- Vilgrunt_shotgunner -->
+			<li>
+				<kindDef>Combat</kindDef>
+				<commonality>1</commonality>
+				<options>
+					<Viltrumite_Fighter_Random>1</Viltrumite_Fighter_Random>
+					<Vilgrunt_shotgunner>1</Vilgrunt_shotgunner>
+				</options>
+			</li>
+			<li>
+				<kindDef>Combat</kindDef>
+				<commonality>1</commonality>
+				<options>
+					<Vilgrunt_shotgunner>1</Vilgrunt_shotgunner>
+				</options>
+			</li>
+			<!-- Vilgrunt_Mercenary_Sniper -->
+			<li>
+				<kindDef>Combat</kindDef>
+				<commonality>1</commonality>
+				<options>
+					<Viltrumite_Fighter_Random>1</Viltrumite_Fighter_Random>
+					<Vilgrunt_Mercenary_Sniper>1</Vilgrunt_Mercenary_Sniper>
+				</options>
+			</li>
+			<li>
+				<kindDef>Combat</kindDef>
+				<commonality>1</commonality>
+				<options>
+					<Vilgrunt_Mercenary_Sniper>1</Vilgrunt_Mercenary_Sniper>
+				</options>
+			</li>
+			<!-- Vilgrunt_Mercenary_Slasher -->
+			<li>
+				<kindDef>Combat</kindDef>
+				<commonality>1</commonality>
+				<options>
+					<Viltrumite_Fighter_Random>1</Viltrumite_Fighter_Random>
+					<Vilgrunt_Mercenary_Slasher>1</Vilgrunt_Mercenary_Slasher>
+				</options>
+			</li>
+			<li>
+				<kindDef>Combat</kindDef>
+				<commonality>1</commonality>
+				<options>
+					<Vilgrunt_Mercenary_Slasher>1</Vilgrunt_Mercenary_Slasher>
+				</options>
+			</li>
+			<!-- Every custom pawnkind -->
+			<li>
+				<kindDef>Combat</kindDef>
+				<commonality>1</commonality>
+				<options>
+					<Viltrumite_Fighter_Regent>1</Viltrumite_Fighter_Regent>
+					<Viltrumite_Fighter_Simple>1</Viltrumite_Fighter_Simple>
+					<Viltrumite_Fighter_Random>1</Viltrumite_Fighter_Random>
+					<Viltrumite_Fighter_Solo>1</Viltrumite_Fighter_Solo>
+					<Viltrumite_Fighter_Elite>1</Viltrumite_Fighter_Elite>
+					<Vilgrunt_Random>1</Vilgrunt_Random>
+					<Vilgrunt_Marine>1</Vilgrunt_Marine>
+					<Vilgrunt_shotgunner>1</Vilgrunt_shotgunner>
+					<Vilgrunt_Mercenary_Sniper>1</Vilgrunt_Mercenary_Sniper>
+					<Vilgrunt_Grenadier_EMP>1</Vilgrunt_Grenadier_EMP>
+					<Vilgrunt_Mercenary_Slasher>1</Vilgrunt_Mercenary_Slasher>
+					<Vilgrunt_Mercenary_Gunner>1</Vilgrunt_Mercenary_Gunner>
+					<Vilmerc_Sniper>1</Vilmerc_Sniper>
+					<Vilmerc_Slasher>1</Vilmerc_Slasher>
+					<Vilgrunt_Mercenary_Heavy>1</Vilgrunt_Mercenary_Heavy>
+					<Vilgrunt_Mercenary_Elite>1</Vilgrunt_Mercenary_Elite>
+					<Vilgrunt_Grenadier_Destructive>1</Vilgrunt_Grenadier_Destructive>
+					<Viltrum_Fighter_Champion MayRequire="Ludeon.RimWorld.Royalty">1</Viltrum_Fighter_Champion>
+					<Viltrum_Fighter_CataphractRanged MayRequire="Ludeon.RimWorld.Royalty">1</Viltrum_Fighter_CataphractRanged>
+				</options>
+			</li>
+			<!-- You're so boned bro lmao -->
+			<li>
+				<kindDef>Combat</kindDef>
+				<commonality>1</commonality>
+				<options>
+					<Viltrumite_Fighter_Regent>1</Viltrumite_Fighter_Regent>
+					<Viltrumite_Fighter_Simple>1</Viltrumite_Fighter_Simple>
+					<Viltrumite_Fighter_Garbage>1</Viltrumite_Fighter_Garbage>
+					<Viltrumite_Fighter_Slicer>1</Viltrumite_Fighter_Slicer>
+					<Viltrumite_Fighter_Random>1</Viltrumite_Fighter_Random>
+					<Viltrumite_Fighter_Solo>1</Viltrumite_Fighter_Solo>
+					<Viltrumite_Fighter_Elite>1</Viltrumite_Fighter_Elite>
+				</options>
+			</li>
+			<!-- Solo Viltrumite raids (pawn cost means only 1 will be sent) -->
+			<li>
+				<kindDef>Combat</kindDef>
+				<commonality>1</commonality>
+				<options>
+					<Viltrumite_Fighter_Regent>1</Viltrumite_Fighter_Regent>
+					<Viltrumite_Fighter_Solo>1</Viltrumite_Fighter_Solo>
+					<Viltrumite_Fighter_Elite>1</Viltrumite_Fighter_Elite>
+					<Viltrumite_Fighter_Slicer>1</Viltrumite_Fighter_Slicer>
+				</options>
+			</li>
+			<!-- Gang Violence -->
+			<li>
+				<kindDef>Combat</kindDef>
+				<commonality>1</commonality>
+				<options>
+					<Viltrumite_Fighter_Simple>1</Viltrumite_Fighter_Simple>
+				</options>
+			</li>
+			<li>
+				<kindDef>Combat</kindDef>
+				<commonality>1</commonality>
+				<options>
+					<Viltrumite_Fighter_Random>1</Viltrumite_Fighter_Random>
+				</options>
+			</li>
+			<li>
+				<kindDef>Combat</kindDef>
+				<commonality>1</commonality>
+				<options>
+					<Viltrumite_Fighter_Garbage>1</Viltrumite_Fighter_Garbage>
+				</options>
+			</li>
+			<li>
+				<kindDef>Combat</kindDef>
+				<commonality>1</commonality>
+				<options>
+					<Viltrumite_Fighter_Simple>1</Viltrumite_Fighter_Simple>
+					<Viltrumite_Fighter_Garbage>1</Viltrumite_Fighter_Garbage>
+					<Viltrumite_Fighter_Random>1</Viltrumite_Fighter_Random>
+				</options>
+			</li>
+			<!-- Every Vilgrunt -->
+			<li>
+				<kindDef>Combat</kindDef>
+				<commonality>1</commonality>
+				<options>
+					<Vilgrunt_Random>1</Vilgrunt_Random>
+					<Vilgrunt_Marine>1</Vilgrunt_Marine>
+					<Vilgrunt_shotgunner>1</Vilgrunt_shotgunner>
+					<Vilgrunt_Mercenary_Sniper>1</Vilgrunt_Mercenary_Sniper>
+					<Vilgrunt_Mercenary_Slasher>1</Vilgrunt_Mercenary_Slasher>
+					<Viltrum_Fighter_Champion MayRequire="Ludeon.RimWorld.Royalty">1</Viltrum_Fighter_Champion>
+					<Viltrum_Fighter_CataphractRanged MayRequire="Ludeon.RimWorld.Royalty">1</Viltrum_Fighter_CataphractRanged>
+				</options>
+			</li>
+			<!-- Every Vilmerc -->
+			<li>
+				<kindDef>Combat</kindDef>
+				<commonality>1</commonality>
+				<options>
+					<Vilgrunt_Mercenary_Gunner>1</Vilgrunt_Mercenary_Gunner>
+					<Vilmerc_Sniper>1</Vilmerc_Sniper>
+					<Vilmerc_Slasher>1</Vilmerc_Slasher>
+					<Vilgrunt_Mercenary_Heavy>1</Vilgrunt_Mercenary_Heavy>
+					<Vilgrunt_Mercenary_Elite>1</Vilgrunt_Mercenary_Elite>
+				</options>
+			</li>
+			<!-- Every Mech -->
+			<li>
+				<kindDef>Combat</kindDef>
+				<commonality>1</commonality>
+				<disallowedStrategies>
+					<li>Siege</li>
+				</disallowedStrategies>
+				<options>
+					<Mech_Scyther>10</Mech_Scyther>
+					<Mech_Pikeman>10</Mech_Pikeman>
+					<Mech_Lancer>10</Mech_Lancer>
+					<Mech_Centurion>2</Mech_Centurion>
+					<Mech_Warqueen>1</Mech_Warqueen>
+					<Mech_Apocriton>1</Mech_Apocriton>
+					<Mech_Scorcher>5</Mech_Scorcher>
+					<Mech_Cyclops MayRequire="Ludeon.RimWorld.Odyssey">5</Mech_Cyclops>
+					<Mech_Tesseron>5</Mech_Tesseron>
+					<Mech_Legionary>2</Mech_Legionary>
+					<Mech_Diabolus>1</Mech_Diabolus>
+					<Mech_CentipedeGunner>5</Mech_CentipedeGunner>
+					<Mech_CentipedeBurner>5</Mech_CentipedeBurner>
+					<Mech_Militor>10</Mech_Militor>
+					<Mech_CentipedeBlaster>10</Mech_CentipedeBlaster>
+					<Mech_Termite_Breach>1</Mech_Termite_Breach>
+				</options>
+			</li>
+			<!-- Every Mech + Vilmerc-->
+			<li>
+				<kindDef>Combat</kindDef>
+				<commonality>1</commonality>
+				<disallowedStrategies>
+					<li>Siege</li>
+				</disallowedStrategies>
+				<options>
+					<Vilgrunt_Mercenary_Gunner>1</Vilgrunt_Mercenary_Gunner>
+					<Vilmerc_Sniper>1</Vilmerc_Sniper>
+					<Vilmerc_Slasher>1</Vilmerc_Slasher>
+					<Vilgrunt_Mercenary_Heavy>1</Vilgrunt_Mercenary_Heavy>
+					<Vilgrunt_Mercenary_Elite>1</Vilgrunt_Mercenary_Elite>
+					<Mech_Scyther>1</Mech_Scyther>
+					<Mech_Pikeman>1</Mech_Pikeman>
+					<Mech_Lancer>1</Mech_Lancer>
+					<Mech_Centurion>1</Mech_Centurion>
+					<Mech_Warqueen>1</Mech_Warqueen>
+					<Mech_Apocriton>1</Mech_Apocriton>
+					<Mech_Scorcher>1</Mech_Scorcher>
+					<Mech_Cyclops MayRequire="Ludeon.RimWorld.Odyssey">1</Mech_Cyclops>
+					<Mech_Tesseron>1</Mech_Tesseron>
+					<Mech_Legionary>1</Mech_Legionary>
+					<Mech_Diabolus>1</Mech_Diabolus>
+					<Mech_CentipedeGunner>1</Mech_CentipedeGunner>
+					<Mech_CentipedeBurner>1</Mech_CentipedeBurner>
+					<Mech_Militor>1</Mech_Militor>
+					<Mech_CentipedeBlaster>1</Mech_CentipedeBlaster>
+					<Mech_Termite_Breach>1</Mech_Termite_Breach>
+				</options>
+			</li>
+			<!-- Every Mech + VIlgrunt -->
+			<li>
+				<kindDef>Combat</kindDef>
+				<commonality>1</commonality>
+				<disallowedStrategies>
+					<li>Siege</li>
+				</disallowedStrategies>
+				<options>
+					<Vilgrunt_Random>1</Vilgrunt_Random>
+					<Vilgrunt_Marine>1</Vilgrunt_Marine>
+					<Vilgrunt_shotgunner>1</Vilgrunt_shotgunner>
+					<Vilgrunt_Mercenary_Sniper>1</Vilgrunt_Mercenary_Sniper>
+					<Vilgrunt_Mercenary_Slasher>1</Vilgrunt_Mercenary_Slasher>
+					<Viltrum_Fighter_Champion MayRequire="Ludeon.RimWorld.Royalty">1</Viltrum_Fighter_Champion>
+					<Mech_Scyther>1</Mech_Scyther>
+					<Mech_Pikeman>1</Mech_Pikeman>
+					<Mech_Lancer>1</Mech_Lancer>
+					<Mech_Centurion>1</Mech_Centurion>
+					<Mech_Warqueen>1</Mech_Warqueen>
+					<Mech_Apocriton>1</Mech_Apocriton>
+					<Mech_Scorcher>1</Mech_Scorcher>
+					<Mech_Cyclops MayRequire="Ludeon.RimWorld.Odyssey">1</Mech_Cyclops>
+					<Mech_Tesseron>1</Mech_Tesseron>
+					<Mech_Legionary>1</Mech_Legionary>
+					<Mech_Diabolus>1</Mech_Diabolus>
+					<Mech_CentipedeGunner>1</Mech_CentipedeGunner>
+					<Mech_CentipedeBurner>1</Mech_CentipedeBurner>
+					<Mech_Militor>1</Mech_Militor>
+					<Mech_CentipedeBlaster>1</Mech_CentipedeBlaster>
+					<Mech_Termite_Breach>1</Mech_Termite_Breach>
+				</options>
+			</li>
+			<!-- Every Mech + Viltrumite -->
+			<li>
+				<kindDef>Combat</kindDef>
+				<commonality>1</commonality>
+				<disallowedStrategies>
+					<li>Siege</li>
+				</disallowedStrategies>
+				<options>
+					<Viltrumite_Fighter_Random>1</Viltrumite_Fighter_Random>
+					<Viltrum_Fighter_Champion MayRequire="Ludeon.RimWorld.Royalty">1</Viltrum_Fighter_Champion>
+					<Mech_Scyther>1</Mech_Scyther>
+					<Mech_Pikeman>1</Mech_Pikeman>
+					<Mech_Lancer>1</Mech_Lancer>
+					<Mech_Centurion>1</Mech_Centurion>
+					<Mech_Warqueen>1</Mech_Warqueen>
+					<Mech_Apocriton>1</Mech_Apocriton>
+					<Mech_Scorcher>1</Mech_Scorcher>
+					<Mech_Cyclops MayRequire="Ludeon.RimWorld.Odyssey">1</Mech_Cyclops>
+					<Mech_Tesseron>1</Mech_Tesseron>
+					<Mech_Legionary>1</Mech_Legionary>
+					<Mech_Diabolus>1</Mech_Diabolus>
+					<Mech_CentipedeGunner>1</Mech_CentipedeGunner>
+					<Mech_CentipedeBurner>1</Mech_CentipedeBurner>
+					<Mech_Militor>1</Mech_Militor>
+					<Mech_CentipedeBlaster>1</Mech_CentipedeBlaster>
+					<Mech_Termite_Breach>1</Mech_Termite_Breach>
+				</options>
+			</li>
+			<!-- Every Mech + Vilmerc + Viltrumite -->
+			<li>
+				<kindDef>Combat</kindDef>
+				<commonality>1</commonality>
+				<disallowedStrategies>
+					<li>Siege</li>
+				</disallowedStrategies>
+				<options>
+					<Viltrumite_Fighter_Random>1</Viltrumite_Fighter_Random>
+					<Vilgrunt_Mercenary_Gunner>1</Vilgrunt_Mercenary_Gunner>
+					<Vilmerc_Sniper>1</Vilmerc_Sniper>
+					<Vilmerc_Slasher>1</Vilmerc_Slasher>
+					<Vilgrunt_Mercenary_Heavy>1</Vilgrunt_Mercenary_Heavy>
+					<Vilgrunt_Mercenary_Elite>1</Vilgrunt_Mercenary_Elite>
+					<Mech_Scyther>1</Mech_Scyther>
+					<Mech_Pikeman>1</Mech_Pikeman>
+					<Mech_Lancer>1</Mech_Lancer>
+					<Mech_Centurion>1</Mech_Centurion>
+					<Mech_Warqueen>1</Mech_Warqueen>
+					<Mech_Apocriton>1</Mech_Apocriton>
+					<Mech_Scorcher>1</Mech_Scorcher>
+					<Mech_Cyclops MayRequire="Ludeon.RimWorld.Odyssey">1</Mech_Cyclops>
+					<Mech_Tesseron>1</Mech_Tesseron>
+					<Mech_Legionary>1</Mech_Legionary>
+					<Mech_Diabolus>1</Mech_Diabolus>
+					<Mech_CentipedeGunner>1</Mech_CentipedeGunner>
+					<Mech_CentipedeBurner>1</Mech_CentipedeBurner>
+					<Mech_Militor>1</Mech_Militor>
+					<Mech_CentipedeBlaster>1</Mech_CentipedeBlaster>
+					<Mech_Termite_Breach>1</Mech_Termite_Breach>
+				</options>
+			</li>
+			<!-- Every Mech + VIlgrunt + Viltrumite -->
+			<li>
+				<kindDef>Combat</kindDef>
+				<commonality>1</commonality>
+				<disallowedStrategies>
+					<li>Siege</li>
+				</disallowedStrategies>
+				<options>
+					<Viltrumite_Fighter_Random>1</Viltrumite_Fighter_Random>
+					<Vilgrunt_Random>1</Vilgrunt_Random>
+					<Vilgrunt_Marine>1</Vilgrunt_Marine>
+					<Vilgrunt_shotgunner>1</Vilgrunt_shotgunner>
+					<Vilgrunt_Mercenary_Sniper>1</Vilgrunt_Mercenary_Sniper>
+					<Vilgrunt_Mercenary_Slasher>1</Vilgrunt_Mercenary_Slasher>
+					<Viltrum_Fighter_Champion MayRequire="Ludeon.RimWorld.Royalty">1</Viltrum_Fighter_Champion>
+					<Mech_Scyther>1</Mech_Scyther>
+					<Mech_Pikeman>1</Mech_Pikeman>
+					<Mech_Lancer>1</Mech_Lancer>
+					<Mech_Centurion>1</Mech_Centurion>
+					<Mech_Warqueen>1</Mech_Warqueen>
+					<Mech_Apocriton>1</Mech_Apocriton>
+					<Mech_Scorcher>1</Mech_Scorcher>
+					<Mech_Cyclops MayRequire="Ludeon.RimWorld.Odyssey">1</Mech_Cyclops>
+					<Mech_Tesseron>1</Mech_Tesseron>
+					<Mech_Legionary>1</Mech_Legionary>
+					<Mech_Diabolus>1</Mech_Diabolus>
+					<Mech_CentipedeGunner>1</Mech_CentipedeGunner>
+					<Mech_CentipedeBurner>1</Mech_CentipedeBurner>
+					<Mech_Militor>1</Mech_Militor>
+					<Mech_CentipedeBlaster>1</Mech_CentipedeBlaster>
+					<Mech_Termite_Breach>1</Mech_Termite_Breach>
+				</options>
+			</li>
+			<!-- Every Mech + VIlgrunt + Viltrumite + Vilmerc -->
+			<li>
+				<kindDef>Combat</kindDef>
+				<commonality>1</commonality>
+				<disallowedStrategies>
+					<li>Siege</li>
+				</disallowedStrategies>
+				<options>
+					<Viltrumite_Fighter_Random>1</Viltrumite_Fighter_Random>
+					<Vilgrunt_Mercenary_Gunner>1</Vilgrunt_Mercenary_Gunner>
+					<Vilmerc_Sniper>1</Vilmerc_Sniper>
+					<Vilmerc_Slasher>1</Vilmerc_Slasher>
+					<Vilgrunt_Mercenary_Heavy>1</Vilgrunt_Mercenary_Heavy>
+					<Vilgrunt_Mercenary_Elite>1</Vilgrunt_Mercenary_Elite>
+					<Vilgrunt_Random>1</Vilgrunt_Random>
+					<Vilgrunt_Marine>1</Vilgrunt_Marine>
+					<Vilgrunt_shotgunner>1</Vilgrunt_shotgunner>
+					<Vilgrunt_Mercenary_Sniper>1</Vilgrunt_Mercenary_Sniper>
+					<Vilgrunt_Mercenary_Slasher>1</Vilgrunt_Mercenary_Slasher>
+					<Viltrum_Fighter_Champion MayRequire="Ludeon.RimWorld.Royalty">1</Viltrum_Fighter_Champion>
+					<Mech_Scyther>1</Mech_Scyther>
+					<Mech_Pikeman>1</Mech_Pikeman>
+					<Mech_Lancer>1</Mech_Lancer>
+					<Mech_Centurion>1</Mech_Centurion>
+					<Mech_Warqueen>1</Mech_Warqueen>
+					<Mech_Apocriton>1</Mech_Apocriton>
+					<Mech_Scorcher>1</Mech_Scorcher>
+					<Mech_Cyclops MayRequire="Ludeon.RimWorld.Odyssey">1</Mech_Cyclops>
+					<Mech_Tesseron>1</Mech_Tesseron>
+					<Mech_Legionary>1</Mech_Legionary>
+					<Mech_Diabolus>1</Mech_Diabolus>
+					<Mech_CentipedeGunner>1</Mech_CentipedeGunner>
+					<Mech_CentipedeBurner>1</Mech_CentipedeBurner>
+					<Mech_Militor>1</Mech_Militor>
+					<Mech_CentipedeBlaster>1</Mech_CentipedeBlaster>
+					<Mech_Termite_Breach>1</Mech_Termite_Breach>
+				</options>
+			</li>
+			<!-- Settlement Defense -->
+			<li>
+				<kindDef>Settlement</kindDef>
+				<options>
+					<Viltrumite_Fighter_RandomGuard>1</Viltrumite_Fighter_RandomGuard>
+					<Viltrumite_Fighter_GarbageGuard>1</Viltrumite_Fighter_GarbageGuard>
+					<Viltrumite_Fighter_SlicerGuard>1</Viltrumite_Fighter_SlicerGuard>
+					<Viltrumite_Fighter_SimpleGuard>1</Viltrumite_Fighter_SimpleGuard>
+					<Viltrumite_Fighter_EliteGuard>1</Viltrumite_Fighter_EliteGuard>
+					<Viltrumite_Fighter_Regent>1</Viltrumite_Fighter_Regent>
+					<Vilgrunt_RandomGuard>1</Vilgrunt_RandomGuard>
+				</options>
+			</li>
+			<!-- Trader -->
+			<li>
+				<kindDef>Trader</kindDef>
+				<traders>
+					<Vilt_Town_Trader>1</Vilt_Town_Trader>
+				</traders>
+				<carriers>
+					<Muffalo>6</Muffalo>
+					<Dromedary>5</Dromedary>
+					<Alpaca>2</Alpaca>
+					<Elephant>1</Elephant>
+				</carriers>
+				<guards>
+					<Mech_CentipedeBlaster>2</Mech_CentipedeBlaster>
+					<Vilgrunt_Marine>2</Vilgrunt_Marine>
+					<Vilgrunt_shotgunner>2</Vilgrunt_shotgunner>
+					<Vilgrunt_Mercenary_Sniper>2</Vilgrunt_Mercenary_Sniper>
+					<Vilgrunt_Mercenary_Slasher>2</Vilgrunt_Mercenary_Slasher>
+				</guards>
+			</li>
+		</pawnGroupMakers>
+		<maxConfigurableAtWorldCreation>2</maxConfigurableAtWorldCreation>
+		<configurationListOrderPriority>70</configurationListOrderPriority>
+		<disallowedRaidAgeRestrictions>
+			<li>Children</li>
+		</disallowedRaidAgeRestrictions>
+	</FactionDef>
+
+	<ThingSetMakerDef>
+		<defName>ViltrumRaidLootMaker</defName>
+		<root Class="ThingSetMaker_MarketValue">
+			<fixedParams>
+				<filter>
+					<thingDefs>
+						<li>MedicineUltratech</li>
+						<li>ComponentSpacer</li>
+						<li>Plasteel</li>
+						<li>Hyperweave</li>
+						<li>MechSerumHealer</li>
+						<li>MealSurvivalPack</li>
+					</thingDefs>
+				</filter>
+			</fixedParams>
+		</root>
+	</ThingSetMakerDef>
+	
+	<!-- =============================== Names =============================== -->
+
+	<RulePackDef>
+		<defName>NamerFactionViltrum</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name->The Viltrum Empire</li>
+				<li>r_name->Viltrum Empire</li>
+				<li>r_name->Viltrum's Glory</li>
+				<li>r_name->World Betterment Committee</li>
+				<li>r_name->Totally Trustworthy</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+
+	<RulePackDef>
+		<defName>NamerSettlementViltrum</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name->[viltrum_outpost]</li>
+				<li>r_name->[viltrum_outpost][gobbeldy]</li>
+				<li>r_name->[viltrum_outpost][leta]</li>
+				<li>r_name->[viltrum_outpost][ranfig]</li>
+				<li>r_name->[viltrum_outpost][ranfig][ranfig]</li>
+				<li>r_name->[leta][outpost_type]</li>
+
+				<li>viltrum_outpost->Viltrum Outpost</li>
+				<li>viltrum_outpost->Viltrum Post</li>
+				<li>viltrum_outpost->Viltrum Fort</li>
+				<li>viltrum_outpost->Viltrum Zone</li>
+				<li>viltrum_outpost->Viltrum Base</li>
+				<li>viltrum_outpost->Viltrum Hold</li>
+				<li>viltrum_outpost->Viltrum Site</li>
+				<li>outpost_type->Outpost</li>
+				<li>outpost_type->Post</li>
+				<li>outpost_type->Fort</li>
+				<li>outpost_type->Zone</li>
+				<li>outpost_type->Base</li>
+				<li>outpost_type->Hold</li>
+				<li>outpost_type->Site</li>
+				<li>gobbeldy-> 69</li>
+				<li>gobbeldy-> 420</li>
+				<li>gobbeldy-> 67</li>
+				<li>gobbeldy-> 42</li>
+				<li>gobbeldy-> 80085</li>
+				<li>gobbeldy-> 8008135</li>
+				<li>gobbeldy-> 350</li>
+				<li>gobbeldy-> 21</li>
+				<li>gobbeldy-> 789</li>
+				<li>gobbeldy-> 1738</li>
+				<li>leta-> Alpha</li>
+				<li>leta-> Omega</li>
+				<li>leta-> Beta</li>
+				<li>leta-> Delta</li>
+				<li>leta-> Epsilon</li>
+				<li>leta-> Zeta</li>
+				<li>leta-> Eta</li>
+				<li>leta-> Theta</li>
+				<li>leta-> Iota</li>
+				<li>leta-> Kappa</li>
+				<li>leta-> Gamma</li>
+				<li>leta-> Lambda</li>
+				<li>leta-> Mu</li>
+				<li>leta-> Nu</li>
+				<li>leta-> Xi</li>
+				<li>leta-> Omicron</li>
+				<li>leta-> Pi</li>
+				<li>leta-> Rho</li>
+				<li>leta-> Sigma</li>
+				<li>leta-> Tau</li>
+				<li>leta-> Upsilon</li>
+				<li>leta-> Phi</li>
+				<li>leta-> Chi</li>
+				<li>leta-> Psi</li>
+				<li>ranfig-> 1</li>
+				<li>ranfig-> 2</li>
+				<li>ranfig-> 3</li>
+				<li>ranfig-> 4</li>
+				<li>ranfig-> 5</li>
+				<li>ranfig-> 6</li>
+				<li>ranfig-> 7</li>
+				<li>ranfig-> 8</li>
+				<li>ranfig-> 9</li>
+				<li>ranfig-> A</li>
+				<li>ranfig-> B</li>
+				<li>ranfig-> C</li>
+				<li>ranfig-> D</li>
+				<li>ranfig-> E</li>
+				<li>ranfig-> F</li>
+				<li>ranfig-> G</li>
+				<li>ranfig-> H</li>
+				<li>ranfig-> I</li>
+				<li>ranfig-> J</li>
+				<li>ranfig-> K</li>
+				<li>ranfig-> L</li>
+				<li>ranfig-> M</li>
+				<li>ranfig-> N</li>
+				<li>ranfig-> O</li>
+				<li>ranfig-> P</li>
+				<li>ranfig-> Q</li>
+				<li>ranfig-> R</li>
+				<li>ranfig-> S</li>
+				<li>ranfig-> T</li>
+				<li>ranfig-> U</li>
+				<li>ranfig-> V</li>
+				<li>ranfig-> W</li>
+				<li>ranfig-> X</li>
+				<li>ranfig-> Y</li>
+				<li>ranfig-> Z</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+
+	<RulePackDef>
+		<defName>ViltrumNameUtility</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>ViltrumNameFirstMale->Thragg</li>
+				<li>ViltrumNameFirstMale->Nowlan</li>
+				<li>ViltrumNameFirstMale->Mack</li>
+				<li>ViltrumNameFirstMale->Bernaard</li>
+				<li>ViltrumNameFirstMale->Onaan</li>
+				<li>ViltrumNameFirstMale->Lucan</li>
+				<li>ViltrumNameFirstMale->Thaedus</li>
+				<li>ViltrumNameFirstMale->Randee</li>
+				<li>ViltrumNameFirstMale->Vidor</li>
+				<li>ViltrumNameFirstMale->Argall</li>
+				<li>ViltrumNameFirstMale->Conan</li>
+				<li>ViltrumNameFirstMale->Grugg</li>
+				<li>ViltrumNameFirstMale->Goku</li>
+				<li>ViltrumNameFirstMale->Simo</li>
+				<li>ViltrumNameFirstMale->Kalel</li>
+				<li>ViltrumNameFirstMale->Teal'c</li>
+				<li>ViltrumNameFirstMale->Salger</li>
+				<li>ViltrumNameFirstMale->Ulf</li>
+				<li>ViltrumNameFirstMale->Tartarus</li>
+				<li>ViltrumNameFirstMale->Kinos</li>
+				<li>ViltrumNameFirstMale->Prime</li>
+				<li>ViltrumNameFirstMale->Leroy</li>
+				<li>ViltrumNameFirstMale->Ringo</li>
+				<li>ViltrumNameFirstMale->Kragor</li>
+				<li>ViltrumNameFirstMale->Vraxx</li>
+				<li>ViltrumNameFirstMale->Varnus</li>
+				<li>ViltrumNameFirstMale->Regis</li>
+				<li>ViltrumNameFirstMale->Vakerius</li>
+				<li>ViltrumNameFirstMale->Cael</li>
+				<li>ViltrumNameFirstMale->Ares</li>
+				<li>ViltrumNameFirstMale->Oskoan</li>
+				<li>ViltrumNameFirstMale->Arkaled</li>
+				<li>ViltrumNameFirstMale->Magno</li>
+				<li>ViltrumNameFirstMale->Tromto</li>
+				<li>ViltrumNameFirstMale->Vladek</li>
+				<li>ViltrumNameFirstMale->Amery</li>
+				<li>ViltrumNameFirstMale->Aran</li>
+				<li>ViltrumNameFirstMale->Shaggy</li>
+				<li>ViltrumNameFirstMale->Elix</li>
+				<li>ViltrumNameFirstMale->Kradd</li>
+				<li>ViltrumNameFirstMale->Jimothy</li>
+				<li>ViltrumNameFirstMale->Yaoi</li>
+				<li>ViltrumNameFirstFemale->Shaggette</li>
+				<li>ViltrumNameFirstFemale->Ara</li>
+				<li>ViltrumNameFirstFemale->Ama</li>
+				<li>ViltrumNameFirstFemale->Tama</li>
+				<li>ViltrumNameFirstFemale->Arkala</li>
+				<li>ViltrumNameFirstFemale->Magna</li>
+				<li>ViltrumNameFirstFemale->Carta</li>
+				<li>ViltrumNameFirstFemale->Vala</li>
+				<li>ViltrumNameFirstFemale->Athena</li>
+				<li>ViltrumNameFirstFemale->Thula</li>
+				<li>ViltrumNameFirstFemale->Varnelle</li>
+				<li>ViltrumNameFirstFemale->Mutha</li>
+				<li>ViltrumNameFirstFemale->Anissa</li>
+				<li>ViltrumNameFirstFemale->Ursaal</li>
+				<li>ViltrumNameFirstFemale->Lupa</li>
+				<li>ViltrumNameFirstFemale->Andressa</li>
+				<li>ViltrumNameFirstFemale->Olga</li>
+				<li>ViltrumNameFirstFemale->Till</li>
+				<li>ViltrumNameFirstFemale->Hoen</li>
+				<li>ViltrumNameFirstFemale->Rauta</li>
+				<li>ViltrumNameFirstFemale->Hela</li>
+				<li>ViltrumNameFirstFemale->Sima</li>
+				<li>ViltrumNameFirstFemale->Bulan</li>
+				<li>ViltrumNameFirstFemale->Kipo</li>
+				<li>ViltrumNameFirstFemale->Boudic</li>
+				<li>ViltrumNameFirstFemale->Sama</li>
+				<li>ViltrumNameFirstFemale->Vulpna</li>
+				<li>ViltrumNameFirstFemale->Cana</li>
+				<li>ViltrumNameFirstFemale->Tusla</li>
+				<li>ViltrumNameFirstFemale->Nyutter</li>
+				<li>ViltrumNameFirstFemale->Nyx</li>
+				<li>ViltrumNameFirstFemale->Nyke</li>
+				<li>ViltrumNameFirstFemale->Amazon</li>
+				<li>ViltrumNameFirstFemale->Ariel</li>
+				<li>ViltrumNameFirstFemale->Yuri</li>
+				<li>ViltrumNameFirstNeutral->Conquest</li>
+				<li>ViltrumNameFirstNeutral->Strife</li>
+				<li>ViltrumNameFirstNeutral->Ruin</li>
+				<li>ViltrumNameFirstNeutral->Faka</li>
+				<li>ViltrumNameFirstNeutral->War</li>
+				<li>ViltrumNameFirstNeutral->Warrior</li>
+				<li>ViltrumNameFirstNeutral->Fighter</li>
+				<li>ViltrumNameFirstNeutral->Soldier</li>
+				<li>ViltrumNameFirstNeutral->Soldja</li>
+				<li>ViltrumNameFirstNeutral->Fiter</li>
+				<li>ViltrumNameFirstNeutral->Crusher</li>
+				<li>ViltrumNameFirstNeutral->Butcher</li>
+				<li>ViltrumNameFirstNeutral->Poopy</li>
+				<li>ViltrumNameFirstNeutral->Destroyer</li>
+				<li>ViltrumNameFirstNeutral->Obliterator</li>
+				<li>ViltrumNameFirstNeutral->Killer</li>
+				<li>ViltrumNameFirstNeutral->Slaughter</li>
+				<li>ViltrumNameFirstNeutral->Massacre</li>
+				<li>ViltrumNameFirstNeutral->Bloodshed</li>
+				<li>ViltrumNameFirstNeutral->Battle</li>
+				<li>ViltrumNameFirstNeutral->Slayer</li>
+				<li>ViltrumNameFirstNeutral->Viltrum</li>
+				<li>ViltrumNameFirstNeutral->Victory</li>
+				<li>ViltrumNameFirstNeutral->Death</li>
+				<li>ViltrumNameFirstNeutral->Beaner</li>
+				<li>ViltrumNameFirstNeutral->Warsong</li>
+				<li>ViltrumNameFirstNeutral->[RanSym1]</li>
+				<li>ViltrumNameFirstNeutral->[RanSym1][RanSym2]</li>
+				<li>ViltrumNameFirstNeutral->[RanSym1][RanSym2][RanSym2]</li>
+				
+				<li>RanSym1->Now</li>
+				<li>RanSym1->Lan</li>
+				<li>RanSym1->Tak</li>
+				<li>RanSym1->Mat</li>
+				<li>RanSym1->Rae</li>
+				<li>RanSym1->Ro</li>
+				<li>RanSym1->La</li>
+				<li>RanSym1->U</li>
+				<li>RanSym1->Teal</li>
+				<li>RanSym1->Caz</li>
+				<li>RanSym1->Mali</li>
+				<li>RanSym1->Mal</li>
+				<li>RanSym1->Rot</li>
+				<li>RanSym1->Sep</li>
+				<li>RanSym1->Teku</li>
+				<li>RanSym1->Kal</li>
+				<li>RanSym1->El</li>
+				<li>RanSym1->Tus</li>
+				<li>RanSym1->Ani</li>
+				<li>RanSym1->Sa</li>
+				<li>RanSym1->Go</li>
+				<li>RanSym1->Ku</li>
+
+				<li>RanSym2->now</li>
+				<li>RanSym2->lan</li>
+				<li>RanSym2->tak</li>
+				<li>RanSym2->mat</li>
+				<li>RanSym2->rae</li>
+				<li>RanSym2->ro</li>
+				<li>RanSym2->la</li>
+				<li>RanSym2->u</li>
+				<li>RanSym2->teal</li>
+				<li>RanSym2->caz</li>
+				<li>RanSym2->mali</li>
+				<li>RanSym2->mal</li>
+				<li>RanSym2->rot</li>
+				<li>RanSym2->sep</li>
+				<li>RanSym2->teku</li>
+				<li>RanSym2->kal</li>
+				<li>RanSym2->el</li>
+				<li>RanSym2->tus</li>
+				<li>RanSym2->ani</li>
+				<li>RanSym2->sa</li>
+				<li>RanSym2->go</li>
+				<li>RanSym2->ku</li>
+
+				<!-- Special Names -->
+				<li>ViltrumNameFirstMale1->King</li>
+				<li>ViltrumNameLastMale1->Vonquest</li>
+				<li>ViltrumNameFirstMale2->Shaggy</li>
+				<li>ViltrumNameLastMale2->Rodgers</li>
+				<li>ViltrumNameFirstMale3->Samuel</li>
+				<li>ViltrumNameLastMale3->Streamer</li>
+				<li>ViltrumNameFirstMale4->Mister</li>
+				<li>ViltrumNameLastMale4->Creamer</li>
+
+				<li>ViltrumNameLastMale->[ViltrumNameFirstNeutral]</li>
+				<li>ViltrumNameLastMale->[ViltrumNameFirstMale]son</li>
+				<li>ViltrumNameLastMale->[ViltrumNameFirstFemale]son</li>
+				<li>ViltrumNameLastMale->[ViltrumNameFirstNeutral]son</li>
+				<li>ViltrumNameLastMale->[ViltrumNameFirstMale]sson</li>
+				<li>ViltrumNameLastMale->[ViltrumNameFirstFemale]sson</li>
+				<li>ViltrumNameLastMale->[ViltrumNameFirstNeutral]sson</li>
+				<li>ViltrumNameLastMale->[ViltrumNameFirstMale]sun</li>
+				<li>ViltrumNameLastMale->[ViltrumNameFirstFemale]sun</li>
+				<li>ViltrumNameLastMale->[ViltrumNameFirstNeutral]sun</li>
+				<li>ViltrumNameLastMale->[ViltrumNameFirstMale]ssun</li>
+				<li>ViltrumNameLastMale->[ViltrumNameFirstFemale]ssun</li>
+				<li>ViltrumNameLastMale->[ViltrumNameFirstNeutral]ssun</li>
+				<li>ViltrumNameLastFemale->[ViltrumNameFirstNeutral]</li>
+				<li>ViltrumNameLastFemale->[ViltrumNameFirstMale]sdotr</li>
+				<li>ViltrumNameLastFemale->[ViltrumNameFirstFemale]sdotr</li>
+				<li>ViltrumNameLastFemale->[ViltrumNameFirstNeutral]sdotr</li>
+				<li>ViltrumNameLastFemale->[ViltrumNameFirstMale]sdota</li>
+				<li>ViltrumNameLastFemale->[ViltrumNameFirstFemale]sdota</li>
+				<li>ViltrumNameLastFemale->[ViltrumNameFirstNeutral]sdota</li>
+				<li>ViltrumNameLastFemale->[ViltrumNameFirstMale]dotr</li>
+				<li>ViltrumNameLastFemale->[ViltrumNameFirstFemale]dotr</li>
+				<li>ViltrumNameLastFemale->[ViltrumNameFirstNeutral]dotr</li>
+				<li>ViltrumNameLastFemale->[ViltrumNameFirstMale]dota</li>
+				<li>ViltrumNameLastFemale->[ViltrumNameFirstFemale]dota</li>
+				<li>ViltrumNameLastFemale->[ViltrumNameFirstNeutral]dota</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+
+	<RulePackDef>
+		<defName>NamerPersonViltrumMale</defName>
+		<include>
+			<li>ViltrumNameUtility</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name->[ViltrumNameFirstMale] [ViltrumNameLastMale]</li>
+				<li>r_name->[ViltrumNameFirstNeutral] [ViltrumNameLastMale]</li>
+				<li>r_name->[ViltrumNameFirstMale1] [ViltrumNameLastMale1]</li>
+				<li>r_name->[ViltrumNameFirstMale2] [ViltrumNameLastMale2]</li>
+				<li>r_name->[ViltrumNameFirstMale3] [ViltrumNameLastMale3]</li>
+				<li>r_name->[ViltrumNameFirstMale4] [ViltrumNameLastMale4]</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+
+	<RulePackDef>
+		<defName>NamerPersonViltrumFemale</defName>
+		<include>
+			<li>ViltrumNameUtility</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name->[ViltrumNameFirstFemale] [ViltrumNameLastFemale]</li>
+				<li>r_name->[ViltrumNameFirstNeutral] [ViltrumNameLastFemale]</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+
+</Defs>

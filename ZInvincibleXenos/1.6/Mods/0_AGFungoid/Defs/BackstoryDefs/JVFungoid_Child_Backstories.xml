@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- Normal backstories -->
+
+	<BackstoryDef>
+		<defName>JVBackStory_Unknown</defName>
+		<title>Unknown</title>
+		<titleShort>Unknown</titleShort>
+		<slot>Childhood</slot>
+		<bodyTypeMale>Hulk</bodyTypeMale>
+		<bodyTypeFemale>Hulk</bodyTypeFemale>
+		<baseDesc>[PAWN_nameDef]'s childhood is forgotten to them.</baseDesc>
+		<spawnCategories>
+			<li>Vilgrunt_Fungoid</li>
+		</spawnCategories>
+	</BackstoryDef>
+
+</Defs>

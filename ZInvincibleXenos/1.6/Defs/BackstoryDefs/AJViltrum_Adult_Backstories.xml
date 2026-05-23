@@ -1,0 +1,1196 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- Normal backstories -->
+	<!-- To-do. More Vilgrunt variants. Worshipper, sniper, monk,  -->
+
+	<BackstoryDef>
+		<defName>JVBackStory_Hyroponic</defName>
+		<title>Hydroponics Worker</title>
+		<titleShort>Hydroponic</titleShort>
+		<slot>Adulthood</slot>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<baseDesc>[PAWN_nameDef] worked in hydroponics. They grew food, medicine and other useful plants, as well as making repairs.</baseDesc>
+		<spawnCategories>
+			<li>VGeneric</li>
+			<li>Outlander</li>
+		</spawnCategories>
+		<skillGains>
+			<Plants>5</Plants>
+			<Construction>3</Construction>
+			<Crafting>1</Crafting>
+		</skillGains>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<defName>JVBackstory_Useless</defName>
+		<title>Useless</title>
+		<titleShort>Useless</titleShort>
+		<slot>Adulthood</slot>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<baseDesc>[PAWN_nameDef] is a completely and utterly useless bum. Get a job!</baseDesc>
+		<spawnCategories>
+			<li>VGeneric</li>
+			<li>Outlander</li>
+		</spawnCategories>
+		<workDisables>
+			<li>Caring</li>
+			<li>ManualDumb</li>
+			<li>ManualSkilled</li>
+			<li>Violent</li>
+			<li>Firefighting</li>
+			<li>Intellectual</li>
+			<li>Constructing</li>
+			<li>Crafting</li>
+			<li>Social</li>
+		</workDisables>
+	</BackstoryDef>
+
+	<!-- Special backstories -->
+
+	<BackstoryDef>
+		<defName>JVBackStory_Biosculpted</defName>
+		<title>Biosculptee</title>
+		<titleShort>Biosculptee</titleShort>
+		<slot>Adulthood</slot>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<baseDesc>[PAWN_nameDef] received advanced glitterworld biosculpting treatments, enhancing their body.</baseDesc>
+		<spawnCategories>
+			<li>Vilgrunt</li>
+			<li>Outlander</li>
+			<li>Hero</li>
+		</spawnCategories>
+		<skillGains>
+			<Melee>3</Melee>
+		</skillGains>
+		<forcedTraits>
+			<Tough>0</Tough>
+			<Beauty>2</Beauty>
+			<Immunity>1</Immunity>
+		</forcedTraits>
+		<disallowedTraits>
+			<AnnoyingVoice>0</AnnoyingVoice>
+		</disallowedTraits>
+	</BackstoryDef>
+
+	<!-- Vilgrunt backstories -->
+	<BackstoryDef>
+		<defName>JVBackstory_VCann</defName>
+		<title>Vilgrunt Cannibal</title>
+		<titleShort>Cannibal</titleShort>
+		<slot>Adulthood</slot>
+		<bodyTypeMale>Hulk</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<baseDesc>Due to supply issues, [PAWN_nameDef] had no food - except the corpses of their enemies. They took well to their new diet.</baseDesc>
+		<spawnCategories>
+			<li>Vilgrunt</li>
+		</spawnCategories>
+		<skillGains>
+			<Social>-7</Social>
+			<Melee>5</Melee>
+			<Shooting>5</Shooting>
+			<Cooking>2</Cooking>
+		</skillGains>
+		<workDisables>
+			<li>Caring</li>
+		</workDisables>
+		<forcedTraits>
+			<Cannibal>0</Cannibal>
+			<Bloodlust>0</Bloodlust>
+			<Tough>0</Tough>
+		</forcedTraits>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<defName>JVBackstory_VChem</defName>
+		<title>Vilgrunt Addict</title>
+		<titleShort>Addict</titleShort>
+		<slot>Adulthood</slot>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<baseDesc>To fight through sleepless nights and dread, [PAWN_nameDef] was given a range of drugs, which gained their fascination.</baseDesc>
+		<spawnCategories>
+			<li>Vilgrunt</li>
+		</spawnCategories>
+		<skillGains>
+			<Social>-2</Social>
+			<Melee>4</Melee>
+			<Shooting>4</Shooting>
+			<Cooking>5</Cooking>
+		</skillGains>
+		<forcedTraits>
+			<DrugDesire>2</DrugDesire>
+			<Tough>0</Tough>
+		</forcedTraits>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<defName>JVBackstory_VSniper</defName>
+		<title>Vilgrunt Sniper</title>
+		<titleShort>Sniper</titleShort>
+		<slot>Adulthood</slot>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<baseDesc>[PAWN_nameDef] was a sniper of Viltrum, firing powerful rifles with recoil that would injure most people.</baseDesc>
+		<spawnCategories>
+			<li>Vilgrunt</li>
+		</spawnCategories>
+		<skillGains>
+			<Shooting>10</Shooting>
+		</skillGains>
+		<forcedTraits>
+			<Tough>0</Tough>
+			<ShootingAccuracy>1</ShootingAccuracy>
+		</forcedTraits>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<defName>JVBackstory_VRunner</defName>
+		<title>Vilgrunt Runner</title>
+		<titleShort>Runner</titleShort>
+		<slot>Adulthood</slot>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<baseDesc>Among Vilgrunts, [PAWN_nameDef] was noticed for their speed.</baseDesc>
+		<spawnCategories>
+			<li>Vilgrunt</li>
+			<li>Vilgrunt_Fast</li>
+		</spawnCategories>
+		<skillGains>
+			<Shooting>3</Shooting>
+			<Melee>5</Melee>
+		</skillGains>
+		<forcedTraits>
+			<Tough>0</Tough>
+			<SpeedOffset>2</SpeedOffset>
+		</forcedTraits>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<defName>JVBackstory_VDelivering</defName>
+		<title>Vilgrunt Delivery</title>
+		<titleShort>Delivery</titleShort>
+		<slot>Adulthood</slot>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<baseDesc>Before graduating as a Vilgrunt, [PAWN_nameDef] was tasked with hand-delivering important items across warzones and battlefields. They became quite fast as a result.</baseDesc>
+		<spawnCategories>
+			<li>Vilgrunt</li>
+			<li>Vilgrunt_Fast</li>
+		</spawnCategories>
+		<skillGains>
+			<Shooting>2</Shooting>
+			<Melee>3</Melee>
+		</skillGains>
+		<forcedTraits>
+			<Tough>0</Tough>
+			<SpeedOffset>2</SpeedOffset>
+		</forcedTraits>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<defName>JVBackstory_VGunner</defName>
+		<title>Vilgrunt Gunner</title>
+		<titleShort>Gunner</titleShort>
+		<slot>Adulthood</slot>
+		<bodyTypeMale>Hulk</bodyTypeMale>
+		<bodyTypeFemale>Hulk</bodyTypeFemale>
+		<baseDesc>[PAWN_nameDef] was a heavy gunner of Viltrum, firing powerful rapid-fire weapons. They learned to shoot first and aim later.</baseDesc>
+		<spawnCategories>
+			<li>Vilgrunt</li>
+		</spawnCategories>
+		<skillGains>
+			<Shooting>6</Shooting>
+			<Melee>2</Melee>
+		</skillGains>
+		<forcedTraits>
+			<Tough>0</Tough>
+			<ShootingAccuracy>-1</ShootingAccuracy>
+		</forcedTraits>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<defName>JVBackstory_VMonk</defName>
+		<title>Vilgrunt Monk</title>
+		<titleShort>Monk</titleShort>
+		<slot>Adulthood</slot>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<baseDesc>[PAWN_nameDef] is a warrior monk in service to, and worshipper of, Viltrumites and Viltrum.</baseDesc>
+		<spawnCategories>
+			<li>Vilgrunt</li>
+		</spawnCategories>
+		<skillGains>
+			<Shooting>4</Shooting>
+			<Melee>4</Melee>
+		</skillGains>
+		<forcedTraits>
+			<Tough>0</Tough>
+			<Ascetic>0</Ascetic>
+		</forcedTraits>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<defName>JVBackstory_VChamp</defName>
+		<title>Vilgrunt Champion</title>
+		<titleShort>Champion</titleShort>
+		<slot>Adulthood</slot>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<baseDesc>[PAWN_nameDef] had to defeat multiple opponents in battles to the death to earn their place aboard Viltrum's warships.</baseDesc>
+		<spawnCategories>
+			<li>Vilgrunt</li>
+			<li>VilgruntM</li>
+		</spawnCategories>
+		<skillGains>
+			<Shooting>4</Shooting>
+			<Melee>4</Melee>
+			<Intellectual>-5</Intellectual>
+		</skillGains>
+		<forcedTraits>
+			<Tough>0</Tough>
+			<Bloodlust>0</Bloodlust>
+		</forcedTraits>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<defName>JVBackstory_VSlave</defName>
+		<title>Vilgrunt Freed</title>
+		<titleShort>Freed</titleShort>
+		<slot>Adulthood</slot>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<baseDesc>[PAWN_nameDef] was formerly a slave, but a Viltrumite conquered their world and "freed" them for being strong. Well, more like under new management, but [PAWN_nameDef] has seen huge improvement to their standard of living either way.</baseDesc>
+		<spawnCategories>
+			<li>Vilgrunt</li>
+		</spawnCategories>
+		<skillGains>
+			<Shooting>4</Shooting>
+			<Melee>4</Melee>
+		</skillGains>
+		<forcedTraits>
+			<Tough>0</Tough>
+			<NaturalMood>2</NaturalMood>
+		</forcedTraits>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<defName>JVBackstory_VBionicalist</defName>
+		<title>Vilgrunt Bionicalist</title>
+		<titleShort>Bionicalist</titleShort>
+		<slot>Adulthood</slot>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<baseDesc>In addition to serving as a soldier, [PAWN_nameDef] makes, maintains and replaces bionics for their fellow Vilgrunts.</baseDesc>
+		<spawnCategories>
+			<li>Vilgrunt</li>
+		</spawnCategories>
+		<skillGains>
+			<Shooting>4</Shooting>
+			<Melee>4</Melee>
+			<Crafting>8</Crafting>
+		</skillGains>
+		<forcedTraits>
+			<Tough>0</Tough>
+			<Transhumanist>0</Transhumanist>
+		</forcedTraits>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<defName>JVBackstory_VilChef</defName>
+		<title>Vilgrunt Chef</title>
+		<titleShort>Chef</titleShort>
+		<slot>Adulthood</slot>
+		<bodyTypeMale>Hulk</bodyTypeMale>
+		<bodyTypeFemale>Hulk</bodyTypeFemale>
+		<baseDesc>In addition to serving as a soldier, [PAWN_nameDef] makes delicious food for their fellow Vilgrunts.</baseDesc>
+		<spawnCategories>
+			<li>Vilgrunt</li>
+		</spawnCategories>
+		<skillGains>
+			<Shooting>4</Shooting>
+			<Melee>4</Melee>
+			<Cooking>5</Cooking>
+		</skillGains>
+		<forcedTraits>
+			<Tough>0</Tough>
+			<Gourmand>0</Gourmand> 
+		</forcedTraits>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<defName>JVBackstory_VRoyal</defName>
+		<title>Vilgrunt Royal</title>
+		<titleShort>Royal</titleShort>
+		<slot>Adulthood</slot>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<baseDesc>To demonstrate loyalty, a monarch gave their child, [PAWN_nameDef], to the Viltrum empire to become a Vilgrunt.</baseDesc>
+		<spawnCategories>
+			<li>Vilgrunt</li>
+		</spawnCategories>
+		<skillGains>
+			<Shooting>5</Shooting>
+			<Melee>5</Melee>
+			<Social>4</Social>
+		</skillGains>
+		<forcedTraits>
+			<Tough>0</Tough>
+			<Greedy>0</Greedy>
+			<Beauty>2</Beauty>
+		</forcedTraits>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<defName>JVBackstory_VMedic</defName>
+		<title>Vilgrunt Medic</title>
+		<titleShort>Medic</titleShort>
+		<slot>Adulthood</slot>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<baseDesc>[PAWN_nameDef] is a medic who seeks to save the lives of their fellow Vilgrunts.</baseDesc>
+		<spawnCategories>
+			<li>Vilgrunt</li>
+		</spawnCategories>
+		<skillGains>
+			<Shooting>4</Shooting>
+			<Melee>4</Melee>
+			<Medicine>5</Medicine>
+		</skillGains>
+		<forcedTraits>
+			<Tough>0</Tough>
+			<Kind>0</Kind>
+		</forcedTraits>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<defName>JVBackstory_VAmazon</defName>
+		<title>Vilgrunt Amazon</title>
+		<titleShort>Amazon</titleShort>
+		<slot>Adulthood</slot>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<baseDesc>[PAWN_nameDef] is from a Viltrum-ruled planet ruled by warrior-women (specifically, the female Viltrumite who defeated their previous queen), where men are considered lesser.</baseDesc>
+		<spawnCategories>
+			<li>Vilgrunt</li>
+		</spawnCategories>
+		<skillGains>
+			<Shooting>4</Shooting>
+			<Melee>4</Melee>
+			<Social>-4</Social>
+		</skillGains>
+		<forcedTraits>
+			<Tough>0</Tough>
+			<DislikesMen>0</DislikesMen>
+		</forcedTraits>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<defName>JVBackstory_VTunneller</defName>
+		<title>Vilgrunt Tuneller</title>
+		<titleShort>Tunneller</titleShort>
+		<slot>Adulthood</slot>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<baseDesc>[PAWN_nameDef] was often deployed in underground warfare. They developed a love of small spaces, and skill in the ways of stone.</baseDesc>
+		<spawnCategories>
+			<li>Vilgrunt</li>
+		</spawnCategories>
+		<skillGains>
+			<Shooting>4</Shooting>
+			<Melee>4</Melee>
+			<Mining>5</Mining>
+		</skillGains>
+		<forcedTraits>
+			<Tough>0</Tough>
+			<Undergrounder>0</Undergrounder>
+		</forcedTraits>
+	</BackstoryDef>
+
+	<!-- Viltrumite backstories. -->
+
+	<BackstoryDef>
+		<defName>JVBackstory_Anissa</defName>
+		<title>Diplomat Viltrumite</title>
+		<titleShort>Diplomat</titleShort>
+		<slot>Adulthood</slot>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<baseDesc>[PAWN_nameDef] is reasonable... relative to other Viltrumites, at least. They're often tasked with more diplomatic missions, like convincing ideallic young Viltrumites to conquer their worlds.</baseDesc>
+		<spawnCategories>
+			<li>Viltrum</li>
+		</spawnCategories>
+		<skillGains>
+			<Social>11</Social>
+			<Medicine>4</Medicine>
+			<Intellectual>2</Intellectual>
+		</skillGains>
+		<requiredWorkTags>
+			<li>Violent</li>
+			<li>Caring</li>
+			<li>Social</li>
+		</requiredWorkTags>
+		<disallowedTraits>
+			<AnnoyingVoice>0</AnnoyingVoice>
+			<Bloodlust>0</Bloodlust>
+			<Abrasive>0</Abrasive>
+			<Psychopath>0</Psychopath>
+			<Cannibal>0</Cannibal>
+		</disallowedTraits>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<defName>JVBackstory_Executioner</defName>
+		<title>Viltrumite Executioner</title>
+		<titleShort>Executioner</titleShort>
+		<slot>Adulthood</slot>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<baseDesc>[PAWN_nameDef] is sometimes tasked with executing traitors, including former comrades. They do it without question.</baseDesc>
+		<spawnCategories>
+			<li>Viltrum</li>
+		</spawnCategories>
+		<skillGains>
+			<Melee>3</Melee>
+			<Social>-3</Social>
+		</skillGains>
+		<requiredWorkTags>
+			<li>Violent</li>
+		</requiredWorkTags>
+		<forcedTraits>
+			<Psychopath>0</Psychopath>
+		</forcedTraits>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<defName>JVBackstory_Whoopsie</defName>
+		<title>Whoopsie Daisy</title>
+		<titleShort>Whoopsie</titleShort>
+		<slot>Adulthood</slot>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<baseDesc>[PAWN_nameDef] was specifically ordered not to murder a planet's royal family, but found it too hilarious not to. The planet's still a warzone and waste of the empire's resources. There's a note saying "unreliable" on their file.</baseDesc>
+		<spawnCategories>
+			<li>Viltrum</li>
+		</spawnCategories>
+		<skillGains>
+			<Melee>3</Melee>
+			<Social>-3</Social>
+			<Intellectual>-10</Intellectual>
+		</skillGains>
+		<requiredWorkTags>
+			<li>Violent</li>
+		</requiredWorkTags>
+		<workDisables>
+			<li>Caring</li>
+		</workDisables>
+		<forcedTraits>
+			<Bloodlust>0</Bloodlust>
+			<SlowLearner>0</SlowLearner>
+		</forcedTraits>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<defName>JVBackstory_Peaceful</defName>
+		<title>Peaceful Conqueror</title>
+		<titleShort>Peaceful</titleShort>
+		<slot>Adulthood</slot>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<baseDesc>[PAWN_nameDef] has conquered worlds without killing anyone, and prefers it that way.</baseDesc>
+		<spawnCategories>
+			<li>Viltrum</li>
+		</spawnCategories>
+		<skillGains>
+			<Social>13</Social>
+			<Intellectual>5</Intellectual>
+		</skillGains>
+		<requiredWorkTags>
+			<li>Violent</li>
+		</requiredWorkTags>
+		<forcedTraits>
+			<Kind>0</Kind>
+			<FastLearner>0</FastLearner>
+		</forcedTraits>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<defName>JVBackstory_Bionic</defName>
+		<title>Viltrumite Bionicalist</title>
+		<titleShort>Bionicalist</titleShort>
+		<slot>Adulthood</slot>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<baseDesc>[PAWN_nameDef] makes bionics for other Viltrumites using the strongest materials and secret technology.</baseDesc>
+		<spawnCategories>
+			<li>Viltrum</li>
+		</spawnCategories>
+		<skillGains>
+			<Crafting>8</Crafting>
+			<Intellectual>5</Intellectual>
+			<Construction>3</Construction>
+			<Artistic>2</Artistic>
+		</skillGains>
+		<requiredWorkTags>
+			<li>Violent</li>
+		</requiredWorkTags>
+		<forcedTraits>
+			<Transhumanist>0</Transhumanist>
+		</forcedTraits>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<defName>JVBackstory_Bee</defName>
+		<title>Bee A Bee</title>
+		<titleShort>BeeBee</titleShort>
+		<slot>Adulthood</slot>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<baseDesc>Ever since returning from a particular mission, [PAWN_nameDef] thinks they're a Bee.</baseDesc>
+		<spawnCategories>
+			<li>Viltrum</li>
+		</spawnCategories>
+		<skillGains>
+			<Construction>4</Construction>
+			<Animals>4</Animals>
+			<Social>-8</Social>
+		</skillGains>
+		<requiredWorkTags>
+			<li>Violent</li>
+		</requiredWorkTags>
+		<forcedTraits>
+			<Ascetic>0</Ascetic>
+			<Transhumanist>0</Transhumanist>
+			<Industriousness>2</Industriousness>
+		</forcedTraits>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<defName>JVBackstory_ImASteak</defName>
+		<title>Ima Steak</title>
+		<titleShort>Steak</titleShort>
+		<slot>Adulthood</slot>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<baseDesc>Ever since returning from a particular mission, [PAWN_nameDef] thinks they're a steak.</baseDesc>
+		<spawnCategories>
+			<li>Viltrum</li>
+		</spawnCategories>
+		<skillGains>
+			<Cooking>1</Cooking>
+			<Animals>1</Animals>
+			<Social>-8</Social>
+		</skillGains>
+		<requiredWorkTags>
+			<li>Violent</li>
+		</requiredWorkTags>
+		<forcedTraits>
+			<Gourmand>0</Gourmand>
+		</forcedTraits>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<defName>JVBackstory_MadeASteak</defName>
+		<title>Made A Steak</title>
+		<titleShort>Steak</titleShort>
+		<slot>Adulthood</slot>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<baseDesc>[PAWN_nameDef] made a steak. It was quite tasty.</baseDesc>
+		<spawnCategories>
+			<li>Viltrum</li>
+		</spawnCategories>
+		<skillGains>
+			<Cooking>4</Cooking>
+			<Animals>-2</Animals>
+			<Social>2</Social>
+		</skillGains>
+		<requiredWorkTags>
+			<li>Violent</li>
+		</requiredWorkTags>
+		<forcedTraits>
+			<NaturalMood>2</NaturalMood>
+		</forcedTraits>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<defName>JVBackstory_Ship</defName>
+		<title>Viltrumite Shipwright</title>
+		<titleShort>Bionicalist</titleShort>
+		<slot>Adulthood</slot>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<baseDesc>[PAWN_nameDef] helps build ships worthy of Viltrumites (and durable enough for their disagreements).</baseDesc>
+		<spawnCategories>
+			<li>Viltrum</li>
+		</spawnCategories>
+		<skillGains>
+			<Construction>8</Construction>
+			<Crafting>3</Crafting>
+			<Artistic>2</Artistic>
+			<Intellectual>3</Intellectual>
+		</skillGains>
+		<requiredWorkTags>
+			<li>Violent</li>
+		</requiredWorkTags>
+		<forcedTraits>
+			<Transhumanist>0</Transhumanist>
+		</forcedTraits>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<defName>JVBackstory_Wimp</defName>
+		<title>Wimpy Viltrumite</title>
+		<titleShort>Wimpy</titleShort>
+		<slot>Adulthood</slot>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<baseDesc>[PAWN_nameDef] isn't used to fighting Viltrumites or other strong opponents.</baseDesc>
+		<spawnCategories>
+			<li>ViltrumGarbage</li>
+		</spawnCategories>
+		<skillGains>
+			<Melee>-4</Melee>
+		</skillGains>
+		<requiredWorkTags>
+			<li>Violent</li>
+		</requiredWorkTags>
+		<forcedTraits>
+			<Wimp>0</Wimp>
+		</forcedTraits>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<defName>JVBackstory_Greed</defName>
+		<title>Spoilt Viltrumite</title>
+		<titleShort>Spoilt</titleShort>
+		<slot>Adulthood</slot>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<baseDesc>[PAWN_nameDef] has a bad habit of staying in the most luxurious places and throwing parties on planets they conquer. They're used to being pampered.</baseDesc>
+		<spawnCategories>
+			<li>Viltrum</li>
+		</spawnCategories>
+		<skillGains>
+			<Melee>4</Melee>
+			<Social>6</Social>
+			<Artistic>5</Artistic>
+		</skillGains>
+		<requiredWorkTags>
+			<li>Violent</li>
+		</requiredWorkTags>
+		<forcedTraits>
+			<Greedy>0</Greedy>
+		</forcedTraits>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<defName>JVBackstory_VPrisoner</defName>
+		<title>Viltrumite Prisoner</title>
+		<titleShort>Prisoner</titleShort>
+		<slot>Adulthood</slot>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<baseDesc>[PAWN_nameDef] was imprisoned and tortured by other Viltrumites for breaking their rules. This left them mentally unstble, with deep psychological scars.</baseDesc>
+		<spawnCategories>
+			<li>Viltrum</li>
+		</spawnCategories>
+		<skillGains>
+			<Melee>4</Melee>
+			<Social>-3</Social>
+		</skillGains>
+		<requiredWorkTags>
+			<li>Violent</li>
+		</requiredWorkTags>
+		<forcedTraits>
+			<Nerves>-2</Nerves>
+			<NaturalMood>-2</NaturalMood>
+			<Disturbing MayRequire="Ludeon.RimWorld.Anomaly">0</Disturbing>
+		</forcedTraits>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<defName>JVBackstory_VGenocide</defName>
+		<title>Viltrumite Genocider</title>
+		<titleShort>Genocider</titleShort>
+		<slot>Adulthood</slot>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<baseDesc>[PAWN_nameDef] was primarily tasked with wiping out whole xenotypes and species that Viltrum considered useless or detrimental to their empire. They're among the few Viltrumites experienced with ranged warfare, especially ballistics.</baseDesc>
+		<spawnCategories>
+			<li>Viltrum</li>
+		</spawnCategories>
+		<skillGains>
+			<Melee>4</Melee>
+			<Shooting>4</Shooting>
+			<Social>-3</Social>
+		</skillGains>
+		<requiredWorkTags>
+			<li>Violent</li>
+		</requiredWorkTags>
+		<forcedTraits>
+			<Psychopath>0</Psychopath>
+		</forcedTraits>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<defName>JVBackstory_VBiologist</defName>
+		<title>Viltrumite Biologist</title>
+		<titleShort>Biologist</titleShort>
+		<slot>Adulthood</slot>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<baseDesc>Chosen for their intellect and loyalty, [PAWN_nameDef] was among the few, even among Viltrumites, trusted to study the secrets of Viltrumite biology and know their weaknesses.</baseDesc>
+		<spawnCategories>
+			<li>Viltrum</li>
+		</spawnCategories>
+		<skillGains>
+			<Social>-3</Social>
+			<Intellectual>7</Intellectual>
+			<Medicine>7</Medicine>
+		</skillGains>
+		<requiredWorkTags>
+			<li>Violent</li>
+		</requiredWorkTags>
+		<forcedTraits>
+			<FastLearner>0</FastLearner>
+		</forcedTraits>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<defName>JVBackstory_VSmith</defName>
+		<title>Viltrumite Smith</title>
+		<titleShort>Smith</titleShort>
+		<slot>Adulthood</slot>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<baseDesc>[PAWN_nameDef] carefully uses their strength to forge weapons worthy of Viltrumites. Since Viltrumites are more than deadly enough with their fists, though, this is an underappreciated craft, and some consider needing weapons a sign of weakness.</baseDesc>
+		<spawnCategories>
+			<li>Viltrum</li>
+		</spawnCategories>
+		<skillGains>
+			<Melee>3</Melee>
+			<Intellectual>3</Intellectual>
+			<Crafting>7</Crafting>
+		</skillGains>
+		<requiredWorkTags>
+			<li>Violent</li>
+		</requiredWorkTags>
+		<forcedTraits>
+			<Industriousness>2</Industriousness>
+		</forcedTraits>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<defName>JVBackstory_VChef</defName>
+		<title>Viltrumite Chef</title>
+		<titleShort>Chef</titleShort>
+		<slot>Adulthood</slot>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<baseDesc>[PAWN_nameDef] enjoys mixing ingredients and recipes from conquered worlds.</baseDesc>
+		<spawnCategories>
+			<li>Viltrum</li>
+		</spawnCategories>
+		<skillGains>
+			<Cooking>7</Cooking>
+			<Plants>4</Plants>
+			<Intellectual>3</Intellectual>
+			<Animals>2</Animals>
+		</skillGains>
+		<requiredWorkTags>
+			<li>Violent</li>
+		</requiredWorkTags>
+		<forcedTraits>
+			<Gourmand>0</Gourmand>
+		</forcedTraits>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<defName>JVBackstory_VBarber</defName>
+		<title>Viltrumite Barber</title>
+		<titleShort>Barber</titleShort>
+		<slot>Adulthood</slot>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<baseDesc>[PAWN_nameDef] is among Viltrum's finest barbers. Word is, they maintain the crispness of the hairline of the Grant Regent themselves.</baseDesc>
+		<spawnCategories>
+			<li>Viltrum</li>
+		</spawnCategories>
+		<skillGains>
+			<Artistic>7</Artistic>
+			<Crafting>4</Crafting>
+			<Intellectual>3</Intellectual>
+		</skillGains>
+		<requiredWorkTags>
+			<li>Violent</li>
+		</requiredWorkTags>
+		<forcedTraits>
+			<TorturedArtist>0</TorturedArtist>
+		</forcedTraits>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<defName>JVBackstory_VMournful</defName>
+		<title>Viltrumite Mourner</title>
+		<titleShort>Mourner</titleShort>
+		<slot>Adulthood</slot>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<baseDesc>[PAWN_nameDef] was partly raised by non-Viltrumites. Knowledge of their lifespan weighs heavily upon them.</baseDesc>
+		<spawnCategories>
+			<li>Viltrum</li>
+		</spawnCategories>
+		<skillGains>
+			<Intellectual>3</Intellectual>
+		</skillGains>
+		<requiredWorkTags>
+			<li>Violent</li>
+		</requiredWorkTags>
+		<forcedTraits>
+			<GreatMemory>0</GreatMemory>
+			<NaturalMood>-1</NaturalMood>
+		</forcedTraits>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<defName>JVBackstory_VJoyous</defName>
+		<title>Joyous Viltrumite</title>
+		<titleShort>Joyous</titleShort>
+		<slot>Adulthood</slot>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<baseDesc>[PAWN_nameDef] is oddly upbeat, chatty and friendly for a Viltrumite. They even compliment and apologize to people as they kill them, and take time to admire and take pictures of monuments before destroying them.</baseDesc>
+		<spawnCategories>
+			<li>Viltrum</li>
+		</spawnCategories>
+		<skillGains>
+			<Social>3</Social>
+		</skillGains>
+		<requiredWorkTags>
+			<li>Violent</li>
+		</requiredWorkTags>
+		<forcedTraits>
+			<NaturalMood>2</NaturalMood>
+			<Kind>0</Kind>
+			<Joyous MayRequire="Ludeon.RimWorld.Anomaly">0</Joyous>
+		</forcedTraits>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<defName>JVBackstory_VTimer</defName>
+		<title>Timetrapped Viltrumite</title>
+		<titleShort>timetrapped</titleShort>
+		<slot>Adulthood</slot>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<baseDesc>[PAWN_nameDef] was trapped in a time-based anomaly.</baseDesc>
+		<spawnCategories>
+			<li>Viltrum</li>
+		</spawnCategories>
+		<skillGains>
+			<Social>-3</Social>
+		</skillGains>
+		<requiredWorkTags>
+			<li>Violent</li>
+		</requiredWorkTags>
+		<forcedTraits>
+			<NaturalMood>-1</NaturalMood>
+		</forcedTraits>
+	</BackstoryDef>
+
+	<!-- Elite -->
+	<BackstoryDef>
+		<defName>JVBackstory_Taker</defName>
+		<title>Planet Infiltrator</title>
+		<titleShort>Conqueror</titleShort>
+		<slot>Adulthood</slot>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<baseDesc>[PAWN_nameDef] has infiltrated powerful worlds and conquered them from within. They often had to manage these planets themselves until Viltrum's governors arrived.</baseDesc>
+		<spawnCategories>
+			<li>ViltrumElite</li>
+		</spawnCategories>
+		<skillGains>
+			<Melee>7</Melee>
+			<Social>7</Social>
+			<Intellectual>4</Intellectual>
+		</skillGains>
+		<requiredWorkTags>
+			<li>Violent</li>
+		</requiredWorkTags>
+		<forcedTraits>
+			<Tough>0</Tough>
+			<FastLearner>0</FastLearner>
+		</forcedTraits>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<defName>JVBackstory_Feared</defName>
+		<title>Feared Viltrumite</title>
+		<titleShort>Feared</titleShort>
+		<slot>Adulthood</slot>
+		<bodyTypeMale>Hulk</bodyTypeMale>
+		<bodyTypeFemale>Hulk</bodyTypeFemale>
+		<baseDesc>[PAWN_nameDef] is so lonely. All the other Viltrumites are scared of [PAWN_nameDef]. Noone talks to them. Noone wants to be their friend - they think they are unstable. They send [PAWN_nameDef] from planet to planet committing atrocities in Viltrum's name. And as [PAWN_nameDef] gets better at it, they fear [PAWN_nameDef] more and more. [PAWN_nameDef] is a victim of their own success.</baseDesc>
+		<spawnCategories>
+			<li>ViltrumElite</li>
+			<li>ViltrumConquest</li>
+		</spawnCategories>
+		<skillGains>
+			<Social>-7</Social>
+			<Melee>15</Melee>
+		</skillGains>
+		<requiredWorkTags>
+			<li>Violent</li>
+		</requiredWorkTags>
+		<forcedTraits>
+			<Bloodlust>0</Bloodlust>
+			<Brawler>0</Brawler>
+			<Masochist>0</Masochist>
+			<Tough>0</Tough>
+			<NaturalMood>-2</NaturalMood>
+			<Abrasive>0</Abrasive>
+			<Beauty>-2</Beauty>
+			<CreepyBreathing>0</CreepyBreathing>
+			<AnnoyingVoice>0</AnnoyingVoice>
+		</forcedTraits>
+		<disallowedTraits>
+			<Kind>0</Kind>
+		</disallowedTraits>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<defName>JVBackstory_Slayer</defName>
+		<title>Viltrumite Slayer</title>
+		<titleShort>Slayer</titleShort>
+		<slot>Adulthood</slot>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<baseDesc>For their strength and loyalty, [PAWN_nameDef] is among the most likely to be tasked with finding and killing treasonous Viltrumites.</baseDesc>
+		<spawnCategories>
+			<li>ViltrumElite</li>
+		</spawnCategories>
+		<skillGains>
+			<Melee>10</Melee>
+		</skillGains>
+		<requiredWorkTags>
+			<li>Violent</li>
+		</requiredWorkTags>
+		<forcedTraits>
+			<Tough>0</Tough>
+		</forcedTraits>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<defName>JVBackstory_Discipline</defName>
+		<title>Viltrumite Discipliner</title>
+		<titleShort>Handler</titleShort>
+		<slot>Adulthood</slot>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<baseDesc>[PAWN_nameDef] was often tasked with managing unruly subordinates, and often had to put them in their place, or even revoke their being-alive privileges.</baseDesc>
+		<spawnCategories>
+			<li>ViltrumElite</li>
+		</spawnCategories>
+		<skillGains>
+			<Melee>5</Melee>
+			<Social>4</Social>
+		</skillGains>
+		<requiredWorkTags>
+			<li>Violent</li>
+		</requiredWorkTags>
+		<forcedTraits>
+			<Tough>0</Tough>
+		</forcedTraits>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<defName>JVBackstory_WarHero</defName>
+		<title>Viltrumite War Hero</title>
+		<titleShort>Warhero</titleShort>
+		<slot>Adulthood</slot>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<baseDesc>For their deeds, [PAWN_nameDef] is considered a war hero and celebrated by their fellow Viltrumites.</baseDesc>
+		<spawnCategories>
+			<li>ViltrumElite</li>
+		</spawnCategories>
+		<skillGains>
+			<Melee>5</Melee>
+		</skillGains>
+		<requiredWorkTags>
+			<li>Violent</li>
+		</requiredWorkTags>
+		<forcedTraits>
+			<Tough>0</Tough>
+		</forcedTraits>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<defName>JVBackstory_Gymrat</defName>
+		<title>Viltrumite Gym Rat</title>
+		<titleShort>Gymrat</titleShort>
+		<slot>Adulthood</slot>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<baseDesc>[PAWN_nameDef] is among Viltrumites what humans would call a "gym rat". They've even gotten in trouble for shirking their duties to spend more time pushing asteroids to get stronger.</baseDesc>
+		<spawnCategories>
+			<li>ViltrumElite</li>
+		</spawnCategories>
+		<skillGains>
+			<Melee>7</Melee>
+		</skillGains>
+		<requiredWorkTags>
+			<li>Violent</li>
+		</requiredWorkTags>
+		<forcedTraits>
+			<Tough>0</Tough>
+		</forcedTraits>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<defName>JVBackstory_Muncher</defName>
+		<title>Viltrumite Muncher</title>
+		<titleShort>Muncher</titleShort>
+		<slot>Adulthood</slot>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<baseDesc>[PAWN_nameDef] used to be relatively weak, but since killing and eating an abnormally strong kaiju, they've been a lot tougher. Viltrum is still trying to find out what caused this increase in strength.</baseDesc>
+		<spawnCategories>
+			<li>ViltrumElite</li>
+		</spawnCategories>
+		<skillGains>
+			<Melee>4</Melee>
+		</skillGains>
+		<requiredWorkTags>
+			<li>Violent</li>
+		</requiredWorkTags>
+		<forcedTraits>
+			<Tough>0</Tough>
+			<Gourmand>0</Gourmand>
+		</forcedTraits>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<defName>JVBackstory_Spearhead</defName>
+		<title>Viltrumite Spearhead</title>
+		<titleShort>Spearhead</titleShort>
+		<slot>Adulthood</slot>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<baseDesc>[PAWN_nameDef] is often tasked with spearheading particularly difficult invasions against capable foes, requiring not only combat skills but tactical wit, too.</baseDesc>
+		<spawnCategories>
+			<li>ViltrumElite</li>
+		</spawnCategories>
+		<skillGains>
+			<Melee>5</Melee>
+			<Intellectual>3</Intellectual>
+		</skillGains>
+		<requiredWorkTags>
+			<li>Violent</li>
+		</requiredWorkTags>
+		<forcedTraits>
+			<Tough>0</Tough>
+		</forcedTraits>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<defName>JVBackstory_Feral</defName>
+		<title>Viltrumite Feral</title>
+		<titleShort>Feral</titleShort>
+		<slot>Adulthood</slot>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<baseDesc>[PAWN_nameDef] is practically feral, but useful. They're often let loose to bring death and destruction upon Viltrum's enemies.</baseDesc>
+		<spawnCategories>
+			<li>ViltrumElite</li>
+			<li>Vilgrunt</li>
+		</spawnCategories>
+		<skillGains>
+			<Melee>9</Melee>
+		</skillGains>
+		<requiredWorkTags>
+			<li>Violent</li>
+		</requiredWorkTags>
+		<forcedTraits>
+			<Tough>0</Tough>
+		</forcedTraits>
+		<workDisables>
+			<li>Caring</li>
+			<li>ManualDumb</li>
+			<li>ManualSkilled</li>
+			<li>Firefighting</li>
+			<li>Intellectual</li>
+			<li>Constructing</li>
+			<li>Crafting</li>
+			<li>Social</li>
+		</workDisables>
+	</BackstoryDef>
+
+	<!-- Regent. Supreme leader of ass whoopings -->
+	<BackstoryDef>
+		<defName>JVBackstory_Regent</defName>
+		<title>Viltrumite Regent</title>
+		<titleShort>Regent</titleShort>
+		<slot>Adulthood</slot>
+		<bodyTypeMale>Hulk</bodyTypeMale>
+		<bodyTypeFemale>Hulk</bodyTypeFemale>
+		<baseDesc>[PAWN_nameDef] was chosen as a Regent for their... excessively impressive resume.</baseDesc>
+		<spawnCategories>
+			<li>ViltrumRegent</li>
+		</spawnCategories>
+		<skillGains>
+			<Melee>20</Melee>
+			<Intellectual>8</Intellectual>
+			<Social>8</Social>
+			<Shooting>18</Shooting>
+			<Mining>8</Mining>
+			<Construction>8</Construction>
+			<Medicine>8</Medicine>
+		</skillGains>
+		<requiredWorkTags>
+			<li>Violent</li>
+		</requiredWorkTags>
+		<forcedTraits>
+			<Tough>0</Tough>
+			<FastLearner>0</FastLearner>
+			<Nimble>0</Nimble>
+			<SpeedOffset>2</SpeedOffset>
+			<Nerves>2</Nerves>
+			<Brawler>0</Brawler>
+			<Gigantism MayRequire="RedMattis.BigSmall.Core">0</Gigantism>
+			<RT_Resilient MayRequire="Sierra.RT.GeneralTraits">0</RT_Resilient>
+			<RT_Hardy MayRequire="Sierra.RT.GeneralTraits">0</RT_Hardy>
+		</forcedTraits>
+	</BackstoryDef>
+
+	<BackstoryDef>
+		<defName>JVBackstory_Argall</defName>
+		<title>Argallblood</title>
+		<titleShort>Argallblood</titleShort>
+		<slot>Adulthood</slot>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<baseDesc>[PAWN_nameDef] is of Argall's royal bloodline, and has a claim to the throne of Viltrum. Of course, claims mean nothing without the strength to take them.</baseDesc>
+		<spawnCategories>
+			<li>ViltrumArgall</li>
+		</spawnCategories>
+		<skillGains>
+			<Melee>5</Melee>
+			<Intellectual>5</Intellectual>
+			<Social>5</Social>
+		</skillGains>
+		<requiredWorkTags>
+			<li>Violent</li>
+		</requiredWorkTags>
+		<forcedTraits>
+			<Tough>0</Tough>
+			<FastLearner>0</FastLearner>
+		</forcedTraits>
+	</BackstoryDef>
+	
+</Defs>

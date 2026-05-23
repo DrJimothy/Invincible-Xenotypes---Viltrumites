@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+<!-- Giving shotguns a shotgun-specific tag... they should really have one already -->
+
+<Operation Class="PatchOperationReplace">
+    <xpath>Defs/PawnKindDef[defName="Vilgrunt_Phytokin"]/weaponTags</xpath>
+    <value>
+      <weaponTags>
+        <li>JimPew_SpaceShotgun</li>
+      </weaponTags>
+    </value>
+</Operation>
+
+</Patch>

@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+<!-- Make Marines feel Mariney -->
+<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="VWEL_Gun_LaserRifle"]/weaponTags</xpath>
+		<value>
+			<li>JimPew_Marine</li>
+		</value>
+</Operation>
+
+<!-- Make Marines feel Mariney -->
+<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="VWEL_Gun_LaserSniperRifle"]/weaponTags</xpath>
+		<value>
+			<li>JimPew_SniperStrong</li>
+		</value>
+</Operation>
+
+<!-- Make Marines feel Mariney -->
+<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="VWEL_Gun_LaserShotgun"]/weaponTags</xpath>
+		<value>
+			<li>JimPew_StrongShotgun</li>
+			<li>JimPew_SpaceShotgun</li>
+		</value>
+</Operation>
+
+<!-- Make Marines feel Mariney -->
+<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="VWEL_Gun_LaserMinigun"]/weaponTags</xpath>
+		<value>
+			<li>JimPew_MinigunStrong</li>
+		</value>
+</Operation>
+
+<!-- Make Marines feel Mariney -->
+<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="VWEL_Gun_TeslaGun"]/weaponTags</xpath>
+		<value>
+			<li>JimPew_MinigunStrong</li>
+		</value>
+</Operation>
+
+</Patch>

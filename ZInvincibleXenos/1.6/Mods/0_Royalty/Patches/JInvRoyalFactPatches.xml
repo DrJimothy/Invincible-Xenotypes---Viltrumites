@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+<!-- Raids -->
+<Operation Class="PatchOperationAdd">
+		<xpath>Defs/FactionDef[defName="ViltrumEmpire"]/pawnGroupMakers</xpath>
+		<value>
+			<!-- You WILL hate your stupid chud life -->
+			<li>
+				<kindDef>Combat</kindDef>
+				<commonality>1</commonality>
+				<options>
+					<Viltrum_Fighter_Champion>1</Viltrum_Fighter_Champion>
+				</options>
+			</li>
+			<li>
+				<kindDef>Combat</kindDef>
+				<commonality>1</commonality>
+				<options>
+					<Viltrum_Fighter_Janissary>1</Viltrum_Fighter_Janissary>
+				</options>
+			</li>
+			<li>
+				<kindDef>Combat</kindDef>
+				<commonality>1</commonality>
+				<options>
+					<Viltrum_Fighter_Trooper>1</Viltrum_Fighter_Trooper>
+				</options>
+			</li>
+			<li>
+				<kindDef>Combat</kindDef>
+				<commonality>1</commonality>
+				<options>
+					<Viltrum_Fighter_CataphractMelee>1</Viltrum_Fighter_CataphractMelee>
+				</options>
+			</li>
+			<li>
+				<kindDef>Combat</kindDef>
+				<commonality>1</commonality>
+				<options>
+					<Viltrum_Fighter_CataphractRanged>1</Viltrum_Fighter_CataphractRanged>
+				</options>
+			</li>
+			<!-- Are ya winning son? -->
+			<li>
+				<kindDef>Combat</kindDef>
+				<commonality>1</commonality>
+				<options>
+					<Viltrum_Fighter_Champion>1</Viltrum_Fighter_Champion>
+					<Viltrumite_Fighter_Random>1</Viltrumite_Fighter_Random>
+				</options>
+			</li>
+			<li>
+				<kindDef>Combat</kindDef>
+				<commonality>1</commonality>
+				<options>
+					<Viltrum_Fighter_Janissary>1</Viltrum_Fighter_Janissary>
+					<Viltrumite_Fighter_Random>1</Viltrumite_Fighter_Random>
+				</options>
+			</li>
+			<li>
+				<kindDef>Combat</kindDef>
+				<commonality>1</commonality>
+				<options>
+					<Viltrum_Fighter_Trooper>1</Viltrum_Fighter_Trooper>
+					<Viltrumite_Fighter_Random>1</Viltrumite_Fighter_Random>
+				</options>
+			</li>
+			<li>
+				<kindDef>Combat</kindDef>
+				<commonality>1</commonality>
+				<options>
+					<Viltrum_Fighter_CataphractMelee>1</Viltrum_Fighter_CataphractMelee>
+					<Viltrumite_Fighter_Random>1</Viltrumite_Fighter_Random>
+				</options>
+			</li>
+			<li>
+				<kindDef>Combat</kindDef>
+				<commonality>1</commonality>
+				<options>
+					<Viltrum_Fighter_CataphractRanged>1</Viltrum_Fighter_CataphractRanged>
+					<Viltrumite_Fighter_Random>1</Viltrumite_Fighter_Random>
+				</options>
+			</li>
+		</value>
+</Operation>
+
+</Patch>

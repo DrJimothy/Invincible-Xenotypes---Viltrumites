@@ -1,0 +1,592 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<GeneDef ParentName="HALI_RandomGeneticsBase">
+		<defName>HALIJInv_RandomHealing</defName>
+		<label>gamble healing</label>
+		<description>Carriers of this gene have random healing. This includes reduction. Chance to get nothing.</description>
+		<displayOrderInCategory>10</displayOrderInCategory>
+		<modExtensions>
+			<li Class="HALI_RandomGenetics.Gene_Filtered">
+				<filterList>
+					<li>
+						<exclusionTags>
+							<li>WoundHealingRate</li>
+						</exclusionTags>
+						<filler>4</filler>
+						<filler>2</filler>
+					</li>
+				</filterList>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+	<GeneDef ParentName="HALI_RandomGeneticsBase">
+		<defName>HALIJInv_RandomImmunity</defName>
+		<label>gamble immunity</label>
+		<description>Carriers of this gene have random immunity. This includes reduction. Chance to get nothing.</description>
+		<displayOrderInCategory>10</displayOrderInCategory>
+		<modExtensions>
+			<li Class="HALI_RandomGenetics.Gene_Filtered">
+				<filterList>
+					<li>
+						<exclusionTags>
+							<li>Immunity</li>
+						</exclusionTags>
+						<filler>4</filler>
+					</li>
+				</filterList>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+	<GeneDef ParentName="HALI_RandomGeneticsBase">
+		<defName>HALIJInv_RandomToxic</defName>
+		<label>gamble tox immunity</label>
+		<description>Carriers of this gene have random tox immunity. This includes reduction Chance to get nothing.</description>
+		<displayOrderInCategory>10</displayOrderInCategory>
+		<modExtensions>
+			<li Class="HALI_RandomGenetics.Gene_Filtered">
+				<filterList>
+					<li>
+						<exclusionTags>
+							<li>ToxicEnvironmentResistance</li>
+						</exclusionTags>
+						<filler>4</filler>
+					</li>
+				</filterList>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+	<GeneDef ParentName="HALI_RandomGeneticsBase">
+		<defName>HALIJInv_RandomFertility</defName>
+		<label>gamble fertility</label>
+		<description>Carriers of this gene will random fertility. This includes reduction Chance to get nothing.</description>
+		<displayOrderInCategory>10</displayOrderInCategory>
+		<modExtensions>
+			<li Class="HALI_RandomGenetics.Gene_Filtered">
+				<filterList>
+					<li>
+						<exclusionTags>
+							<li>Fertility</li>
+						</exclusionTags>
+						<filler>4</filler>
+					</li>
+				</filterList>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+	<GeneDef ParentName="HALI_RandomGeneticsBase">
+		<defName>HALIJInv_RandomMelee</defName>
+		<label>gamble strength</label>
+		<description>Carriers of this gene will have random melee strength. This includes reduction. There's a small chance they'll become incapable of violence entirely Chance to get nothing.</description>
+		<displayOrderInCategory>10</displayOrderInCategory>
+		<modExtensions>
+			<li Class="HALI_RandomGenetics.Gene_Filtered">
+				<filterList>
+					<li>
+						<exclusionTags>
+							<li>MeleeDamage</li>
+						</exclusionTags>
+						<filler>4</filler>
+					</li>
+				</filterList>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+	<GeneDef ParentName="HALI_RandomGeneticsBase">
+		<defName>HALIJInv_RandomAggression</defName>
+		<label>gamble aggression</label>
+		<description>Carriers of this gene will have random aggression. This includes reduction. There's a small chance they'll become incapable of violence entirely. Chance to get nothing.</description>
+		<displayOrderInCategory>10</displayOrderInCategory>
+		<modExtensions>
+			<li Class="HALI_RandomGenetics.Gene_Filtered">
+				<filterList>
+					<li>
+						<exclusionTags>
+							<li>Aggressive</li>
+						</exclusionTags>
+						<filler>4</filler>
+					</li>
+				</filterList>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+	<GeneDef ParentName="HALI_RandomGeneticsBase">
+		<defName>HALIJInv_RandomKillOrChill</defName>
+		<label>kill or chill</label>
+		<description>Carriers of this gene have a random thirst to kill. There's a chance they become incapable of violence entirely Chance to get nothing.</description>
+		<displayOrderInCategory>10</displayOrderInCategory>
+		<modExtensions>
+			<li Class="HALI_RandomGenetics.Gene_Filtered">
+				<filterList>
+					<li>
+						<exclusionTags>
+							<li>KillThirst</li>
+						</exclusionTags>
+						<filler>4</filler>
+					</li>
+				</filterList>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+	<GeneDef ParentName="HALI_RandomGeneticsBase">
+		<defName>HALIJInv_RandomShooty</defName>
+		<label>nearsighted or pacifist</label>
+		<description>Carriers of this gene have random shooting accuracy. There's a chance they become incapable of violence entirely (with no other gene mods, only gives nearsighted or pacifist). Chance to get nothing.</description>
+		<displayOrderInCategory>10</displayOrderInCategory>
+		<modExtensions>
+			<li Class="HALI_RandomGenetics.Gene_Filtered">
+				<filterList>
+					<li>
+						<exclusionTags>
+							<li>ShootingAccuracy</li>
+						</exclusionTags>
+						<filler>4</filler>
+					</li>
+				</filterList>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+	<GeneDef ParentName="HALI_RandomGeneticsBase">
+		<defName>HALIJInv_RandomFire</defName>
+		<label>gamble fire resistance</label>
+		<description>Carriers of this gene have random fire resistance. This includes reduction. Chance to get nothing.</description>
+		<displayOrderInCategory>10</displayOrderInCategory>
+		<modExtensions>
+			<li Class="HALI_RandomGenetics.Gene_Filtered">
+				<filterList>
+					<li>
+						<exclusionTags>
+							<li>FireDamage</li>
+						</exclusionTags>
+						<filler>4</filler>
+					</li>
+				</filterList>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+	<GeneDef ParentName="HALI_RandomGeneticsBase">
+		<defName>HALIJInv_RandomStability</defName>
+		<label>gamble cell stability</label>
+		<description>Carriers of this gene have random cell stability. This includes reduction. Chance to get nothing.</description>
+		<displayOrderInCategory>10</displayOrderInCategory>
+		<modExtensions>
+			<li Class="HALI_RandomGenetics.Gene_Filtered">
+				<filterList>
+					<li>
+						<exclusionTags>
+							<li>CellInstability</li>
+						</exclusionTags>
+						<filler>4</filler>
+					</li>
+				</filterList>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+	<GeneDef ParentName="HALI_RandomGeneticsBase">
+		<defName>HALIJInv_RandomMinTemp</defName>
+		<label>gamble cold resistance</label>
+		<description>Carriers of this gene have random cold resistance. This includes reduction. Chance to get nothing.</description>
+		<displayOrderInCategory>10</displayOrderInCategory>
+		<modExtensions>
+			<li Class="HALI_RandomGenetics.Gene_Filtered">
+				<filterList>
+					<li>
+						<exclusionTags>
+							<li>MinTemperature</li>
+						</exclusionTags>
+						<filler>4</filler>
+					</li>
+				</filterList>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+	<GeneDef ParentName="HALI_RandomGeneticsBase">
+		<defName>HALIJInv_RandomMaxTemp</defName>
+		<label>gamble heat resistance</label>
+		<description>Carriers of this gene have random heat resistance. This includes reduction. Chance to get nothing.</description>
+		<displayOrderInCategory>10</displayOrderInCategory>
+		<modExtensions>
+			<li Class="HALI_RandomGenetics.Gene_Filtered">
+				<filterList>
+					<li>
+						<exclusionTags>
+							<li>MaxTemperature</li>
+						</exclusionTags>
+						<filler>4</filler>
+					</li>
+				</filterList>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+	<GeneDef ParentName="HALI_RandomGeneticsBase">
+		<defName>HALIJInv_RandomPsychicAbility</defName>
+		<label>gamble psychic ability</label>
+		<description>Carriers of this gene have random psychic ability. This includes reduction. Chance to get nothing.</description>
+		<displayOrderInCategory>10</displayOrderInCategory>
+		<modExtensions>
+			<li Class="HALI_RandomGenetics.Gene_Filtered">
+				<filterList>
+					<li>
+						<exclusionTags>
+							<li>PsychicAbility</li>
+						</exclusionTags>
+						<filler>4</filler>
+					</li>
+				</filterList>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+	<GeneDef ParentName="HALI_RandomGeneticsBase">
+		<defName>HALIJInv_RandomMoveSpeed</defName>
+		<label>gamble move speed</label>
+		<description>Carriers of this gene have random movespeed. This includes reduction. Chance to get nothing.</description>
+		<displayOrderInCategory>10</displayOrderInCategory>
+		<modExtensions>
+			<li Class="HALI_RandomGenetics.Gene_Filtered">
+				<filterList>
+					<li>
+						<exclusionTags>
+							<li>MoveSpeed</li>
+						</exclusionTags>
+						<filler>4</filler>
+					</li>
+				</filterList>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+	<GeneDef ParentName="HALI_RandomGeneticsBase">
+		<defName>HALIJInv_RandomBeauty</defName>
+		<label>gamble beauty</label>
+		<description>Carriers of this gene have random beauty. This includes reduction. Chance to get nothing.</description>
+		<displayOrderInCategory>10</displayOrderInCategory>
+		<modExtensions>
+			<li Class="HALI_RandomGenetics.Gene_Filtered">
+				<filterList>
+					<li>
+						<exclusionTags>
+							<li>Beauty</li>
+						</exclusionTags>
+						<filler>4</filler>
+					</li>
+				</filterList>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+	<GeneDef ParentName="HALI_RandomGeneticsBase">
+		<defName>HALIJInv_RandomLearning</defName>
+		<label>gamble learning</label>
+		<description>Carriers of this gene have random learning. This includes reduction. Chance to get nothing.</description>
+		<displayOrderInCategory>10</displayOrderInCategory>
+		<modExtensions>
+			<li Class="HALI_RandomGenetics.Gene_Filtered">
+				<filterList>
+					<li>
+						<exclusionTags>
+							<li>Learning</li>
+						</exclusionTags>
+						<filler>4</filler>
+					</li>
+				</filterList>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+	<GeneDef ParentName="HALI_RandomGeneticsBase">
+		<defName>HALIJInv_RandomToughness</defName>
+		<label>gamble robustness</label>
+		<description>Carriers of this gene have random robustness. This includes reduction. Chance to get nothing.</description>
+		<displayOrderInCategory>10</displayOrderInCategory>
+		<modExtensions>
+			<li Class="HALI_RandomGenetics.Gene_Filtered">
+				<filterList>
+					<li>
+						<exclusionTags>
+							<li>Toughness</li>
+						</exclusionTags>
+						<filler>4</filler>
+					</li>
+				</filterList>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+	<GeneDef ParentName="HALI_RandomGeneticsBase">
+		<defName>HALIJInv_RandomPain</defName>
+		<label>gamble pain sensitivity</label>
+		<description>Carriers of this gene have random pain sensitivity. This includes reduction. Chance to get nothing.</description>
+		<displayOrderInCategory>10</displayOrderInCategory>
+		<modExtensions>
+			<li Class="HALI_RandomGenetics.Gene_Filtered">
+				<filterList>
+					<li>
+						<exclusionTags>
+							<li>Pain</li>
+						</exclusionTags>
+						<filler>4</filler>
+					</li>
+				</filterList>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+	<GeneDef ParentName="HALI_RandomGeneticsBase">
+		<defName>HALIJInv_RandomSleep</defName>
+		<label>gamble sleepiness</label>
+		<description>Carriers of this gene have random sleepiness. This includes reduction. Chance to get nothing.</description>
+		<displayOrderInCategory>10</displayOrderInCategory>
+		<modExtensions>
+			<li Class="HALI_RandomGenetics.Gene_Filtered">
+				<filterList>
+					<li>
+						<exclusionTags>
+							<li>Sleep</li>
+						</exclusionTags>
+						<filler>4</filler>
+					</li>
+				</filterList>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+	<GeneDef ParentName="HALI_RandomGeneticsBase">
+		<defName>HALIJInv_RandomUVSensitivity</defName>
+		<label>gamble UV sensitivity</label>
+		<description>Carriers of this gene have random UV sensitivity. This includes reduction. Chance to get nothing.</description>
+		<displayOrderInCategory>10</displayOrderInCategory>
+		<modExtensions>
+			<li Class="HALI_RandomGenetics.Gene_Filtered">
+				<filterList>
+					<li>
+						<exclusionTags>
+							<li>UVSensitivity</li>
+						</exclusionTags>
+						<filler>4</filler>
+					</li>
+				</filterList>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+	<GeneDef ParentName="HALI_RandomGeneticsBase">
+		<defName>HALIJInv_RandomLibido</defName>
+		<label>gamble libido</label>
+		<description>Carriers of this gene have random libido. This includes reduction. Chance to get nothing.</description>
+		<displayOrderInCategory>10</displayOrderInCategory>
+		<modExtensions>
+			<li Class="HALI_RandomGenetics.Gene_Filtered">
+				<filterList>
+					<li>
+						<exclusionTags>
+							<li>Libido</li>
+						</exclusionTags>
+						<filler>4</filler>
+					</li>
+				</filterList>
+			</li>
+		</modExtensions>
+	</GeneDef>
+	
+	<GeneDef ParentName="HALI_RandomGeneticsBase">
+		<defName>HALIJInv_RandomMood</defName>
+		<label>gamble mood</label>
+		<description>Carriers of this gene will have either a positive or negative mood, or no change at all.</description>
+		<displayOrderInCategory>10</displayOrderInCategory>
+		<modExtensions>
+			<li Class="HALI_RandomGenetics.Gene_Filtered">
+				<filterList>
+					<li>
+						<exclusionTags>
+							<li>Mood</li>
+						</exclusionTags>
+						<filler>10</filler>
+					</li>
+				</filterList>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+	<GeneDef ParentName="HALI_RandomGeneticsBase">
+		<defName>HALIJInv_Archite</defName>
+		<label>gamble archite gene</label>
+		<description>Carriers will have a randomly assigned archite gene. Tiny chance to get nothing. Chance to get nothing.</description>
+		<displayOrderInCategory>10</displayOrderInCategory>
+		<modExtensions>
+			<li Class="HALI_RandomGenetics.Gene_Filtered">
+				<filterList>
+					<li>
+						<minArchite>1</minArchite>
+						<filler>10</filler>
+					</li>
+				</filterList>
+			</li>
+		</modExtensions>
+    	<biostatCpx>12</biostatCpx>
+    	<biostatArc>4</biostatArc>
+	</GeneDef>
+	
+	<GeneDef ParentName="HALI_RandomGeneticsBase">
+		<defName>HALIJInv_RandomAnyTail</defName>
+		<label>gamble unlikely tail</label>
+		<description>Might generate any random tail, but unlikely.</description>
+		<displayOrderInCategory>10</displayOrderInCategory>
+		<modExtensions>
+			<li Class="HALI_RandomGenetics.Gene_Filtered">
+				<filterList>
+					<li>
+						<exclusionTags>
+							<li>Tail</li>
+						</exclusionTags>
+						<excluded>
+							<!--Excluding this tail because it can automatically kill male pawns-->
+							<li MayRequire="fs.reviaracebiotech">ReviaTail</li>
+							<!--Use the exclusionTags for non tail-->
+							<!--use a large amount of exclusionTags-->
+							<li MayRequire="emitbreaker.mim.wh40k.ch.cd">EMCD_Violence_LordofChange</li>
+							<li MayRequire="emitbreaker.mim.wh40k.ch.cd">EMCD_Violence_Horror</li>
+							<li MayRequire="emitbreaker.mim.wh40k.ch.cd">EMCD_Violence_Changecaster</li>
+							<li MayRequire="emitbreaker.mim.wh40k.ch.cd">EMCD_Violence_Changeling</li>
+							<li MayRequire="emitbreaker.mim.wh40k.ch.cd">EMCD_Violence_Flamer</li>
+							<li MayRequire="emitbreaker.mim.wh40k.nc.core">EMNC_Biotransference</li>
+							<li MayRequire="emitbreaker.mim.wh40k.gc.core">EMGC_Gene_PurestrainGenestealer</li>
+							<li MayRequire="emitbreaker.mim.wh40k.gc.core">EMGC_Gene_Patriarch</li>
+						</excluded>
+						<filler>20</filler>
+					</li>
+				</filterList>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+	<GeneDef ParentName="HALI_RandomGeneticsBase">
+		<defName>HALIJInv_RandomHairColor</defName>
+		<label>gamble hair color</label>
+		<description>might generate a random hair color for the carrier. Might not.</description>
+		<iconPath>UI/Icons/Genes/RG_MultiHairColors</iconPath>
+		<displayCategory>Cosmetic_Hair</displayCategory>
+		<displayOrderInCategory>452</displayOrderInCategory>
+		<modExtensions>
+			<li Class="HALI_RandomGenetics.Gene_Filtered">
+				<filterList>
+					<li>
+						<exclusionTags>
+							<li>HairColor</li>
+						</exclusionTags>
+						<minMetabolism>0</minMetabolism>
+						<excluded>
+							<!--Does more than just changing hair color-->
+							<li MayRequire="resplice.xotr.core,Ludeon.Rimworld.Anomaly">RS_VoidTouched</li>
+						</excluded>
+						<filler>20</filler>
+					</li>
+				</filterList>
+			</li>
+		</modExtensions>
+	</GeneDef>
+	
+	<GeneDef ParentName="HALI_RandomGeneticsBase">
+		<defName>HALIJInv_RandomHorns</defName>
+		<label>gamble horns / antlers</label>
+		<description>Might generate a random pair of horns or antlers for the carrier. Might not.</description>
+		<displayOrderInCategory>10</displayOrderInCategory>
+		<modExtensions>
+			<li Class="HALI_RandomGenetics.Gene_Filtered">
+				<filterList>
+					<li>
+						<exclusionTags>
+							<li>Headbone</li>
+						</exclusionTags>
+						<excluded>
+							<li>Headbone_Human</li>
+						</excluded>
+						<filler>20</filler>
+					</li>
+				</filterList>
+			</li>
+		</modExtensions>
+	</GeneDef>
+	
+	<GeneDef ParentName="HALI_RandomGeneticsBase">
+		<defName>HALIJInv_RandomEars</defName>
+		<label>gamble ears</label>
+		<description>Might generate a random set of ears for the carrier. Might not.</description>
+		<displayOrderInCategory>10</displayOrderInCategory>
+		<modExtensions>
+			<li Class="HALI_RandomGenetics.Gene_Filtered">
+				<filterList>
+					<li>
+						<exclusionTags>
+							<li>Ears</li>
+						</exclusionTags>
+						<filler>20</filler>
+					</li>
+				</filterList>
+			</li>
+		</modExtensions>
+	</GeneDef>
+	
+	<GeneDef ParentName="HALI_RandomGeneticsBase">
+		<defName>HALIJInv_RandomAnything</defName>
+		<label>a random gene</label>
+		<description>Generates a random gene for the carrier. Including archite genes.</description>
+		<displayOrderInCategory>10</displayOrderInCategory>
+		<modExtensions>
+			<li Class="HALI_RandomGenetics.Gene_Filtered">
+				<filterList>
+					<li>
+						<maxArchite>10</maxArchite>
+						<canHaveAbility>true</canHaveAbility>
+					</li>
+				</filterList>
+			</li>
+		</modExtensions>
+	</GeneDef>
+	
+	<GeneDef ParentName="HALI_RandomGeneticsBase">
+		<defName>HALIJInv_RandomAnything2</defName>
+		<label>a gamble gene</label>
+		<description>Generates a random gene for the carrier. Including archite genes.</description>
+		<displayOrderInCategory>10</displayOrderInCategory>
+		<modExtensions>
+			<li Class="HALI_RandomGenetics.Gene_Filtered">
+				<filterList>
+					<li>
+						<maxArchite>10</maxArchite>
+						<canHaveAbility>true</canHaveAbility>
+					</li>
+				</filterList>
+			</li>
+		</modExtensions>
+	</GeneDef>
+	
+	<GeneDef ParentName="HALI_RandomGeneticsBase">
+		<defName>HALIJInv_RandomAnything3</defName>
+		<label>a gamble gene</label>
+		<description>Generates a random gene for the carrier. Including archite genes.</description>
+		<displayOrderInCategory>10</displayOrderInCategory>
+		<modExtensions>
+			<li Class="HALI_RandomGenetics.Gene_Filtered">
+				<filterList>
+					<li>
+						<maxArchite>10</maxArchite>
+						<canHaveAbility>true</canHaveAbility>
+					</li>
+				</filterList>
+			</li>
+		</modExtensions>
+	</GeneDef>
+</Defs>

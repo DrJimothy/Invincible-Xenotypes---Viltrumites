@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<GeneDef>
+		<defName>JInv_VSmartGene</defName>
+		<label>Smart Atom Production</label>
+ 		<displayCategory>Archite</displayCategory>
+		<description>Carriers of this gene produce smart atoms in their body, making the impossible possible. By itself, this gene does nothing.</description>
+		<iconPath>UI/Icons/Genes/Gene_GrayEyes</iconPath>
+		<biostatMet>6</biostatMet>
+		<biostatCpx>8</biostatCpx>
+		<biostatArc>2</biostatArc>
+		<displayOrderInCategory>42.35</displayOrderInCategory>
+		<marketValueFactor>5</marketValueFactor>
+		<exclusionTags>
+			<li>SmartAtomSauce</li>
+		</exclusionTags>
+	</GeneDef>
+
+	<GeneDef>
+		<defName>JInv_VMetabolism</defName>
+		<label>Smart Metabolism</label>
+ 		<displayCategory>Archite</displayCategory>
+		<description>Smart atoms improve their metabolic efficiency by a ridiculous amount.</description>
+		<iconPath>UI/Icons/Genes/Gene_ArchiteMetabolism</iconPath>
+		<biostatCpx>66</biostatCpx>
+		<biostatMet>66</biostatMet>
+		<biostatArc>22</biostatArc>
+		<displayOrderInCategory>42.351</displayOrderInCategory>
+		<marketValueFactor>4</marketValueFactor>
+		<prerequisite>JInv_VSmartGene</prerequisite>
+	</GeneDef>
+
+	<GeneDef>
+		<defName>JInv_VMetabolism2</defName>
+		<label>Do not use</label>
+		<description>This gene has been deactivated. It would be wise to remove it from anyone who has it, as the def may be recycled for something Scourge Virus related.</description>
+		<iconPath>UI/Icons/Genes/Gene_ArchiteMetabolism</iconPath>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>-1</biostatMet>
+		<biostatArc>1</biostatArc>
+		<displayOrderInCategory>42.352</displayOrderInCategory>
+		<marketValueFactor>4</marketValueFactor>
+		<prerequisite>JInv_VSmartGene</prerequisite>
+	</GeneDef>
+
+	<GeneDef>
+		<defName>JInv_VMetabolism3</defName>
+		<label>Do not use</label>
+		<description>This gene has been deactivated. It would be wise to remove it from anyone who has it, as the def may be recycled for something Scourge Virus related.</description>
+		<iconPath>UI/Icons/Genes/Gene_ArchiteMetabolism</iconPath>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>-1</biostatMet>
+		<biostatArc>1</biostatArc>
+		<displayOrderInCategory>42.353</displayOrderInCategory>
+		<marketValueFactor>4</marketValueFactor>
+		<prerequisite>JInv_VSmartGene</prerequisite>
+	</GeneDef>
+
+	<GeneDef>
+		<defName>JInv_VMetabolism4</defName>
+		<label>Do not use</label>
+		<description>This gene has been deactivated. It would be wise to remove it from anyone who has it, as the def may be recycled for something Scourge Virus related.</description>
+		<iconPath>UI/Icons/Genes/Gene_ArchiteMetabolism</iconPath>
+		<biostatCpx>1</biostatCpx>
+		<biostatMet>-1</biostatMet>
+		<biostatArc>1</biostatArc>
+		<displayOrderInCategory>42.354</displayOrderInCategory>
+		<marketValueFactor>4</marketValueFactor>
+		<prerequisite>JInv_VSmartGene</prerequisite>
+	</GeneDef>
+
+	<GeneDef>
+		<defName>JInv_VMeleeGene</defName>
+		<label>Super Smart Melee Damage</label>
+ 		<displayCategory>Violence</displayCategory>
+		<description>Carriers of this gene do immensely more damage in close-quarters combat. Smart atoms double the power of their blows.</description>
+		<iconPath>UI/Icons/Genes/Gene_StrongMeleeDamage</iconPath>
+		<biostatCpx>8</biostatCpx>
+		<biostatArc>4</biostatArc>
+		<displayOrderInCategory>42.35</displayOrderInCategory>
+		<statFactors>
+			<MeleeDamageFactor>2</MeleeDamageFactor>
+			<CarryingCapacity>2</CarryingCapacity>
+			<VEF_MassCarryCapacity>2</VEF_MassCarryCapacity>
+            <SM_RaidWealthMultiplier MayRequire="RedMattis.BigSmall.Core">1.5</SM_RaidWealthMultiplier>
+		</statFactors>
+		<marketValueFactor>5</marketValueFactor>
+		<minAgeActive>13</minAgeActive>
+		<prerequisite>JInv_VSmartGene</prerequisite>
+	</GeneDef>
+
+	<GeneDef>
+		<defName>JInv_VMeleeGene2</defName>
+		<label>Super-Density Melee Damage</label>
+ 		<displayCategory>Violence</displayCategory>
+		<description>Carriers of this gene do immensely more damage in close-quarters combat. Super-dense fast-twitch muscle fibers make their strikes accurate and powerful.</description>
+		<iconPath>UI/Icons/Genes/Gene_StrongMeleeDamage</iconPath>
+		<biostatMet>-6</biostatMet>
+		<biostatCpx>10</biostatCpx>
+		<displayOrderInCategory>42.35</displayOrderInCategory>
+		<statFactors>
+			<MeleeDamageFactor>2.5</MeleeDamageFactor>
+			<CarryingCapacity>2.5</CarryingCapacity>
+			<VEF_MassCarryCapacity>2.5</VEF_MassCarryCapacity>
+		</statFactors>
+		<marketValueFactor>5</marketValueFactor>
+		<minAgeActive>13</minAgeActive>
+		<exclusionTags>
+			<li>MeleeDamage</li>
+		</exclusionTags>
+	</GeneDef>
+
+	<GeneDef>
+		<defName>JInv_VImmGene</defName>
+		<label>Smart Immunity</label>
+ 		<displayCategory>Healing</displayCategory>
+		<description>Smart Atoms massively strengthen their immunity.</description>
+		<iconPath>UI/Icons/Genes/Gene_PerfectImmunity</iconPath>
+		<biostatCpx>4</biostatCpx>
+		<biostatArc>2</biostatArc>
+		<displayOrderInCategory>69</displayOrderInCategory>
+		<capMods>
+			<li>
+				<capacity>BloodFiltration</capacity>
+				<offset>0.5</offset>
+			</li>
+		</capMods>
+		<statFactors>
+			<ImmunityGainSpeed>3</ImmunityGainSpeed>
+		</statFactors>
+		<marketValueFactor>2</marketValueFactor>
+		<minAgeActive>13</minAgeActive>
+		<prerequisite>JInv_VSmartGene</prerequisite>
+	</GeneDef>
+
+	<GeneDef>
+		<defName>JInv_VSpeedGene</defName>
+		<label>Super-Smart Speed</label>
+		<displayCategory>Movement</displayCategory>
+		<description>Carriers of this gene move with incredible speed. Smart atoms help propel them forward.</description>
+		<iconPath>UI/Icons/Genes/Gene_VeryQuickMovespeed</iconPath>
+		<biostatCpx>4</biostatCpx>
+		<biostatArc>2</biostatArc>
+		<displayOrderInCategory>20.55</displayOrderInCategory>
+		<statOffsets>
+			<MoveSpeed>2</MoveSpeed>
+		</statOffsets>
+		<marketValueFactor>2</marketValueFactor>
+		<minAgeActive>13</minAgeActive>
+		<prerequisite>JInv_VSmartGene</prerequisite>
+		<exclusionTags>
+			<li>SuperSpeeds</li>
+			<li>RandomSpeed</li>
+		</exclusionTags>
+	</GeneDef>
+
+	<GeneDef>
+		<defName>JInv_VSpeedGene2</defName>
+		<label>Super-Density Runner</label>
+		<displayCategory>Movement</displayCategory>
+		<description>Carriers of this gene move with incredible speed. Super-dense fibres in their legs let them move quickly.</description>
+		<iconPath>UI/Icons/Genes/Gene_VeryQuickMovespeed</iconPath>
+		<biostatMet>-6</biostatMet>
+		<biostatCpx>2</biostatCpx>
+		<displayOrderInCategory>20.55</displayOrderInCategory>
+		<statOffsets>
+			<MoveSpeed>1.2</MoveSpeed>
+		</statOffsets>
+		<marketValueFactor>2</marketValueFactor>
+		<minAgeActive>13</minAgeActive>
+		<exclusionTags>
+			<li>MoveSpeed</li>
+		</exclusionTags>
+	</GeneDef>
+
+	<GeneDef>
+		<defName>JInv_VAgeGene</defName>
+		<label>Smart Aging</label>
+ 		<displayCategory>Archite</displayCategory>
+		<description>Upon reaching their teen years, smart atoms slow their aging. The older they get, the slower they age. Their elderly are quite literally ancient.</description>
+		<iconPath>UI/Icons/Genes/Gene_Ageless</iconPath>
+		<biostatCpx>3</biostatCpx>
+		<biostatArc>1</biostatArc>
+		<displayOrderInCategory>20.55</displayOrderInCategory>
+		<statFactors>
+			<LifespanFactor>2</LifespanFactor>
+		</statFactors>
+		<biologicalAgeTickFactorFromAgeCurve>
+			<points>
+				<li>(13, 1)</li>
+				<li>(30, 0.1)</li>
+				<li>(80, 0.01)</li>
+			</points>
+		</biologicalAgeTickFactorFromAgeCurve>
+		<marketValueFactor>2</marketValueFactor>
+		<prerequisite>JInv_VSmartGene</prerequisite>
+	</GeneDef>
+
+	<GeneDef>
+		<defName>JInv_VHealGene</defName>
+		<label>Smart Healing</label>
+ 		<displayCategory>Healing</displayCategory>
+		<description>Carriers of this gene heal a bit faster and don't die as easily. They don't develop permanent scars or cracks, though any they already have don't disappear.</description>
+		<iconPath>UI/Icons/Genes/Gene_WoundHealingRateSuperfast</iconPath>
+		<biostatCpx>4</biostatCpx>
+		<biostatArc>2</biostatArc>
+		<displayOrderInCategory>53.34</displayOrderInCategory>
+		<capMods>
+			<li>
+				<capacity>BloodPumping</capacity>
+				<offset>0.5</offset>
+			</li>
+		</capMods>
+		<statFactors>
+			<InjuryHealingFactor>1.2</InjuryHealingFactor>
+		</statFactors>
+		<preventPermanentWounds>true</preventPermanentWounds>
+		<marketValueFactor>1.5</marketValueFactor>
+		<minAgeActive>13</minAgeActive>
+		<prerequisite>JInv_VSmartGene</prerequisite>
+	</GeneDef>
+
+	<GeneDef ParentName="GeneHealingRateBase">
+		<defName>JInv_VHealGene2</defName>
+		<label>Ultrafast Wound Healing</label>
+		<description>Carriers of this gene heal exceptionally quickly.</description>
+		<iconPath>UI/Icons/Genes/Gene_WoundHealingRateSuperfast</iconPath>
+		<biostatMet>-5</biostatMet>
+		<biostatCpx>2</biostatCpx>
+		<displayOrderInCategory>53.34</displayOrderInCategory>
+		<statFactors>
+			<InjuryHealingFactor>4.5</InjuryHealingFactor>
+		</statFactors>
+		<marketValueFactor>1.5</marketValueFactor>
+		<minAgeActive>13</minAgeActive>
+	</GeneDef>
+
+	<GeneDef>
+		<defName>JInv_VStoreGene</defName>
+		<label>Dense Nutrition Storage</label>
+		<description>Carriers of this gene store nutrition super-efficiently, allowing them to survive a long time without food. Ironically, the processes to so tightly store such nutrition cost quite a bit of energy, so more food is needed overall to be able to survive long periods without. Useful for feast-and-famine lifestyles, like those of powerful space-faring organisms that can easily obtain food when it's available but must go long periods without for long, extra-terrestial travel.</description>
+		<iconPath>UI/Icons/Genes/Gene_ArchiteMetabolism</iconPath>
+		<biostatMet>-6</biostatMet>
+		<biostatCpx>4</biostatCpx>
+		<displayOrderInCategory>9.67</displayOrderInCategory>
+		<statFactors>
+			<MaxNutrition>5</MaxNutrition>
+		</statFactors>
+		<marketValueFactor>1.5</marketValueFactor>
+		<minAgeActive>13</minAgeActive>
+		<exclusionTags>
+			<li>EBSG_StomachPouches</li>
+		</exclusionTags>
+	</GeneDef>
+
+	<GeneDef>
+		<defName>JInv_VStoreGene2</defName>
+		<label>Smart Nutrition Storage</label>
+		<description>Smart Atoms weave extra energy and density into stored nutrition, doubling the effectiveness of nutrition storage and increasing its efficiency.</description>
+		<iconPath>UI/Icons/Genes/Gene_ArchiteMetabolism</iconPath>
+		<biostatMet>6</biostatMet>
+		<biostatCpx>4</biostatCpx>
+		<biostatArc>2</biostatArc>
+		<displayOrderInCategory>9.67</displayOrderInCategory>
+		<statFactors>
+			<MaxNutrition>2</MaxNutrition>
+		</statFactors>
+		<marketValueFactor>1.5</marketValueFactor>
+		<minAgeActive>13</minAgeActive>
+		<prerequisite>JInv_VSmartGene</prerequisite>
+	</GeneDef>
+
+	<GeneDef ParentName="GeneToxResistBase">
+		<defName>JInv_VToxinGene</defName>
+		<label>Almost Tox-Immune</label>
+ 		<displayCategory>ResistanceAndWeakness</displayCategory>
+		<description>Carriers of this gene are incredibly effective at neutralizing almost any toxin or pollutant in their blood... but not perfect.</description>
+		<iconPath>UI/Icons/Genes/Gene_TotalToxicityResistance</iconPath>
+		<biostatMet>-3</biostatMet>
+		<biostatCpx>4</biostatCpx>
+		<displayOrderInCategory>20.1</displayOrderInCategory>
+		<statOffsets>
+			<ToxicResistance>0.99</ToxicResistance>
+			<ToxicEnvironmentResistance>0.99</ToxicEnvironmentResistance>
+		</statOffsets>
+		<marketValueFactor>1.5</marketValueFactor>
+		<minAgeActive>13</minAgeActive>
+	</GeneDef>
+
+	<GeneDef>
+		<defName>JInv_VRobustGene</defName>
+		<label>Super-Smart Robustness</label>
+ 		<displayCategory>Pain</displayCategory>
+		<description>Carriers of this gene are excessively robust. Smart atoms kinetically hold their body in shape, halving damage taken.</description>
+		<iconPath>UI/Icons/Genes/Gene_Tough</iconPath>
+		<biostatCpx>2</biostatCpx>
+		<biostatArc>2</biostatArc>
+		<displayOrderInCategory>12.31</displayOrderInCategory>
+		<statFactors>
+			<IncomingDamageFactor>0.5</IncomingDamageFactor>
+            <SM_RaidWealthMultiplier MayRequire="RedMattis.BigSmall.Core">1.5</SM_RaidWealthMultiplier>
+		</statFactors>
+		<marketValueFactor>2</marketValueFactor>
+		<minAgeActive>13</minAgeActive>
+		<prerequisite>JInv_VSmartGene</prerequisite>
+	</GeneDef>
+
+	<GeneDef ParentName="GeneToughnessBase">
+		<defName>JInv_VRobustGene2</defName>
+		<label>Super-Density Robustness</label>
+		<description>Carriers of this gene are excessively robust. Their body's density resists any kind of deformation.</description>
+		<iconPath>UI/Icons/Genes/Gene_Tough</iconPath>
+		<biostatMet>-6</biostatMet>
+		<biostatCpx>4</biostatCpx>
+		<displayOrderInCategory>12.31</displayOrderInCategory>
+		<statFactors>
+			<IncomingDamageFactor>0.4</IncomingDamageFactor>
+		</statFactors>
+		<marketValueFactor>2</marketValueFactor>
+		<minAgeActive>13</minAgeActive>
+	</GeneDef>
+
+	<GeneDef>
+		<defName>JInv_VSkinGene</defName>
+		<label>Nano-Carbon Skin</label>
+ 		<displayCategory>Pain</displayCategory>
+		<description>Carriers of this gene have an ultra-dense, fire-proof carbon latice in their skin. It resists cutting, absorbs impacts and reflects sources of sudden, intense heat.</description>
+		<iconPath>UI/Icons/Genes/Gene_Tough</iconPath>
+		<biostatMet>-6</biostatMet>
+		<biostatCpx>4</biostatCpx>
+		<displayOrderInCategory>12.31</displayOrderInCategory>
+		<statOffsets>
+			<ArmorRating_Blunt>0.5</ArmorRating_Blunt>
+			<ArmorRating_Sharp>1</ArmorRating_Sharp>
+			<ArmorRating_Heat>1</ArmorRating_Heat>
+		</statOffsets>
+		<statFactors>
+			<Flammability>0.01</Flammability>
+		</statFactors>
+		<immuneToVacuumBurns MayRequire="Ludeon.RimWorld.Odyssey">true</immuneToVacuumBurns>
+		<marketValueFactor>2</marketValueFactor>
+		<minAgeActive>13</minAgeActive>
+		<exclusionTags>
+			<li>AG_Armour</li>
+			<li>Armour</li>
+			<li>Armor</li>
+			<li>FireDamage</li>
+		</exclusionTags>
+	</GeneDef>
+
+	<GeneDef>
+		<defName>JInv_VSkinGene2</defName>
+		<label>Smart Skin</label>
+ 		<displayCategory>Pain</displayCategory>
+		<description>Smart atoms in and just beneath their skin spread the force of blunt impacts. To a lesser extent, they also strengthen intermolecular attractive forces, increasing resistance to cutting, and absorb heat.</description>
+		<iconPath>UI/Icons/Genes/Gene_Tough</iconPath>
+		<biostatArc>3</biostatArc>
+		<biostatCpx>4</biostatCpx>
+		<displayOrderInCategory>12.31</displayOrderInCategory>
+		<statOffsets>
+			<ArmorRating_Blunt>1.5</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.5</ArmorRating_Sharp>
+			<ArmorRating_Heat>0.5</ArmorRating_Heat>
+            <SM_RaidWealthOffset MayRequire="RedMattis.BigSmall.Core">1000</SM_RaidWealthOffset>
+		</statOffsets>
+		<marketValueFactor>2</marketValueFactor>
+		<minAgeActive>13</minAgeActive>
+		<prerequisite>JInv_VSmartGene</prerequisite>
+	</GeneDef>
+
+	<GeneDef>
+		<defName>JInv_VTempGene</defName>
+		<label>Smart Temperature Tolerance</label>
+ 		<displayCategory>Temperature</displayCategory>
+		<description>Carriers of this gene can withstand both high and low temperatures. Smart atoms kinetically release or absorb heat from the rest of their body, helping it maintain a steady temperature.</description>
+		<iconPath>UI/Icons/Genes/Gene_MinTemperatureSmallDecrease</iconPath>
+		<biostatArc>4</biostatArc>
+		<biostatCpx>16</biostatCpx>
+		<displayOrderInCategory>20.31</displayOrderInCategory>
+		<statOffsets>
+			<ComfyTemperatureMax>900</ComfyTemperatureMax>
+			<ComfyTemperatureMin>-270</ComfyTemperatureMin>
+            <SM_RaidWealthOffset MayRequire="RedMattis.BigSmall.Core">250</SM_RaidWealthOffset>
+		</statOffsets>
+		<marketValueFactor>1.5</marketValueFactor>
+		<minAgeActive>13</minAgeActive>
+		<prerequisite>JInv_VSmartGene</prerequisite>
+	</GeneDef>
+</Defs>

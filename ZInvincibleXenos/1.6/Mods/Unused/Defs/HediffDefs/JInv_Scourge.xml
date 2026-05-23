@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+	
+	<!-- Scourge OH HELL NAH -->
+
+	
+	<HediffDef ParentName="InfectionBase">
+		<defName>JInv_Scourge0</defName>
+		<label>omni scourge</label>
+		<description>A mutated or modified strain of the Scourge Virus. It targets everyone, not just Viltrumites, and is exceptionally dangerous.</description>
+		<makesSickThought>true</makesSickThought>
+		<lethalSeverity>1</lethalSeverity>
+		<tendable>true</tendable>
+		<comps>
+			<li Class="HediffCompProperties_TendDuration">
+				<baseTendDurationHours>4</baseTendDurationHours>
+				<severityPerDayTended>-0.0200</severityPerDayTended>
+			</li>
+			<li Class="HediffCompProperties_Immunizable">
+				<severityPerDayNotImmune>0.333</severityPerDayNotImmune>
+				<immunityPerDaySick>0.1350</immunityPerDaySick>
+				<severityPerDayImmune>-1</severityPerDayImmune>
+				<immunityPerDayNotSick>-0.02</immunityPerDayNotSick>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<label>minor</label>
+				<painOffset>0.2</painOffset>
+				<vomitMtbDays>1</vomitMtbDays>
+				<painFactor>2</painFactor>
+				<totalBleedFactor>2</totalBleedFactor>
+				<hungerRateFactor>2.5</hungerRateFactor>
+				<statFactors>
+					<ImmunityGainSpeed>0.3</ImmunityGainSpeed>
+					<InjuryHealingFactor>0.2</InjuryHealingFactor>
+				</statFactors>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>-0.05</offset>
+					</li>
+					<li>
+						<capacity>Manipulation</capacity>
+						<offset>-0.05</offset>
+					</li>
+					<li>
+						<capacity>BloodPumping</capacity>
+						<setMax>1</setMax>
+					</li>
+					<li>
+						<capacity>BloodFiltration</capacity>
+						<setMax>1</setMax>
+					</li>
+					<li>
+						<capacity>Breathing</capacity>
+						<setMax>1</setMax>
+					</li>
+				</capMods>
+				<hediffGivers>
+					<li Class="HediffGiver_Random">
+						<hediff>JInv_ScourgeWound</hediff>
+						<mtbDays>1</mtbDays>
+						<canAffectAnyLivePart>true</canAffectAnyLivePart>
+					</li>
+				</hediffGivers>
+			</li>
+			<li>
+				<minSeverity>0.6</minSeverity>
+				<label>major</label>
+				<painOffset>0.35</painOffset>
+				<vomitMtbDays>1</vomitMtbDays>
+				<painFactor>2</painFactor>
+				<totalBleedFactor>2</totalBleedFactor>
+				<hungerRateFactor>2.5</hungerRateFactor>
+				<statFactors>
+					<ImmunityGainSpeed>0.3</ImmunityGainSpeed>
+					<InjuryHealingFactor>0.15</InjuryHealingFactor>
+				</statFactors>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>-0.2</offset>
+					</li>
+					<li>
+						<capacity>Manipulation</capacity>
+						<offset>-0.2</offset>
+					</li>
+					<li>
+						<capacity>BloodPumping</capacity>
+						<setMax>1</setMax>
+					</li>
+					<li>
+						<capacity>BloodFiltration</capacity>
+						<setMax>1</setMax>
+					</li>
+					<li>
+						<capacity>Breathing</capacity>
+						<setMax>1</setMax>
+					</li>
+				</capMods>
+				<hediffGivers>
+					<li Class="HediffGiver_Random">
+						<hediff>JInv_ScourgeWound</hediff>
+						<mtbDays>1</mtbDays>
+						<canAffectAnyLivePart>true</canAffectAnyLivePart>
+					</li>
+				</hediffGivers>
+			</li>
+			<li>
+				<minSeverity>0.8</minSeverity>
+				<label>extreme</label>
+				<painOffset>0.6</painOffset>
+				<vomitMtbDays>1</vomitMtbDays>
+				<painFactor>2</painFactor>
+				<totalBleedFactor>2</totalBleedFactor>
+				<hungerRateFactor>2.5</hungerRateFactor>
+				<statFactors>
+					<ImmunityGainSpeed>0.3</ImmunityGainSpeed>
+					<InjuryHealingFactor>0.1</InjuryHealingFactor>
+				</statFactors>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>-0.3</offset>
+					</li>
+					<li>
+						<capacity>Manipulation</capacity>
+						<offset>-0.3</offset>
+					</li>
+					<li>
+						<capacity>BloodPumping</capacity>
+						<setMax>1</setMax>
+					</li>
+					<li>
+						<capacity>BloodFiltration</capacity>
+						<setMax>1</setMax>
+					</li>
+					<li>
+						<capacity>Breathing</capacity>
+						<setMax>1</setMax>
+					</li>
+				</capMods>
+				<hediffGivers>
+					<li Class="HediffGiver_Random">
+						<hediff>JInv_ScourgeWound</hediff>
+						<mtbDays>1</mtbDays>
+						<canAffectAnyLivePart>true</canAffectAnyLivePart>
+					</li>
+				</hediffGivers>
+			</li>
+			<li>
+				<minSeverity>0.9</minSeverity>
+				<label>extreme</label>
+				<lifeThreatening>true</lifeThreatening>
+				<painOffset>0.85</painOffset>
+				<vomitMtbDays>1</vomitMtbDays>
+				<painFactor>2</painFactor>
+				<totalBleedFactor>2</totalBleedFactor>
+				<hungerRateFactor>2.5</hungerRateFactor>
+				<statFactors>
+					<ImmunityGainSpeed>0.3</ImmunityGainSpeed>
+					<InjuryHealingFactor>0.05</InjuryHealingFactor>
+				</statFactors>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>-0.3</offset>
+					</li>
+					<li>
+						<capacity>Manipulation</capacity>
+						<offset>-0.3</offset>
+					</li>
+					<li>
+						<capacity>Breathing</capacity>
+						<offset>-0.15</offset>
+					</li>
+					<li>
+						<capacity>BloodPumping</capacity>
+						<setMax>1</setMax>
+					</li>
+					<li>
+						<capacity>BloodFiltration</capacity>
+						<setMax>1</setMax>
+					</li>
+					<li>
+						<capacity>Breathing</capacity>
+						<setMax>1</setMax>
+					</li>
+				</capMods>
+				<hediffGivers>
+					<li Class="HediffGiver_Random">
+						<hediff>JInv_ScourgeWound</hediff>
+						<mtbDays>1</mtbDays>
+						<canAffectAnyLivePart>true</canAffectAnyLivePart>
+					</li>
+				</hediffGivers>
+			</li>
+		</stages>
+	</HediffDef>
+
+	<HediffDef ParentName="InjuryBase">
+		<defName>JInv_ScourgeWound</defName>
+		<label>scourge wound</label>
+		<labelNoun>a scourge wound</labelNoun>
+		<description>A scourge wound.</description>
+		<initialSeverity>8</initialSeverity>
+		<comps>
+			<li Class="HediffCompProperties_TendDuration">
+				<labelTendedWell>bandaged</labelTendedWell>
+				<labelTendedWellInner>sutured</labelTendedWellInner>
+				<labelSolidTendedWell>set</labelSolidTendedWell>
+			</li>
+			<li Class="HediffCompProperties_Infecter">
+				<infectionChance>0.15</infectionChance>
+			</li>
+			<li Class="HediffCompProperties_GetsPermanent">
+				<permanentLabel>scourge scarring</permanentLabel>
+			</li>
+		</comps>
+		<injuryProps>
+			<painPerSeverity>0.0250</painPerSeverity>
+			<averagePainPerSeverityPermanent>0.01250</averagePainPerSeverityPermanent>
+			<bleedRate>0.12</bleedRate>
+			<canMerge>true</canMerge>
+			<destroyedLabel>Scourged</destroyedLabel>
+		</injuryProps>
+	</HediffDef>
+	
+</Defs>

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<GeneDef>
+		<defName>JInv_VFistGene</defName>
+		<label>Mighty Fists</label>
+ 		<displayCategory>Violence</displayCategory>
+		<description>Carriers of this gene have durable, mighty fists that can be more useful in combat than most weapons.\n\n(Slightly better than a normal quality monosword)</description>
+		<iconPath>UI/Icons/Genes/Gene_StrongMeleeDamage</iconPath>
+		<biostatMet>-3</biostatMet>
+		<biostatCpx>4</biostatCpx>
+		<displayOrderInCategory>42.35</displayOrderInCategory>
+		<marketValueFactor>5</marketValueFactor>
+		<minAgeActive>13</minAgeActive>
+		<prerequisite>JInv_VSmartGene</prerequisite>
+		<modExtensions>
+			<li Class="VEF.Genes.GeneExtension">
+				<hediffsToBodyParts>
+					<li>
+						<hediff>JInvFistHediff</hediff>
+						<bodyparts>
+							<li>Hand</li>
+							<li>Hand</li>
+						</bodyparts>
+					</li>
+				</hediffsToBodyParts>
+				<hediffToWholeBody>JInvFistGiverHediff</hediffToWholeBody>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+	<GeneDef>
+		<defName>JInv_VClawGene</defName>
+		<label>Mighty Claws</label>
+ 		<displayCategory>Violence</displayCategory>
+		<description>Carriers of this gene have durable, mighty claws that easily outclass most weapons, tearing through metal, flesh and bone alike</description>
+		<iconPath>UI/Icons/Genes/Gene_StrongMeleeDamage</iconPath>
+		<biostatMet>-3</biostatMet>
+		<biostatCpx>4</biostatCpx>
+		<displayOrderInCategory>42.355</displayOrderInCategory>
+		<marketValueFactor>5</marketValueFactor>
+		<minAgeActive>13</minAgeActive>
+		<prerequisite>JInv_VSmartGene</prerequisite>
+		<modExtensions>
+			<li Class="VEF.Genes.GeneExtension">
+				<hediffsToBodyParts>
+					<li>
+						<hediff>JInvClawHediff</hediff>
+						<bodyparts>
+							<li>Hand</li>
+							<li>Hand</li>
+						</bodyparts>
+					</li>
+				</hediffsToBodyParts>
+				<hediffToWholeBody>JInvClawGiverHediff</hediffToWholeBody>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+	<GeneDef>
+		<defName>JInv_VJawGene</defName>
+		<label>Mighty Bite</label>
+ 		<displayCategory>Violence</displayCategory>
+		<description>Carriers of this gene have durable, mighty jaw that easily outclasses most weapons, tearing through metal, flesh and bone alike</description>
+    <iconPath>UI/Icons/Genes/Gene_JawHeavy</iconPath>
+		<biostatMet>-3</biostatMet>
+		<biostatCpx>4</biostatCpx>
+		<displayOrderInCategory>42.356</displayOrderInCategory>
+		<marketValueFactor>5</marketValueFactor>
+		<minAgeActive>13</minAgeActive>
+		<prerequisite>JInv_VSmartGene</prerequisite>
+		<modExtensions>
+			<li Class="VEF.Genes.GeneExtension">
+				<hediffsToBodyParts>
+					<li>
+						<hediff>JInvJawHediff</hediff>
+						<bodyparts>
+							<li>Jaw</li>
+						</bodyparts>
+					</li>
+				</hediffsToBodyParts>
+				<hediffToWholeBody>JInvJawGiverHediff</hediffToWholeBody>
+			</li>
+		</modExtensions>
+	</GeneDef>
+
+	<GeneDef>
+		<defName>JInv_VDigestion</defName>
+		<label>Smart Digestion</label>
+		<description>Aided by smart atoms, their stomach extracts far more from their food.</description>
+		<iconPath>UI/Icons/Genes/Gene_StrongStomach</iconPath>
+		<biostatMet>6</biostatMet>
+		<biostatCpx>12</biostatCpx>
+		<biostatArc>3</biostatArc>
+		<displayOrderInCategory>9.67</displayOrderInCategory>
+		<marketValueFactor>1.5</marketValueFactor>
+		<minAgeActive>13</minAgeActive>
+		<modExtensions>
+			<li Class="VEF.Genes.GeneExtension">
+				<hediffsToBodyParts>
+					<li>
+						<hediff>JInvVStomachHediff</hediff>
+						<bodyparts>
+							<li>Stomach</li>
+						</bodyparts>
+					</li>
+				</hediffsToBodyParts>	
+				<hediffToWholeBody>JInvStomachGiverHediff</hediffToWholeBody>
+			</li>
+		</modExtensions>
+		<prerequisite>JInv_VSmartGene</prerequisite>
+	</GeneDef>
+
+	<GeneDef>
+		<defName>JInv_VDrugsGene</defName>
+		<label>Smart Neural Maintainance</label>
+ 		<displayCategory>ResistanceAndWeakness</displayCategory>
+		<description>Smart atoms help maintain brain function and efficiency despite any damage and prevent drug addictions, but also prevent consciousness gain.</description>
+		<iconPath>UI/Icons/Genes/Gene_Tough</iconPath>
+		<biostatMet>2</biostatMet>
+		<biostatCpx>4</biostatCpx>
+		<biostatArc>1</biostatArc>
+		<displayOrderInCategory>12.31</displayOrderInCategory>
+		<marketValueFactor>1.5</marketValueFactor>
+		<minAgeActive>13</minAgeActive>
+		<capMods>
+			<li>
+				<capacity>BloodFiltration</capacity>
+				<offset>0.5</offset>
+			</li>
+		</capMods>
+		<modExtensions>
+			<li Class="VEF.Genes.GeneExtension">				
+				<hediffToWholeBody>JInvDrugImmunityHediff</hediffToWholeBody>
+			</li>
+		</modExtensions>
+	</GeneDef>
+</Defs>

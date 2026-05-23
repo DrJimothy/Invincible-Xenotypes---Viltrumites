@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+<!-- The DREADED Scrambler Raid! -->
+<Operation Class="PatchOperationAdd">
+	<xpath>Defs/FactionDef[defName="ViltrumEmpire"]/pawnGroupMakers</xpath>
+	<value>
+		<li>
+			<kindDef>Combat</kindDef>
+			<commonality>1</commonality>
+			<options>
+				<Mech_Scrambler>1</Mech_Scrambler>
+			</options>
+		</li>
+		<li>
+			<kindDef>Combat</kindDef>
+			<commonality>1</commonality>
+			<options>
+				<Mech_Scrambler>1</Mech_Scrambler>
+				<Vilgrunt_Grenadier_EMP>1</Vilgrunt_Grenadier_EMP>
+			</options>
+		</li>
+		<li>
+			<kindDef>Combat</kindDef>
+			<commonality>1</commonality>
+			<options>
+				<Mech_Scrambler>1</Mech_Scrambler>
+				<Vilgrunt_Grenadier_EMP>1</Vilgrunt_Grenadier_EMP>
+				<Viltrum_Fighter_CataphractMelee MayRequire="Ludeon.RimWorld.Royalty">1</Viltrum_Fighter_CataphractMelee>
+			</options>
+		</li>
+	</value>
+</Operation>
+
+</Patch>

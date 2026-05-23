@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <!-- Vilslaves: Expendables, basically -->
+    <!-- Some defnames are inaccurate, as they are recycled to prevent damage to saves. -->
+  <PawnKindDef Name="Vilgrunt_MercenaryBase" Abstract="True">
+    <race>Human</race>
+    <defaultFactionDef>ViltrumEmpire</defaultFactionDef>
+    <chemicalAddictionChance>1</chemicalAddictionChance>
+    <invNutrition>4</invNutrition>
+    <backstoryCryptosleepCommonality>0.08</backstoryCryptosleepCommonality>
+    <combatEnhancingDrugsChance>1</combatEnhancingDrugsChance>
+    <combatEnhancingDrugsCount>1~2</combatEnhancingDrugsCount>
+    <biocodeWeaponChance>1</biocodeWeaponChance>
+    <techHediffsChance>0.8</techHediffsChance>
+    <techHediffsRequired>
+      <li>DeathAcidifier</li>
+      <li>Painstopper</li>
+    </techHediffsRequired>
+    <initialWillRange>1~2</initialWillRange>
+    <initialResistanceRange>1~2</initialResistanceRange>
+    <gearHealthRange>0.2~0.8</gearHealthRange>
+  </PawnKindDef>
+
+  <!-- Low merc tier - grenadiers -->
+
+  <PawnKindDef Abstract="True" Name="Vilgrunt_GrenadierBase" ParentName="Vilgrunt_MercenaryBase">
+    <race>Human</race>
+    <apparelTags>
+      <li>BeltDefensePop</li>
+      <li>IndustrialBasic</li>
+      <li>IndustrialAdvanced</li>
+      <li>IndustrialMilitaryBasic</li>
+      <li>SpacerMilitary</li>
+    </apparelTags>
+    <apparelMoney>400~700</apparelMoney>
+    <apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+    <weaponMoney>500~700</weaponMoney>
+    <techHediffsMoney>500~2000</techHediffsMoney>
+    <techHediffsTags>
+      <li>Poor</li>
+      <li>Simple</li>
+      <li>Advanced</li>
+      <li>ImplantEmpireCommon</li>
+    </techHediffsTags>
+    <disallowedTraits>
+      <li>Brawler</li>
+    </disallowedTraits>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="Vilgrunt_GrenadierBase">
+    <defName>Vilgrunt_Grenadier_Destructive</defName>
+    <label>vilslave grenadier</label>
+    <combatPower>105</combatPower>
+    <canBeSapper>true</canBeSapper>
+    <isGoodBreacher>true</isGoodBreacher>
+    <weaponTags>
+      <li>GrenadeDestructive</li>
+    </weaponTags>
+  </PawnKindDef>
+  <!-- removed smoke grenadiers cos they're dumb -->
+
+  <!-- Mid merc tier - gunner, slasher, sniper, heavy -->
+
+</Defs>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- Normal backstories -->
+	<BackstoryDef>
+		<defName>JVBackstory_AngstromKid</defName>
+		<title>Dimensional Mishaps</title>
+		<titleShort>Dimensional</titleShort>
+		<slot>Childhood</slot>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<baseDesc>[PAWN_nameDef] was able to access different dimensions from a young age. This made them hard to babysit, but quick to learn.</baseDesc>
+		<spawnCategories>
+			<li>Angstrom</li>
+		</spawnCategories>
+		<skillGains>
+			<Intellectual>5</Intellectual>
+		</skillGains>
+		<forcedTraits>
+			<GreatMemory>0</GreatMemory>
+			<FastLearner>0</FastLearner>
+		</forcedTraits>
+	</BackstoryDef>
+</Defs>

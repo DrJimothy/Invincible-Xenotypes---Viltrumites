@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<GeneDef>
+		<defName>JInv_VAntiSmartGene</defName>
+		<label>Smart Atom Nullification</label>
+		<description>Any smart atoms in their body are nullified and thus prevented from doing anything.</description>
+		<iconPath>UI/Icons/Genes/Gene_GrayEyes</iconPath>
+ 		<displayCategory>Archite</displayCategory>
+		<biostatCpx>1</biostatCpx>
+		<displayOrderInCategory>42.349</displayOrderInCategory>
+		<marketValueFactor>5</marketValueFactor>
+		<exclusionTags>
+			<li>SmartAtomSauce</li>
+		</exclusionTags>
+	</GeneDef>
+</Defs>

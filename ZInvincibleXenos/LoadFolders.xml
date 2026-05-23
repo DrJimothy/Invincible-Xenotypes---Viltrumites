@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<loadFolders>
+	<v1.6>
+		<li>/</li>
+		<li>1.6</li>
+		<li IfModActive="fedecrakeado.viltrumitesinrimworld,Nalzurin.ViltrumiteXenotype">1.6/Mods/00_NalzORFreda</li>
+		<li IfModActiveAll="fedecrakeado.viltrumitesinrimworld,Nalzurin.ViltrumiteXenotype">1.6/Mods/00_NalzANDFreda</li>
+		<li IfModActive="OmniNerd.CombatEvolution.2005">1.6/Mods/0_AdaptiveExpression</li>
+		<li IfModActiveAll="vanillaracesexpanded.fungoid,sarg.alphagenes">1.6/Mods/0_AGFungoid</li>
+		<li IfModActive="RedMattis.BigSmall">1.6/Mods/0_BigVilgrunt</li>
+		<li IfModActive="turkler.Biocodable.Apparel">1.6/Mods/0_BiocodeApparel</li>
+		<li IfModActive="Ludeon.RimWorld.Anomaly">1.6/Mods/0_Anomaly</li>
+		<li IfModActive="FrozenSnowFox.AdvancedBionicsExpansion">1.6/Mods/0_FSFAdvancedBionics</li>
+		<li IfModActive="MoreBiotechStyleXenotypes.Mod">1.6/Mods/0_MBStyleXenos</li>
+		<li IfModActive="Ludeon.RimWorld.Odyssey">1.6/Mods/0_Odyssey</li>
+		<li IfModActive="Ludeon.RimWorld.Royalty">1.6/Mods/0_Royalty</li>
+		<li IfModActive="Pal5k.ScramblerMechanoid">1.6/Mods/0_Scrambler</li>
+		<li IfModActive="SuperheroGenesBase.Mod">1.6/Mods/0_SuperHero</li>
+		<li IfModActive="Truchinsky.SuperSuits">1.6/Mods/0_SuperSuits</li>
+		<li IfModActive="Truchinsky.Simplesuits">1.6/Mods/0_SuperSuitsSimple</li>
+		<li IfModActive="Truchinsky.SuperSuitsMisc">1.6/Mods/0_SuperSuitsMisc</li>
+		<li IfModActive="Truchinsky.SuperSuitsXmen90">1.6/Mods/0_SuperSuitsXMen</li>
+		<li IfModActive="VanillaExpanded.VAEAccessories">1.6/Mods/0_VEAccExp</li>
+		<li IfModActive="VanillaExpanded.VARME">1.6/Mods/0_VEApparel</li>
+		<li IfModActive="VanillaExpanded.VAPPE">1.6/Mods/0_VEArmour</li>
+		<li IfModActive="VanillaExpanded.VanillaTraitsExpanded">1.6/Mods/0_VETraits</li>
+		<li IfModActive="VanillaExpanded.VWE">1.6/Mods/0_VEWeapons</li>
+		<li IfModActive="VanillaExpanded.VWEC">1.6/Mods/0_VEWCoil</li>
+		<li IfModActive="VanillaExpanded.VWEL">1.6/Mods/0_VEWLaser</li>
+		<li IfModActiveAll="VanillaExpanded.Ideo.Dryads,vanillaracesexpanded.phytokin">1.6/Mods/0_VREPhytoDryad</li>
+		<li IfModActiveAll="VanillaExpanded.Ideo.Dryads,vanillaracesexpanded.phytokin,VanillaExpanded.VWE">1.6/Mods/0_VREPhytoDryadVWE</li>
+		<li IfModActive="Halicade.RandomGenes">1.6/Mods/1__RanGenGenes</li>
+		<li IfModActive="fedecrakeado.viltrumitesinrimworld">1.6/Mods/2__ViltrumitesInRimworld</li>
+		<li IfModActiveAll="fedecrakeado.viltrumitesinrimworld,Ludeon.RimWorld.Odyssey">1.6/Mods/2_Odyssey</li>
+		<li IfModActiveAll="fedecrakeado.viltrumitesinrimworld,RedMattis.BetterGeneInheritance">1.6/Mods/2_Inheritance</li>
+		<li IfModActiveAll="fedecrakeado.viltrumitesinrimworld,Truchinsky.SuperSuits">1.6/Mods/2_SuperSuits</li>
+		<li IfModActive="Nalzurin.ViltrumiteXenotype">1.6/Mods/3__Viltrumite</li>
+		<li IfModActiveAll="Nalzurin.ViltrumiteXenotype,Truchinsky.SuperSuits">1.6/Mods/3_SuperSuits</li>
+	</v1.6>
+</loadFolders>
+

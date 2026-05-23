@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- Normal backstories -->
+	<BackstoryDef>
+		<defName>JVBackStory_AHero</defName>
+		<title>A Hero</title>
+		<titleShort>Hero</titleShort>
+		<slot>Adulthood</slot>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<baseDesc>[PAWN_nameDef] is a hero who stands where others would cower or fall.</baseDesc>
+		<spawnCategories>
+        	<li>Outlander</li>
+			<li>Hero</li>
+		</spawnCategories>
+		<skillGains>
+			<Melee>4</Melee>
+		</skillGains>
+		<forcedTraits>
+			<Tough>0</Tough>
+			<Kind>0</Kind>
+			<VTE_Brave>0</VTE_Brave>
+		</forcedTraits>
+	</BackstoryDef>
+
+	<!-- Vilgrunt backstories -->
+
+	<BackstoryDef>
+		<defName>JVBackstory_VBunny</defName>
+		<title>Vilgrunt Bunny</title>
+		<titleShort>Bunny</titleShort>
+		<slot>Adulthood</slot>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<baseDesc>[PAWN_nameDef] has been nicknamed "barracks bunny" for... reasons.</baseDesc>
+		<spawnCategories>
+			<li>Vilgrunt</li>
+		</spawnCategories>
+		<skillGains>
+			<Shooting>4</Shooting>
+			<Melee>4</Melee>
+			<Social>4</Social>
+		</skillGains>
+		<forcedTraits>
+			<Tough>0</Tough>
+			<VTE_Insatiable>0</VTE_Insatiable>
+    		<Beauty>2</Beauty>
+			<SpeedOffset>2</SpeedOffset>
+		</forcedTraits>
+	</BackstoryDef>
+
+	<!-- Regular Viltrumite backstories -->
+	<BackstoryDef>
+		<defName>JVBackStory_Insatiable</defName>
+		<title>Successful Multiplier</title>
+		<titleShort>Multiplier</titleShort>
+		<slot>Adulthood</slot>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<baseDesc>[PAWN_nameDef] was selected for a breeding program... they did well.</baseDesc>
+		<spawnCategories>
+			<li>Viltrum</li>
+		</spawnCategories>
+		<skillGains>
+			<Social>5</Social>
+		</skillGains>
+		<forcedTraits>
+			<VTE_Insatiable>0</VTE_Insatiable>
+    		<Beauty>2</Beauty>
+		</forcedTraits>
+	</BackstoryDef>
+
+	<!-- Pathetic Viltrumite backstories -->
+	<!-- Elite Viltrumite backstories -->
+	<BackstoryDef>
+		<defName>JVBackStory_KarateAdult</defName>
+		<title>Karate Grownup</title>
+		<titleShort>Karate</titleShort>
+		<slot>Adulthood</slot>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<baseDesc>[PAWN_nameDef] has been expertly trained in martial arts.</baseDesc>
+		<spawnCategories>
+        	<li>Outlander</li>
+			<li>Hero</li>
+			<li>Vilgrunt</li>
+		</spawnCategories>
+		<skillGains>
+			<Melee>4</Melee>
+		</skillGains>
+		<forcedTraits>
+			<Tough>0</Tough>
+			<VTE_MartialArtist>0</VTE_MartialArtist>
+			<Nimble>0</Nimble>
+		</forcedTraits>
+	</BackstoryDef>
+	
+</Defs>

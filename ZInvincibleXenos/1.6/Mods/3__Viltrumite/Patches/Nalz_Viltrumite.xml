@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+
+<Operation Class="PatchOperationReplace">
+	<xpath>Defs/XenotypeDef[defName="Viltrumite"]/label</xpath>
+	<value>
+		<label>Mark Grayson</label>
+	</value>
+</Operation>
+
+<Operation Class="PatchOperationReplace">
+	<xpath>Defs/XenotypeDef[defName="Viltrumite"]/iconPath</xpath>
+	<value>
+		<iconPath>UI/Icons/Xenotypes/Baseliner</iconPath>
+	</value>
+</Operation>
+
+<Operation Class="PatchOperationReplace">
+	<xpath>Defs/XenotypeDef[defName="Viltrumite"]/description</xpath>
+	<value>
+		<description>Mark Grayson... possibly. More likely an alternate version or a clone, courtesy of Angstrom's eternal quest to slander the guy. Oddities in the cloning process, time warps, differences in upbringing and so on result in variety in age, gender and personality.</description>
+	</value>
+</Operation>
+
+<Operation Class="PatchOperationReplace">
+	<xpath>Defs/XenotypeDef[defName="Viltrumite"]/descriptionShort</xpath>
+	<value>
+		<descriptionShort>Mark Grayson... or one of his infinite variants or clones from across the infinite multiverse, at least.</descriptionShort>
+	</value>
+</Operation>
+
+<!-- turn Jim_Viltrumite from here back to Viltrumite -->
+
+<Operation Class="PatchOperationAdd">
+	<xpath>Defs/XenotypeDef[defName="Viltrumite"]/genes</xpath>
+	<value>
+		<li>JInv_VSmartGene</li>
+		<li>JInv_VMetabolism</li>
+		<li>JInv_VMeleeGene</li>
+		<li>JInv_VMeleeGene2</li>
+		<li>JInv_VImmGene</li>
+		<li>JInv_VSpeedGene</li>
+		<li>JInv_VSpeedGene2</li>
+		<li>JInv_VAgeGene</li>
+		<li>JInv_VHealGene</li>
+		<li>JInv_VHealGene2</li>
+		<li>JInv_VStoreGene</li>
+		<li>JInv_VStoreGene2</li>
+		<li>JInv_VToxinGene</li>
+		<li>JInv_VRobustGene</li>
+		<li>JInv_VRobustGene2</li>
+		<li>JInv_VSkinGene</li>
+		<li>JInv_VSkinGene2</li>
+		<li>JInv_VTempGene</li>
+		<li>PsychicAbility_Deaf</li>
+		<li>Pain_Reduced</li>
+		<li>Beauty_Pretty</li>
+		<li>Libido_High</li>
+		<li>Aggression_Aggressive</li>
+		<li>Hair_InkBlack</li>
+		<li>Skin_Melanin5</li>
+		<li>Skin_Melanin6</li>
+			<li MayRequire="kentington.saveourship2">SoS2_VacuumAdapted</li>
+			<li MayRequire="Ludeon.RimWorld.Odyssey">JInv_VLungGene</li>
+			<!-- Dets -->
+			<li MayRequire="det.stoneborn">DV_ExtendedMemory</li>
+			<li MayRequire="det.stoneborn">DV_MightyLiver</li>
+			<li MayRequire="det.stoneborn">DV_LifespanLong</li>
+			<li MayRequire="det.brawnum">DV_RoughPlay</li>
+			<li MayRequire="det.brawnum">DV_StrongBack</li>
+			<li MayRequire="det.boglegs">DV_IntimidatingPresence</li>
+			<!-- Alpha Genes -->
+			<li MayRequire="sarg.alphagenes">AG_DeadlyRaidPresence</li>
+			<li MayRequire="sarg.alphagenes">AG_HardBones</li>
+			<li MayRequire="sarg.alphagenes">AG_Enforcer</li>
+			<li MayRequire="sarg.alphagenes">AG_NoWings</li>
+			<li MayRequire="sarg.alphagenes">AG_PackMule</li>
+			<li MayRequire="sarg.alphagenes">AG_ToughSinews</li>
+			<li MayRequire="sarg.alphagenes">AG_NoTusks</li>
+			<li MayRequire="sarg.alphagenes">AG_NoLowerAntennae</li>
+			<li MayRequire="sarg.alphagenes">AG_NoAntennae</li>
+			<li MayRequire="sarg.alphagenes,vanillaracesexpanded.fungoid">AG_GeneInfectionImmunity</li>
+			<!-- Biggie Smol -->
+			<li MayRequire="RedMattis.BigSmall.Core">BS_Xenolocked</li>
+			<li MayRequire="RedMattis.BigSmall.Core">BS_EverFertile</li>
+			<li MayRequire="RedMattis.BigSmall.Core">BS_SlowBleeding</li>
+			<li MayRequire="RedMattis.BetterGeneInheritance">BGI_PrimaryGenes</li>
+			<!-- FSF -->
+			<li MayRequire="FrozenSnowFox.AdvancedBionicsExpansion">JInv_VFistGene</li>
+			<li MayRequire="FrozenSnowFox.AdvancedBionicsExpansion">JInv_VDigestion</li>
+			<li MayRequire="FrozenSnowFox.AdvancedBionicsExpansion">JInv_VDrugsGene</li>
+			<!-- Adaptation -->
+			<li MayRequire="OmniNerd.CombatEvolution.2005">JIM_OmniAdaptiveLite</li>
+			<li MayRequire="Endermaster567.CryptosleepAdaptationGene">CryptosleepAdaptationGene</li>
+			<!-- Metabolic nonsense -->
+			<li MayRequire="Darkborderman.MoreTraitGenes">LargeStomach</li>
+			<!-- Handsome boi -->
+			<li MayRequire="Neronix17.Outland.Genetics">Outland_SvelteHead</li>
+			<!-- Supa -->
+			<li MayRequire="SuperheroGenesBase.Mod">JInv_VMeleeGeneSH</li>
+			<li MayRequire="SuperheroGenesBase.Mod">JInv_VRobustGeneSH</li>
+			<li MayRequire="SuperheroGenesBase.Mod">JInv_Flight</li>
+			<li MayRequire="SuperheroGenesBase.Mod">JInv_HeroicLeap</li>
+			<li MayRequire="SuperheroGenesBase.Mod">JInv_Restraint</li>
+			<!-- VRE -->
+			<li MayRequire="vanillaracesexpanded.genie">VRE_Slow_Diseases</li>
+			<li MayRequire="vanillaracesexpanded.hussar">VREH_Unconstrained</li>
+			<li MayRequire="vanillaracesexpanded.pigskin">VRE_OrganRegeneration</li>
+	</value>
+</Operation>
+
+<Operation Class="PatchOperationReplace">
+	<xpath>Defs/PawnKindDef[defName="Viltrumite"]/xenotypeSet</xpath>
+	<value>
+		<xenotypeSet>
+			<xenotypeChances>
+				<Jim_Viltrumite>2</Jim_Viltrumite>
+			</xenotypeChances>
+		</xenotypeSet>
+	</value>
+</Operation>
+
+</Patch>

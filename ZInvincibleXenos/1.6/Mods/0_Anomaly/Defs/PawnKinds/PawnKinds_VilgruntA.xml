@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!--===================== Viltrum fighters: punishment ranks =========================-->
+
+  <PawnKindDef ParentName="Vilgrunt_WarriorBase">
+    <defName>Vilgrunt_Mercenary_Flamer</defName>
+    <label>vilgrunt flamer</label>
+    <combatPower>350</combatPower>
+    <apparelTags>
+      <li>IndustrialBasic</li>
+      <li>SpacerMilitary</li>
+      <li>BeltDefensePop</li>
+    </apparelTags>
+    <apparelMoney>10000~20000</apparelMoney>
+    <weaponMoney>8000~12000</weaponMoney>
+    <weaponTags>
+      <li>Flamethrower</li>
+    </weaponTags>
+    <apparelRequired>
+      <li>Apparel_PowerArmorHelmet</li>
+      <li>Apparel_ArmorRecon</li>
+    </apparelRequired>
+    <itemQuality>Legendary</itemQuality>
+    <maxApparelQuality>Legendary</maxApparelQuality>
+    <forceWeaponQuality>Legendary</forceWeaponQuality>
+    <disallowedTraits>
+      <li>Brawler</li>
+    </disallowedTraits>
+    <useFactionXenotypes>false</useFactionXenotypes>
+    <xenotypeSet>
+      <xenotypeChances>
+        <Impid>1</Impid>
+        <mfaxGorerunner MayRequire="doll.dreadfleet">0.5</mfaxGorerunner>
+        <MBSXT_Oni MayRequire="MoreBiotechStyleXenotypes.Mod">2</MBSXT_Oni>
+        <AG_Efreet MayRequire="sarg.alphagenes">2</AG_Efreet>
+      </xenotypeChances>
+    </xenotypeSet>
+  </PawnKindDef>
+
+</Defs>

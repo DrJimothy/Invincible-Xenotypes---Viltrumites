@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!--===================== Viltrum fighters: punishment ranks =========================-->
+
+  <PawnKindDef ParentName="VilmercBase">
+    <defName>Vilgrunt_Mercenary_Sacrifice</defName>
+    <label>viltrum sacrifice</label>
+    <combatPower>185</combatPower>
+    <gearHealthRange>0.4~1</gearHealthRange>
+    <itemQuality>Poor</itemQuality>
+    <apparelTags>
+      <li>IndustrialBasic</li>
+      <li>SpacerMilitary</li>
+      <li MayRequire="Ludeon.RimWorld.Odyssey">Vacsuit</li>
+    </apparelTags>
+    <apparelMoney>2000~3000</apparelMoney>
+    <apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+    <weaponMoney>1000~3000</weaponMoney>
+    <weaponTags>
+      <li>GrenadeDestructive</li>
+      <li>EmpireGrenadeDestructive</li>
+    </weaponTags>
+    <apparelRequired>
+      <li MayRequire="Ludeon.RimWorld.Odyssey">Apparel_VacsuitHelmet</li>
+      <li MayRequire="Ludeon.RimWorld.Odyssey">Apparel_Vacsuit</li>
+      <li>VAEA_Apparel_ExplosiveBelt</li>
+    </apparelRequired>
+    <skills>
+      <li>
+        <skill>Shooting</skill>
+        <range>0~5</range>
+      </li>
+    </skills>
+    <inventoryOptions>
+      <skipChance>0.15</skipChance>
+      <subOptionsChooseOne>
+        <li>
+          <thingDef>Shell_HighExplosive</thingDef>
+          <countRange>1</countRange>
+        </li>
+        <li>
+          <thingDef>Shell_HighExplosive</thingDef>
+          <countRange>2</countRange>
+        </li>
+      </subOptionsChooseOne>
+    </inventoryOptions>
+    <initialResistanceRange>6~10</initialResistanceRange>
+    <useFactionXenotypes>false</useFactionXenotypes>
+    <xenotypeSet>
+      <xenotypeChances>
+        <Impid>1</Impid>
+        <Genie>0.25</Genie>
+        <Blastheart MayRequire="sarg.alphagenes,biotexpans.mammalia">2</Blastheart>
+      </xenotypeChances>
+    </xenotypeSet>
+  </PawnKindDef>
+
+</Defs>

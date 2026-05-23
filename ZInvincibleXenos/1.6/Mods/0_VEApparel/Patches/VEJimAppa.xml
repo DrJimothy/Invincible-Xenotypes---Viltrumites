@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+<!-- Giving shotguns a shotgun-specific tag... they should really have one already -->
+<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="VAE_Apparel_Jeans"]/apparel/tags</xpath>
+		<value>
+			<li>J_ClothUnderArm</li>
+		</value>
+</Operation>
+<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="VAE_Footwear_Boots"]/apparel/tags</xpath>
+		<value>
+			<li>J_ClothSpeedy</li>
+		</value>
+</Operation>
+
+</Patch>

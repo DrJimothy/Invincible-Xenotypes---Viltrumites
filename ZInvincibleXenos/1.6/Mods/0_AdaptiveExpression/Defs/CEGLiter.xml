@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- Copied then altered from Adaptive Expression -->
+	<!-- Numbers mostly left as-is for now, since the gene currently pulls on the same stuff as the mod's normal Lite version -->
+	<!-- (making it use this hediff, and making this hediff progress from damage properly, would require C# shenanigans, beyond my ability) -->
+	<HediffDef>
+		<defName>JIM_AdaptExpressLite</defName>
+		<label>Lesser Adaptive Expression</label>
+		<description>An alternative less limiting version of adaptive expression that allows for genetic editing</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<alwaysShowSeverity>true</alwaysShowSeverity>
+		<minSeverity>0.0</minSeverity>
+		<initialSeverity>0.0001</initialSeverity> 
+		<everCurableByItem>false</everCurableByItem> <!-- Prevents healer mech serum or anomaly healing from curing -->
+		<isBad>false</isBad> <!-- Prevents any sort of curing from other mods healing abilities -->
+
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerDay">
+				<severityPerDay>0</severityPerDay> <!-- no severity gain per day, but can be changed --> 
+			</li>
+			<li Class="HediffCompProperties_TrackDamage1"/> <!-- tracks damage -->
+		</comps>
+
+		<stages>
+			<li>
+				<statFactorsBySeverity> <!-- left value is the severity, right value is the multiplier, statoffset however acts differently and not directly a multiplier -->
+					<li>
+						<stat>CarryingCapacity</stat> <!-- How much you can carry -->
+						<valueBySeverity>
+							<points>
+								<li>(0.0, 1.00)</li>
+								<li>(0.1, 1.05)</li>
+								<li>(0.2, 1.10)</li>
+								<li>(0.3, 1.15)</li>
+								<li>(0.4, 1.20)</li>
+								<li>(0.5, 1.25)</li>
+								<li>(0.6, 1.30)</li>
+								<li>(0.7, 1.35)</li>
+								<li>(0.8, 1.40)</li>
+								<li>(0.9, 1.45)</li>
+								<li>(1.0, 1.50)</li>
+							</points>
+						</valueBySeverity>
+					</li>
+					<li>
+						<stat>MoveSpeed</stat>
+						<valueBySeverity>
+							<points>
+								<li>(0.0, 1.00)</li>
+								<li>(0.1, 1.05)</li>
+								<li>(0.2, 1.10)</li>
+								<li>(0.3, 1.15)</li>
+								<li>(0.4, 1.20)</li>
+								<li>(0.5, 1.25)</li>
+								<li>(0.6, 1.30)</li>
+								<li>(0.7, 1.35)</li>
+								<li>(0.8, 1.40)</li>
+								<li>(0.9, 1.45)</li>
+								<li>(1.0, 1.50)</li>
+							</points>
+						</valueBySeverity>
+					</li>
+					<li>
+						<stat>InjuryHealingFactor</stat>
+						<valueBySeverity>
+							<points>
+								<li>(0.0, 1.00)</li>
+								<li>(0.1, 1.10)</li>
+								<li>(0.2, 1.20)</li>
+								<li>(0.3, 1.30)</li>
+								<li>(0.4, 1.40)</li>
+								<li>(0.5, 1.50)</li>
+								<li>(0.6, 1.60)</li>
+								<li>(0.7, 1.70)</li>
+								<li>(0.8, 1.80)</li>
+								<li>(0.9, 1.90)</li>
+								<li>(1.0, 2.00)</li>
+							</points>
+						</valueBySeverity>
+					</li>
+					<li>
+						<stat>IncomingDamageFactor</stat> <!-- Durability -->
+						<valueBySeverity>
+							<points>
+								<li>(0.0, 1.00)</li>
+								<li>(0.1, 0.95)</li>
+								<li>(0.2, 0.90)</li>
+								<li>(0.3, 0.85)</li>
+								<li>(0.4, 0.80)</li>
+								<li>(0.5, 0.75)</li>
+								<li>(0.6, 0.70)</li>
+								<li>(0.7, 0.65)</li>
+								<li>(0.8, 0.60)</li>
+								<li>(0.9, 0.55)</li>
+								<li>(1.0, 0.50)</li>
+							</points>
+						</valueBySeverity>
+					</li>
+					<li>
+						<stat>MeleeDamageFactor</stat>
+						<valueBySeverity>
+							<points>
+								<li>(0.0, 1.00)</li>
+								<li>(0.1, 1.10)</li>
+								<li>(0.2, 1.20)</li>
+								<li>(0.3, 1.30)</li>
+								<li>(0.4, 1.40)</li>
+								<li>(0.5, 1.50)</li>
+								<li>(0.6, 1.60)</li>
+								<li>(0.7, 1.70)</li>
+								<li>(0.8, 1.80)</li>
+								<li>(0.9, 1.90)</li>
+								<li>(1.0, 2.00)</li>
+							</points>
+						</valueBySeverity>
+					</li>
+					<li>
+						<stat>ImmunityGainSpeed</stat>
+						<valueBySeverity>
+							<points>
+								<li>(0.0, 1.00)</li>
+								<li>(0.1, 1.05)</li>
+								<li>(0.2, 1.10)</li>
+								<li>(0.3, 1.15)</li>
+								<li>(0.4, 1.20)</li>
+								<li>(0.5, 1.25)</li>
+								<li>(0.6, 1.30)</li>
+								<li>(0.7, 1.35)</li>
+								<li>(0.8, 1.40)</li>
+								<li>(0.9, 1.45)</li>
+								<li>(1.0, 1.50)</li>
+							</points>
+						</valueBySeverity>
+					</li>
+				</statFactorsBySeverity>
+				<!-- statOffsetsBySeverity removed to prevent 200% armour and ensueing 0-damage cringe -->
+			</li>
+		</stages>
+	</HediffDef>
+
+	<!-- Adaptive Gene Definition. Pain reduction and lifespan removed cos Viltrumites already have those -->
+	<GeneDef ParentName="GeneCustom">
+		<defName>JIM_OmniAdaptiveLite</defName>
+		<label>Viltrumite Adaptation</label>
+		<labelShortAdj>Adaptive</labelShortAdj>
+		<description>Increases strength, speed, durability, healing factors, and overall combat potential as experience is gained. Less powerful than similar genes.</description>
+		<iconPath>Genes/CellDivision</iconPath>
+		<displayOrderInCategory>100.01</displayOrderInCategory>
+		<geneClass>Gene_AdaptiveProtein</geneClass> <!-- Attaches our class... may need whole new class to make this one work -->
+		<biostatMet>-1</biostatMet> <!-- Metabolism cost -->
+		<prerequisite>JInv_VSmartGene</prerequisite>
+		<minAgeActive>13</minAgeActive>
+		<symbolPack>
+			<prefixSymbols>
+			<li><symbol>tough</symbol></li>
+			<li><symbol>strong</symbol></li>
+			<li><symbol>fasthealer</symbol></li>
+			</prefixSymbols>
+			<suffixSymbols>
+			<li><symbol>Adaptive</symbol></li>
+			</suffixSymbols>
+		</symbolPack>
+		<modExtensions>
+			<li Class="SmartAtomExtension">
+			<adaptiveHediff>JIM_AdaptExpressLite</adaptiveHediff>
+			<stressCycleTicks>60000</stressCycleTicks>
+			<MeleeContributionCap>0.4</MeleeContributionCap>
+			<MaxAttackContribution>30</MaxAttackContribution>
+			<damageStressCap>0.6</damageStressCap>
+			<maxDamageContribution>55</maxDamageContribution>
+			<fullGrowthSeverity>0.02</fullGrowthSeverity>
+			<partialGrowthSeverity>0.004</partialGrowthSeverity>
+			<partialGrowthCurveExponent>3.5</partialGrowthCurveExponent>
+			<maturityDurationTicks>11880000</maturityDurationTicks>
+			<totalMaturityGain>0.1</totalMaturityGain>
+			<maturityGrowthIntervalTicks>60000</maturityGrowthIntervalTicks>
+			<RemoveAllXenogenes>false</RemoveAllXenogenes>
+			<!-- ask Cynic if alleleMinFirstGen can safely be increased to 0.5. -->
+			<!-- Idea of genetic quality already managed by Viltrumites in Rimworld, so this gene can be all about personal, earned quality. -->
+			<alleleMinFirstGen>1.0</alleleMinFirstGen>
+			<alleleMaxFirstGen>1.0</alleleMaxFirstGen>
+			<hulkBodyAge>-1</hulkBodyAge>
+			<conflictingGenes>
+				<li>Omni-Adaptive Lite</li>
+				<li>Omni-Adaptive</li>
+				<li>Omni-Adaptive1</li>
+			</conflictingGenes>
+			<rejectedHediffs>
+				<li>TraumaSavant</li>
+				<li>TestingHediff</li>
+				<li>JuggernautSerum</li>
+				<li>Metalblood</li>
+			</rejectedHediffs>
+			</li>
+		</modExtensions>
+	</GeneDef>
+	
+</Defs>
+
+
+

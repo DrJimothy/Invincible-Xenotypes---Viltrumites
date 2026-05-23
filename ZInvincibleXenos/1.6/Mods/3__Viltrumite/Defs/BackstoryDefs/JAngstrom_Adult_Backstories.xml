@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- Normal backstories -->
+	<!-- To-do. More Vilgrunt variants. Worshipper, sniper, monk,  -->
+
+	<BackstoryDef>
+		<defName>JVBackStory_Angstrom</defName>
+		<title>Ruined Experiment</title>
+		<titleShort>Ruined</titleShort>
+		<slot>Adulthood</slot>
+		<bodyTypeMale>Male</bodyTypeMale>
+		<bodyTypeFemale>Female</bodyTypeFemale>
+		<baseDesc>[PAWN_nameDef] was going to merge their mind with countless reality-crossing copies of themselves, only for it to be ruined by someone they claim was called Invincible. They still gained incredible knowledge, but were physically ruined and turned insane. Since then, they've sought to make the whole multiverse hate Invincible as much as they do.</baseDesc>
+		<spawnCategories>
+			<li>Angstrom</li>
+		</spawnCategories>
+		<skillGains>
+			<Plants>20</Plants>
+			<Construction>20</Construction>
+			<Crafting>20</Crafting>
+			<Intellectual>20</Intellectual>
+			<Mining>20</Mining>
+			<Shooting>20</Shooting>
+			<Cooking>20</Cooking>
+			<Melee>20</Melee>
+			<Social>20</Social>
+			<Artistic>20</Artistic>
+			<Medicine>20</Medicine>
+			<Animals>20</Animals>
+		</skillGains>
+		<forcedTraits>
+			<Tough>0</Tough>
+			<Beauty>-2</Beauty>
+			<Bloodlust>0</Bloodlust>
+			<ShootingAccuracy>-1</ShootingAccuracy>
+			<NaturalMood>-2</NaturalMood>
+			<Abrasive>0</Abrasive>
+			<Neurotic>2</Neurotic>
+			<TooSmart>0</TooSmart>
+		</forcedTraits>
+		<disallowedTraits>
+			<Kind>0</Kind>
+		</disallowedTraits>
+	</BackstoryDef>
+	
+</Defs>

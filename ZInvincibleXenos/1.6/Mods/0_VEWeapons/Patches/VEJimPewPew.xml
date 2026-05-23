@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+<!-- Giving shotguns a shotgun-specific tag... they should really have one already -->
+<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="VWE_SawedOffShotgun"]/weaponTags</xpath>
+		<value>
+			<li>JimPew_Shotgun</li>
+		</value>
+</Operation>
+<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="VWE_TrenchGun"]/weaponTags</xpath>
+		<value>
+			<li>JimPew_Shotgun</li>
+		</value>
+</Operation>
+<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="VWE_Gun_ChargeShotgun"]/weaponTags</xpath>
+		<value>
+			<li>JimPew_Shotgun</li>
+			<li>JimPew_StrongShotgun</li>
+			<li>JimPew_SpaceShotgun</li>
+		</value>
+</Operation>
+
+<Operation Class="PatchOperationReplace">
+		<xpath>Defs/PawnKindDef[defName="Vilgrunt_shotgunner"]/weaponTags</xpath>
+		<value>
+			<weaponTags>
+				<li>JimPew_SpaceShotgun</li>
+			</weaponTags>
+		</value>
+</Operation>
+
+<!-- powerful miniguns -->
+<Operation Class="PatchOperationRemove">
+	<xpath>Defs/PawnKindDef[defName="Viltrum_Fighter_CataphractRanged"]/weaponTags/li[text()="Minigun"]</xpath>
+</Operation>
+<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="VWE_Gun_ChargeMinigun"]/weaponTags</xpath>
+		<value>
+			<li>JimPew_MinigunStrong</li>
+		</value>
+</Operation>
+
+<!-- powerful sniper weapons -->
+<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="VWE_Gun_AntiMaterialRifle"]/weaponTags</xpath>
+		<value>
+			<li>JimPew_SniperStrong</li>
+		</value>
+</Operation>
+<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="VWE_Gun_ChargeSniperRifle"]/weaponTags</xpath>
+		<value>
+			<li>JimPew_SniperStrong</li>
+		</value>
+</Operation>
+
+<!-- worthy melee weapons -->
+<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="VWE_MeleeWeapon_BattleAxe"]/weaponTags</xpath>
+		<value>
+			<li>JimPew_SharpStrong</li>
+		</value>
+</Operation>
+<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="VWE_MeleeWeapon_Halberd"]/weaponTags</xpath>
+		<value>
+			<li>JimPew_SharpStrong</li>
+		</value>
+</Operation>
+<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="VWE_MeleeWeapon_Shovel"]/weaponTags</xpath>
+		<value>
+			<li>JimPew_SharpStrong</li>
+		</value>
+</Operation>
+<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="VWE_MeleeWeapon_CombatKnife"]/weaponTags</xpath>
+		<value>
+			<li>JimPew_SharpStrong</li>
+		</value>
+</Operation>
+
+</Patch>

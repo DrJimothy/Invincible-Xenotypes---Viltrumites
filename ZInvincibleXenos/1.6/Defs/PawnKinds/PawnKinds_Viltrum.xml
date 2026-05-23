@@ -1,0 +1,538 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- Viltrumite Baseline -->
+
+	<PawnKindDef Name="ViltrumiteFighterBase" Abstract="True">
+		<race>Human</race>
+		<defaultFactionDef>ViltrumEmpire</defaultFactionDef>
+		<minGenerationAge>20</minGenerationAge>
+		<titleSelectOne>
+			<li MayRequire="Ludeon.RimWorld.Royalty">Vilt_Cadet</li>
+			<li MayRequire="Ludeon.RimWorld.Royalty">Vilt_Soldier</li>
+			<li MayRequire="Ludeon.RimWorld.Royalty">Vilt_Officer</li>
+			<li MayRequire="Ludeon.RimWorld.Royalty">Vilt_Lieutenant</li>
+			<li MayRequire="Ludeon.RimWorld.Royalty">Vilt_Captain</li>
+		</titleSelectOne>
+		<apparelTags>
+			<li>IndustrialBasic</li>
+		</apparelTags>
+		<styleItemTags>
+			<li>
+				<tag>Soldier</tag>
+				<baseWeight>1</baseWeight>
+				<weightFactor>1</weightFactor>
+			</li>
+		</styleItemTags>
+		<invNutrition>2.55</invNutrition>
+		<apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
+		<apparelMoney>500~1000</apparelMoney>
+		<itemQuality>Legendary</itemQuality>
+		<maxApparelQuality>Legendary</maxApparelQuality>
+		<techHediffsChance>0.5</techHediffsChance>
+		<techHediffsMoney>250~9000</techHediffsMoney>
+		<useFactionXenotypes>false</useFactionXenotypes>
+		<xenotypeSet>
+			<xenotypeChances>
+				<Jim_Viltrumite>1</Jim_Viltrumite>
+			</xenotypeChances>
+		</xenotypeSet>
+	</PawnKindDef>
+
+	<!-- Garbage Viltrumite -->
+	<PawnKindDef ParentName="ViltrumiteFighterBase">
+		<defName>Viltrumite_Fighter_Garbage</defName>
+		<label>weak viltrumite</label>
+		<titleSelectOne>
+			<li MayRequire="Ludeon.RimWorld.Royalty">Vilt_Cadet</li>
+		</titleSelectOne>
+		<combatPower>1500</combatPower>
+		<apparelColor>(0.9, 0.9, 0.9)</apparelColor>
+		<apparelRequired>
+			<li>Apparel_Pants</li>
+			<li>Apparel_BasicShirt</li>
+		</apparelRequired>
+		<backstoryFiltersOverride>
+			<li>
+				<categories>
+					<li>ViltrumGarbage</li>
+					<li>ViltrumChild</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>
+		<techHediffsTags>
+			<li>Advanced</li>
+			<li MayRequire="Ludeon.RimWorld.Royalty">ImplantEmpireCommon</li>
+		</techHediffsTags>
+		<disallowedTraits>
+			<li>Tough</li>
+			<li>Brawler</li>
+			<li>Nimble</li>
+		</disallowedTraits>
+		<skills>
+			<li>
+				<skill>Melee</skill>
+				<range>0~6</range>
+			</li>
+		</skills>
+		<initialWillRange>5~10</initialWillRange>
+		<initialResistanceRange>10~15</initialResistanceRange>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="ViltrumiteFighterBase">
+		<defName>Viltrumite_Fighter_GarbageGuard</defName>
+		<label>weak viltrumite</label>
+		<titleSelectOne>
+			<li MayRequire="Ludeon.RimWorld.Royalty">Vilt_Cadet</li>
+		</titleSelectOne>
+		<combatPower>300</combatPower>
+		<apparelColor>(0.9, 0.9, 0.9)</apparelColor>
+		<apparelRequired>
+			<li>Apparel_Pants</li>
+			<li>Apparel_BasicShirt</li>
+		</apparelRequired>
+		<backstoryFiltersOverride>
+			<li>
+				<categories>
+					<li>ViltrumGarbage</li>
+					<li>ViltrumChild</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>
+		<techHediffsTags>
+			<li>Advanced</li>
+			<li MayRequire="Ludeon.RimWorld.Royalty">ImplantEmpireCommon</li>
+		</techHediffsTags>
+		<techHediffsRequired>
+			<li>DeathAcidifier</li>
+			<li>Painstopper</li>
+			<li MayRequire="Ludeon.RimWorld.Odyssey">VacskinGland</li>
+		</techHediffsRequired>
+		<disallowedTraits>
+			<li>Tough</li>
+			<li>Brawler</li>
+			<li>Nimble</li>
+		</disallowedTraits>
+		<skills>
+			<li>
+				<skill>Melee</skill>
+				<range>0~6</range>
+			</li>
+		</skills>
+		<initialWillRange>5~10</initialWillRange>
+		<initialResistanceRange>10~15</initialResistanceRange>
+	</PawnKindDef>
+
+	<!-- Stabby McStabbyFace -->
+	<PawnKindDef ParentName="ViltrumiteFighterBase">
+		<defName>Viltrumite_Fighter_Slicer</defName>
+		<label>viltrumite slicer</label>
+		<titleSelectOne>
+			<li MayRequire="Ludeon.RimWorld.Royalty">Vilt_Cadet</li>
+			<li MayRequire="Ludeon.RimWorld.Royalty">Vilt_Soldier</li>
+		</titleSelectOne>
+		<combatPower>3000</combatPower>
+		<apparelColor>(0.9, 0.9, 0.9)</apparelColor>
+		<apparelRequired>
+			<li>Apparel_Pants</li>
+			<li>Apparel_BasicShirt</li>
+		</apparelRequired>
+		<forceWeaponQuality>Legendary</forceWeaponQuality>
+		<weaponMoney>8000~12000</weaponMoney>
+		<weaponTags>
+			<li>JimPew_SharpWeak</li>
+		</weaponTags>
+		<weaponStuffOverride>Plasteel</weaponStuffOverride>
+		<backstoryFiltersOverride>
+			<li>
+				<categories>
+					<li>ViltrumGarbage</li>
+					<li>ViltrumChild</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>
+		<techHediffsTags>
+			<li>Advanced</li>
+			<li MayRequire="Ludeon.RimWorld.Royalty">ImplantEmpireCommon</li>
+		</techHediffsTags>
+		<skills>
+			<li>
+				<skill>Melee</skill>
+				<range>12~20</range>
+			</li>
+		</skills>
+		<initialWillRange>10~20</initialWillRange>
+		<initialResistanceRange>20~30</initialResistanceRange>
+	</PawnKindDef>
+	<PawnKindDef ParentName="ViltrumiteFighterBase">
+		<defName>Viltrumite_Fighter_SlicerGuard</defName>
+		<label>viltrumite slicer</label>
+		<titleSelectOne>
+			<li MayRequire="Ludeon.RimWorld.Royalty">Vilt_Cadet</li>
+			<li MayRequire="Ludeon.RimWorld.Royalty">Vilt_Soldier</li>
+		</titleSelectOne>
+		<combatPower>600</combatPower>
+		<apparelColor>(0.9, 0.9, 0.9)</apparelColor>
+		<apparelRequired>
+			<li>Apparel_Pants</li>
+			<li>Apparel_BasicShirt</li>
+		</apparelRequired>
+		<forceWeaponQuality>Legendary</forceWeaponQuality>
+		<weaponMoney>8000~12000</weaponMoney>
+		<weaponTags>
+			<li>JimPew_SharpWeak</li>
+		</weaponTags>
+		<weaponStuffOverride>Plasteel</weaponStuffOverride>
+		<backstoryFiltersOverride>
+			<li>
+				<categories>
+					<li>ViltrumGarbage</li>
+					<li>ViltrumChild</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>
+		<techHediffsTags>
+			<li>Advanced</li>
+			<li MayRequire="Ludeon.RimWorld.Royalty">ImplantEmpireCommon</li>
+		</techHediffsTags>
+		<skills>
+			<li>
+				<skill>Melee</skill>
+				<range>12~20</range>
+			</li>
+		</skills>
+		<initialWillRange>10~20</initialWillRange>
+		<initialResistanceRange>20~30</initialResistanceRange>
+	</PawnKindDef>
+
+	<!-- Basic Viltrumite -->
+	<PawnKindDef ParentName="ViltrumiteFighterBase">
+		<defName>Viltrumite_Fighter_Simple</defName>
+		<label>viltrumite</label>
+		<titleSelectOne>
+			<li MayRequire="Ludeon.RimWorld.Royalty">Vilt_Cadet</li>
+			<li MayRequire="Ludeon.RimWorld.Royalty">Vilt_Soldier</li>
+		</titleSelectOne>
+		<combatPower>2300</combatPower>
+		<apparelColor>(0.9, 0.9, 0.9)</apparelColor>
+		<apparelRequired>
+			<li>Apparel_Pants</li>
+			<li>Apparel_BasicShirt</li>
+		</apparelRequired>
+		<backstoryFiltersOverride>
+			<li>
+				<categories>
+					<li>Viltrum</li>
+					<li>ViltrumChild</li>
+					<li>Viltrumite</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>
+		<techHediffsTags>
+			<li>Advanced</li>
+			<li MayRequire="Ludeon.RimWorld.Royalty">ImplantEmpireCommon</li>
+		</techHediffsTags>
+		<disallowedTraits>
+			<li>Tough</li>
+		</disallowedTraits>
+		<skills>
+			<li>
+				<skill>Melee</skill>
+				<range>4~12</range>
+			</li>
+		</skills>
+		<initialWillRange>10~20</initialWillRange>
+		<initialResistanceRange>20~30</initialResistanceRange>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="ViltrumiteFighterBase">
+		<defName>Viltrumite_Fighter_SimpleGuard</defName>
+		<label>viltrumite</label>
+		<titleSelectOne>
+			<li MayRequire="Ludeon.RimWorld.Royalty">Vilt_Cadet</li>
+			<li MayRequire="Ludeon.RimWorld.Royalty">Vilt_Soldier</li>
+		</titleSelectOne>
+		<combatPower>450</combatPower>
+		<apparelColor>(0.9, 0.9, 0.9)</apparelColor>
+		<apparelRequired>
+			<li>Apparel_Pants</li>
+			<li>Apparel_BasicShirt</li>
+		</apparelRequired>
+		<backstoryFiltersOverride>
+			<li>
+				<categories>
+					<li>Viltrum</li>
+					<li>ViltrumChild</li>
+					<li>Viltrumite</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>
+		<techHediffsTags>
+			<li>Advanced</li>
+			<li MayRequire="Ludeon.RimWorld.Royalty">ImplantEmpireCommon</li>
+		</techHediffsTags>
+		<techHediffsRequired>
+			<li>DeathAcidifier</li>
+			<li>Painstopper</li>
+			<li MayRequire="Ludeon.RimWorld.Odyssey">VacskinGland</li>
+		</techHediffsRequired>
+		<disallowedTraits>
+			<li>Tough</li>
+		</disallowedTraits>
+		<skills>
+			<li>
+				<skill>Melee</skill>
+				<range>4~14</range>
+			</li>
+		</skills>
+		<initialWillRange>10~20</initialWillRange>
+		<initialResistanceRange>20~30</initialResistanceRange>
+	</PawnKindDef>
+
+	<!-- Elite Viltrumite -->
+	<PawnKindDef ParentName="ViltrumiteFighterBase">
+		<defName>Viltrumite_Fighter_Elite</defName>
+		<label>elite viltrumite</label>
+		<minGenerationAge>20</minGenerationAge>
+		<titleSelectOne>
+			<li MayRequire="Ludeon.RimWorld.Royalty">Vilt_Lieutenant</li>
+			<li MayRequire="Ludeon.RimWorld.Royalty">Vilt_Captain</li>
+		</titleSelectOne>
+		<combatPower>6000</combatPower>
+		<apparelColor>(0.9, 0.9, 0.9)</apparelColor>
+		<backstoryFiltersOverride>
+			<li>
+				<categories>
+					<li>ViltrumElite</li>
+					<li>ViltrumChild</li>
+					<li>ViltrumChildElite</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>
+		<apparelRequired>
+			<li>Apparel_Pants</li>
+			<li>Apparel_BasicShirt</li>
+		</apparelRequired>
+		<techHediffsTags>
+			<li>Advanced</li>
+			<li MayRequire="Ludeon.RimWorld.Royalty">ImplantEmpireCommon</li>
+		</techHediffsTags>
+		<disallowedTraits>
+			<li>Wimp</li>
+			<li>Delicate</li>
+		</disallowedTraits>
+		<skills>
+			<li>
+				<skill>Melee</skill>
+				<range>12~20</range>
+			</li>
+		</skills>
+		<initialWillRange>15~30</initialWillRange>
+		<initialResistanceRange>30~40</initialResistanceRange>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="ViltrumiteFighterBase">
+		<defName>Viltrumite_Fighter_EliteGuard</defName>
+		<label>elite viltrumite</label>
+		<minGenerationAge>20</minGenerationAge>
+		<titleSelectOne>
+			<li MayRequire="Ludeon.RimWorld.Royalty">Vilt_Lieutenant</li>
+			<li MayRequire="Ludeon.RimWorld.Royalty">Vilt_Captain</li>
+		</titleSelectOne>
+		<combatPower>1200</combatPower>
+		<apparelColor>(0.9, 0.9, 0.9)</apparelColor>
+		<backstoryFiltersOverride>
+			<li>
+				<categories>
+					<li>ViltrumElite</li>
+					<li>ViltrumChild</li>
+					<li>ViltrumChildElite</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>
+		<apparelRequired>
+			<li>Apparel_Pants</li>
+			<li>Apparel_BasicShirt</li>
+		</apparelRequired>
+		<techHediffsTags>
+			<li>Advanced</li>
+			<li MayRequire="Ludeon.RimWorld.Royalty">ImplantEmpireCommon</li>
+		</techHediffsTags>
+		<techHediffsRequired>
+			<li>DeathAcidifier</li>
+			<li>Painstopper</li>
+			<li MayRequire="Ludeon.RimWorld.Odyssey">VacskinGland</li>
+		</techHediffsRequired>
+		<disallowedTraits>
+			<li>Wimp</li>
+			<li>Delicate</li>
+		</disallowedTraits>
+		<skills>
+			<li>
+				<skill>Melee</skill>
+				<range>10~20</range>
+			</li>
+		</skills>
+		<initialWillRange>15~30</initialWillRange>
+		<initialResistanceRange>30~40</initialResistanceRange>
+	</PawnKindDef>
+
+	<!-- Regent Viltrumite -->
+	<PawnKindDef ParentName="ViltrumiteFighterBase">
+		<defName>Viltrumite_Fighter_Regent</defName>
+		<label>viltrumite regent</label>
+		<minGenerationAge>25</minGenerationAge>
+		<factionLeader>true</factionLeader>
+		<titleSelectOne>
+			<li MayRequire="Ludeon.RimWorld.Royalty">Vilt_Lieutenant</li>
+			<li MayRequire="Ludeon.RimWorld.Royalty">Vilt_Captain</li>
+		</titleSelectOne>
+		<combatPower>6000</combatPower>
+		<apparelColor>(0.9, 0.9, 0.9)</apparelColor>
+		<backstoryFiltersOverride>
+			<li>
+				<categories>
+					<li>ViltrumRegent</li>
+					<li>ViltrumChild</li>
+					<li>ViltrumChildElite</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>
+		<itemQuality>Legendary</itemQuality>
+		<maxApparelQuality>Legendary</maxApparelQuality>
+		<apparelRequired>
+			<li>Apparel_Pants</li>
+			<li>Apparel_BasicShirt</li>
+		</apparelRequired>
+		<techHediffsTags>
+			<li>Advanced</li>
+			<li MayRequire="Ludeon.RimWorld.Royalty">ImplantEmpireCommon</li>
+		</techHediffsTags>
+		<disallowedTraits>
+			<li>Wimp</li>
+			<li>Delicate</li>
+		</disallowedTraits>
+		<initialResistanceRange>40~80</initialResistanceRange>
+		<initialWillRange>20~40</initialWillRange>
+	</PawnKindDef>
+
+	<!-- Soloist. Very Random. -->
+	<PawnKindDef ParentName="ViltrumiteFighterBase">
+		<defName>Viltrumite_Fighter_Solo</defName>
+		<label>viltrumite</label>
+		<titleSelectOne>
+			<li MayRequire="Ludeon.RimWorld.Royalty">Vilt_Cadet</li>
+			<li MayRequire="Ludeon.RimWorld.Royalty">Vilt_Soldier</li>
+		</titleSelectOne>
+		<combatPower>9000</combatPower>
+		<apparelColor>(0.9, 0.9, 0.9)</apparelColor>
+		<apparelRequired>
+			<li>Apparel_Pants</li>
+			<li>Apparel_BasicShirt</li>
+		</apparelRequired>
+		<backstoryFiltersOverride>
+			<li>
+				<categories>
+					<li>Viltrum</li>
+					<li>ViltrumChild</li>
+					<li>Viltrumite</li>
+					<li>ViltrumElite</li>
+					<li>ViltrumChildElite</li>
+					<li>ViltrumGarbage</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>
+		<techHediffsTags>
+			<li>Advanced</li>
+			<li MayRequire="Ludeon.RimWorld.Royalty">ImplantEmpireCommon</li>
+		</techHediffsTags>
+		<skills>
+			<li>
+				<skill>Melee</skill>
+				<range>4~20</range>
+			</li>
+		</skills>
+		<initialWillRange>10~20</initialWillRange>
+		<initialResistanceRange>20~30</initialResistanceRange>
+	</PawnKindDef>
+
+	<!-- Random. Same as soloist, but can come in groups. -->
+	<PawnKindDef ParentName="ViltrumiteFighterBase">
+		<defName>Viltrumite_Fighter_Random</defName>
+		<label>viltrumite</label>
+		<titleSelectOne>
+			<li MayRequire="Ludeon.RimWorld.Royalty">Vilt_Cadet</li>
+			<li MayRequire="Ludeon.RimWorld.Royalty">Vilt_Soldier</li>
+		</titleSelectOne>
+		<combatPower>2300</combatPower>
+		<apparelColor>(0.9, 0.9, 0.9)</apparelColor>
+		<apparelRequired>
+			<li>Apparel_Pants</li>
+			<li>Apparel_BasicShirt</li>
+		</apparelRequired>
+		<backstoryFiltersOverride>
+			<li>
+				<categories>
+					<li>Viltrum</li>
+					<li>ViltrumChild</li>
+					<li>Viltrumite</li>
+					<li>ViltrumElite</li>
+					<li>ViltrumChildElite</li>
+					<li>ViltrumGarbage</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>
+		<techHediffsTags>
+			<li>Advanced</li>
+			<li MayRequire="Ludeon.RimWorld.Royalty">ImplantEmpireCommon</li>
+		</techHediffsTags>
+		<skills>
+			<li>
+				<skill>Melee</skill>
+				<range>4~20</range>
+			</li>
+		</skills>
+		<initialWillRange>10~20</initialWillRange>
+		<initialResistanceRange>20~30</initialResistanceRange>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="ViltrumiteFighterBase">
+		<defName>Viltrumite_Fighter_RandomGuard</defName>
+		<label>viltrumite</label>
+		<titleSelectOne>
+			<li MayRequire="Ludeon.RimWorld.Royalty">Vilt_Cadet</li>
+			<li MayRequire="Ludeon.RimWorld.Royalty">Vilt_Soldier</li>
+		</titleSelectOne>
+		<combatPower>450</combatPower>
+		<apparelColor>(0.9, 0.9, 0.9)</apparelColor>
+		<apparelRequired>
+			<li>Apparel_Pants</li>
+			<li>Apparel_BasicShirt</li>
+		</apparelRequired>
+		<backstoryFiltersOverride>
+			<li>
+				<categories>
+					<li>Viltrum</li>
+					<li>ViltrumChild</li>
+					<li>Viltrumite</li>
+					<li>ViltrumElite</li>
+					<li>ViltrumChildElite</li>
+					<li>ViltrumGarbage</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>
+		<techHediffsTags>
+			<li>Advanced</li>
+			<li MayRequire="Ludeon.RimWorld.Royalty">ImplantEmpireCommon</li>
+		</techHediffsTags>
+		<skills>
+			<li>
+				<skill>Melee</skill>
+				<range>4~20</range>
+			</li>
+		</skills>
+		<initialWillRange>10~20</initialWillRange>
+		<initialResistanceRange>20~30</initialResistanceRange>
+	</PawnKindDef>
+
+</Defs>

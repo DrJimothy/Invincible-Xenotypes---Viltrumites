@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<XenotypeDef>
+		<defName>JInv_ViltrumiteHybrid</defName>
+		<label>Viltrumite Hybrid</label>
+		<description>A Viltrumite hybrid, with genes from their non-Viltrumite half.</description>
+		<descriptionShort>A Viltrumite hybrid, with genes from their non-Viltrumite half.</descriptionShort>
+		<iconPath>UI/Icons/Xenotypes/Baseliner</iconPath>
+		<inheritable>true</inheritable>
+		<genes>
+			<li>ArchiteMetabolism</li>
+			<li>DiseaseFree</li>
+			<li>Ears_Human</li>
+			<li>Nose_Human</li>
+			<li>Jaw_Baseline</li>
+			<li>Headbone_Human</li>
+			<li>Voice_Human</li>
+			<li>StrongStomach</li>
+			<li>Hands_Human</li>
+			<li>Unstoppable</li>
+			<li>JInv_VSmartGene</li>
+			<li>JInv_VMetabolism</li>
+			<li>JInv_VMeleeGene</li>
+			<li>JInv_VMeleeGene2</li>
+			<li>JInv_VImmGene</li>
+			<li>JInv_VSpeedGene</li>
+			<li>JInv_VSpeedGene2</li>
+			<li>JInv_VAgeGene</li>
+			<li>JInv_VHealGene</li>
+			<li>JInv_VHealGene2</li>
+			<li>JInv_VStoreGene</li>
+			<li>JInv_VStoreGene2</li>
+			<li>JInv_VToxinGene</li>
+			<li>JInv_VRobustGene</li>
+			<li>JInv_VRobustGene2</li>
+			<li>JInv_VSkinGene</li>
+			<li>JInv_VSkinGene2</li>
+			<li>JInv_VTempGene</li>
+			<li>PsychicAbility_Deaf</li>
+			<li>Pain_Reduced</li>
+			<li>Beauty_Pretty</li>
+			<li>Libido_High</li>
+			<li>Aggression_Aggressive</li>
+			<li>HALI_RandomSkinColor</li>
+			<li>HALI_RandomAnything</li>
+			<li>HALI_GambleGene</li>
+			<li>HALI_RandomTemperatureTolerance</li>
+			<li>HALI_RandomAbilityAndCounter</li>
+			<li>HALI_RandomGoodAndBadSkill</li>
+			<li>HALIJInv_RandomHealing</li>
+			<li>HALIJInv_RandomImmunity</li>
+			<li>HALIJInv_RandomToxic</li>
+			<li>HALIJInv_RandomFertility</li>
+			<li>HALIJInv_RandomMelee</li>
+			<li>HALIJInv_RandomAggression</li>
+			<li>HALIJInv_RandomKillOrChill</li>
+			<li>HALIJInv_RandomShooty</li>
+			<li>HALIJInv_RandomFire</li>
+			<li>HALIJInv_RandomStability</li>
+			<li>HALIJInv_RandomMinTemp</li>
+			<li>HALIJInv_RandomMaxTemp</li>
+			<li>HALIJInv_RandomPsychicAbility</li>
+			<li>HALIJInv_RandomMoveSpeed</li>
+			<li>HALIJInv_RandomBeauty</li>
+			<li>HALIJInv_RandomLearning</li>
+			<li>HALIJInv_RandomToughness</li>
+			<li>HALIJInv_RandomPain</li>
+			<li>HALIJInv_RandomSleep</li>
+			<li>HALIJInv_RandomUVSensitivity</li>
+			<li>HALIJInv_RandomLibido</li>
+			<li>HALIJInv_Archite</li>
+			<li>HALIJInv_RandomAnyTail</li>
+			<li>HALIJInv_RandomMood</li>
+			<li>HALIJInv_RandomHairColor</li>
+			<li>HALIJInv_RandomHorns</li>
+			<li>HALIJInv_RandomEars</li>
+			<li>HALIJInv_RandomAnything</li>
+			<li>HALIJInv_RandomAnything2</li>
+			<li>HALIJInv_RandomAnything3</li>
+			<li MayRequire="kentington.saveourship2">SoS2_VacuumAdapted</li>
+			<li MayRequire="Ludeon.RimWorld.Odyssey">JInv_VLungGene</li>
+			<li MayRequire="Ludeon.RimWorld.Odyssey">MoveSpeed_Space</li>
+			<!-- Dets -->
+			<li MayRequire="det.stoneborn">DV_ExtendedMemory</li>
+			<li MayRequire="det.stoneborn">DV_MightyLiver</li>
+			<li MayRequire="det.stoneborn">DV_LifespanLong</li>
+			<li MayRequire="det.brawnum">DV_RoughPlay</li>
+			<li MayRequire="det.brawnum">DV_StrongBack</li>
+			<li MayRequire="det.boglegs">DV_IntimidatingPresence</li>
+			<!-- Alpha Genes -->
+			<li MayRequire="sarg.alphagenes">AG_DeadlyRaidPresence</li>
+			<li MayRequire="sarg.alphagenes">AG_HardBones</li>
+			<li MayRequire="sarg.alphagenes">AG_Enforcer</li>
+			<li MayRequire="sarg.alphagenes">AG_NoWings</li>
+			<li MayRequire="sarg.alphagenes">AG_PackMule</li>
+			<li MayRequire="sarg.alphagenes">AG_ToughSinews</li>
+			<li MayRequire="sarg.alphagenes">AG_NoTusks</li>
+			<li MayRequire="sarg.alphagenes">AG_NoLowerAntennae</li>
+			<li MayRequire="sarg.alphagenes">AG_NoAntennae</li>
+			<li MayRequire="sarg.alphagenes,vanillaracesexpanded.fungoid">AG_GeneInfectionImmunity</li>
+			<!-- Biggie Smol -->
+			<li MayRequire="RedMattis.BigSmall.Core">BS_Xenolocked</li>
+			<li MayRequire="RedMattis.BigSmall.Core">BS_EverFertile</li>
+			<li MayRequire="RedMattis.BigSmall.Core">BS_SlowBleeding</li>
+			<li MayRequire="RedMattis.BetterGeneInheritance">BGI_PrimaryGenes</li>
+			<!-- FSF -->
+			<li MayRequire="FrozenSnowFox.AdvancedBionicsExpansion">JInv_VFistGene</li>
+			<li MayRequire="FrozenSnowFox.AdvancedBionicsExpansion">JInv_VDigestion</li>
+			<li MayRequire="FrozenSnowFox.AdvancedBionicsExpansion">JInv_VDrugsGene</li>
+			<!-- Nalz or Freda -->
+			<li MayRequire="fedecrakeado.viltrumitesinrimworld,Nalzurin.ViltrumiteXenotype">SensitiveInnerEars</li>
+			<li MayRequire="fedecrakeado.viltrumitesinrimworld,Nalzurin.ViltrumiteXenotype">Flight</li>
+			<li MayRequire="fedecrakeado.viltrumitesinrimworld,Nalzurin.ViltrumiteXenotype">Beard_MoustacheOnly</li>
+			<!-- Adaptation -->
+			<li MayRequire="OmniNerd.CombatEvolution.2005">JIM_OmniAdaptiveLite</li>
+			<li MayRequire="Endermaster567.CryptosleepAdaptationGene">CryptosleepAdaptationGene</li>
+			<!-- Metabolic nonsense -->
+			<li MayRequire="Darkborderman.MoreTraitGenes">LargeStomach</li>
+			<!-- Supa -->
+			<li MayRequire="SuperheroGenesBase.Mod">JInv_VMeleeGeneSH</li>
+			<li MayRequire="SuperheroGenesBase.Mod">JInv_VRobustGeneSH</li>
+			<li MayRequire="SuperheroGenesBase.Mod">JInv_Flight</li>
+			<li MayRequire="SuperheroGenesBase.Mod">JInv_HeroicLeap</li>
+			<li MayRequire="SuperheroGenesBase.Mod">JInv_Restraint</li>
+			<!-- VRE -->
+			<li MayRequire="vanillaracesexpanded.genie">VRE_Slow_Diseases</li>
+			<li MayRequire="vanillaracesexpanded.hussar">VREH_Unconstrained</li>
+			<li MayRequire="vanillaracesexpanded.pigskin">VRE_OrganRegeneration</li>
+		</genes>
+	</XenotypeDef>
+</Defs>

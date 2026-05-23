@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+<!-- Make Marines feel Mariney -->
+<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Gun_ChargeRifle"]/weaponTags</xpath>
+		<value>
+			<li>JimPew_Marine</li>
+		</value>
+</Operation>
+
+<!-- Giving shotguns a shotgun-specific tag... they should really have one already -->
+<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Gun_PumpShotgun"]/weaponTags</xpath>
+		<value>
+			<li>JimPew_Shotgun</li>
+		</value>
+</Operation>
+<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Gun_ChainShotgun"]/weaponTags</xpath>
+		<value>
+			<li>JimPew_Shotgun</li>
+			<li>JimPew_StrongShotgun</li>
+		</value>
+</Operation>
+
+<!-- Mighty sniper rifle -->
+<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Gun_ChargeLance"]/weaponTags</xpath>
+		<value>
+			<li>JimPew_SniperStrong</li>
+		</value>
+</Operation>
+
+<!-- Sharp Weapons -->
+<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="MeleeWeapon_Spear"]/weaponTags</xpath>
+		<value>
+			<li>JimPew_SharpStrong</li>
+			<li>JimPew_Sharp</li>
+		</value>
+</Operation>
+<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="MeleeWeapon_LongSword"]/weaponTags</xpath>
+		<value>
+			<li>JimPew_SharpStrong</li>
+			<li>JimPew_Sharp</li>
+		</value>
+</Operation>
+<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="MeleeWeapon_Gladius"]/weaponTags</xpath>
+		<value>
+			<li>JimPew_SharpDecent</li>
+			<li>JimPew_Sharp</li>
+		</value>
+</Operation>
+<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="MeleeWeapon_Knife"]/weaponTags</xpath>
+		<value>
+			<li>JimPew_SharpWeak</li>
+			<li>JimPew_Sharp</li>
+		</value>
+</Operation>
+<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="MeleeWeapon_Ikwa"]/weaponTags</xpath>
+		<value>
+			<li>JimPew_SharpWeak</li>
+			<li>JimPew_Sharp</li>
+		</value>
+</Operation>
+
+<!-- Blunt Weapons -->
+<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="MeleeWeapon_Mace"]/weaponTags</xpath>
+		<value>
+			<li>JimPew_BluntStrong</li>
+		</value>
+</Operation>
+
+<!-- Angstrom's Pewpew being an EMP launcher -->
+<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Gun_EmpLauncher"]/weaponTags</xpath>
+		<value>
+			<li>JimPew_Angstrom</li>
+		</value>
+</Operation>
+
+<!-- Underclothes skin layer beneath armour -->
+<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Apparel_TribalA"]/apparel/tags</xpath>
+		<value>
+			<li>J_ClothUnderArm</li>
+		</value>
+</Operation>
+<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Apparel_Pants"]/apparel/tags</xpath>
+		<value>
+			<li>J_ClothUnderArm</li>
+		</value>
+</Operation>
+<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Apparel_BasicShirt"]/apparel/tags</xpath>
+		<value>
+			<li>J_ClothUnderArm</li>
+		</value>
+</Operation>
+<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="Apparel_CollarShirt"]/apparel/tags</xpath>
+		<value>
+			<li>J_ClothUnderArm</li>
+		</value>
+</Operation>
+
+</Patch>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+  
+    <!--Make Viltrumites spawn with the suit if using Super Suits-->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/PawnKindDef[defName="ViltrumiteEmpire_Weak"]/apparelRequired</xpath>
+        <value>
+    		<apparelRequired>
+    			<li>JInv_Viltrumitesuitc</li>
+    		</apparelRequired>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/PawnKindDef[defName="WeakViltrumitePawn"]/apparelRequired</xpath>
+        <value>
+    		<apparelRequired>
+    			<li>JInv_Viltrumitesuitc</li>
+    		</apparelRequired>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/PawnKindDef[defName="EvilWeakViltrumitePawn"]/apparelRequired</xpath>
+        <value>
+    		<apparelRequired>
+    			<li>JInv_Viltrumitesuitc</li>
+    		</apparelRequired>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/PawnKindDef[defName="EvilEliteViltrumitePawn"]/apparelRequired</xpath>
+        <value>
+    		<apparelRequired>
+    			<li>JInv_Viltrumitesuitc</li>
+    		</apparelRequired>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/PawnKindDef[defName="ViltrumiteEmpire_Elite"]/apparelRequired</xpath>
+        <value>
+    		<apparelRequired>
+    			<li>JInv_ViltrumitGeneralsuitc</li>
+    		</apparelRequired>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/PawnKindDef[defName="EliteViltrumitePawn"]/apparelRequired</xpath>
+        <value>
+    		<apparelRequired>
+    			<li>JInv_ViltrumitGeneralsuitc</li>
+    		</apparelRequired>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/PawnKindDef[defName="EliteViltrumiteScenarioPawn"]/apparelRequired</xpath>
+        <value>
+    		<apparelRequired>
+    			<li>JInv_ViltrumitGeneralsuitc</li>
+    		</apparelRequired>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/PawnKindDef[defName="ConquestPawn"]/apparelRequired</xpath>
+        <value>
+    		<apparelRequired>
+    			<li>JInv_ViltrumitGeneralsuitc</li>
+    		</apparelRequired>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/PawnKindDef[defName="ViltrumiteEmpire_Blood"]/apparelRequired</xpath>
+        <value>
+    		<apparelRequired>
+    			<li>JInv_ViltrumiteLordcc</li>
+    		</apparelRequired>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/PawnKindDef[defName="ViltrumiteEmpire_Leader"]/apparelRequired</xpath>
+        <value>
+    		<apparelRequired>
+    			<li>JInv_ViltrumiteLordcc</li>
+    		</apparelRequired>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/PawnKindDef[defName="BloodOfArgallPawn"]/apparelRequired</xpath>
+        <value>
+    		<apparelRequired>
+    			<li>JInv_ViltrumiteLordcc</li>
+    		</apparelRequired>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/PawnKindDef[defName="LegendaryViltrumitePawn"]/apparelRequired</xpath>
+        <value>
+    		<apparelRequired>
+    			<li>JInv_ViltrumiteLordcc</li>
+    		</apparelRequired>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/PawnKindDef[defName="EvilBloodOfArgallPawn"]/apparelRequired</xpath>
+        <value>
+    		<apparelRequired>
+    			<li>JInv_ViltrumiteLordcc</li>
+    		</apparelRequired>
+        </value>
+    </Operation>
+    
+    <!--Make Viltrumites spawn without them stinking parkas and dusters-->
+
+</Patch>

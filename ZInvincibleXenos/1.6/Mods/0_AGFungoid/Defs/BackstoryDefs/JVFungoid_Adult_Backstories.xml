@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- Normal backstories -->
+	<!-- To-do. More Vilgrunt variants. Worshipper, sniper, monk,  -->
+
+	<BackstoryDef>
+		<defName>JVBackStory_Fungoid</defName>
+		<title>Viltrum Mycomorph</title>
+		<titleShort>Mycomorph</titleShort>
+		<slot>Adulthood</slot>
+		<bodyTypeMale>Hulk</bodyTypeMale>
+		<bodyTypeFemale>Hulk</bodyTypeFemale>
+		<baseDesc>[PAWN_nameDef] has been turned into a Mycomorph and extensively physically altered. Who they might've once been is unknown.</baseDesc>
+		<spawnCategories>
+			<li>Vilgrunt_Fungoid</li>
+		</spawnCategories>
+		<forcedTraits>
+			<Tough>0</Tough>
+			<Brawler>0</Brawler>
+			<SpeedOffset>2</SpeedOffset>
+			<NaturalMood>-2</NaturalMood>
+			<Nimble>0</Nimble>
+		</forcedTraits>
+	</BackstoryDef>
+	
+</Defs>

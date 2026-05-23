@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+<Operation Class="PatchOperationReplace">
+    <xpath>Defs/XenotypeDef[defName="Jim_Viltrumite"]/iconPath</xpath>
+    <value>
+      <iconPath>UI/Icons/Xenotypes/Viltrumite</iconPath>
+    </value>
+</Operation>
+<!-- Equilibrium (doubled pain) -->
+
+<Operation Class="PatchOperationReplace">
+    <xpath>Defs/HediffDef[defName="V_InnerEarDisrupted"]</xpath>
+    <value>
+  <HediffDef>
+    <defName>V_InnerEarDisrupted</defName>
+    <label>Disrupted equilibrium</label>
+    <description>Disrupted equilibrium of the inner ears, causes severe pain and cripples viltrumite's powers. Equilibrium will be restored on its own, but continued disruption will lead to more severe symptoms and eventually death.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <lethalSeverity>5</lethalSeverity>
+    <maxSeverity>5</maxSeverity>
+    <makesSickThought>true</makesSickThought>
+    <initialSeverity>1</initialSeverity>
+    <canApplyDodChanceForCapacityChanges>true</canApplyDodChanceForCapacityChanges>
+    <stages>
+      <li>
+      <label>mild</label>
+      <minSeverity>1</minSeverity>
+      <painOffset>0.4</painOffset>
+      <capMods>
+        <li>
+          <capacity>Hearing</capacity>
+          <offset>-0.3</offset>
+        </li>
+					<li>
+						<capacity>Consciousness</capacity>
+						<setMax>0.95</setMax>
+					</li>
+      </capMods>
+      </li>
+      <li>
+      <label>moderate</label>
+      <minSeverity>2</minSeverity>
+      <painOffset>0.8</painOffset>
+      <capMods>
+        <li>
+          <capacity>Hearing</capacity>
+          <offset>-0.5</offset>
+        </li>
+					<li>
+						<capacity>Consciousness</capacity>
+						<setMax>0.9</setMax>
+					</li>
+      </capMods>
+      </li>
+      <li>
+      <label>severe</label>
+      <minSeverity>3</minSeverity>
+      <painOffset>1.2</painOffset>
+      <capMods>
+        <li>
+          <capacity>Hearing</capacity>
+          <offset>-0.7</offset>
+        </li>
+					<li>
+						<capacity>Consciousness</capacity>
+						<setMax>0.85</setMax>
+					</li>
+      </capMods>
+      </li>
+      <li>
+      <label>extreme</label>
+      <minSeverity>4</minSeverity>
+      <painOffset>1.6</painOffset>
+      <capMods>
+        <li>
+          <capacity>Hearing</capacity>
+          <offset>-0.9</offset>
+        </li>
+					<li>
+						<capacity>Consciousness</capacity>
+						<setMax>0.8</setMax>
+					</li>
+      </capMods>
+      </li>
+    </stages>
+    <comps>
+      <li Class="HediffCompProperties_Immunizable">
+      <compClass>HediffComp_ImmunizableToxic</compClass>
+      <severityPerDayNotImmune>-3</severityPerDayNotImmune>
+      </li>
+    </comps>
+  </HediffDef>
+    </value>
+</Operation>
+
+<!-- Flight Regrowth -->
+  <Operation Class="PatchOperationConditional">
+		<success>Always</success>
+		<xpath>/Defs/GeneDef[defName = "Flight"]/modExtensions</xpath>
+		<nomatch Class="PatchOperationAdd">
+			<xpath>/Defs/GeneDef[defName = "Flight"]</xpath>
+			<value>
+				<modExtensions>
+					<li Class="VEF.Genes.GeneExtension">				
+						<hediffToWholeBody>JInvFlightGiverHediff</hediffToWholeBody>
+					</li>
+				</modExtensions>
+			</value>
+		</nomatch>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/GeneDef[defName = "Flight"]/modExtensions</xpath>
+			<value>
+				<li Class="VEF.Genes.GeneExtension">				
+					<hediffToWholeBody>JInvFlightGiverHediff</hediffToWholeBody>
+				</li>
+			</value>
+		</match>
+	</Operation>
+
+</Patch>

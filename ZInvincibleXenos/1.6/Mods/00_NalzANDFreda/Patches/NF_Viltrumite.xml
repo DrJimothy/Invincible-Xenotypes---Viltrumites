@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+
+<Operation Class="PatchOperationSequence">
+	<operations>
+		<li Class="PatchOperationRemove">
+			<xpath>Defs/XenotypeDef[defName="EliteViltrumite"]/genes/li[text()="EliteViltrumiteEquilibrium"]</xpath>
+		</li>
+		<li Class="PatchOperationRemove">
+			<xpath>Defs/XenotypeDef[defName="LegendaryViltrumite"]/genes/li[text()="LegendaryViltrumiteEquilibrium"]</xpath>
+		</li>		
+		<li Class="PatchOperationRemove">
+			<xpath>Defs/XenotypeDef[defName="BloodOfArgall"]/genes/li[text()="BloodOfArgallEquilibrium"]</xpath>
+		</li>
+	</operations>
+</Operation>
+
+<Operation Class="PatchOperationAdd">
+	<xpath>Defs/XenotypeDef[defName="EliteViltrumite"]/genes</xpath>
+	<value>
+		<li>SensitiveInnerEars</li>
+	</value>
+</Operation>
+
+<Operation Class="PatchOperationAdd">
+	<xpath>Defs/XenotypeDef[defName="LegendaryViltrumite"]/genes</xpath>
+	<value>
+		<li>SensitiveInnerEars</li>
+	</value>
+</Operation>
+
+<Operation Class="PatchOperationAdd">
+	<xpath>Defs/XenotypeDef[defName="BloodOfArgall"]/genes</xpath>
+	<value>
+		<li>SensitiveInnerEars</li>
+	</value>
+</Operation>
+
+</Patch>

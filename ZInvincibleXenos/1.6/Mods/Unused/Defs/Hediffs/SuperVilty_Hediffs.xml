@@ -1,0 +1,628 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+	
+	<!-- Weakness -->
+
+	<HediffDef>
+		<defName>JInvNoiseWeakHediff</defName>
+		<label>advanced inner ear</label>
+		<description>Ah, an inner ear so advanced it lets one do loop-de-loops in the air without getting dizzy. Surely, this comes with no weaknesses nor vulnerabilities whatsoever.</description>
+		<allowMothballIfLowPriorityWorldPawn>true</allowMothballIfLowPriorityWorldPawn>
+		<everCurableByItem>false</everCurableByItem>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<isBad>false</isBad>
+		<hediffClass>HediffWithComps</hediffClass>
+		<stages>
+			<li>
+				<capMods>
+					<li>
+						<capacity>Hearing</capacity>
+						<postFactor>1.25</postFactor>
+					</li>
+				</capMods>
+			</li>
+		</stages>
+		<comps>
+			<li Class="HediffCompProperties_ReactOnDamage">
+				<damageDefIncoming>EMP</damageDefIncoming>
+				<createHediff>JInvNoiseHurtHediff</createHediff>
+			</li>
+		</comps>
+	</HediffDef>
+
+	<!-- First EMP hit -->
+	<HediffDef>
+		<defName>JInvNoiseHurtHediff</defName>
+		<label>disrupted equilibrium</label>
+		<description>AHHHHH OH MY GOD OW IT HURTS IT HURTS NOTHING HURTS MORE THAN THIS!</description>
+		<allowMothballIfLowPriorityWorldPawn>true</allowMothballIfLowPriorityWorldPawn>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<isBad>false</isBad>
+		<hediffClass>HediffWithComps</hediffClass>
+		<stages>
+			<li>
+				<painFactor>1.1</painFactor>
+				<painOffset>0.1</painOffset>
+				<statOffsets>
+					<MeleeDodgeChance>-20</MeleeDodgeChance>
+				</statOffsets>
+				<statFactors>
+					<MoveSpeed>0.7</MoveSpeed>
+					<MeleeDamageFactor>0.9</MeleeDamageFactor>
+					<PawnTrapSpringChance>5</PawnTrapSpringChance>
+				</statFactors>
+				<capMods>
+					<li>
+						<capacity>Hearing</capacity>
+						<postFactor>0.8</postFactor>
+					</li>
+					<li>
+						<capacity>Moving</capacity>
+						<postFactor>0.9</postFactor>
+					</li>
+					<li>
+						<capacity>Manipulation</capacity>
+						<postFactor>0.9</postFactor>
+					</li>
+				</capMods>
+				<mentalStateGivers>
+					<li>
+						<mentalState>WanderConfused</mentalState>
+						<mtbDays>50</mtbDays>
+					</li>
+				</mentalStateGivers>
+				<hediffGivers>
+					<li Class="HediffGiver_Random">
+						<hediff>CatatonicBreakdown</hediff>
+						<mtbDays>5</mtbDays>
+						<partsToAffect>
+							<li>Brain</li>
+						</partsToAffect>
+					</li>
+					<li Class="HediffGiver_Random">
+						<hediff>HeartAttack</hediff>
+						<mtbDays>5</mtbDays>
+						<partsToAffect>
+							<li>Heart</li>
+						</partsToAffect>
+					</li>
+					<li Class="HediffGiver_Random">
+						<hediff>BrainShock</hediff>
+						<mtbDays>5</mtbDays>
+						<partsToAffect>
+							<li>Brain</li>
+						</partsToAffect>
+					</li>
+					<li Class="HediffGiver_Random">
+						<hediff>JInv_BigBleedEar</hediff>
+						<mtbDays>1</mtbDays>
+						<partsToAffect>
+							<li>Ear</li>
+						</partsToAffect>
+					</li>
+					<li Class="HediffGiver_Random">
+						<hediff>JInv_BigBleedEye</hediff>
+						<mtbDays>1</mtbDays>
+						<partsToAffect>
+							<li>Eye</li>
+						</partsToAffect>
+					</li>
+					<li Class="HediffGiver_Random">
+						<hediff>JInv_BigBleedNose</hediff>
+						<mtbDays>1</mtbDays>
+						<partsToAffect>
+							<li>Nose</li>
+						</partsToAffect>
+					</li>
+					<li Class="HediffGiver_Random">
+						<hediff>JInvNoiseSnapHediff</hediff>
+						<mtbDays>0.01</mtbDays>
+						<partsToAffect>
+							<li>Brain</li>
+						</partsToAffect>
+					</li>
+				</hediffGivers>
+			</li>
+		</stages>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<disappearsAfterTicks>2500~3500</disappearsAfterTicks>
+			</li>
+		</comps>
+	</HediffDef>
+
+	<HediffDef>
+		<defName>JInvNoiseSnapHediff</defName>
+		<label>owie</label>
+		<description>(cries)</description>
+		<allowMothballIfLowPriorityWorldPawn>true</allowMothballIfLowPriorityWorldPawn>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<isBad>false</isBad>
+		<hediffClass>HediffWithComps</hediffClass>
+		<stages>
+			<li>
+				<painFactor>1.1</painFactor>
+				<painOffset>0.1</painOffset>
+				<statOffsets>
+					<MeleeDodgeChance>-20</MeleeDodgeChance>
+				</statOffsets>
+				<statFactors>
+					<MoveSpeed>0.7</MoveSpeed>
+					<MeleeDamageFactor>0.9</MeleeDamageFactor>
+					<PawnTrapSpringChance>5</PawnTrapSpringChance>
+				</statFactors>
+				<capMods>
+					<li>
+						<capacity>Hearing</capacity>
+						<postFactor>0.8</postFactor>
+					</li>
+					<li>
+						<capacity>Moving</capacity>
+						<postFactor>0.9</postFactor>
+					</li>
+					<li>
+						<capacity>Manipulation</capacity>
+						<postFactor>0.9</postFactor>
+					</li>
+				</capMods>
+				<mentalStateGivers>
+					<li>
+						<mentalState>WanderConfused</mentalState>
+						<mtbDays>50</mtbDays>
+					</li>
+				</mentalStateGivers>
+				<hediffGivers>
+					<li Class="HediffGiver_Random">
+						<hediff>CatatonicBreakdown</hediff>
+						<mtbDays>5</mtbDays>
+						<partsToAffect>
+							<li>Brain</li>
+						</partsToAffect>
+					</li>
+					<li Class="HediffGiver_Random">
+						<hediff>HeartAttack</hediff>
+						<mtbDays>5</mtbDays>
+						<partsToAffect>
+							<li>Heart</li>
+						</partsToAffect>
+					</li>
+					<li Class="HediffGiver_Random">
+						<hediff>BrainShock</hediff>
+						<mtbDays>5</mtbDays>
+						<partsToAffect>
+							<li>Brain</li>
+						</partsToAffect>
+					</li>
+					<li Class="HediffGiver_Random">
+						<hediff>JInv_BigBleedEar</hediff>
+						<mtbDays>1</mtbDays>
+						<partsToAffect>
+							<li>Ear</li>
+						</partsToAffect>
+					</li>
+					<li Class="HediffGiver_Random">
+						<hediff>JInv_BigBleedEye</hediff>
+						<mtbDays>1</mtbDays>
+						<partsToAffect>
+							<li>Eye</li>
+						</partsToAffect>
+					</li>
+					<li Class="HediffGiver_Random">
+						<hediff>JInv_BigBleedNose</hediff>
+						<mtbDays>1</mtbDays>
+						<partsToAffect>
+							<li>Nose</li>
+						</partsToAffect>
+					</li>
+				</hediffGivers>
+			</li>
+		</stages>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<disappearsAfterTicks>2500~3500</disappearsAfterTicks>
+			</li>
+			<li Class="HediffCompProperties_ReactOnDamage">
+				<damageDefIncoming>EMP</damageDefIncoming>
+				<createHediff>JInvNoiseHurtHediff2</createHediff>
+			</li>
+		</comps>
+	</HediffDef>
+
+	<!-- Second EMP Hit -->
+	<HediffDef>
+		<defName>JInvNoiseHurtHediff2</defName>
+		<label>disrupted equilibrium</label>
+		<description>AHHHHH OH MY GOD OW IT HURTS IT HURTS NOTHING HURTS MORE THAN THIS!</description>
+		<allowMothballIfLowPriorityWorldPawn>true</allowMothballIfLowPriorityWorldPawn>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<isBad>false</isBad>
+		<hediffClass>HediffWithComps</hediffClass>
+		<stages>
+			<li>
+				<painFactor>1.1</painFactor>
+				<painOffset>0.1</painOffset>
+				<statOffsets>
+					<MeleeDodgeChance>-20</MeleeDodgeChance>
+				</statOffsets>
+				<statFactors>
+					<MoveSpeed>0.7</MoveSpeed>
+					<MeleeDamageFactor>0.9</MeleeDamageFactor>
+					<PawnTrapSpringChance>5</PawnTrapSpringChance>
+				</statFactors>
+				<capMods>
+					<li>
+						<capacity>Hearing</capacity>
+						<postFactor>0.8</postFactor>
+					</li>
+					<li>
+						<capacity>Moving</capacity>
+						<postFactor>0.9</postFactor>
+					</li>
+					<li>
+						<capacity>Manipulation</capacity>
+						<postFactor>0.9</postFactor>
+					</li>
+				</capMods>
+				<mentalStateGivers>
+					<li>
+						<mentalState>WanderConfused</mentalState>
+						<mtbDays>50</mtbDays>
+					</li>
+				</mentalStateGivers>
+				<hediffGivers>
+					<li Class="HediffGiver_Random">
+						<hediff>CatatonicBreakdown</hediff>
+						<mtbDays>5</mtbDays>
+						<partsToAffect>
+							<li>Brain</li>
+						</partsToAffect>
+					</li>
+					<li Class="HediffGiver_Random">
+						<hediff>HeartAttack</hediff>
+						<mtbDays>5</mtbDays>
+						<partsToAffect>
+							<li>Heart</li>
+						</partsToAffect>
+					</li>
+					<li Class="HediffGiver_Random">
+						<hediff>BrainShock</hediff>
+						<mtbDays>5</mtbDays>
+						<partsToAffect>
+							<li>Brain</li>
+						</partsToAffect>
+					</li>
+					<li Class="HediffGiver_Random">
+						<hediff>JInv_BigBleedEar</hediff>
+						<mtbDays>1</mtbDays>
+						<partsToAffect>
+							<li>Ear</li>
+						</partsToAffect>
+					</li>
+					<li Class="HediffGiver_Random">
+						<hediff>JInv_BigBleedEye</hediff>
+						<mtbDays>1</mtbDays>
+						<partsToAffect>
+							<li>Eye</li>
+						</partsToAffect>
+					</li>
+					<li Class="HediffGiver_Random">
+						<hediff>JInv_BigBleedNose</hediff>
+						<mtbDays>1</mtbDays>
+						<partsToAffect>
+							<li>Nose</li>
+						</partsToAffect>
+					</li>
+					<li Class="HediffGiver_Random">
+						<hediff>JInvNoiseSnapHediff2</hediff>
+						<mtbDays>0.01</mtbDays>
+						<partsToAffect>
+							<li>Brain</li>
+						</partsToAffect>
+					</li>
+				</hediffGivers>
+			</li>
+		</stages>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<disappearsAfterTicks>2500~3500</disappearsAfterTicks>
+			</li>
+		</comps>
+	</HediffDef>
+
+	<HediffDef>
+		<defName>JInvNoiseSnapHediff2</defName>
+		<label>owie</label>
+		<description>(cries)</description>
+		<allowMothballIfLowPriorityWorldPawn>true</allowMothballIfLowPriorityWorldPawn>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<isBad>false</isBad>
+		<hediffClass>HediffWithComps</hediffClass>
+		<stages>
+			<li>
+				<painFactor>1.1</painFactor>
+				<painOffset>0.1</painOffset>
+				<statOffsets>
+					<MeleeDodgeChance>-20</MeleeDodgeChance>
+				</statOffsets>
+				<statFactors>
+					<MoveSpeed>0.7</MoveSpeed>
+					<MeleeDamageFactor>0.9</MeleeDamageFactor>
+					<PawnTrapSpringChance>5</PawnTrapSpringChance>
+				</statFactors>
+				<capMods>
+					<li>
+						<capacity>Hearing</capacity>
+						<postFactor>0.8</postFactor>
+					</li>
+					<li>
+						<capacity>Moving</capacity>
+						<postFactor>0.9</postFactor>
+					</li>
+					<li>
+						<capacity>Manipulation</capacity>
+						<postFactor>0.9</postFactor>
+					</li>
+				</capMods>
+				<mentalStateGivers>
+					<li>
+						<mentalState>WanderConfused</mentalState>
+						<mtbDays>50</mtbDays>
+					</li>
+				</mentalStateGivers>
+				<hediffGivers>
+					<li Class="HediffGiver_Random">
+						<hediff>CatatonicBreakdown</hediff>
+						<mtbDays>5</mtbDays>
+						<partsToAffect>
+							<li>Brain</li>
+						</partsToAffect>
+					</li>
+					<li Class="HediffGiver_Random">
+						<hediff>HeartAttack</hediff>
+						<mtbDays>5</mtbDays>
+						<partsToAffect>
+							<li>Heart</li>
+						</partsToAffect>
+					</li>
+					<li Class="HediffGiver_Random">
+						<hediff>BrainShock</hediff>
+						<mtbDays>5</mtbDays>
+						<partsToAffect>
+							<li>Brain</li>
+						</partsToAffect>
+					</li>
+					<li Class="HediffGiver_Random">
+						<hediff>JInv_BigBleedEar</hediff>
+						<mtbDays>1</mtbDays>
+						<partsToAffect>
+							<li>Ear</li>
+						</partsToAffect>
+					</li>
+					<li Class="HediffGiver_Random">
+						<hediff>JInv_BigBleedEye</hediff>
+						<mtbDays>1</mtbDays>
+						<partsToAffect>
+							<li>Eye</li>
+						</partsToAffect>
+					</li>
+					<li Class="HediffGiver_Random">
+						<hediff>JInv_BigBleedNose</hediff>
+						<mtbDays>1</mtbDays>
+						<partsToAffect>
+							<li>Nose</li>
+						</partsToAffect>
+					</li>
+					<li Class="HediffGiver_Random">
+						<hediff>JInvNoiseSnapHediff</hediff>
+						<mtbDays>0.01</mtbDays>
+						<partsToAffect>
+							<li>Brain</li>
+						</partsToAffect>
+					</li>
+				</hediffGivers>
+			</li>
+		</stages>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<disappearsAfterTicks>2500~3500</disappearsAfterTicks>
+			</li>
+			<li Class="HediffCompProperties_ReactOnDamage">
+				<damageDefIncoming>EMP</damageDefIncoming>
+				<createHediff>JInvNoiseHurtHediff3</createHediff>
+			</li>
+		</comps>
+	</HediffDef>
+
+	<!-- Third EMP Hit -->
+	<HediffDef>
+		<defName>JInvNoiseHurtHediff3</defName>
+		<label>disrupted equilibrium</label>
+		<description>AHHHHH OH MY GOD OW IT HURTS IT HURTS NOTHING HURTS MORE THAN THIS!</description>
+		<allowMothballIfLowPriorityWorldPawn>true</allowMothballIfLowPriorityWorldPawn>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<isBad>false</isBad>
+		<hediffClass>HediffWithComps</hediffClass>
+		<stages>
+			<li>
+				<painFactor>1.1</painFactor>
+				<painOffset>0.1</painOffset>
+				<statOffsets>
+					<MeleeDodgeChance>-20</MeleeDodgeChance>
+				</statOffsets>
+				<statFactors>
+					<MoveSpeed>0.7</MoveSpeed>
+					<MeleeDamageFactor>0.9</MeleeDamageFactor>
+					<PawnTrapSpringChance>5</PawnTrapSpringChance>
+				</statFactors>
+				<capMods>
+					<li>
+						<capacity>Hearing</capacity>
+						<postFactor>0.8</postFactor>
+					</li>
+					<li>
+						<capacity>Moving</capacity>
+						<postFactor>0.9</postFactor>
+					</li>
+					<li>
+						<capacity>Manipulation</capacity>
+						<postFactor>0.9</postFactor>
+					</li>
+				</capMods>
+				<mentalStateGivers>
+					<li>
+						<mentalState>WanderConfused</mentalState>
+						<mtbDays>50</mtbDays>
+					</li>
+				</mentalStateGivers>
+				<hediffGivers>
+					<li Class="HediffGiver_Random">
+						<hediff>CatatonicBreakdown</hediff>
+						<mtbDays>5</mtbDays>
+						<partsToAffect>
+							<li>Brain</li>
+						</partsToAffect>
+					</li>
+					<li Class="HediffGiver_Random">
+						<hediff>HeartAttack</hediff>
+						<mtbDays>5</mtbDays>
+						<partsToAffect>
+							<li>Heart</li>
+						</partsToAffect>
+					</li>
+					<li Class="HediffGiver_Random">
+						<hediff>BrainShock</hediff>
+						<mtbDays>5</mtbDays>
+						<partsToAffect>
+							<li>Brain</li>
+						</partsToAffect>
+					</li>
+					<li Class="HediffGiver_Random">
+						<hediff>JInv_BigBleedEar</hediff>
+						<mtbDays>1</mtbDays>
+						<partsToAffect>
+							<li>Ear</li>
+						</partsToAffect>
+					</li>
+					<li Class="HediffGiver_Random">
+						<hediff>JInv_BigBleedEye</hediff>
+						<mtbDays>1</mtbDays>
+						<partsToAffect>
+							<li>Eye</li>
+						</partsToAffect>
+					</li>
+					<li Class="HediffGiver_Random">
+						<hediff>JInv_BigBleedNose</hediff>
+						<mtbDays>1</mtbDays>
+						<partsToAffect>
+							<li>Nose</li>
+						</partsToAffect>
+					</li>
+				</hediffGivers>
+			</li>
+		</stages>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<disappearsAfterTicks>2500~3500</disappearsAfterTicks>
+			</li>
+		</comps>
+	</HediffDef>
+
+	<!-- Extra Agony -->
+	<HediffDef ParentName="InjuryBase">
+		<defName>JInv_BigBleedEar</defName>
+		<label>bleeding ear</label>
+		<description>A bleeding ear.</description>
+		<initialSeverity>5</initialSeverity>
+		<comps>
+			<li Class="HediffCompProperties_TendDuration">
+				<labelTendedWell>bandaged</labelTendedWell>
+				<labelTendedWellInner>sutured</labelTendedWellInner>
+				<labelSolidTendedWell>set</labelSolidTendedWell>
+			</li>
+			<li Class="HediffCompProperties_Infecter">
+				<infectionChance>0.15</infectionChance>
+			</li>
+			<li Class="HediffCompProperties_GetsPermanent">
+				<permanentLabel>bleed scarring</permanentLabel>
+			</li>
+		</comps>
+		<injuryProps>
+			<painPerSeverity>0.0250</painPerSeverity>
+			<averagePainPerSeverityPermanent>0.0125</averagePainPerSeverityPermanent>
+			<bleedRate>0.12</bleedRate>
+			<canMerge>true</canMerge>
+			<destroyedLabel>sounded out</destroyedLabel>
+		</injuryProps>
+	</HediffDef>
+
+	<HediffDef ParentName="InjuryBase">
+		<defName>JInv_BigBleedEye</defName>
+		<label>bleeding eye</label>
+		<description>A bleeding eye.</description>
+		<initialSeverity>3</initialSeverity>
+		<comps>
+			<li Class="HediffCompProperties_TendDuration">
+				<labelTendedWell>bandaged</labelTendedWell>
+				<labelTendedWellInner>sutured</labelTendedWellInner>
+				<labelSolidTendedWell>set</labelSolidTendedWell>
+			</li>
+			<li Class="HediffCompProperties_Infecter">
+				<infectionChance>0.15</infectionChance>
+			</li>
+			<li Class="HediffCompProperties_GetsPermanent">
+				<permanentLabel>bleed scarring</permanentLabel>
+			</li>
+		</comps>
+		<injuryProps>
+			<painPerSeverity>0.0250</painPerSeverity>
+			<averagePainPerSeverityPermanent>0.0125</averagePainPerSeverityPermanent>
+			<bleedRate>0.12</bleedRate>
+			<canMerge>true</canMerge>
+			<destroyedLabel>sounded out</destroyedLabel>
+		</injuryProps>
+	</HediffDef>
+
+	<HediffDef ParentName="InjuryBase">
+		<defName>JInv_BigBleedNose</defName>
+		<label>bleeding nose</label>
+		<description>A bleeding nose.</description>
+		<initialSeverity>3</initialSeverity>
+		<comps>
+			<li Class="HediffCompProperties_TendDuration">
+				<labelTendedWell>bandaged</labelTendedWell>
+				<labelTendedWellInner>sutured</labelTendedWellInner>
+				<labelSolidTendedWell>set</labelSolidTendedWell>
+			</li>
+			<li Class="HediffCompProperties_Infecter">
+				<infectionChance>0.15</infectionChance>
+			</li>
+			<li Class="HediffCompProperties_GetsPermanent">
+				<permanentLabel>bleed scarring</permanentLabel>
+			</li>
+		</comps>
+		<injuryProps>
+			<painPerSeverity>0.0250</painPerSeverity>
+			<averagePainPerSeverityPermanent>0.0125</averagePainPerSeverityPermanent>
+			<bleedRate>0.12</bleedRate>
+			<canMerge>true</canMerge>
+			<destroyedLabel>sounded out</destroyedLabel>
+		</injuryProps>
+	</HediffDef>
+	
+	<ThoughtDef>
+		<defName>JInvNoiseHurtHediff</defName>
+		<workerClass>ThoughtWorker_Hediff</workerClass>
+		<hediff>JInvNoiseHurtHediff</hediff>
+		<validWhileDespawned>true</validWhileDespawned>
+		<developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
+		<stages>
+			<li>
+				<label>excessive agony</label>
+				<description>AHHHHH OH MY GOD OW IT HURTS IT HURTS NOTHING HURTS MORE THAN THIS!</description>
+				<baseMoodEffect>-100</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	
+</Defs>

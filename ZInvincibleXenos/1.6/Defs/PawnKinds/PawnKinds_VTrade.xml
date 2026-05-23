@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- Viltrum Trader - NOT CANCELLED -->
+
+  <PawnKindDef Name="Vilt_OutlanderBase" Abstract="True">
+    <race>Human</race>
+    <defaultFactionDef>ViltrumEmpire</defaultFactionDef>
+    <chemicalAddictionChance>0.35</chemicalAddictionChance>
+    <backstoryCryptosleepCommonality>0.01</backstoryCryptosleepCommonality>
+    <invNutrition>2.55</invNutrition>
+    <apparelTags>
+      <li>IndustrialBasic</li>
+      <li>IndustrialAdvanced</li>
+    </apparelTags>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="Vilt_OutlanderBase" Name="Vilt_TraderBase">
+    <defName>Vilt_Town_Trader</defName>
+    <label>town trader</label>
+    <trader>true</trader>
+    <combatPower>45</combatPower>
+    <isFighter>false</isFighter>
+    <gearHealthRange>1~1</gearHealthRange>
+    <weaponTags>
+      <li>Gun</li>
+      <li>IndustrialGunAdvanced</li>
+      <li>SpacerGun</li>
+    </weaponTags>
+    <weaponMoney>1000~2000</weaponMoney>
+    <apparelMoney>2000~8000</apparelMoney>
+    <apparelTags>
+      <li>IndustrialBasic</li>
+      <li>IndustrialMilitaryBasic</li>
+      <li>IndustrialMilitaryAdvanced</li>
+      <li>SpacerMilitary</li>
+      <li>BeltDefensePop</li>
+    </apparelTags>
+    <techHediffsChance>1</techHediffsChance>
+    <techHediffsMoney>6000~12000</techHediffsMoney>
+    <techHediffsTags>
+      <li>Poor</li>
+      <li>Simple</li>
+      <li>Advanced</li>
+      <li>ImplantEmpireCommon</li>
+    </techHediffsTags>
+    <techHediffsRequired>
+      <li>DeathAcidifier</li>
+      <li>Painstopper</li>
+			<li MayRequire="Ludeon.RimWorld.Royalty">Coagulator</li>
+			<li MayRequire="Ludeon.RimWorld.Royalty">HealingEnhancer</li>
+			<li MayRequire="Ludeon.RimWorld.Royalty">CircadianAssistant</li>
+			<li MayRequire="Ludeon.RimWorld.Royalty">LoveEnhancer</li>
+			<li MayRequire="Ludeon.RimWorld.Royalty">AestheticShaper</li>
+			<li MayRequire="Ludeon.RimWorld.Royalty">AestheticNose</li>
+			<li MayRequire="Ludeon.RimWorld.Royalty,FrozenSnowFox.AdvancedBionicsExpansion">FSFImplantBrainConsciousness</li>
+			<li MayRequire="Ludeon.RimWorld.Royalty,FrozenSnowFox.AdvancedBionicsExpansion">FSFAdvBionicStomach</li>
+			<li MayRequire="Ludeon.RimWorld.Royalty,FrozenSnowFox.AdvancedBionicsExpansion">FSFImplantTorsoClimateControl</li>
+			<li MayRequire="Ludeon.RimWorld.Royalty,FrozenSnowFox.AdvancedBionicsExpansion">FSFImplantTorsoRespirator</li>
+			<li MayRequire="Ludeon.RimWorld.Royalty,FrozenSnowFox.AdvancedBionicsExpansion">FSFImplantEMPShield</li>
+			<li MayRequire="Ludeon.RimWorld.Royalty,FrozenSnowFox.AdvancedBionicsExpansion">Joywire</li>
+    </techHediffsRequired>
+    <initialWillRange>2~4</initialWillRange>
+    <initialResistanceRange>12~20</initialResistanceRange>
+    <xenotypeSet>
+      <xenotypeChances>
+        <Highmate>0.04</Highmate>
+      </xenotypeChances>
+    </xenotypeSet>
+  </PawnKindDef>
+
+</Defs>

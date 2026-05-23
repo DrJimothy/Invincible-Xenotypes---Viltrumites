@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+<!-- Viltrumite -->
+<Operation Class="PatchOperationAdd">
+    <xpath>Defs/FactionDef[defName="ViltrumEmpire"]/pawnGroupMakers</xpath>
+    <value>
+      <li>
+        <!-- Dryad Attack -->
+        <kindDef>Combat</kindDef>
+        <commonality>1</commonality>
+        <options>
+          <Vilgrunt_Phytokin>1</Vilgrunt_Phytokin>
+          <VDE_AwakenedDryad_Clawer>1</VDE_AwakenedDryad_Clawer>
+          <VDE_AwakenedDryad_Barkskin>1</VDE_AwakenedDryad_Barkskin>
+          <VDE_AwakenedDryad_Spitter>1</VDE_AwakenedDryad_Spitter>
+        </options>
+      </li>
+      <li>
+        <!-- Dryad Attack plus Viltrumite -->
+        <kindDef>Combat</kindDef>
+        <commonality>1</commonality>
+        <options>
+          <Viltrumite_Fighter_Simple>1</Viltrumite_Fighter_Simple>
+          <Vilgrunt_Phytokin>4</Vilgrunt_Phytokin>
+          <VDE_AwakenedDryad_Clawer>5</VDE_AwakenedDryad_Clawer>
+          <VDE_AwakenedDryad_Barkskin>5</VDE_AwakenedDryad_Barkskin>
+          <VDE_AwakenedDryad_Spitter>5</VDE_AwakenedDryad_Spitter>
+        </options>
+      </li>
+    </value>
+</Operation>
+
+</Patch>

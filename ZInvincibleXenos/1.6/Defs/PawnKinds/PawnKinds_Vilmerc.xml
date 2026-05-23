@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<PawnKindDef Name="VilmercBase" Abstract="True">
+		<race>Human</race>
+		<defaultFactionDef>ViltrumEmpire</defaultFactionDef>
+		<chemicalAddictionChance>0.1</chemicalAddictionChance>
+		<invNutrition>4</invNutrition>
+		<!--itemQuality>Normal</itemQuality -->
+		<backstoryCryptosleepCommonality>0.08</backstoryCryptosleepCommonality>
+		<maxGenerationAge>65</maxGenerationAge>
+		<combatEnhancingDrugsChance>1</combatEnhancingDrugsChance>
+		<combatEnhancingDrugsCount>1~2</combatEnhancingDrugsCount>
+		<biocodeWeaponChance>1</biocodeWeaponChance>
+		<techHediffsChance>1</techHediffsChance>
+		<techHediffsMoney>1400~2400</techHediffsMoney>
+		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+		<gearHealthRange>0.5~1</gearHealthRange>
+		<techHediffsRequired>
+			<li>DeathAcidifier</li>
+			<li>Painstopper</li>
+		</techHediffsRequired>
+		<techHediffsTags>
+			<li>Simple</li>
+			<li>Advanced</li>
+			<li>ImplantEmpireCommon</li>
+		</techHediffsTags>
+		<disallowedTraits>
+			<li>Wimp</li>
+			<li>Delicate</li>
+			<li>BodyPurist</li>
+			<li>Nudist</li>
+		</disallowedTraits>
+		<initialWillRange>2~4</initialWillRange>
+		<initialResistanceRange>5~20</initialResistanceRange>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="VilmercBase">
+		<defName>Vilgrunt_Mercenary_Gunner</defName>
+		<label>vilmerc gunner</label>
+		<combatPower>127</combatPower>
+		<apparelTags>
+			<li>IndustrialBasic</li>
+			<li>SpacerMilitary</li>
+			<li>BeltDefensePop</li>
+		</apparelTags>
+		<apparelMoney>2000~3000</apparelMoney>
+		<weaponMoney>660~1300</weaponMoney>
+		<weaponTags>
+			<li>Gun</li>
+			<li>IndustrialGunAdvanced</li>
+			<li>SpacerGun</li>
+		</weaponTags>
+		<disallowedTraits>
+			<li>Brawler</li>
+		</disallowedTraits>
+		<skills>
+			<li>
+				<skill>Shooting</skill>
+				<range>4~14</range>
+			</li>
+		</skills>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="VilmercBase">
+		<defName>Vilmerc_Sniper</defName>
+		<label>vilmerc sniper</label>
+		<combatPower>165</combatPower>
+		<apparelTags>
+			<li>IndustrialBasic</li>
+			<li>SpacerMilitary</li>
+		</apparelTags>
+		<apparelMoney>2000~3000</apparelMoney>
+		<weaponMoney>1200~1200</weaponMoney>
+		<weaponTags>
+			<li>SniperRifle</li>
+			<li>JimPew_SniperStrong</li>
+		</weaponTags>
+		<skills>
+			<li>
+				<skill>Shooting</skill>
+				<range>8~16</range>
+			</li>
+		</skills>
+	</PawnKindDef>
+	
+	<PawnKindDef ParentName="VilmercBase">
+		<defName>Vilmerc_Slasher</defName>
+		<label>vilmerc slasher</label>
+		<combatPower>210</combatPower>
+		<canBeSapper>true</canBeSapper>
+		<apparelTags>
+			<li>IndustrialBasic</li>
+			<li>SpacerMilitary</li>
+		</apparelTags>
+		<apparelRequired>
+			<li>Apparel_ShieldBelt</li>
+		</apparelRequired>
+		<apparelMoney>600~2800</apparelMoney>
+		<weaponMoney>400~1000</weaponMoney>
+		<weaponTags>
+			<li>MedievalMeleeDecent</li>
+			<li>MedievalMeleeAdvanced</li>
+		</weaponTags>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="VilmercBase">
+		<defName>Vilgrunt_Mercenary_Heavy</defName>
+		<label>heavy vilmerc</label>
+		<labelPlural>heavy mercenaries</labelPlural>
+		<combatPower>210</combatPower>
+		<gearHealthRange>0.7~1</gearHealthRange>
+		<apparelTags>
+			<li>IndustrialBasic</li>
+			<li>SpacerMilitary</li>
+			<li>BeltDefensePop</li>
+		</apparelTags>
+		<apparelMoney>400~700</apparelMoney>
+		<weaponMoney>2400~2400</weaponMoney>
+		<weaponTags>
+			<li>GunHeavy</li>
+			<li>GunSingleUse</li>
+			<li>Flamethrower</li>
+		</weaponTags>
+	</PawnKindDef>
+
+	<!-- Elite tier - merc elite, pirate boss -->
+	
+	<PawnKindDef ParentName="VilmercBase">
+		<defName>Vilgrunt_Mercenary_Elite</defName>
+		<combatPower>210</combatPower>
+		<maxGenerationAge>45</maxGenerationAge>
+		<backstoryCryptosleepCommonality>0.25</backstoryCryptosleepCommonality>
+		<gearHealthRange>1~1</gearHealthRange>
+		<apparelTags>
+			<li>IndustrialBasic</li>
+			<li>SpacerMilitary</li>
+			<li>BeltDefensePop</li>
+		</apparelTags>
+		<apparelMoney>5000~7000</apparelMoney>
+		<weaponMoney>1000~2800</weaponMoney>
+		<weaponTags>
+			<li>IndustrialGunAdvanced</li>
+			<li>SpacerGun</li>
+		</weaponTags>
+		<disallowedTraits>
+			<li>Brawler</li>
+		</disallowedTraits>
+		<techHediffsMoney>2000~2400</techHediffsMoney>
+		<techHediffsTags>
+			<li>Advanced</li>
+			<li>ImplantEmpireCommon</li>
+		</techHediffsTags>
+		<initialWillRange>8~12</initialWillRange>
+		<skills>
+			<li>
+				<skill>Shooting</skill>
+				<range>10~20</range>
+			</li>
+		</skills>
+	</PawnKindDef>
+
+</Defs>

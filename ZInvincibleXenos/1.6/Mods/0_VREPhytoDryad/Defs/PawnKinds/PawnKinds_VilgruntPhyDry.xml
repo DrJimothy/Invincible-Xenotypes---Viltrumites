@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!--===================== Viltrum fighters: punishment ranks =========================-->
+
+  <!-- Vilgrunt Shotgunner -->
+  <PawnKindDef ParentName="Vilgrunt_WarriorBase">
+    <combatPower>335</combatPower>
+    <defName>Vilgrunt_Phytokin</defName>
+    <label>vilgrunt shotgunner</label>
+    <labelPlural>vilgrunt shotgunners</labelPlural>
+    <apparelMoney>10000~20000</apparelMoney>
+    <apparelTags>
+      <li>BeltDefensePop</li>
+      <li>IndustrialBasic</li>
+      <li>SpacerMilitary</li>
+    </apparelTags>
+    <apparelRequired>
+      <li>Apparel_PowerArmorHelmet</li>
+      <li>Apparel_ArmorRecon</li>
+    </apparelRequired>
+    <itemQuality>Legendary</itemQuality>
+    <maxApparelQuality>Legendary</maxApparelQuality>
+    <forceWeaponQuality>Legendary</forceWeaponQuality>
+    <weaponMoney>5000~7000</weaponMoney>
+    <weaponTags>
+      <li>JimPew_StrongShotgun</li>
+    </weaponTags>
+    <techHediffsMoney>1000~2000</techHediffsMoney>
+    <techHediffsTags>
+      <li>Advanced</li>
+      <li>ImplantEmpireCommon</li>
+    </techHediffsTags>
+    <backstoryFiltersOverride>
+      <li>
+        <categories>
+			    <li>Vilgrunt</li>
+        </categories>
+      </li>
+    </backstoryFiltersOverride>
+    <initialResistanceRange>15~23</initialResistanceRange>
+    <initialWillRange>3~5</initialWillRange>
+    <disallowedTraits>
+      <li>Brawler</li>
+      <li>Wimp</li>
+      <li>Delicate</li>
+    </disallowedTraits>
+    <useFactionXenotypes>false</useFactionXenotypes>
+    <xenotypeSet>
+      <xenotypeChances>
+        <VRE_Poluxkin>1</VRE_Poluxkin>
+        <VRE_Gauranlenkin>0.2</VRE_Gauranlenkin>
+        <VRE_Animakin MayRequire="Ludeon.RimWorld.Royalty">0.2</VRE_Animakin>
+        <ArcheanKin MayRequire="dustydinoface.Archeankin">0.2</ArcheanKin>
+      </xenotypeChances>
+    </xenotypeSet>
+  </PawnKindDef>
+
+</Defs>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+<!-- Viltrumite -->
+<Operation Class="PatchOperationRemove">
+	<xpath>Defs/BackstoryDef[defName="JVBackstory_Regent"]/forcedTraits/Nerves</xpath>
+</Operation>
+<!-- Viltrumite -->
+<Operation Class="PatchOperationAdd">
+    <xpath>Defs/BackstoryDef[defName="JVBackstory_Regent"]/forcedTraits</xpath>
+    <value>
+        <VTE_MartialArtist />
+        <VTE_Brave />
+    </value>
+</Operation>
+
+</Patch>

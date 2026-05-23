@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+
+	<HediffDef>
+		<defName>JInvFlightGiverHediff</defName>
+		<label>regrowth</label>
+		<labelNoun>hediff giver</labelNoun>
+		<description>allows regaining of important parts or abilities if lost</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<everCurableByItem>false</everCurableByItem>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<isBad>false</isBad>
+    <stages>
+      <li>
+        <label>regrowth</label>
+        <hediffGivers>
+          <li Class="HediffGiver_Random">
+            <hediff>V_Flight</hediff>
+            <mtbDays>2</mtbDays>
+          </li>
+        </hediffGivers>
+      </li>
+    </stages>
+	</HediffDef>
+	
+</Defs>

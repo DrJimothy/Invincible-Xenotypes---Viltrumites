@@ -1,0 +1,534 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- ============== Viltrum titles - Citizenship ============================= -->
+
+  <RoyalTitleDef Abstract="True" Name="BaseViltrumTitle" >
+    <tags>
+      <li>ViltrumTitle</li>
+    </tags>
+    <awardThought>GainedTitle</awardThought>
+    <lostThought>LostTitle</lostThought>
+  </RoyalTitleDef>
+
+  <RoyalTitleDef ParentName="BaseViltrumTitle">
+    <defName>Vilt_Peon</defName>
+    <label>peon</label>
+    <description>Privileges? None. Rights? What are those? Protections? Lol, lmao even.</description>
+    <seniority>0</seniority>
+    <favorCost>1</favorCost>
+    <changeHeirQuestPoints>1000</changeHeirQuestPoints>
+    <allowDignifiedMeditationFocus>False</allowDignifiedMeditationFocus>
+    <awardWorkerClass>RoyalTitleAwardWorker_Instant</awardWorkerClass>
+  </RoyalTitleDef>
+
+  <RoyalTitleDef ParentName="BaseViltrumTitle">
+    <defName>Vilt_Underling</defName>
+    <label>underling</label>
+    <description>Loyalty and utility are starting to be noticed.</description>
+    <seniority>100</seniority>
+    <favorCost>2</favorCost>
+    <changeHeirQuestPoints>1000</changeHeirQuestPoints>
+    <allowDignifiedMeditationFocus>False</allowDignifiedMeditationFocus>
+    <recruitmentResistanceOffset>1</recruitmentResistanceOffset>
+    <commonality>2</commonality>
+    <awardWorkerClass>RoyalTitleAwardWorker_Instant</awardWorkerClass>
+  </RoyalTitleDef>
+
+  <RoyalTitleDef ParentName="BaseViltrumTitle">
+    <defName>Vilt_Servant</defName>
+    <label>servant</label>
+    <description>No rights yet, but Viltrum considers this person useful enough for basic protections.</description>
+    <seniority>200</seniority>
+    <favorCost>3</favorCost>
+    <changeHeirQuestPoints>1000</changeHeirQuestPoints>
+    <allowDignifiedMeditationFocus>False</allowDignifiedMeditationFocus>
+    <recruitmentResistanceOffset>2</recruitmentResistanceOffset>
+    <commonality>2</commonality>
+    <awardWorkerClass>RoyalTitleAwardWorker_Instant</awardWorkerClass>
+  </RoyalTitleDef>
+
+  <RoyalTitleDef ParentName="BaseViltrumTitle">
+    <defName>Vilt_Citizen</defName>
+    <label>citizen</label>
+    <description>Citizens, with their Viltrum citizenship, receive basic rights and protections from the state. Most born under Viltrum reach this rank by adulthood with hard labour or military contribution.</description>
+    <seniority>300</seniority>
+    <favorCost>4</favorCost>
+    <changeHeirQuestPoints>1000</changeHeirQuestPoints>
+    <allowDignifiedMeditationFocus>False</allowDignifiedMeditationFocus>
+    <recruitmentResistanceOffset>3</recruitmentResistanceOffset>
+    <commonality>2</commonality>
+    <awardWorkerClass>RoyalTitleAwardWorker_Instant</awardWorkerClass>
+  </RoyalTitleDef>
+
+  <!-- ============== THE GOONS ============================= -->
+
+  <RoyalTitleDef ParentName="BaseViltrumTitle">
+    <defName>Vilt_Stooge</defName>
+    <label>stooge</label>
+    <description>Mmm yummy cannonfodder for the enemy warbeasts to eat yum yum yum.</description>
+    <seniority>400</seniority>
+    <favorCost>6</favorCost>
+    <changeHeirQuestPoints>1000</changeHeirQuestPoints>
+    <allowDignifiedMeditationFocus>False</allowDignifiedMeditationFocus>
+    <permitPointsAwarded>1</permitPointsAwarded>
+    <recruitmentResistanceOffset>4</recruitmentResistanceOffset>
+    <commonality>2</commonality>
+    <awardWorkerClass>RoyalTitleAwardWorker_Instant</awardWorkerClass>
+  </RoyalTitleDef>
+
+  <RoyalTitleDef ParentName="BaseViltrumTitle">
+    <defName>Vilt_Mook</defName>
+    <label>mook</label>
+    <description>There is no greater privilege than being grabbed and ripped in half by your Viltrumite leader cos they were bored.</description>
+    <seniority>500</seniority>
+    <favorCost>8</favorCost>
+    <changeHeirQuestPoints>1000</changeHeirQuestPoints>
+    <allowDignifiedMeditationFocus>False</allowDignifiedMeditationFocus>
+    <permitPointsAwarded>1</permitPointsAwarded>
+    <recruitmentResistanceOffset>5</recruitmentResistanceOffset>
+    <commonality>2</commonality>
+    <awardWorkerClass>RoyalTitleAwardWorker_Instant</awardWorkerClass>
+  </RoyalTitleDef>
+
+  <RoyalTitleDef ParentName="BaseViltrumTitle">
+    <defName>Vilt_Grunt</defName>
+    <label>grunt</label>
+    <description>When wanting to behead someone cos they're bored, your Viltrumite leader will probably walk past you to behead a mook or stooge instead.</description>
+    <seniority>600</seniority>
+    <favorCost>10</favorCost>
+    <changeHeirQuestPoints>1000</changeHeirQuestPoints>
+    <allowDignifiedMeditationFocus>False</allowDignifiedMeditationFocus>
+    <permitPointsAwarded>1</permitPointsAwarded>
+    <recruitmentResistanceOffset>7</recruitmentResistanceOffset>
+    <commonality>2</commonality>
+    <awardWorkerClass>RoyalTitleAwardWorker_Instant</awardWorkerClass>
+  </RoyalTitleDef>
+
+  <RoyalTitleDef ParentName="BaseViltrumTitle">
+    <defName>Vilt_Goon</defName>
+    <label>goon</label>
+    <description>Served Viltrum well enough to be acknowledged as a goon? Now that's some real gooning!</description>
+    <seniority>700</seniority>
+    <favorCost>16</favorCost>
+    <changeHeirQuestPoints>1000</changeHeirQuestPoints>
+    <allowDignifiedMeditationFocus>False</allowDignifiedMeditationFocus>
+    <permitPointsAwarded>1</permitPointsAwarded>
+    <recruitmentResistanceOffset>8</recruitmentResistanceOffset>
+    <commonality>2</commonality>
+    <awardWorkerClass>RoyalTitleAwardWorker_Instant</awardWorkerClass>
+  </RoyalTitleDef>
+
+  <!-- ============== Soldier ============================= -->
+
+  <RoyalTitleDef ParentName="BaseViltrumTitle">
+    <defName>Vilt_Cadet</defName>
+    <label>cadet</label>
+    <description>Cadets are those in consideration for personalized, expensive equipment, modifications, and more intense missions. Some, especially Viltrumites, are raised for and then granted this rank, rather than earning it.</description>
+    <seniority>800</seniority>
+    <favorCost>19</favorCost>
+    <changeHeirQuestPoints>1000</changeHeirQuestPoints>
+    <permitPointsAwarded>1</permitPointsAwarded>
+    <recruitmentResistanceOffset>9</recruitmentResistanceOffset>
+    <commonality>0.2</commonality>
+    <awardWorkerClass>RoyalTitleAwardWorker_Instant</awardWorkerClass>
+  </RoyalTitleDef>
+
+  <RoyalTitleDef ParentName="BaseViltrumTitle">
+    <defName>Vilt_Soldier</defName>
+    <label>soldier</label>
+    <description>A genuine soldier of the Viltrum Empire, expected to emerge victorious from intense battles and wars.</description>
+    <seniority>900</seniority>
+    <favorCost>22</favorCost>
+    <changeHeirQuestPoints>1000</changeHeirQuestPoints>
+    <permitPointsAwarded>1</permitPointsAwarded>
+    <recruitmentResistanceOffset>10</recruitmentResistanceOffset>
+    <commonality>0.2</commonality>
+    <awardWorkerClass>RoyalTitleAwardWorker_Instant</awardWorkerClass>
+  </RoyalTitleDef>
+
+  <RoyalTitleDef ParentName="BaseViltrumTitle">
+    <defName>Vilt_Officer</defName>
+    <label>officer</label>
+    <description>An officer of the Viltrum Empire, expected to be capable of conquering strong planets.</description>
+    <seniority>800</seniority>
+    <favorCost>25</favorCost>
+    <changeHeirQuestPoints>1000</changeHeirQuestPoints>
+    <permitPointsAwarded>1</permitPointsAwarded>
+    <recruitmentResistanceOffset>11</recruitmentResistanceOffset>
+    <commonality>0.2</commonality>
+    <awardWorkerClass>RoyalTitleAwardWorker_Instant</awardWorkerClass>
+  </RoyalTitleDef>
+
+  <RoyalTitleDef ParentName="BaseViltrumTitle">
+    <defName>Vilt_Lieutenant</defName>
+    <label>lieutenant</label>
+    <description>An lieutenant of the Viltrum Empire, expected to be capable of enforcing the will of the higher-ups onto and defeating cadets, soldiers and officers.</description>
+    <seniority>900</seniority>
+    <favorCost>28</favorCost>
+    <changeHeirQuestPoints>1000</changeHeirQuestPoints>
+    <permitPointsAwarded>1</permitPointsAwarded>
+    <recruitmentResistanceOffset>12</recruitmentResistanceOffset>
+    <commonality>0.2</commonality>
+    <awardWorkerClass>RoyalTitleAwardWorker_Instant</awardWorkerClass>
+  </RoyalTitleDef>
+
+  <!-- ============== Command Ranks ============================= -->
+
+  <RoyalTitleDef ParentName="BaseViltrumTitle">
+    <defName>Vilt_Captain</defName>
+    <label>captain</label>
+    <description>An captain in the Viltrum Empire, allowed to give orders to Viltrumites and command their own mega-ship.</description>
+    <seniority>1000</seniority>
+    <favorCost>32</favorCost>
+    <changeHeirQuestPoints>1000</changeHeirQuestPoints>
+    <permitPointsAwarded>1</permitPointsAwarded>
+    <recruitmentResistanceOffset>13</recruitmentResistanceOffset>
+    <commonality>0.1</commonality>
+    <throneRoomRequirements>
+      <li Class="RoomRequirement_HasAssignedThroneAnyOf">
+        <things>
+          <li>Throne</li>
+          <li>GrandThrone</li>
+        </things>
+      </li>
+      <li Class="RoomRequirement_Area">
+        <area>12</area>
+      </li>
+      <li Class="RoomRequirement_Impressiveness">
+        <impressiveness>60</impressiveness>
+      </li>
+      <li Class="RoomRequirement_TerrainWithTags">
+        <labelKey>RoomRequirementAllFloored</labelKey>
+        <tags>
+          <li>Floor</li>
+          <li>FineFloor</li>
+        </tags>
+      </li>
+      <li Class="RoomRequirement_ForbiddenBuildings">
+        <labelKey>RoomRequirementNoProductionFacilities</labelKey>
+        <buildingTags><li>Production</li></buildingTags>
+      </li>
+      <li Class="RoomRequirement_ForbiddenBuildings">
+        <labelKey>RoomRequirementNoBeds</labelKey>
+        <buildingTags><li>Bed</li></buildingTags>
+      </li>
+      <li Class="RoomRequirement_ForbiddenBuildings" MayRequire="Ludeon.RimWorld.Biotech">
+        <labelKey>RoomRequirementNoBiotechBuildings</labelKey>
+        <buildingTags><li>Biotech</li></buildingTags>
+      </li>
+      <li Class="RoomRequirement_ForbiddenBuildings" MayRequire="Ludeon.RimWorld.Anomaly">
+        <labelKey>RoomRequirementNoAnomalyBuildings</labelKey>
+        <buildingTags><li>Anomaly</li></buildingTags>
+      </li>
+    </throneRoomRequirements>
+    <grantedAbilities><li>Speech</li></grantedAbilities>
+    <speechCooldown>900000</speechCooldown>
+    <awardWorkerClass>RoyalTitleAwardWorker_Instant</awardWorkerClass>
+  </RoyalTitleDef>
+
+  <RoyalTitleDef ParentName="BaseViltrumTitle">
+    <defName>Vilt_Commander</defName>
+    <label>commander</label>
+    <description>An commander in the Viltrum Empire, allowed to give orders to Viltrumites and command their own giga-ship.</description>
+    <seniority>1100</seniority>
+    <favorCost>36</favorCost>
+    <changeHeirQuestPoints>1000</changeHeirQuestPoints>
+    <permitPointsAwarded>1</permitPointsAwarded>
+    <recruitmentResistanceOffset>14</recruitmentResistanceOffset>
+    <commonality>0.1</commonality>
+    <throneRoomRequirements>
+      <li Class="RoomRequirement_HasAssignedThroneAnyOf">
+        <things>
+          <li>Throne</li>
+          <li>GrandThrone</li>
+        </things>
+      </li>
+      <li Class="RoomRequirement_Area">
+        <area>15</area>
+      </li>
+      <li Class="RoomRequirement_Impressiveness">
+        <impressiveness>70</impressiveness>
+      </li>
+      <li Class="RoomRequirement_TerrainWithTags">
+        <labelKey>RoomRequirementAllFloored</labelKey>
+        <tags>
+          <li>Floor</li>
+          <li>FineFloor</li>
+        </tags>
+      </li>
+      <li Class="RoomRequirement_ForbiddenBuildings">
+        <labelKey>RoomRequirementNoProductionFacilities</labelKey>
+        <buildingTags><li>Production</li></buildingTags>
+      </li>
+      <li Class="RoomRequirement_ForbiddenBuildings">
+        <labelKey>RoomRequirementNoBeds</labelKey>
+        <buildingTags><li>Bed</li></buildingTags>
+      </li>
+      <li Class="RoomRequirement_ForbiddenBuildings" MayRequire="Ludeon.RimWorld.Biotech">
+        <labelKey>RoomRequirementNoBiotechBuildings</labelKey>
+        <buildingTags><li>Biotech</li></buildingTags>
+      </li>
+      <li Class="RoomRequirement_ForbiddenBuildings" MayRequire="Ludeon.RimWorld.Anomaly">
+        <labelKey>RoomRequirementNoAnomalyBuildings</labelKey>
+        <buildingTags><li>Anomaly</li></buildingTags>
+      </li>
+    </throneRoomRequirements>
+    <grantedAbilities><li>Speech</li></grantedAbilities>
+    <speechCooldown>900000</speechCooldown>
+    <awardWorkerClass>RoyalTitleAwardWorker_Instant</awardWorkerClass>
+  </RoyalTitleDef>
+
+  <RoyalTitleDef ParentName="BaseViltrumTitle">
+    <defName>Vilt_Colonel</defName>
+    <label>colonel</label>
+    <description>An colonel in the Viltrum Empire, allowed to give orders to Viltrumites and command their own tera-ship.</description>
+    <seniority>1200</seniority>
+    <favorCost>40</favorCost>
+    <changeHeirQuestPoints>1000</changeHeirQuestPoints>
+    <permitPointsAwarded>1</permitPointsAwarded>
+    <recruitmentResistanceOffset>15</recruitmentResistanceOffset>
+    <commonality>0.1</commonality>
+    <throneRoomRequirements>
+      <li Class="RoomRequirement_HasAssignedThroneAnyOf">
+        <things>
+          <li>Throne</li>
+          <li>GrandThrone</li>
+        </things>
+      </li>
+      <li Class="RoomRequirement_Area">
+        <area>20</area>
+      </li>
+      <li Class="RoomRequirement_Impressiveness">
+        <impressiveness>80</impressiveness>
+      </li>
+      <li Class="RoomRequirement_TerrainWithTags">
+        <labelKey>RoomRequirementAllFloored</labelKey>
+        <tags>
+          <li>Floor</li>
+          <li>FineFloor</li>
+        </tags>
+      </li>
+      <li Class="RoomRequirement_ForbiddenBuildings">
+        <labelKey>RoomRequirementNoProductionFacilities</labelKey>
+        <buildingTags><li>Production</li></buildingTags>
+      </li>
+      <li Class="RoomRequirement_ForbiddenBuildings">
+        <labelKey>RoomRequirementNoBeds</labelKey>
+        <buildingTags><li>Bed</li></buildingTags>
+      </li>
+      <li Class="RoomRequirement_ForbiddenBuildings" MayRequire="Ludeon.RimWorld.Biotech">
+        <labelKey>RoomRequirementNoBiotechBuildings</labelKey>
+        <buildingTags><li>Biotech</li></buildingTags>
+      </li>
+      <li Class="RoomRequirement_ForbiddenBuildings" MayRequire="Ludeon.RimWorld.Anomaly">
+        <labelKey>RoomRequirementNoAnomalyBuildings</labelKey>
+        <buildingTags><li>Anomaly</li></buildingTags>
+      </li>
+    </throneRoomRequirements>
+    <grantedAbilities><li>Speech</li></grantedAbilities>
+    <speechCooldown>900000</speechCooldown>
+    <awardWorkerClass>RoyalTitleAwardWorker_Instant</awardWorkerClass>
+  </RoyalTitleDef>
+
+  <RoyalTitleDef ParentName="BaseViltrumTitle">
+    <defName>Vilt_General</defName>
+    <label>general</label>
+    <description>An general in the Viltrum Empire, allowed to give orders to Viltrumites and command their own peta-ship.</description>
+    <seniority>1300</seniority>
+    <favorCost>44</favorCost>
+    <changeHeirQuestPoints>1000</changeHeirQuestPoints>
+    <permitPointsAwarded>1</permitPointsAwarded>
+    <recruitmentResistanceOffset>16</recruitmentResistanceOffset>
+    <commonality>0.1</commonality>
+    <throneRoomRequirements>
+      <li Class="RoomRequirement_HasAssignedThroneAnyOf">
+        <things>
+          <li>Throne</li>
+          <li>GrandThrone</li>
+        </things>
+      </li>
+      <li Class="RoomRequirement_Area">
+        <area>30</area>
+      </li>
+      <li Class="RoomRequirement_Impressiveness">
+        <impressiveness>160</impressiveness>
+      </li>
+      <li Class="RoomRequirement_TerrainWithTags">
+        <labelKey>RoomRequirementAllFloored</labelKey>
+        <tags>
+          <li>Floor</li>
+          <li>FineFloor</li>
+        </tags>
+      </li>
+      <li Class="RoomRequirement_ForbiddenBuildings">
+        <labelKey>RoomRequirementNoProductionFacilities</labelKey>
+        <buildingTags><li>Production</li></buildingTags>
+      </li>
+      <li Class="RoomRequirement_ForbiddenBuildings">
+        <labelKey>RoomRequirementNoBeds</labelKey>
+        <buildingTags><li>Bed</li></buildingTags>
+      </li>
+      <li Class="RoomRequirement_ForbiddenBuildings" MayRequire="Ludeon.RimWorld.Biotech">
+        <labelKey>RoomRequirementNoBiotechBuildings</labelKey>
+        <buildingTags><li>Biotech</li></buildingTags>
+      </li>
+      <li Class="RoomRequirement_ForbiddenBuildings" MayRequire="Ludeon.RimWorld.Anomaly">
+        <labelKey>RoomRequirementNoAnomalyBuildings</labelKey>
+        <buildingTags><li>Anomaly</li></buildingTags>
+      </li>
+    </throneRoomRequirements>
+    <grantedAbilities><li>Speech</li></grantedAbilities>
+    <speechCooldown>900000</speechCooldown>
+    <awardWorkerClass>RoyalTitleAwardWorker_Instant</awardWorkerClass>
+  </RoyalTitleDef>
+
+  <!-- ============== Ruling positions. Should never actually show up in-game ============================= -->
+
+
+  <RoyalTitleDef Abstract="True" Name="BaseViltrumTitleNPC" ParentName="BaseViltrumTitle" >
+    <minExpectation>Royal</minExpectation>
+    <requiredMinimumApparelQuality>Excellent</requiredMinimumApparelQuality>
+    <suppressIdleAlert>true</suppressIdleAlert>
+    <disabledWorkTags>
+      <li>Commoner</li>
+    </disabledWorkTags>
+    <throneRoomRequirements>
+      <li Class="RoomRequirement_HasAssignedThroneAnyOf">
+        <things><li>GrandThrone</li></things>
+      </li>
+      <li Class="RoomRequirement_Area">
+        <area>80</area>
+      </li>
+      <li Class="RoomRequirement_Impressiveness">
+        <impressiveness>160</impressiveness>
+      </li>
+      <li Class="RoomRequirement_TerrainWithTags">
+        <labelKey>RoomRequirementAllFineFloored</labelKey>
+        <tags>
+          <li>FineFloor</li>
+        </tags>
+      </li>
+      <li Class="RoomRequirement_ThingAnyOfCount">
+        <things>
+          <li>Brazier</li>
+          <li MayRequire="Ludeon.RimWorld.Royalty,Ludeon.RimWorld.Ideology">DarklightBrazier</li>
+        </things>
+        <count>2</count>
+      </li>
+      <li Class="RoomRequirement_ThingCount">
+        <thingDef>Column</thingDef>
+        <count>6</count>
+      </li>
+      <li Class="RoomRequirement_Thing">
+        <thingDef>Piano</thingDef>
+      </li>
+      <li Class="RoomRequirement_AllThingsAnyOfAreGlowing">
+        <labelKey>RoomRequirementAllBraziersMustBeLit</labelKey>
+        <things>
+          <li>Brazier</li>
+          <li MayRequire="Ludeon.RimWorld.Royalty,Ludeon.RimWorld.Ideology">DarklightBrazier</li>
+        </things>
+      </li>
+      <li Class="RoomRequirement_ForbiddenBuildings">
+        <labelKey>RoomRequirementNoProductionFacilities</labelKey>
+        <buildingTags><li>Production</li></buildingTags>
+      </li>
+      <li Class="RoomRequirement_ForbiddenBuildings">
+        <labelKey>RoomRequirementNoBeds</labelKey>
+        <buildingTags><li>Bed</li></buildingTags>
+      </li>
+      <li MayRequire="Ludeon.RimWorld.Ideology" Class="RoomRequirement_ForbidAltars">
+        <labelKey>RoomRequirementNoAltars</labelKey>
+      </li>
+      <li Class="RoomRequirement_ForbiddenBuildings" MayRequire="Ludeon.RimWorld.Biotech">
+        <labelKey>RoomRequirementNoBiotechBuildings</labelKey>
+        <buildingTags><li>Biotech</li></buildingTags>
+      </li>
+      <li Class="RoomRequirement_ForbiddenBuildings" MayRequire="Ludeon.RimWorld.Anomaly">
+        <labelKey>RoomRequirementNoAnomalyBuildings</labelKey>
+        <buildingTags><li>Anomaly</li></buildingTags>
+      </li>
+    </throneRoomRequirements>
+    <bedroomRequirements>
+      <li Class="RoomRequirement_Area">
+        <area>30</area>
+      </li>
+      <li Class="RoomRequirement_Impressiveness">
+        <impressiveness>80</impressiveness>
+      </li>
+      <li Class="RoomRequirement_TerrainWithTags">
+        <labelKey>RoomRequirementAllFineFloored</labelKey>
+        <tags>
+          <li>FineFloor</li>
+        </tags>
+      </li>
+      <li Class="RoomRequirement_ThingAnyOf">
+        <disablingPrecepts>
+          <li MayRequire="Ludeon.RimWorld.Ideology">SlabBed_Preferred</li>
+        </disablingPrecepts>
+        <things>
+          <li>RoyalBed</li>
+          <li MayRequire="Ludeon.RimWorld.Biotech">DeathrestCasket</li>
+        </things>
+      </li>
+      <li Class="RoomRequirement_Thing">
+        <thingDef>EndTable</thingDef>
+      </li>
+      <li Class="RoomRequirement_Thing">
+        <thingDef>Dresser</thingDef>
+      </li>
+      <li Class="RoomRequirement_ThingCount">
+        <thingDef>Drape</thingDef>
+        <count>1</count>
+      </li>
+      <li Class="RoomRequirement_ForbiddenBuildings">
+        <labelKey>RoomRequirementNoProductionFacilities</labelKey>
+        <buildingTags><li>Production</li></buildingTags>
+      </li>
+      <li Class="RoomRequirement_ForbiddenBuildings" MayRequire="Ludeon.RimWorld.Biotech">
+        <labelKey>RoomRequirementNoBiotechBuildings</labelKey>
+        <buildingTags><li>Biotech</li></buildingTags>
+      </li>
+      <li Class="RoomRequirement_ForbiddenBuildings" MayRequire="Ludeon.RimWorld.Anomaly">
+        <labelKey>RoomRequirementNoAnomalyBuildings</labelKey>
+        <buildingTags><li>Anomaly</li></buildingTags>
+      </li>
+    </bedroomRequirements>
+    <foodRequirement>
+      <minQuality>MealLavish</minQuality>
+      <allowedTypes>Processed, Liquor</allowedTypes>
+      <allowedDefs>
+        <li>Ambrosia</li>
+        <li>Milk</li>
+        <li>RawBerries</li>
+        <li>InsectJelly</li>
+      </allowedDefs>
+    </foodRequirement>
+    <grantedAbilities><li>Speech</li></grantedAbilities>
+    <speechCooldown>600000</speechCooldown>
+  </RoyalTitleDef>
+
+  <RoyalTitleDef ParentName="BaseViltrumTitle">
+    <defName>Vilt_Council</defName>
+    <label>councillor</label>
+    <description>Councillors personally advise the Grand Regent on major decisions and manage most of the day-to-day running of the Empire.</description>
+    <seniority>1400</seniority>
+    <changeHeirQuestPoints>1000</changeHeirQuestPoints>
+    <permitPointsAwarded>1</permitPointsAwarded>
+    <commonality>0</commonality>
+  </RoyalTitleDef>
+
+  <RoyalTitleDef ParentName="BaseViltrumTitle">
+    <defName>Vilt_Regent</defName>
+    <label>grand regent</label>
+    <description>The Grand Regent is acknowledged as the Empire's strongest member and, with that, its rightful ruler.</description>
+    <seniority>1500</seniority>
+    <changeHeirQuestPoints>1000</changeHeirQuestPoints>
+    <permitPointsAwarded>1</permitPointsAwarded>
+    <commonality>0</commonality>
+  </RoyalTitleDef>
+
+  <!-- ============== Viltrum titles - Player gettable psycaster ============================= -->
+
+</Defs>

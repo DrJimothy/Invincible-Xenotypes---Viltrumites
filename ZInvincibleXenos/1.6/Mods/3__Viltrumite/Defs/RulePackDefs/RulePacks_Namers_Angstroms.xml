@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+
+  <RulePackDef>
+    <defName>NamerPersonAngstromXeno</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>r_name->[firstName] [lastName]</li>
+        <li>r_name->[firstName] '[nicknameAngstrom]' [lastName]</li>
+
+        <li>firstName->Angstrom</li>
+
+        <li>lastName->Levy</li>
+        <li>lastName->Levi</li>
+        <li>lastName->[Desig]</li>
+        <li>lastName->[Desig][Desig]</li>
+        <li>lastName->[Desig][Desig][Desig]</li>
+        <li>lastName->[Desig][Desig][Desig][Desig]</li>
+        <li>lastName->[Desig][Desig][Desig][Desig][Desig]</li>
+        <li>lastName->[Leta][Desig]</li>
+        <li>lastName->[Leta][Desig][Desig]</li>
+        <li>lastName->[Leta][Desig][Desig][Desig]</li>
+        <li>lastName->[Leta][Desig][Desig][Desig][Desig]</li>
+        <li>lastName->[Leta][Desig][Desig][Desig][Desig][Desig]</li>
+        <li>lastName->Levy-[Desig]</li>
+        <li>lastName->Levy-[Desig][Desig]</li>
+        <li>lastName->Levy-[Desig][Desig][Desig]</li>
+        <li>lastName->Levy-[Desig][Desig][Desig][Desig]</li>
+        <li>lastName->Levy-[Desig][Desig][Desig][Desig][Desig]</li>
+        <li>lastName->Levy-[Leta][Desig]</li>
+        <li>lastName->Levy-[Leta][Desig][Desig]</li>
+        <li>lastName->Levy-[Leta][Desig][Desig][Desig]</li>
+        <li>lastName->Levy-[Leta][Desig][Desig][Desig][Desig]</li>
+        <li>lastName->Levy-[Leta][Desig][Desig][Desig][Desig][Desig]</li>
+        <li>lastName->Levi-[Desig]</li>
+        <li>lastName->Levi-[Desig][Desig]</li>
+        <li>lastName->Levi-[Desig][Desig][Desig]</li>
+        <li>lastName->Levi-[Desig][Desig][Desig][Desig]</li>
+        <li>lastName->Levi-[Desig][Desig][Desig][Desig][Desig]</li>
+        <li>lastName->Levi-[Leta][Desig]</li>
+        <li>lastName->Levi-[Leta][Desig][Desig]</li>
+        <li>lastName->Levi-[Leta][Desig][Desig][Desig]</li>
+        <li>lastName->Levi-[Leta][Desig][Desig][Desig][Desig]</li>
+        <li>lastName->Levi-[Leta][Desig][Desig][Desig][Desig][Desig]</li>
+
+        <li>nicknameAngstrom->Hater</li>
+        <li>nicknameAngstrom->Levy</li>
+        <li>nicknameAngstrom->Levi</li>
+        <li>nicknameAngstrom->Angstrom</li>
+        <li>nicknameAngstrom->Markslayer</li>
+
+        <li>Leta->A</li>
+        <li>Leta->B</li>
+        <li>Leta->C</li>
+        <li>Leta->D</li>
+        <li>Leta->E</li>
+        <li>Leta->F</li>
+        <li>Leta->G</li>
+        <li>Leta->H</li>
+        <li>Leta->I</li>
+        <li>Leta->J</li>
+        <li>Leta->K</li>
+        <li>Leta->L</li>
+        <li>Leta->M</li>
+        <li>Leta->N</li>
+        <li>Leta->O</li>
+        <li>Leta->P</li>
+        <li>Leta->Q</li>
+        <li>Leta->R</li>
+        <li>Leta->S</li>
+        <li>Leta->T</li>
+        <li>Leta->U</li>
+        <li>Leta->V</li>
+        <li>Leta->W</li>
+        <li>Leta->X</li>
+        <li>Leta->Y</li>
+        <li>Leta->Z</li>
+
+        <li>Desig->0</li>
+        <li>Desig->1</li>
+        <li>Desig->2</li>
+        <li>Desig->3</li>
+        <li>Desig->4</li>
+        <li>Desig->5</li>
+        <li>Desig->6</li>
+        <li>Desig->7</li>
+        <li>Desig->8</li>
+        <li>Desig->9</li>
+      </rulesStrings>
+      <rulesFiles>
+        <li>Syl->WordParts/Syllables_Waster</li>
+        <li>nicknameWaster->Names/Nick_Unisex_Waster</li>
+      </rulesFiles>
+    </rulePack>
+  </RulePackDef>
+
+</Defs>

@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="ApparelMakeableBase">
+ 
+    <defName>JInv_Omnimansuitc</defName>
+    <label>Omniman Super-Suit</label>
+    <description>A highly durable supersuit. This is styled after the suit of the Viltrumite rebel Now'lan, also known as Omni Man.</description>
+    <graphicData>
+      <texPath>Things/Suits/Omniman/Omniman</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>1.0</drawSize>
+    </graphicData>
+    <costList>
+        <Hyperweave>150</Hyperweave>
+        <Plasteel>15</Plasteel>
+        <ComponentSpacer>3</ComponentSpacer>
+        <Dye>1</Dye>
+    </costList>
+    <tradeability>Sellable</tradeability>
+    <statBases>
+      <WorkToMake>1500</WorkToMake>
+      <MaxHitPoints>10000</MaxHitPoints>
+      <Mass>5.0</Mass>
+      <ArmorRating_Sharp>0.25</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.25</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.25</ArmorRating_Heat>
+      <Insulation_Cold>50</Insulation_Cold>
+      <Insulation_Heat>50</Insulation_Heat>
+      <EquipDelay>1</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+        <MeleeDodgeChance>0.6</MeleeDodgeChance>
+        <SocialImpact>0.40</SocialImpact>
+    </equippedStatOffsets>
+    <thingCategories>
+      <li>Apparel</li>
+    </thingCategories>
+    <apparel>
+      <bodyPartGroups>
+        <li>Torso</li>
+				<li>Neck</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+				<li>Legs</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Suits/Omniman/Omniman</wornGraphicPath>
+      <useWornGraphicMask>true</useWornGraphicMask>
+      <!-- Layers your apparel will be on, OnSkin (Shirt), Middle (Flak vest), Shell (Duster) -->
+      <layers>
+        <li>OnSkin</li>
+      </layers>
+      <!-- Tags for your apparel to spawn -->
+      <tags>
+        <li>Viltrum_Suit</li>
+        <li>Hero_Suit</li>
+        <li>Super_Suit</li>
+        <li>Omniman_Suit</li>
+      </tags>
+      <!-- Can this apparel be deired for an Ideoligion? If no then false,if yes then true -->
+      <canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+    </apparel>
+    <recipeMaker>
+    <!-- Research required to get before apparel can be made -->
+    <researchPrerequisites>
+      <li>ComplexClothing</li>
+      <li>AdvancedFabrication</li>
+    </researchPrerequisites>
+        <recipeUsers>
+          <li>ElectricTailoringBench</li>
+        </recipeUsers>
+    </recipeMaker>
+  </ThingDef>
+
+  <ThingDef ParentName="ApparelMakeableBase">
+ 
+    <defName>JInv_Viltrumitesuitc</defName>
+    <label>Viltrumite Super-Suit</label>
+    <description>A highly durable super-suit and Viltrum uniform.</description>
+    <graphicData>
+        <!-- File Path in which the texture is located, example. If my Texture is in a folder called apparel I would path it as so. Notice you do not need to put the folder named 'Textures' -->
+      <texPath>Things/Suits/Viltrumite/Viltrumite</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>1.0</drawSize>
+    </graphicData>
+    <costList>
+        <Hyperweave>150</Hyperweave>
+        <Plasteel>15</Plasteel>
+        <ComponentSpacer>3</ComponentSpacer>
+        <Dye>1</Dye>
+    </costList>
+    <tradeability>Sellable</tradeability>
+    <statBases>
+      <WorkToMake>1500</WorkToMake>
+      <MaxHitPoints>10000</MaxHitPoints>
+      <Mass>5.0</Mass>
+      <ArmorRating_Sharp>0.25</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.25</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.25</ArmorRating_Heat>
+      <Insulation_Cold>50</Insulation_Cold>
+      <Insulation_Heat>50</Insulation_Heat>
+      <EquipDelay>1</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+        <MeleeDodgeChance>0.6</MeleeDodgeChance>
+        <SocialImpact>0.40</SocialImpact>
+    </equippedStatOffsets>
+    <thingCategories>
+      <li>Apparel</li>
+    </thingCategories>
+    <apparel>
+      <bodyPartGroups>
+        <li>Torso</li>
+				<li>Neck</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+				<li>Legs</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Suits/Viltrumite/Viltrumite</wornGraphicPath>
+      <useWornGraphicMask>true</useWornGraphicMask>
+      <!-- Layers your apparel will be on, OnSkin (Shirt), Middle (Flak vest), Shell (Duster) -->
+      <layers>
+        <li>OnSkin</li>
+      </layers>
+      <!-- Tags for your apparel to spawn -->
+      <tags>
+        <li>Viltrum_Suit</li>
+        <li>Viltrumite_Suit</li>
+      </tags>
+      <!-- Can this apparel be deired for an Ideoligion? If no then false,if yes then true -->
+      <canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+    </apparel>
+    <recipeMaker>
+    <!-- Research required to get before apparel can be made -->
+    <researchPrerequisites>
+      <li>ComplexClothing</li>
+      <li>AdvancedFabrication</li>
+    </researchPrerequisites>
+        <recipeUsers>
+          <li>ElectricTailoringBench</li>
+        </recipeUsers>
+    </recipeMaker>
+  </ThingDef>
+
+  <ThingDef ParentName="ApparelMakeableBase">
+
+    <defName>JInv_ViltrumitGeneralsuitc</defName>
+    <label>Viltrumite General Super-Suit</label>
+    <description>A highly durable super-suit and uniform of Viltrum's Viltrumite generals.</description>
+    <graphicData>
+        <!-- File Path in which the texture is located, example. If my Texture is in a folder called apparel I would path it as so. Notice you do not need to put the folder named 'Textures' -->
+      <texPath>Things/Suits/Viltrumitageneral/Genviltrumita</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>1.0</drawSize>
+    </graphicData>
+    <costList>
+        <Hyperweave>150</Hyperweave>
+        <Plasteel>15</Plasteel>
+        <ComponentSpacer>3</ComponentSpacer>
+        <Dye>1</Dye>
+    </costList>
+    <tradeability>Sellable</tradeability>
+    <statBases>
+      <WorkToMake>1500</WorkToMake>
+      <MaxHitPoints>10000</MaxHitPoints>
+      <Mass>5.0</Mass>
+      <ArmorRating_Sharp>0.25</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.25</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.25</ArmorRating_Heat>
+      <Insulation_Cold>50</Insulation_Cold>
+      <Insulation_Heat>50</Insulation_Heat>
+      <EquipDelay>1</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+        <MeleeDodgeChance>0.6</MeleeDodgeChance>
+        <SocialImpact>0.40</SocialImpact>
+    </equippedStatOffsets>
+    <thingCategories>
+      <li>Apparel</li>
+    </thingCategories>
+    <apparel>
+      <bodyPartGroups>
+        <li>Torso</li>
+				<li>Neck</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+				<li>Legs</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Suits/Viltrumitageneral/Genviltrumita</wornGraphicPath>
+      <useWornGraphicMask>true</useWornGraphicMask>
+      <!-- Layers your apparel will be on, OnSkin (Shirt), Middle (Flak vest), Shell (Duster) -->
+      <layers>
+        <li>OnSkin</li>
+      </layers>
+      <!-- Tags for your apparel to spawn -->
+      <tags>
+        <li>Viltrum_Suit</li>
+        <li>Viltrumite_Suit</li>
+      </tags>
+      <!-- Can this apparel be deired for an Ideoligion? If no then false,if yes then true -->
+      <canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+    </apparel>
+    <recipeMaker>
+    <!-- Research required to get before apparel can be made -->
+    <researchPrerequisites>
+      <li>ComplexClothing</li>
+      <li>AdvancedFabrication</li>
+    </researchPrerequisites>
+        <recipeUsers>
+          <li>ElectricTailoringBench</li>
+        </recipeUsers>
+    </recipeMaker>
+  </ThingDef>
+
+  <ThingDef ParentName="ApparelMakeableBase">
+
+    <defName>JInv_Invenciblec</defName>
+    <label>Invincible Super-Suit</label>
+    <description>A highly durable super-suit, styled after the Earth hero and anti-Viltrum warrior Invincible.</description>
+    <graphicData>
+        <!-- File Path in which the texture is located, example. If my Texture is in a folder called apparel I would path it as so. Notice you do not need to put the folder named 'Textures' -->
+      <texPath>Things/Suits/Invencible/Invencible</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>1.0</drawSize>
+    </graphicData>
+    <costList>
+        <Hyperweave>150</Hyperweave>
+        <Plasteel>15</Plasteel>
+        <ComponentSpacer>3</ComponentSpacer>
+        <Dye>1</Dye>
+    </costList>
+    <tradeability>Sellable</tradeability>
+    <statBases>
+      <WorkToMake>1500</WorkToMake>
+      <MaxHitPoints>10000</MaxHitPoints>
+      <Mass>5.0</Mass>
+      <ArmorRating_Sharp>0.25</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.25</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.25</ArmorRating_Heat>
+      <Insulation_Cold>50</Insulation_Cold>
+      <Insulation_Heat>50</Insulation_Heat>
+      <EquipDelay>1</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+        <MeleeDodgeChance>0.6</MeleeDodgeChance>
+        <SocialImpact>0.40</SocialImpact>
+    </equippedStatOffsets>
+    <thingCategories>
+      <li>Apparel</li>
+    </thingCategories>
+    <apparel>
+      <bodyPartGroups>
+        <li>Torso</li>
+				<li>Neck</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+				<li>Legs</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Suits/Invencible/Invencible</wornGraphicPath>
+      <useWornGraphicMask>true</useWornGraphicMask>
+      <!-- Layers your apparel will be on, OnSkin (Shirt), Middle (Flak vest), Shell (Duster) -->
+      <layers>
+        <li>OnSkin</li>
+      </layers>
+      <!-- Tags for your apparel to spawn -->
+      <tags>
+        <li>Viltrum_Suit</li>
+        <li>Viltrumite_Suit</li>
+      </tags>
+      <!-- Can this apparel be deired for an Ideoligion? If no then false,if yes then true -->
+      <canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+    </apparel>
+    <recipeMaker>
+    <!-- Research required to get before apparel can be made -->
+    <researchPrerequisites>
+      <li>ComplexClothing</li>
+      <li>AdvancedFabrication</li>
+    </researchPrerequisites>
+        <recipeUsers>
+          <li>ElectricTailoringBench</li>
+        </recipeUsers>
+    </recipeMaker>
+  </ThingDef>
+
+  <ThingDef ParentName="ApparelMakeableBase">
+
+    <defName>JInv_ViltrumiteLordcc</defName>
+    <label>Viltrumite Lord Super-Suit</label>
+    <description>A highly durable super-suit and the traditional Lord Suit of Viltrum.</description>
+    <graphicData>
+        <!-- File Path in which the texture is located, example. If my Texture is in a folder called apparel I would path it as so. Notice you do not need to put the folder named 'Textures' -->
+      <texPath>Things/Suits/Thrallccapa/thrall</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>1.0</drawSize>
+    </graphicData>
+    <costList>
+        <Hyperweave>150</Hyperweave>
+        <Plasteel>15</Plasteel>
+        <ComponentSpacer>3</ComponentSpacer>
+        <Dye>1</Dye>
+    </costList>
+    <tradeability>Sellable</tradeability>
+    <statBases>
+      <WorkToMake>1500</WorkToMake>
+      <MaxHitPoints>10000</MaxHitPoints>
+      <Mass>5.0</Mass>
+      <ArmorRating_Sharp>0.25</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.25</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.25</ArmorRating_Heat>
+      <Insulation_Cold>50</Insulation_Cold>
+      <Insulation_Heat>50</Insulation_Heat>
+      <EquipDelay>1</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+        <MeleeDodgeChance>0.6</MeleeDodgeChance>
+        <SocialImpact>0.40</SocialImpact>
+    </equippedStatOffsets>
+    <thingCategories>
+      <li>Apparel</li>
+    </thingCategories>
+    <apparel>
+      <bodyPartGroups>
+        <li>Torso</li>
+				<li>Neck</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+				<li>Legs</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Suits/Thrallccapa/thrall</wornGraphicPath>
+      <useWornGraphicMask>true</useWornGraphicMask>
+      <!-- Layers your apparel will be on, OnSkin (Shirt), Middle (Flak vest), Shell (Duster) -->
+      <layers>
+        <li>OnSkin</li>
+      </layers>
+      <!-- Tags for your apparel to spawn -->
+      <tags>
+        <li>Viltrum_Suit</li>
+        <li>Viltrumite_Suit</li>
+      </tags>
+      <!-- Can this apparel be deired for an Ideoligion? If no then false,if yes then true -->
+      <canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+    </apparel>
+    <recipeMaker>
+    <!-- Research required to get before apparel can be made -->
+    <researchPrerequisites>
+      <li>ComplexClothing</li>
+      <li>AdvancedFabrication</li>
+    </researchPrerequisites>
+        <recipeUsers>
+          <li>ElectricTailoringBench</li>
+        </recipeUsers>
+    </recipeMaker>
+  </ThingDef>
+
+  <ThingDef ParentName="ApparelMakeableBase">
+
+    <defName>JInv_ViltrumiteLord</defName>
+    <label>Viltrumite Lord Super-Suit</label>
+    <description>A highly durable super-suit and the traditional Lord Suit of Viltrum.</description>
+    <graphicData>
+        <!-- File Path in which the texture is located, example. If my Texture is in a folder called apparel I would path it as so. Notice you do not need to put the folder named 'Textures' -->
+      <texPath>Things/Suits/Thrall/thrallsc</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>1.0</drawSize>
+    </graphicData>
+    <costList>
+        <Hyperweave>150</Hyperweave>
+        <Plasteel>15</Plasteel>
+        <ComponentSpacer>3</ComponentSpacer>
+        <Dye>1</Dye>
+    </costList>
+    <tradeability>Sellable</tradeability>
+    <statBases>
+      <WorkToMake>1500</WorkToMake>
+      <MaxHitPoints>10000</MaxHitPoints>
+      <Mass>5.0</Mass>
+      <ArmorRating_Sharp>0.25</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.25</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.25</ArmorRating_Heat>
+      <Insulation_Cold>50</Insulation_Cold>
+      <Insulation_Heat>50</Insulation_Heat>
+      <EquipDelay>1</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+        <MeleeDodgeChance>0.6</MeleeDodgeChance>
+        <SocialImpact>0.40</SocialImpact>
+    </equippedStatOffsets>
+    <thingCategories>
+      <li>Apparel</li>
+    </thingCategories>
+    <apparel>
+      <bodyPartGroups>
+        <li>Torso</li>
+				<li>Neck</li>
+				<li>Shoulders</li>
+				<li>Arms</li>
+				<li>Legs</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Suits/Thrall/thrallsc</wornGraphicPath>
+      <useWornGraphicMask>true</useWornGraphicMask>
+      <!-- Layers your apparel will be on, OnSkin (Shirt), Middle (Flak vest), Shell (Duster) -->
+      <layers>
+        <li>OnSkin</li>
+      </layers>
+      <!-- Tags for your apparel to spawn -->
+      <tags>
+        <li>Viltrum_Suit</li>
+        <li>Viltrumite_Suit</li>
+      </tags>
+      <!-- Can this apparel be deired for an Ideoligion? If no then false,if yes then true -->
+      <canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+    </apparel>
+    <recipeMaker>
+    <!-- Research required to get before apparel can be made -->
+    <researchPrerequisites>
+      <li>ComplexClothing</li>
+      <li>AdvancedFabrication</li>
+    </researchPrerequisites>
+        <recipeUsers>
+          <li>ElectricTailoringBench</li>
+        </recipeUsers>
+    </recipeMaker>
+  </ThingDef>
+
+</Defs>

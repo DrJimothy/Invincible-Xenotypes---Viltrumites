@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<GeneDef>
+        <defName>JInv_Restraint</defName>
+        <label>restraint</label>
+        <description>Carriers of this gene can freely change the upper limits on how much damage they can do in melee combat.</description>
+        <biostatMet>-2</biostatMet>
+		<biostatCpx>4</biostatCpx>
+        <iconPath>Powers/Gene_Restraint</iconPath>
+        <displayOrderInCategory>10</displayOrderInCategory>
+        <geneClass>SuperHeroGenesBase.HediffAdder</geneClass>
+        <displayCategory>SuperPowersPassive</displayCategory>
+        <modExtensions>
+			<li Class="SuperHeroGenesBase.SHGExtension">
+				<hediffsToApply><li><hediff>SHG_Restraint</hediff></li></hediffsToApply>
+			</li>
+		</modExtensions>
+		<minAgeActive>13</minAgeActive>
+    </GeneDef>
+	
+	<GeneDef>
+		<defName>JInv_Flight</defName>
+		<label>smart flight</label>
+		<description>Using smart atoms, carriers of this gene perform telekinesis on themselves in defiance of the law of conservation of momentum, enabling flight.</description>
+		<iconPath>Powers/Gene_Flight</iconPath>
+		<geneClass>SuperHeroGenesBase.HediffAdder</geneClass>
+		<abilities>
+			<li>SHG_Flight_WorldTravel</li>
+		</abilities>
+		<descriptionHyperlinks>
+			<AbilityDef>SHG_Flight_WorldTravel</AbilityDef>
+		</descriptionHyperlinks>
+		<biostatCpx>4</biostatCpx>
+		<biostatArc>2</biostatArc>
+		<customEffectDescriptions>
+			<li>Colonist will always be floating at least a little bit over the ground.</li>
+		</customEffectDescriptions>
+		<exclusionTags>
+			<li>Archetype_PhantomFlight</li>
+			<li>Psionist_SoldierFlight</li>
+		</exclusionTags>
+		<modExtensions>
+			<li Class="SuperHeroGenesBase.SHGExtension">
+				<hediffsToApply><li><hediff>SHG_Powers_Flight</hediff></li></hediffsToApply>
+			</li>
+		</modExtensions>
+		<prerequisite>JInv_VSmartGene</prerequisite>
+		<minAgeActive>13</minAgeActive>
+	</GeneDef>
+
+	<GeneDef>
+		<defName>JInv_HeroicLeap</defName>
+		<label>heroic leap</label>
+		<description>Carriers of this gene are able to make vast leaps that cover a lot of ground.</description>
+		<iconPath>UI/Icons/Genes/Gene_LongJumpLegs</iconPath>
+		<abilities>
+			<li>SHG_HeroicLeap</li>
+		</abilities>
+		<descriptionHyperlinks>
+			<AbilityDef>SHG_HeroicLeap</AbilityDef>
+		</descriptionHyperlinks>
+		<biostatMet>-4</biostatMet>
+		<biostatCpx>4</biostatCpx>
+		<exclusionTags>
+			<li>Archetypes_NinjaHeroicLeap</li>
+			<li>Archetype_SkirmisherLeap</li>
+			<li>Archetype_PugilistLeap</li>
+		</exclusionTags>
+		<minAgeActive>13</minAgeActive>
+	</GeneDef>
+</Defs>

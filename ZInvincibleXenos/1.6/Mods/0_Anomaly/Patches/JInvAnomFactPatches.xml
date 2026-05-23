@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+<!-- Raids -->
+<Operation Class="PatchOperationAdd">
+    <xpath>Defs/FactionDef[defName="ViltrumEmpire"]/pawnGroupMakers</xpath>
+    <value>
+      <li>
+        <!-- Burning Attack -->
+        <kindDef>Combat</kindDef>
+        <commonality>1</commonality>
+        <options>
+          <Vilgrunt_Mercenary_Flamer>1</Vilgrunt_Mercenary_Flamer>
+        </options>
+      </li>
+      <li>
+        <!-- Burning Attack with Viltrumite -->
+        <kindDef>Combat</kindDef>
+        <commonality>1</commonality>
+        <options>
+          <Viltrumite_Fighter_Simple>0.1</Viltrumite_Fighter_Simple>
+          <Vilgrunt_Mercenary_Flamer>1</Vilgrunt_Mercenary_Flamer>
+        </options>
+      </li>
+    </value>
+</Operation>
+
+</Patch>

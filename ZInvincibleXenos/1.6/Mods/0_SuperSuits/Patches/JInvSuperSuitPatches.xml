@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+    <!--Make Viltrumites spawn with the suit if using Super Suits-->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/PawnKindDef[defName="Viltrumite_Fighter_Simple"]/apparelRequired</xpath>
+        <value>
+    		<apparelRequired>
+    			<li>JInv_Viltrumitesuitc</li>
+    		</apparelRequired>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/PawnKindDef[defName="Viltrumite_Fighter_Elite"]/apparelRequired</xpath>
+        <value>
+    		<apparelRequired>
+    			<li>JInv_ViltrumitGeneralsuitc</li>
+    		</apparelRequired>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/PawnKindDef[defName="Viltrumite_Fighter_Solo"]/apparelRequired</xpath>
+        <value>
+    		<apparelRequired>
+    			<li>JInv_Viltrumitesuitc</li>
+    		</apparelRequired>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/PawnKindDef[defName="Viltrumite_Fighter_Random"]/apparelRequired</xpath>
+        <value>
+    		<apparelRequired>
+    			<li>JInv_Viltrumitesuitc</li>
+    		</apparelRequired>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/PawnKindDef[defName="Viltrumite_Fighter_RandomGuard"]/apparelRequired</xpath>
+        <value>
+    		<apparelRequired>
+    			<li>JInv_Viltrumitesuitc</li>
+    		</apparelRequired>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/PawnKindDef[defName="Viltrumite_Fighter_Garbage"]/apparelRequired</xpath>
+        <value>
+    		<apparelRequired>
+    			<li>JInv_Viltrumitesuitc</li>
+    		</apparelRequired>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/PawnKindDef[defName="Viltrumite_Fighter_EliteGuard"]/apparelRequired</xpath>
+        <value>
+    		<apparelRequired>
+    			<li>JInv_ViltrumitGeneralsuitc</li>
+          <li MayRequire="Ludeon.RimWorld.Odyssey">Apparel_VacsuitHelmet</li>
+    		</apparelRequired>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/PawnKindDef[defName="Viltrumite_Fighter_SimpleGuard"]/apparelRequired</xpath>
+        <value>
+    		<apparelRequired>
+    			<li>JInv_Viltrumitesuitc</li>
+          <li MayRequire="Ludeon.RimWorld.Odyssey">Apparel_VacsuitHelmet</li>
+    		</apparelRequired>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/PawnKindDef[defName="Viltrumite_Fighter_GarbageGuard"]/apparelRequired</xpath>
+        <value>
+    		<apparelRequired>
+    			<li>JInv_Viltrumitesuitc</li>
+          <li MayRequire="Ludeon.RimWorld.Odyssey">Apparel_VacsuitHelmet</li>
+    		</apparelRequired>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/PawnKindDef[defName="Viltrumite_Fighter_Regent"]/apparelRequired</xpath>
+        <value>
+    		<apparelRequired>
+    			<li>JInv_ViltrumiteLordcc</li>
+    		</apparelRequired>
+        </value>
+    </Operation>
+    
+    <!--Make Viltrumites spawn without them stinking parkas and dusters-->
+
+</Patch>

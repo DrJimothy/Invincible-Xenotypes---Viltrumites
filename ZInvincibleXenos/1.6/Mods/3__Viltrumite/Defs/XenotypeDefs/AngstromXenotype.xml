@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<XenotypeDef>
+		<defName>Jim_AngstromLevy</defName>
+		<label>Angstrom Levy</label>
+		<description>A scientist capable of crossing the multi-verse, you may run into multiple of him.</description>
+		<descriptionShort>A scientist capable of crossing the multi-verse, you may run into multiple of him.</descriptionShort>
+		<inheritable>true</inheritable>
+		<chanceToUseNameMaker>1</chanceToUseNameMaker>
+		<iconPath>UI/Icons/Xenotypes/Baseliner</iconPath>
+		<nameMaker>NamerPersonAngstromXeno</nameMaker>
+		<genes>
+			<li>ArchiteMetabolism</li>
+			<li>Body_Thin</li>
+			<li>Skin_Melanin8</li>
+			<li>Hair_DarkReddish</li>
+			<li>Mood_Optimist</li>
+			<li>ViolenceDisabled</li>
+			<li>Aggression_DeadCalm</li>
+			<li>Beauty_Pretty</li>
+			<li>Learning_Fast</li>
+			<li>AptitudeTerrible_Shooting</li>
+			<li>AptitudeTerrible_Melee</li>
+			<li>AptitudeRemarkable_Intellectual</li>
+			<li MayRequire="sarg.alphagenes">AG_NereidPocketPlane</li>
+			<li MayRequire="sarg.alphagenes">AG_MajorAnimalSummon_Randomizer</li>
+		</genes>
+	</XenotypeDef>
+
+	<XenotypeDef>
+		<defName>Jim_AngstromLevy2</defName>
+		<label>Angstrom Levy</label>
+		<description>An Angstrom Levy. Insane in the membrane, insane in the brain. Yet also, very big brain. Big brain full of hatred for Mark Grayson. Body full of not only changes induced by failed experiment, but changes from successful experiments all about being better at Mark-murdering.</description>
+		<descriptionShort>An Angstrom Levy. As genius as he is insane and hateful of Mark Grayson.</descriptionShort>
+		<chanceToUseNameMaker>1</chanceToUseNameMaker>
+		<iconPath>UI/Icons/Xenotypes/Baseliner</iconPath>
+		<nameMaker>NamerPersonAngstromXeno</nameMaker>
+		<genes>
+			<li>Aggression_HyperAggressive</li>
+			<li>Mood_Depressive</li>
+			<li>Sterile</li>
+			<li>WoundHealing_SuperFast</li>
+			<li>KillThirst</li>
+			<li>AptitudeRemarkable_Crafting</li>
+			<li>AptitudeRemarkable_Shooting</li>
+			<li>AptitudeRemarkable_Melee</li>
+			<li>AptitudeTerrible_Artistic</li>
+			<li>Body_Standard</li>
+			<li>ChemicalDependency_WakeUp</li>
+			<li>Beauty_VeryUgly</li>
+			<li>Immunity_SuperStrong</li>
+			<li MayRequire="sarg.alphagenes">AG_DeadlyRaidPresence</li>
+			<li MayRequire="sarg.alphagenes">AG_Rowdy</li>
+			<li MayRequire="sarg.alphagenes">AG_ExtraordinaryLifespan</li>
+			<li MayRequire="sarg.alphagenes">AG_Spinnerets</li>
+			<li MayRequire="sarg.alphagenes">AG_SurvivalInstinct_Low</li>
+			<li MayRequire="sarg.alphagenes">AG_HeavilyScarred</li>
+			<li MayRequire="sarg.alphagenes">AG_UnsettlingAppearance</li>
+			<li MayRequire="sarg.alphagenes">AG_Male</li>
+			<li MayRequire="sarg.alphagenes">AG_ArmourMajor</li>
+			<li MayRequire="sarg.alphagenes">AG_FrailStomach</li>
+			<li MayRequire="sarg.alphagenes">AG_BloodVomit</li>
+			<li MayRequire="sarg.alphagenes">AG_FreezingBreath</li>
+			<li MayRequire="sarg.alphagenes">AG_Zap</li>
+			<li MayRequire="RedMattis.BigSmall.Core">BS_Very_Passioned_Learning_Gene</li>
+			<li MayRequire="RedMattis.BigSmall.Core">BS_CellPandemonium</li>
+			<li MayRequire="RedMattis.BigSmall.Core">VU_Pallor</li>
+			<li MayRequire="Neronix17.Outland.Genetics">Outland_EyeVisual_Recessed</li>
+			<li MayRequire="vanillaracesexpanded.genie">VRE_Slow_Diseases</li>
+			<li MayRequire="vanillaracesexpanded.genie">VRE_ElongatedHead</li>
+			<li MayRequire="Rimsenal.Askbarn">EMPSurge</li>
+		</genes>
+		<doubleXenotypeChances>
+			<Jim_AngstromLevy>1</Jim_AngstromLevy>
+		</doubleXenotypeChances>
+	</XenotypeDef>
+</Defs>
